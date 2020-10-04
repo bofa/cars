@@ -10,6 +10,7 @@ const ResponsiveGridLayout = WidthProvider(Responsive);
 
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
+import { getPetrolStatistics } from './ssbno';
 
 export const convertArrayToObject = (array: any[], key: string | number) => {
   const initialValue = {};
@@ -31,12 +32,22 @@ export class Main extends React.Component<MainProps> {
     smooth: 12,
     series: [] as Series[],
     norway: [] as Series[],
+    norwayGas: [] as Series[],
     netherlands: [] as Series[],
     spain: [] as Series[],
   };
 
   constructor(props: MainProps) {
     super(props);
+
+    getPetrolStatistics().then(petrolSeries => {
+      // console.log('data', data);
+      this.setState({ norwayGas: [petrolSeries]});
+    });
+
+    // axios.get('norway-gas.json')
+    //   .then(reponse => reponse.data)
+    //   .then(norwayGas => this.setState({ norwayGas }));
 
     axios.get('norway.json')
       .then(reponse => reponse.data)
@@ -121,6 +132,9 @@ export class Main extends React.Component<MainProps> {
       case 'norway':
         filteredData = this.state.norway;
         break;
+      case 'norwayGas':
+          filteredData = this.state.norwayGas;
+          break;
       case 'netherlands':
         filteredData = this.state.netherlands;
         break;
@@ -146,9 +160,10 @@ export class Main extends React.Component<MainProps> {
               >
                 <option value="models">Sweden Models</option>
                 <option value="segment">Sweden Segment</option>
-                <option value="norway">Norway</option>
-                <option value="netherlands">Netherlands</option>
-                <option value="spain">Spain</option>
+                <option value="norway">Norway Brands</option>
+                <option value="norwayGas">Norway Gas</option>
+                <option value="netherlands">Netherlands Brands</option>
+                <option value="spain">Spain Brands</option>
               </select>
             </div>
           </FormGroup>

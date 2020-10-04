@@ -1,6 +1,7 @@
 const axios = require('axios');
 const moment = require('moment');
 const fs = require('fs').promises;
+const Papa =  require('papaparse');
 const norway2018 = require('./raw/norway2018');
 const norway2019 = require('./raw/norway2019');
 const netherlands2018 = require('./raw/netherlands2018');
@@ -74,3 +75,30 @@ const spain$ = massageJson(
     spain2018.concat(spain2019))
     .then(data => fs.writeFile('public/spain.json', JSON.stringify(data)))
     .then(() => console.log('Done Spain'));
+
+axios.get('https://www.ssb.no/eksport/tabell.csv?key=431798')
+  .then((response: any) => Papa.parse(response.data).data)    
+  .then((data: any) => fs.writeFile('public/norway-gas-months.json', JSON.stringify(data)))
+  .then(() => console.log('Done Norway Gas'));
+
+axios.get('https://www.ssb.no/eksport/tabell.csv?key=416738')
+  .then((response: any) => Papa.parse(response.data).data)
+  .then((data: string[][]) => {
+    const extractIndices = [1, 3, 4, 5 , 6];
+    const years = data[0].filter((_, i) => extractIndices.includes(i))
+      .map(y => moment(y, 'YYYY'));
+
+    const output = data.slice(1).map(d => ({
+      label: d[0],
+      data: d.filter((_, i) => extractIndices.includes(i))
+        .map((v, i) => ({
+          t: years[i],
+          y: +v
+        }))
+        .reverse()
+    }));
+
+    return output;
+  })
+  .then((data: any) => fs.writeFile('public/norway-gas.json', JSON.stringify(data)))
+  .then(() => console.log('Done Norway Gas'));
