@@ -31,6 +31,7 @@ export class Main extends React.Component<MainProps> {
     group: 'models' as string,
     smooth: 12,
     series: [] as Series[],
+    swedenGas: [] as Series[],
     norway: [] as Series[],
     norwayGas: [] as Series[],
     netherlands: [] as Series[],
@@ -45,6 +46,14 @@ export class Main extends React.Component<MainProps> {
       this.setState({ norwayGas: [petrolSeries]});
     });
 
+    axios.get('https://api.spbi.se/api/v1/products-volumes-filter?groupBy=month&perCubicMeter=false&id=12%2C13%2C8%2C27%2C16%2C23%2C3%2C5%2C18%2C19')
+      .then(response => response.data as { name: string, data: { date: string, value: number }[] }[] )
+      // .then(data => console.log('swe petrolium', data));
+      .then(series => series.map(s => ({
+        label: s.name,
+        data: s.data.map(d => ({ t: moment(d.date), y: d.value })).filter(d => d.t.isAfter('2015-01-01'))
+      })))
+      .then((swedenGas: Series[]) => this.setState({ swedenGas }));
     // axios.get('norway-gas.json')
     //   .then(reponse => reponse.data)
     //   .then(norwayGas => this.setState({ norwayGas }));
@@ -129,18 +138,24 @@ export class Main extends React.Component<MainProps> {
               data: s.data
             })); 
         break;
-      case 'norway':
-        filteredData = this.state.norway;
+      case 'swedenGas':
+        filteredData = this.state.swedenGas;
         break;
       case 'norwayGas':
           filteredData = this.state.norwayGas;
           break;
+      case 'norway':
+        filteredData = this.state.norway;
+        break;
       case 'netherlands':
         filteredData = this.state.netherlands;
         break;
       case 'spain':
         filteredData = this.state.spain;
         break;
+      // case 'totalBrands':
+      //   filteredData = [this.state.norway, this.state.netherlands, this.state.spain]
+      //   break;
       default: break;
     }
 
@@ -160,10 +175,12 @@ export class Main extends React.Component<MainProps> {
               >
                 <option value="models">Sweden Models</option>
                 <option value="segment">Sweden Segment</option>
+                <option value="swedenGas">Sweden Petroleum</option>
+                <option value="norwayGas">Norway Petroleum</option>
                 <option value="norway">Norway Brands</option>
-                <option value="norwayGas">Norway Gas</option>
                 <option value="netherlands">Netherlands Brands</option>
                 <option value="spain">Spain Brands</option>
+                {/* <option value="totalBrands">Total Brands</option> */}
               </select>
             </div>
           </FormGroup>
