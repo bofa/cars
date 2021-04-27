@@ -58,28 +58,28 @@ function massageJson (urls: string[], jsonData: any[]) {
 
 // console.log('norway2018', norway2018);
 
-const norway$ = massageJson(
-    ['https://eu-evs.com/get_overall_stats_for_charts.php?year=2020&quarter=0&country=Norway'],
-    norway2018.concat(norway2019))
-    .then(data => fs.writeFile('public/norway.json', JSON.stringify(data)))
-    .then(() => console.log('Done Norway'));
+// const norway$ = massageJson(
+//     ['https://eu-evs.com/CLASSIC/get_overall_stats_for_charts.php?year=2020&quarter=0&country=Norway'],
+//     norway2018.concat(norway2019))
+//     .then(data => fs.writeFile('public/norway.json', JSON.stringify(data)))
+//     .then(() => console.log('Done Norway'));
 
-const netherlands$ = massageJson(
-    ['https://eu-evs.com/get_overall_stats_for_charts.php?year=2020&quarter=0&country=Netherlands'],
-    netherlands2018.concat(netherlands2019))
-    .then(data => fs.writeFile('public/netherlands.json', JSON.stringify(data)))
-    .then(() => console.log('Done Netherlands'));
+// const netherlands$ = massageJson(
+//     ['https://eu-evs.com/CLASSIC/get_overall_stats_for_charts.php?year=2020&quarter=0&country=Netherlands'],
+//     netherlands2018.concat(netherlands2019))
+//     .then(data => fs.writeFile('public/netherlands.json', JSON.stringify(data)))
+//     .then(() => console.log('Done Netherlands'));
 
-const spain$ = massageJson(
-    ['https://eu-evs.com/get_overall_stats_for_charts.php?year=2020&quarter=0&country=Spain'],
-    spain2018.concat(spain2019))
-    .then(data => fs.writeFile('public/spain.json', JSON.stringify(data)))
-    .then(() => console.log('Done Spain'));
+// const spain$ = massageJson(
+//     ['https://eu-evs.com/CLASSIC/get_overall_stats_for_charts.php?year=2020&quarter=0&country=Spain'],
+//     spain2018.concat(spain2019))
+//     .then(data => fs.writeFile('public/spain.json', JSON.stringify(data)))
+//     .then(() => console.log('Done Spain'));
 
 axios.get('https://www.ssb.no/eksport/tabell.csv?key=431798')
   .then((response: any) => Papa.parse(response.data).data)    
   .then((data: any) => fs.writeFile('public/norway-gas-months.json', JSON.stringify(data)))
-  .then(() => console.log('Done Norway Gas'));
+  .then(() => console.log('Done Norway Gas months'));
 
 axios.get('https://www.ssb.no/eksport/tabell.csv?key=416738')
   .then((response: any) => Papa.parse(response.data).data)
