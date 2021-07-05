@@ -48,7 +48,7 @@ export function smooth(list: { t: moment.Moment, y: number }[], size: number) {
         .reduce((acc, v) => acc + v)
       })
     )
-    .slice(size);
+    .slice(size - 1);
 
   return output;
 }
@@ -69,6 +69,7 @@ interface ChartProps {
 
 export default function Chart(props: ChartProps) {
   // const { analyses, chartItems } = props;
+  const { normalize } = props;
 
   const options: ChartOptions = {
     responsive: true,
@@ -84,23 +85,32 @@ export default function Chart(props: ChartProps) {
             min: 0,
           }
         },
-        ... props.normalize
-          ? {
-            id: 'percentY',
-            position: 'right',
-          }
+        ...normalize
+        // ...props.normalize.length > 0
+          ? [{
+              id: 'percentY',
+              position: 'right',
+              ticks: {
+                suggestedMin: 0,
+                suggestedMax: 100,
+              }
+            }]
           : []
       ]
     }
   };
 
-  const normalizedSmoothed = props.normalize !== undefined ? smooth(props.normalize, props.smooth) : null;
+  // const normalizedSmoothed = props.normalize.length > 0 ? smooth(props.normalize, props.smooth) : null;
+  // const smoothedSeries = props.series.map(s => ({
+  //   label: s.label,
+  //   data: smooth(s.data, props.smooth),
+  // }));
+
+  // console.log('normalizedSmoothed', normalize, props.series);
 
   const formattedSeries: ChartData = {
     datasets: props.series
       .map((s, i) => {
-        const smoothed = smooth(s.data, props.smooth);
-
         return [
           {
             yAxisID: 'mainY',
@@ -108,9 +118,9 @@ export default function Chart(props: ChartProps) {
             // backgroundColor: rgba(i),
             borderColor: rgba(i),
             label: s.label,
-            data: smoothed.map(d => ({ ...d, y: Math.round(d.y) }))
+            data: s.data.map(d => ({ ...d, y: Math.round(d.y) }))
           },
-          ... normalizedSmoothed === null ? [] : 
+          ... normalize === undefined ? [] : 
           [{
             yAxisID: 'percentY',
             fill: false,
@@ -118,7 +128,7 @@ export default function Chart(props: ChartProps) {
             label: s.label + '%',
             borderDash: [10, 5],
             // data: props.normalize,
-            data: smoothed.map((d, index) => ({ ...d, y: Math.round(1000 * d.y / normalizedSmoothed[index].y ) / 10 })),
+            data: s.data.map((d, index) => ({ ...d, y: Math.round(1000 * d.y / normalize[index].y ) / 10 })),
           }]
         ];
       })
@@ -133,19 +143,16 @@ export default function Chart(props: ChartProps) {
       // })))
   };
 
-  const fitSeries = props.series.find(s => s.label === props.fitItem)?.data;
+  const fitSeries = props.series?.find(s => s.label === props.fitItem)?.data;
   if (fitSeries) {
 
     let func: any;
     const sCurveParams = props.sCurveParams;
     if (props.fitType === 'scurve' && sCurveParams !== null) {
       func = (x: number) => model([x], sCurveParams.a, sCurveParams.b, sCurveParams.c)[0];
-      console.log('a b c', sCurveParams.a, sCurveParams.b, sCurveParams.c);
     } else if (props.fitType !== 'scurve') {
-      // const fit = exponentialFit(smooth(fitSeries, props.smooth).map(({ y }) => y));
-      const output = regression[props.fitType](smooth(fitSeries, props.smooth).map(({ y }) => y));
+      const output = regression[props.fitType](fitSeries.map(({ y }) => y));
       func = output.func;
-      console.log(output.params);
     }
 
     if (func) {
@@ -154,11 +161,8 @@ export default function Chart(props: ChartProps) {
         fill: false,
         // backgroundColor: rgba(i),
         borderColor: rgba(18),
-        label: 'exponential-fit-' + props.fitItem,
-        data:
-          // new Array(fitSeries.length * 2).fill(0)
-          // : fitSeries[0].t.clone().add(i, 'months')
-          fitSeries
+        label: 'fit-' + props.fitItem,
+        data: fitSeries
             .map(({ t }, i) =>
             ({ t, y: func(i) }))
       };
@@ -167,9 +171,5 @@ export default function Chart(props: ChartProps) {
     }
   }
   
-  // console.log('props', formattedSeries);
-  // debug
-  // scurveFit([]);
-
   return <Line data={formattedSeries} options={options} />;
 }

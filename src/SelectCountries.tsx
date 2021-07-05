@@ -1,0 +1,32 @@
+import * as React from 'react';
+import { MultiSelect } from '@blueprintjs/select';
+import { MenuItem } from '@blueprintjs/core';
+
+const SelectCountries = MultiSelect.ofType<string>();
+
+function toggleItems(selected: string[], item: string) {
+    if (selected.includes(item)) {
+        return selected.filter(v => v !== item);
+    } else {
+        return selected.concat(item);
+    }
+}
+
+export default function (props: { items: string[], selected: string[], onSelect: (selected: string[]) => void }) {
+
+    return (
+        <SelectCountries
+            items={props.items}
+            itemRenderer={(item, { modifiers, handleClick }) =>
+                <MenuItem
+                    {...modifiers}
+                    onClick={handleClick}
+                    text={item}
+                    icon={props.selected.includes(item) ? 'tick' : false}
+                />}
+            tagRenderer={item => item}
+            onItemSelect={(group) => props.onSelect(toggleItems(props.selected, group))}
+            selectedItems={props.selected}
+        />
+    );
+}
