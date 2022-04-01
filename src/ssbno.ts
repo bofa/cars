@@ -46,7 +46,7 @@ const query = (index: string) => ({
     }
   });
 
-export function getPetrolStatistics() {
+export function getPetrolStatisticsNorway() {
   const requests = [
     { id: '03', label: 'Petroleum' },
     { id: '04a', label: 'Diesel duty free' },

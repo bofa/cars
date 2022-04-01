@@ -105,17 +105,17 @@ export default function Chart(props: ChartProps) {
     labels: series12[0].data.map((v, i, a) => a.length - i - 1),
     datasets: [
       {
+        label: 'None BEV',
+        data: series12[1].data.map(d => -d.y),
+        borderColor: 'red',
+        backgroundColor: 'red',
+      },
+      {
         label: 'BEV',
         data: series12[0].data.map(d => d.y),
         borderColor: 'green',
         backgroundColor: 'green',
       },
-      {
-        label: 'None BEV',
-        data: series12[1].data.map(d => -d.y),
-        borderColor: 'red',
-        backgroundColor: 'red',
-      }
     ]
   };
 

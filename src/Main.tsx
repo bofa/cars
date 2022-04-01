@@ -6,13 +6,26 @@ import { FormGroup } from '@blueprintjs/core';
 import { Responsive, WidthProvider } from 'react-grid-layout';
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
-import { getPetrolStatistics } from './ssbno';
+import { getPetrolStatisticsNorway } from './ssbno';
 import worker from './worker.js';
 import WebWorker from './workerSetup';
 import scurveFit from './s-curve-regression';
 import { Button } from '@blueprintjs/core';
 import SelectCountries from './SelectCountries';
 import Pyramid from './Pyramid';
+
+function fetchPage(page: any, delay: number, std: number = 3000, sheet: string = '1l50qi3FAue2zqMOtc-vdGbXBWpb0I4lKByqUaz2nuFs')
+  : Promise<any> {
+  const key = 'AIzaSyC8N3IAsa8l-D_bEQbEM1G8-ZVhkzWMpKM'
+  return new Promise(resolve => setTimeout(() => resolve(
+    axios.get(
+      // 'https://spreadsheets.google.com/feeds/list/1l50qi3FAue2zqMOtc-vdGbXBWpb0I4lKByqUaz2nuFs/'
+      'https://sheets.googleapis.com/v4/spreadsheets/' + sheet + '/values/'
+      + page
+      + '?alt=json&key=' + key
+    )
+  ), delay + std * Math.random()))
+}
 
 export function findLastIndex<T>(array: Array<T>, predicate: (value: T, index: number, obj: T[]) => boolean): number {
   let l = array.length;
@@ -155,33 +168,75 @@ export class Main extends React.Component<MainProps, State> {
   constructor(props: MainProps) {
     super(props);
 
-    getPetrolStatistics().then(petrolSeries => {
+    getPetrolStatisticsNorway().then(petrolSeries => {
       // console.log('data', data);
       this.setState(({ countriesFuel }) => ({
         countriesFuel: { ...countriesFuel, norway: petrolSeries },
       }));
     });
 
+    axios.get('swedenfuel.json')
+      .then(r => r.data as Series[])
+      .then(petrolSeries => {
+        // console.log('data', data);
+        this.setState(({ countriesFuel }) => ({
+          countriesFuel: { ...countriesFuel, sweden: petrolSeries },
+        }));
+      });
+
+    [
+      {
+        countryId: 'NLD',
+        name: 'netherlands',
+      },
+      {
+        countryId: 'DEU',
+        name: 'germany'
+      }
+    ].forEach(({ countryId, name }) => {
+      Promise.all(['INTL.5-2', 'INTL.62-2', 'INTL.65-2', 'INTL.63-2']
+          .map(id => axios
+            .get(`https://api.eia.gov/series/?api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2&series_id=${id}-${countryId}-TBPD.A`)
+            .then(response => response.data.series[0])))
+        .then((response: { name: string, data: [string, number][] }[] ) => {
+          console.log('response', response);
+          const series = response.map(s => ({
+            label: s.name,
+            data: s.data
+              .reverse()
+              .filter(d => typeof d[1] === 'number')
+              .map(d => ({ t: moment(d[0], 'YYYY'), y: d[1] }))
+              .map(d => Array(12).fill(0).map((_, i) => ({ t: moment(d.t).add(i, 'M'), y: d.y })))
+              .reduce((agg, con) => agg.concat(con)),
+          }));
+
+          console.log('netherlands', series);
+          this.setState(({ countriesFuel }) => ({
+            countriesFuel: { ...countriesFuel, [name]: series },
+          }));
+        });
+    });
+
     // getNorwayMotorGas().then((swedenGas: Series[]) => this.setState(({ countriesFuel }) => ({
     //   countriesFuel: { ...countriesFuel, sweden: swedenGas },
     // })));
 
-    axios.get('https://api.spbi.se/api/v1/products-volumes-filter?groupBy=month&perCubicMeter=false&id=5,18,8')
-      .then(response => response.data as { name: string, data: { date: string, value: number }[] }[] )
-      .then(series => series
-        .map(s => ({
-          label: s.name,
-          data: s.data
-            .map(d => ({ t: moment(d.date), y: d.value }))
-            .filter(d => d.t.isAfter('2015-01-01'))
-            .filter(d => d.y > 0)
-        })
-        // TODO Combine diffrent disel groups
-        // .reduce((out, s) => )
-      ))
-      .then((swedenGas: Series[]) => this.setState(({ countriesFuel }) => ({
-        countriesFuel: { ...countriesFuel, sweden: swedenGas },
-      })));
+    // axios.get('https://api.spbi.se/api/v1/products-volumes-filter?groupBy=month&perCubicMeter=false&id=5,18,8')
+    //   .then(response => response.data as { name: string, data: { date: string, value: number }[] }[] )
+    //   .then(series => series
+    //     .map(s => ({
+    //       label: s.name,
+    //       data: s.data
+    //         .map(d => ({ t: moment(d.date), y: d.value / 1000 }))
+    //         .filter(d => d.t.isAfter('2015-01-01'))
+    //         .filter(d => d.y > 0)
+    //     })
+    //     // TODO Combine diffrent disel groups
+    //     // .reduce((out, s) => )
+    //   ))
+    //   .then((swedenGas: Series[]) => this.setState(({ countriesFuel }) => ({
+    //     countriesFuel: { ...countriesFuel, sweden: swedenGas },
+    //   })));
 
     // axios.get('norway.json')
     //   .then(reponse => reponse.data)
@@ -206,42 +261,65 @@ export class Main extends React.Component<MainProps, State> {
       { page: 9, id: 'spain'},
       { page: 10, id: 'schweiz'},
       { page: 11, id: 'ireland'},
-    ].forEach(country => {
-      axios.get('https://spreadsheets.google.com/feeds/list/1l50qi3FAue2zqMOtc-vdGbXBWpb0I4lKByqUaz2nuFs/'
-          + country.page + '/public/basic?alt=json')
-        .then(response => {
-          const dataObj = response.data.feed.entry
-            .map((row: any) => [row.title['$t'],
-              // convertArrayToObject(
-                row.content['$t']
-                .replace(/ /g, '')
-                // .split(' ').join()
-                .split(',')
-                .map((r: any) => r.split(':'))
-                .map((r: any) => [r[0], Number(r[1])])
-                .filter((r: any) => !isNaN(r[1]))
-              // , 0)
-            ])
-            .reduce((acc: { [x: string]: { t: any; y: any; }[]; }, [date, cars]: any) => {
-              cars.forEach(([id, sales]: any[]) => {
-                const input = { t: moment(date), y: sales };
-                if (acc[id] === undefined) {
-                  acc[id] = [input];
-                } else {
-                  acc[id].push(input);
-                }
+      { page: 12, id: 'UK'},
+    ].forEach((country, i) => {
+      fetchPage(country.id, 300 * i, 0)
+        .catch(err => { 
+          console.log('err1', err)
+          return fetchPage(country.id, 1000)
+        })
+        .catch(err => { 
+          console.log('err2', err)
+          return fetchPage(country.id, 2000)
+        })
+        .catch(err => { 
+          console.log('err3', err)
+          return fetchPage(country.id, 3000)
+        })
+        .then((response: any) => {
+          const headers = response.data.values[0];
+          const rows = response.data.values.slice(1);
+
+          const dataList = headers.map((header: string, index: number) => ({
+              label: header,
+              data: rows.map((row: any[]) => ({ t: moment(row[0]), y: Number(row[index]?.replace(/\s+/g, '')) }))
+            }))
+            .slice(1)
+
+          console.log('dataList', dataList);
+
+          // const dataObj = response.data.values
+          //   .map((row: any) => [row.title['$t'],
+          //     // convertArrayToObject(
+          //       row.content['$t']
+          //       .replace(/ /g, '')
+          //       // .split(' ').join()
+          //       .split(',')
+          //       .map((r: any) => r.split(':'))
+          //       .map((r: any) => [r[0], Number(r[1])])
+          //       .filter((r: any) => !isNaN(r[1]))
+          //     // , 0)
+          //   ])
+          //   .reduce((acc: { [x: string]: { t: any; y: any; }[]; }, [date, cars]: any) => {
+          //     cars.forEach(([id, sales]: any[]) => {
+          //       const input = { t: moment(date), y: sales };
+          //       if (acc[id] === undefined) {
+          //         acc[id] = [input];
+          //       } else {
+          //         acc[id].push(input);
+          //       }
                 
-                return acc;
-              });
+          //       return acc;
+          //     });
 
-              return acc;
-            }, {})
-            ;
+          //     return acc;
+          //   }, {})
+          //   ;
 
-          const dataList = Object.keys(dataObj).map(key => ({
-            label: key,
-            data: dataObj[key],
-          }));
+          // const dataList = Object.keys(dataObj).map(key => ({
+          //   label: key,
+          //   data: dataObj[key],
+          // }));
 
           this.setState(state => ({
             countries: { ...state.countries, [country.id]: dataList }
@@ -253,28 +331,33 @@ export class Main extends React.Component<MainProps, State> {
     })
 
     // Fetch connections model-brand-manafacturer
-    axios.get('https://spreadsheets.google.com/feeds/list/1l50qi3FAue2zqMOtc-vdGbXBWpb0I4lKByqUaz2nuFs/1/public/basic?alt=json')
-    .then(response => {
-      const manufacturer = response.data.feed.entry
-        .map((row: any) => ({
-          model: row.title['$t'],
-          ...row.content['$t']
-            .replace(/ /g, '')
-            .split(',')
-            .map((r: any) => r.split(':'))
-            .filter((r: any) => r[0].length > 0)
-            .reduce((obj: any, r: any) => {
-              obj[r[0]] = r[1];
-              return obj;
-            }, {})
-        }))
-        ;
+    fetchPage('Groups', 0, 0, '1l50qi3FAue2zqMOtc-vdGbXBWpb0I4lKByqUaz2nuFs')
+      .then(response => {
+        const manufacturer = response.data.values
+          .slice(1)
+          .map((row: any) => ({
+            model: row[0],
+            brand: row[1],
+            manufacturer: row[2],
+          }))
+          // .map((row: any) => ({
+          //   model: row.title['$t'],
+          //   ...row.content['$t']
+          //     .replace(/ /g, '')
+          //     .split(',')
+          //     .map((r: any) => r.split(':'))
+          //     .filter((r: any) => r[0].length > 0)
+          //     .reduce((obj: any, r: any) => {
+          //       obj[r[0]] = r[1];
+          //       return obj;
+          //     }, {})
+          // }))
+          ;
 
-      this.setState({
-        manufacturer
+        this.setState({
+          manufacturer
+        });
       });
-    });
-
   }
 
   fetchWebWorker = (e: any, countries: Series[]) => {
@@ -369,9 +452,9 @@ export class Main extends React.Component<MainProps, State> {
 
       case 'model':
       case 'fuel':
-        remove = (label: string) => !['total', 'total-none-bev', 'total-bev'].includes(label);
+        remove = (label: string) => !['Total', 'Total-None-Bev', 'Total-BEV'].includes(label);
         filteredData = series
-          .filter(({ label }) => label !== 'total' && remove(label))
+          .filter(({ label }) => label !== 'Total' && remove(label))
             .map(s => ({
               ...s,
               data: s.data
@@ -418,8 +501,8 @@ export class Main extends React.Component<MainProps, State> {
         break;
 
       case 'segment':
-        remove = (label: string) => ['total-none-bev', 'total-bev'].includes(label); 
-        normalize = series.find(({ label }) => label === 'total')?.data;
+        remove = (label: string) => ['Total-None-Bev', 'Total-BEV'].includes(label); 
+        normalize = series.find(({ label }) => label === 'Total')?.data;
         normalize = normalize ? smooth(normalize, this.state.smooth) : undefined;
 
         // console.log('fit', bevX, bevX.map(fit));
@@ -433,8 +516,8 @@ export class Main extends React.Component<MainProps, State> {
         break;
 
       case 'pyramid':
-        remove = (label: string) => ['total-none-bev', 'total-bev'].includes(label); 
-        normalize = series.find(({ label }) => label === 'total')?.data;
+        remove = (label: string) => ['Total-None-Bev', 'Total-BEV'].includes(label); 
+        normalize = series.find(({ label }) => label === 'Total')?.data;
         normalize = normalize ? smooth(normalize, this.state.smooth) : undefined;
 
         // console.log('fit', bevX, bevX.map(fit));
@@ -560,7 +643,7 @@ export class Main extends React.Component<MainProps, State> {
                 <Button
                   style={{ marginLeft: 10 }}
                   icon="reset"
-                  onClick={() => this.setState({ sCurveParams: { a: 1000, b: 1, c: 1 } })}
+                  onClick={() => this.setState({ sCurveParams: { a: 1, b: 26489122129, c: 1 } })}
                 />
                 </div>
                 : null

@@ -19,6 +19,20 @@ export function rgba(index: number, alpha: number = 0.6) {
   return 'rgba(' + o(r(1) * s) + ',' + o(r(2) * s) + ',' + o(r(3) * s) + ',' + alpha + ')';
 }
 
+// const hardCodedColors = {
+//   'Total-BEV': 'green',
+// }
+
+export function rgbLabel(index: number, label: string) {
+  if (label.includes('Total-BEV')) {
+    return 'limegreen';
+  } else if (label.includes('Total-None-Bev')) {
+    return 'black';
+  }
+
+  return rgba(index);
+}
+
 export function smooth(list: { t: moment.Moment, y: number }[], size: number) {
   if (isNaN(size)) {
     const cumulative = list
@@ -106,8 +120,6 @@ export default function Chart(props: ChartProps) {
   //   data: smooth(s.data, props.smooth),
   // }));
 
-  // console.log('normalizedSmoothed', normalize, props.series);
-
   const formattedSeries: ChartData = {
     datasets: props.series
       .map((s, i) => {
@@ -116,7 +128,7 @@ export default function Chart(props: ChartProps) {
             yAxisID: 'mainY',
             fill: false,
             // backgroundColor: rgba(i),
-            borderColor: rgba(i),
+            borderColor: rgbLabel(i, s.label),
             label: s.label,
             data: s.data.map(d => ({ ...d, y: Math.round(d.y) }))
           },
@@ -124,7 +136,7 @@ export default function Chart(props: ChartProps) {
           [{
             yAxisID: 'percentY',
             fill: false,
-            borderColor: rgba(i),
+            borderColor: rgbLabel(i, s.label),
             label: s.label + '%',
             borderDash: [10, 5],
             // data: props.normalize,
