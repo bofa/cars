@@ -201,7 +201,7 @@ export class Main extends React.Component<MainProps, State> {
         .then((response: { name: string, data: [string, number][] }[] ) => {
           console.log('response', response);
           const series = response.map(s => ({
-            label: s.name,
+            label: s.name.split(',')[0],
             data: s.data
               .reverse()
               .filter(d => typeof d[1] === 'number')
