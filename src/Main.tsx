@@ -191,13 +191,23 @@ export class Main extends React.Component<MainProps, State> {
       },
       {
         countryId: 'DEU',
-        name: 'germany'
-      }
+        name: 'germany',
+      },
+      {
+        countryId: 'FRA',
+        name: 'france',
+      },
+      {
+        countryId: 'DNK',
+        name: 'denmark',
+      },
     ].forEach(({ countryId, name }) => {
-      Promise.all(['INTL.5-2', 'INTL.62-2', 'INTL.65-2', 'INTL.63-2']
-          .map(id => axios
-            .get(`https://api.eia.gov/series/?api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2&series_id=${id}-${countryId}-TBPD.A`)
-            .then(response => response.data.series[0])))
+      const totalReq = ['INTL.5-2', 'INTL.62-2', 'INTL.65-2', 'INTL.63-2']
+        .map(id => `${id}-${countryId}-TBPD.A`)
+        .join(';')
+
+      axios.get(`https://api.eia.gov/series/?api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2&series_id=${totalReq}`)
+        .then(response => response.data.series)
         .then((response: { name: string, data: [string, number][] }[] ) => {
           console.log('response', response);
           const series = response.map(s => ({

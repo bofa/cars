@@ -1,6 +1,9 @@
 const axios = require('axios');
 const moment = require('moment');
-// const fs = require('fs').promises;
+const fs = require('fs').promises;
+
+const getPetrolStatisticsSweden = require('./src/scb');
+
 // const Papa =  require('papaparse');
 // const norway2018 = require('./raw/norway2018');
 // const norway2019 = require('./raw/norway2019');
@@ -8,6 +11,11 @@ const moment = require('moment');
 // const netherlands2019 = require('./raw/netherlands2019');
 // const spain2018 = require('./raw/spain2018');
 // const spain2019 = require('./raw/spain2019');
+
+getPetrolStatisticsSweden(axios, moment)
+    .then((data: any) => fs.writeFile('public/swedenfuel.json', JSON.stringify(data)))
+    .then(() => console.log('Done Sweden Fuel'));
+    // .then((r: any) => console.log(r))
 
 // export function massageJson (urls: string[], jsonData: any[]) {
 //     // https://eu-evs.com/get_overall_stats_for_charts.php?year=2020&quarter=0&country=Norway

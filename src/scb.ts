@@ -26,7 +26,7 @@ module.exports = function getPetrolStatisticsSweden(axios: any, moment: any) {
     { id: '20', label: 'Diesel dutiable' },
     // { id: '06c', label: 'Jet fuel' },
   ].map(({ id, label }) => {
-    const req$ = axios.post('http://api.scb.se/OV0104/v1/doris/sv/ssd/START/EN/EN0107/UtLevBioM', query(id));
+    const req$ = axios.post('http://api.scb.se/OV0104/v1/doris/sv/ssd/START/EN/EN0107/EN0107X/UtLevBioM', query(id));
 
     // req$.then((d: any) => console.log('gurkburk', d));
 
