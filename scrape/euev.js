@@ -28,8 +28,8 @@ const dates = [
     // [2018, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]],
     // [2019, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]],
     // [2020, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]],
-    [2022, [7, 8]],
-    // [2022, [1, 2, 3, 4, 5, 6, 7]],
+    // [2022, [7, 8]],
+    [2022, [9, 10, 11]],
 ]
 
 
@@ -160,9 +160,9 @@ trans = m => m[0].map((x,i) => m.map(x => x[i]));
         const transpose = brands
             .map(b => [b.carsId, ...result.map(r => r.find(c => c[1].startsWith(b.euId))?.[2] || '0')])
             .concat([['total', ...total]])
-        
-        await fs.writeFile('scrape/output/' + country + '.txt', trans(transpose).map(row => row.join('\t')).join('\n'));
 
+        await fs.mkdir('scrape/output/', { recursive: true });
+        await fs.writeFile('scrape/output/' + country + '.txt', trans(transpose).map(row => row.join('\t')).join('\n'));
         await fs.writeFile('scrape/output/' + country + '.json', JSON.stringify(resultBrands));
     }
 
