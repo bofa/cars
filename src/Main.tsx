@@ -601,26 +601,24 @@ export class Main extends React.Component<MainProps, State> {
                     />)}
                   </MenuItem>
                   <MenuItem text="Regression">
-                    <MenuItem text="Target">
-                      {smoothedData.map(({ label }) => <MenuItem
-                        key={label}
-                        text={label}
-                        icon={this.state.fitItem === label ? "small-tick" : null}
-                        onClick={() => this.fetchWebWorker(label, smoothedData)}
+                    <MenuDivider title="Target"/>
+                    {smoothedData.map(({ label }) => <MenuItem
+                      key={label}
+                      text={label}
+                      icon={this.state.fitItem === label ? "small-tick" : null}
+                      onClick={() => this.fetchWebWorker(label, smoothedData)}
+                      shouldDismissPopover={false}
+                    />)}
+                    <MenuDivider title="Type"/>
+                    {fitTypes.map(({ text, value }) =>
+                      <MenuItem
+                        key={text}
+                        text={text}
+                        icon={this.state.fitType === value ? "small-tick" : null}
+                        onClick={() => this.setState({ fitType: value })}
                         shouldDismissPopover={false}
-                      />)}
-                    </MenuItem>
-                    <MenuItem text="Type">
-                      {fitTypes.map(({ text, value }) =>
-                        <MenuItem
-                          key={text}
-                          text={text}
-                          icon={this.state.fitType === value ? "small-tick" : null}
-                          onClick={() => this.setState({ fitType: value })}
-                          shouldDismissPopover={false}
-                        />
-                      )}
-                    </MenuItem>
+                      />
+                    )}
                   </MenuItem>
                 </Menu>
               }
