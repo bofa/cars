@@ -623,7 +623,7 @@ export class Main extends React.Component<MainProps, State> {
                 </Menu>
               }
             >
-              <Button icon="settings" text="Settings" />
+              <Button icon="settings" text="Options" />
             </Popover>
           </span>
           <span>
