@@ -2,8 +2,7 @@ import * as React from 'react';
 import * as moment from 'moment';
 import axios from 'axios';
 import Chart, { Series, smooth } from './Chart';
-import { FormGroup } from '@blueprintjs/core';
-import { Responsive, WidthProvider } from 'react-grid-layout';
+import { Menu, MenuDivider, MenuItem, Popover } from '@blueprintjs/core';
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
 import { getPetrolStatisticsNorway } from './ssbno';
@@ -13,6 +12,30 @@ import scurveFit from './s-curve-regression';
 import { Button } from '@blueprintjs/core';
 import SelectCountries from './SelectCountries';
 import Pyramid from './Pyramid';
+
+const segments = [
+  { text: 'Models', id: 'model' },
+  { text: 'Brands', id: 'brand' },
+  { text: 'Manafacturers', id: 'manafacturer' },
+  { text: 'Segments', id: 'segment' },
+  { text: 'Segments Pyramid', id: 'pyramid' },
+  { text: 'Fuel', id: 'fuel' },
+];
+
+const smoothing = [
+  { text: 'Month', value: 1 },
+  { text: 'Quarter', value: 3 },
+  { text: 'Half Year', value: 6 },
+  { text: 'Year', value: 12 },
+  { text: 'Two Years', value: 24 },
+  { text: 'Cumulative', value: NaN },
+];
+
+const fitTypes = [
+  { value: 'linear', text: 'Linear' },
+  { value: 'exponential', text: 'Exponential' },
+  { value: 'scurve', text: 'S Curve' },
+];
 
 function fetchPage(page: any, delay: number, std: number = 3000, sheet: string = '1l50qi3FAue2zqMOtc-vdGbXBWpb0I4lKByqUaz2nuFs')
   : Promise<any> {
@@ -104,8 +127,6 @@ export function mapSeriesCut(group: string[], countries: Record<string, Series[]
     }, [])
     ;
 }
-
-const ResponsiveGridLayout = WidthProvider(Responsive);
 
 export function groupBy(xs: any, key: string | number) {
   const object = xs.reduce(function(rv: any, x: any) {
@@ -224,7 +245,10 @@ export class Main extends React.Component<MainProps, State> {
           this.setState(({ countriesFuel }) => ({
             countriesFuel: { ...countriesFuel, [name]: series },
           }));
-        });
+        })
+        .catch(error => {
+          console.error(countryId, name, error);
+        })
     });
 
     // getNorwayMotorGas().then((swedenGas: Series[]) => this.setState(({ countriesFuel }) => ({
@@ -265,13 +289,14 @@ export class Main extends React.Component<MainProps, State> {
       { page: 3, id: 'germany'},
       { page: 4, id: 'norway'},
       { page: 5, id: 'finland'},
-      { page: 6, id: 'france'},
+      // { page: 6, id: 'france'},
       { page: 7, id: 'denmark'},
       { page: 8, id: 'netherlands'},
       { page: 9, id: 'spain'},
       { page: 10, id: 'schweiz'},
       { page: 11, id: 'ireland'},
-      { page: 12, id: 'UK'},
+      // { page: 12, id: 'UK'},
+      { page: 13, id: 'italy'},
     ].forEach((country, i) => {
       fetchPage(country.id, 300 * i, 0)
         .catch(err => { 
@@ -296,7 +321,7 @@ export class Main extends React.Component<MainProps, State> {
             }))
             .slice(1)
 
-          console.log('dataList', dataList);
+          // console.log('dataList', dataList);
 
           // const dataObj = response.data.values
           //   .map((row: any) => [row.title['$t'],
@@ -370,8 +395,7 @@ export class Main extends React.Component<MainProps, State> {
       });
   }
 
-  fetchWebWorker = (e: any, countries: Series[]) => {
-    const fitItem = e.target.value;
+  fetchWebWorker = (fitItem: any, countries: Series[]) => {
     const fitSeries = countries.find(s => s.label === fitItem)?.data
     // const fitSeries = this.state.series.find((s: Series) => s.label === fitItem)?.data;
     // console.log('fitSeries', fitSeries, this.state.fitType)
@@ -422,8 +446,8 @@ export class Main extends React.Component<MainProps, State> {
 
   render() {
 
-    console.log('state', this.state);
-    console.log('params', this.state.sCurveParams.a, this.state.sCurveParams.b, this.state.sCurveParams.c)
+    // console.log('state', this.state);
+    // console.log('params', this.state.sCurveParams.a, this.state.sCurveParams.b, this.state.sCurveParams.c)
 
     let filteredData: Series[] = [];
     let normalize: { t: moment.Moment; y: number; }[] | undefined = undefined;
@@ -443,7 +467,7 @@ export class Main extends React.Component<MainProps, State> {
       series = mapSeriesCut(this.state.group, this.state.countries);
     }
 
-    console.log('series', series);
+    // console.log('series', series);
 
     switch (this.state.segment) {
       // case 'sweden' :
@@ -553,113 +577,65 @@ export class Main extends React.Component<MainProps, State> {
     
     return (
       <div style={{ padding: 15, height: window.innerHeight - 100 }}>
-        <ResponsiveGridLayout className="layout" rowHeight={30}>
-          <FormGroup
-            data-grid={{x: 0, y: 0, w: 2, h: 2, static: true}}
-            key="group"
-            label="Group"
-            labelFor="group"
-          >
-            <div className="bp3-select">
-              <SelectCountries
-                selected={this.state.group}
-                items={Object.keys(this.state.countries)}
-                onSelect={group => this.setState({ group })}
-              />
-            </div>
-          </FormGroup>
-          <FormGroup
-            data-grid={{x: 2, y: 0, w: 1, h: 2, static: true}}
-            key="segment"
-            label="Segment"
-            labelFor="segment"
-          >
-            <div className="bp3-select">
-              <select
-                value={this.state.segment}
-                onChange={e => this.setState({ segment: e.target.value })}  
-              >
-                <option value="model">Models</option>
-                <option value="brand">Brands</option>
-                <option value="manafacturer">Manafacturers</option>
-                <option value="segment">Segments</option>
-                <option value="pyramid">Segments Pyramid</option>
-                <option value="fuel">Fuel</option>
-              </select>
-            </div>
-          </FormGroup>
-          <FormGroup
-            key="smoothing"
-            data-grid={{x: 3, y: 0, w: 1, h: 2, static: true}}
-            label="Smoothing"
-            helperText="Interval too accumulate over"
-            labelFor="select"
-          >
-            <div className="bp3-select">
-              <select
-                value={this.state.smooth}
-                onChange={e => this.setState({ smooth: +e.target.value })}  
-              >
-                <option value={1}>Month</option>
-                <option value={3}>Quarter</option>
-                <option value={6}>Half Year</option>
-                <option value={12}>Year</option>
-                <option value={24}>Two Years</option>
-                <option value={NaN}>Cumulative</option>
-              </select>
-            </div>
-          </FormGroup>
-          <FormGroup
-            data-grid={{x: 4, y: 0, w: 1, h: 2, static: true}}
-            key="fitType"
-            label="Regression Type"
-            labelFor="regression"
-          >
-            <div className="bp3-select">
-              <select
-                value={this.state.fitType}
-                onChange={e => this.setState({ fitType: e.target.value })}  
-              >
-                <option value="linear">Linear</option>
-                <option value="exponential">Exponential</option>
-                <option value="scurve">S Curve</option>
-              </select>
-            </div>
-          </FormGroup>
-          <FormGroup
-            data-grid={{x: 5, y: 0, w: 2, h: 2, static: true}}
-            key="fitItem"
-            label="Regression Item"
-            labelFor="regression"
-          >
-            <div className="bp3-select">
-              <select
-                value={this.state.fitItem}
-                onChange={e => this.fetchWebWorker(e, smoothedData)}  
-              >
-                <option/>
-                {smoothedData.map(s => 
-                  <option key={s.label} value={s.label}>{s.label}</option>
-                )}
-              </select>
-            </div>
-            {this.state.fitType === 'scurve' && this.state.fitItem ? 
-              <div>
-                <Button
-                  style={{ marginLeft: 10 }}
-                  icon="repeat"
-                  onClick={() => this.fetchWebWorker({ target: { value: this.state.fitItem }}, smoothedData)}
-                />
-                <Button
-                  style={{ marginLeft: 10 }}
-                  icon="reset"
-                  onClick={() => this.setState({ sCurveParams: { a: 1, b: 26489122129, c: 1 } })}
-                />
-                </div>
-                : null
+        <div style={{ padding: 4 }}>
+          <span style={{ marginRight: 10 }}>
+            <Popover
+              content={
+                <Menu>
+                  <MenuDivider title="Segment"/>
+                  {segments.map(({ text, id }) => <MenuItem
+                    key={id}
+                    text={text}
+                    icon={this.state.segment === id ? "small-tick" : null}
+                    onClick={() => this.setState({ segment: id })}
+                    shouldDismissPopover={false}
+                  />)}
+                  <MenuDivider/>
+                  <MenuItem text="Smoothing" >
+                    {smoothing.map(({ text, value }) => <MenuItem
+                      key={text}
+                      text={text}
+                      icon={this.state.smooth === value ? "small-tick" : null}
+                      onClick={() => this.setState({ smooth: value })}
+                      shouldDismissPopover={false}
+                    />)}
+                  </MenuItem>
+                  <MenuItem text="Regression">
+                    <MenuItem text="Target">
+                      {smoothedData.map(({ label }) => <MenuItem
+                        key={label}
+                        text={label}
+                        icon={this.state.fitItem === label ? "small-tick" : null}
+                        onClick={() => this.fetchWebWorker(label, smoothedData)}
+                        shouldDismissPopover={false}
+                      />)}
+                    </MenuItem>
+                    <MenuItem text="Type">
+                      {fitTypes.map(({ text, value }) =>
+                        <MenuItem
+                          key={text}
+                          text={text}
+                          icon={this.state.fitType === value ? "small-tick" : null}
+                          onClick={() => this.setState({ fitType: value })}
+                          shouldDismissPopover={false}
+                        />
+                      )}
+                    </MenuItem>
+                  </MenuItem>
+                </Menu>
               }
-          </FormGroup>
-        </ResponsiveGridLayout>
+            >
+              <Button icon="settings" text="Settings" />
+            </Popover>
+          </span>
+          <span>
+            <SelectCountries
+              selected={this.state.group}
+              items={Object.keys(this.state.countries)}
+              onSelect={group => this.setState({ group })}
+            />
+          </span>
+        </div>
         {this.state.segment === 'pyramid'
           ? <Pyramid series={filteredData}/>
           : <Chart
