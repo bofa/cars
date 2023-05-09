@@ -12,6 +12,9 @@ import scurveFit from './s-curve-regression';
 import { Button } from '@blueprintjs/core';
 import SelectCountries from './SelectCountries';
 import Pyramid from './Pyramid';
+import { basicProjection } from './simulator';
+
+const projectionRun = basicProjection();
 
 const segments = [
   { text: 'Models', id: 'model' },
@@ -20,6 +23,7 @@ const segments = [
   { text: 'Segments', id: 'segment' },
   { text: 'Segments Pyramid', id: 'pyramid' },
   { text: 'Fuel', id: 'fuel' },
+  { text: 'Projection', id: 'projection' },
 ];
 
 const smoothing = [
@@ -174,8 +178,8 @@ export class Main extends React.Component<MainProps, State> {
     
   state: State = {
     group: ['sweden'],
-    segment: 'segment',
-    smooth: 12,
+    segment: 'segment', // 'segment',
+    smooth: 12, // 12,
     fitType: 'linear',
     fitItem: '',
     sCurveParams: { a: 5000, b: 1000, c: 0.5 },
@@ -562,6 +566,14 @@ export class Main extends React.Component<MainProps, State> {
               ...s,
               data: s.data
             }));
+        break;
+
+      case 'projection':
+        remove = (label: string) => ['Total-None-Bev', 'Total-BEV'].includes(label); 
+        normalize = series.find(({ label }) => label === 'Total')?.data;
+        normalize = normalize ? smooth(normalize, this.state.smooth) : undefined;
+
+        filteredData = projectionRun
         break;
 
       default: break;

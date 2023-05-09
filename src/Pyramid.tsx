@@ -5,6 +5,7 @@ import * as moment from 'moment';
 // import { Line } from 'react-chartjs-2';
 import 'chartjs-plugin-annotation';
 import { HorizontalBar } from 'react-chartjs-2';
+import { Series } from './Chart';
 // import { ChartData, ChartOptions } from 'chart.js';
 
 export function rgba(index: number, alpha: number = 0.6) {
@@ -44,11 +45,6 @@ export function smooth(list: { t: moment.Moment, y: number }[], size: number) {
     .slice(size - 1);
 
   return output;
-}
-
-export interface Series {
-  label: string;
-  data: { t: moment.Moment, y: number }[];
 }
 
 interface ChartProps {
