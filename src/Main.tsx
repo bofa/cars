@@ -570,7 +570,7 @@ export class Main extends React.Component<MainProps, State> {
 
       case 'projection':
         remove = (label: string) => ['Total-None-Bev', 'Total-BEV'].includes(label); 
-        normalize = series.find(({ label }) => label === 'Total')?.data;
+        normalize = projectionRun[0].data.map(({t, y}, i) => ({ t, y: y + projectionRun[1].data[i].y }))
         normalize = normalize ? smooth(normalize, this.state.smooth) : undefined;
 
         filteredData = projectionRun
