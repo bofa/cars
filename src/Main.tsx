@@ -14,8 +14,6 @@ import SelectCountries from './SelectCountries';
 import Pyramid from './Pyramid';
 import { basicProjection } from './simulator';
 
-const projectionRun = basicProjection();
-
 const segments = [
   { text: 'Models', id: 'model' },
   { text: 'Brands', id: 'brand' },
@@ -570,10 +568,23 @@ export class Main extends React.Component<MainProps, State> {
 
       case 'projection':
         remove = (label: string) => ['Total-None-Bev', 'Total-BEV'].includes(label); 
-        normalize = projectionRun[0].data.map(({t, y}, i) => ({ t, y: y + projectionRun[1].data[i].y }))
-        normalize = normalize ? smooth(normalize, this.state.smooth) : undefined;
+        
+        const gurkburk = series
+          .filter(({ label }) => remove(label))
+            .map(s => ({
+              ...s,
+              data: s.data
+            }));
 
-        filteredData = projectionRun
+        if (gurkburk.length > 0) {
+          const run = gurkburk.map(s => s.data.map(p => p.y))
+          const projectionRun = basicProjection(run, gurkburk[0].data[0].t);
+          
+          normalize = projectionRun[0].data.map(({t, y}, i) => ({ t, y: y + projectionRun[1].data[i].y }))
+          normalize = normalize ? smooth(normalize, this.state.smooth) : undefined;
+
+          filteredData = projectionRun
+        }
         break;
 
       default: break;

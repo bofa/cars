@@ -1,10 +1,10 @@
-import { matrix, zeros, ones, multiply, add, subset, Matrix, sum, index, concat } from 'mathjs'
+import { matrix, zeros, ones, multiply, add, subset, Matrix, sum, index, concat, mean } from 'mathjs'
 import { Series } from './Chart';
 import * as moment from 'moment';
 
 const N = 12 * 40
 
-const decay = (n: number) => Math.min(1, 1 - 0.2/12*Math.exp(0.13*n/12 - 3))
+const decay = (n: number) => Math.max(0, Math.min(1, 1 - 0.995*Math.exp(0.013*(n - 450))))
 
 const A = matrix(zeros(2*N, 2*N))
 for(let n = 0; n < N - 1; n += 1) {
@@ -16,6 +16,8 @@ for(let n = 0; n < N - 1; n += 1) {
 const B = matrix(zeros(2*N, 2))
 B.set([0, 0], 1)
 B.set([N, 1], 1)
+
+// console.log('A', A, 'B', B)
 
 export function projection(x0: Matrix, u: (n: number) => Matrix, interations: number) {
   let x = x0.clone()
@@ -34,32 +36,28 @@ function interpolate(n: number, scale: number) {
   return Math.max(0, Math.min(1, n/scale))
 }
 
-const baseSales = 25000;
-const sales = [0, 2546, 3734, 7079, 15610, 27848, 57469, 96987, 102826]
-  .map(v => Array(12).fill(v/12) as number[])
-  .reduce((s, a) => s.concat(a))
+const sale = (n: number, baseSales: number, slope: number, baseEV: number) =>
+  Math.min(0.8*baseSales, n * slope + baseEV)
 
-const sale = (n: number) => n < sales.length
-  ? sales[n]
-  : Math.min(0.8*baseSales, (n - sales.length + 1) * (102826/12 - 96987/12) + 102826/12)
+export function basicProjection(uStart: number[][], startDate: moment.Moment) {
+  const x0 = multiply(uStart[1][0]/3, matrix(concat(ones(N, 1), zeros(N, 1), 0)))
+  // const x0 = matrix(concat(zeros(N, 1), zeros(N, 1), 0))
 
-// const sale = (n: number) => 0
-
-console.log(Array(30).fill(0).map((v, i) => sale(i)))
-
-export function basicProjection() {
-  const x0 = multiply(500000/N*12, matrix(concat(ones(N, 1), zeros(N, 1), 0)))
-
+  const baseSales = mean(uStart[0].map((_, i) => uStart[0][i] + uStart[1][i]))
+  const baseEV = mean(uStart[0].slice(-6))
+  const slope = (uStart[0][uStart[0].length-1] - uStart[0][uStart[0].length-12]) / 12
   // const u = (n: number) => multiply(180000, matrix([[1-interpolate(n-10, 12)], [interpolate(n-10, 12)]]))
-  const u: (n: number) => Matrix = n => matrix([[baseSales - sale(n)], [sale(n)]])
+  const u: (n: number) => Matrix = n => n < uStart[0].length
+    ? matrix([[uStart[1][n]], [uStart[0][n]]])
+    : matrix([[baseSales - sale(n - uStart[0].length, baseSales, slope, baseEV)], [sale(n - uStart[0].length, baseSales, slope, baseEV)]])
+  // const u: (n: number) => Matrix = n => n === 0 ? matrix([[1000], [0]]) : matrix([[0], [0]])
 
-  const T = 12*30;
+  const T = 12*20;
   const run = projection(x0, u, T);
 
   const sumCombustionMatrix = concat(matrix(ones(1, N)), matrix(zeros(1, N)))
   const sumBEVMatrix = concat(matrix(zeros(1, N)), matrix(ones(1, N)))
 
-  const startDate = moment('2015-01-01')
   const combustionSeries: Series = {
     label: 'Total-None-Bev',
     data:  run.map((x, i) => ({ t: startDate.clone().add(i, 'months') , y: sum(multiply(sumCombustionMatrix, x)) }))
@@ -70,5 +68,15 @@ export function basicProjection() {
     data:  run.map((x, i) => ({ t: startDate.clone().add(i, 'months'), y: sum(multiply(sumBEVMatrix, x)) }))
   }
 
-  return [combustionSeries, bevSeries]
+  const baseLine = {
+    label: 'baseline',
+    data: uStart[0].map((y, i) => ({ t: startDate.clone().add(i, 'months'), y: 12*y }))
+  }
+
+  const projectedSales = {
+    label: 'projectedSales',
+    data: Array(T).fill(0).map((_, i) => ({ t: startDate.clone().add(i, 'months'), y: 12*u(i).get([1, 0]) }))
+  }
+
+  return [combustionSeries, bevSeries, baseLine, projectedSales]
 }
