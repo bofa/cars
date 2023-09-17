@@ -5,7 +5,6 @@ import {
 } from 'react-router-dom';
 
 import Routes from './Routes';
-import registerServiceWorker from './registerServiceWorker';
 
 import 'normalize.css';
 import '@blueprintjs/core/lib/css/blueprint.css';
@@ -25,4 +24,3 @@ export function App () {
 }
 
 render(<App />, document.getElementById('root'));
-registerServiceWorker();

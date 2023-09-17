@@ -599,12 +599,11 @@ export class Main extends React.Component<MainProps, State> {
     
     return (
       <div style={{ padding: 15, height: window.innerHeight - 100 }}>
-        <div style={{ padding: 4 }}>
+        <div style={{ display: 'flex', padding: 4 }}>
           <span style={{ marginRight: 10 }}>
             <Popover
               content={
                 <Menu>
-                  <MenuDivider title="Segment"/>
                   {segments.map(({ text, id }) => <MenuItem
                     key={id}
                     text={text}

@@ -129,7 +129,7 @@ function getNorwayNew(): Promise<Series[]> {
     const data = r.data;  
 
     const time = Object.keys(data.dimension.Tid.category.index)
-      .map(t => moment(t, "YYYY-MM"))
+      .map(t => DateTime.fromFormat(t, "YYYY-MM"))
 
     const labelsObj = data.dimension.Produkter.category.label;
     const labels: string[] = Object.keys(labelsObj).map(key => labelsObj[key]);
