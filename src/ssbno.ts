@@ -1,6 +1,7 @@
 import axios from 'axios';
 import * as moment from 'moment';
 import { Series } from './Chart';
+import { DateTime } from 'luxon';
 
 const query = (index: string) => ({
   'query': [
@@ -83,7 +84,7 @@ function getPetrolStatisticsNorwayOld(): Promise<Series[]> {
         const valueIndex = reponse.data.dimension.Tid.category.index[key];
 
         return {
-            t: moment(key, 'YYYY-MM'),
+            t: DateTime.fromFormat(key, 'YYYY-MM'),
             y: reponse.data.value[valueIndex],
         };
     }))

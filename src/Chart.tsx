@@ -1,7 +1,7 @@
 // tslint:disable: jsx-wrap-multiline
 
 import * as React from 'react';
-import * as moment from 'moment';
+import { DateTime } from 'luxon';
 // import { Line } from 'react-chartjs-2';
 import 'chartjs-plugin-annotation';
 import { Line } from 'react-chartjs-2';
@@ -33,7 +33,7 @@ export function rgbLabel(index: number, label: string) {
   return rgba(index);
 }
 
-export function smooth(list: { t: moment.Moment, y: number }[], size: number) {
+export function smooth(list: { t: DateTime, y: number }[], size: number) {
   if (isNaN(size)) {
     const cumulative = list
       .map((v1, i1) => ({
@@ -51,8 +51,8 @@ export function smooth(list: { t: moment.Moment, y: number }[], size: number) {
     .map(d => ({
       y: d.y,
       t: d.t,
-      ms: moment(d.t).valueOf(),
-      msLow: moment(d.t).subtract(size - 1, 'months').subtract(3, 'days').valueOf(),
+      ms: d.t.valueOf(),
+      msLow: d.t.minus({ months: size - 1 }).plus({ days: 3 }).valueOf(),
     }))
     .map((v1, i1, a1) => ({
       t: v1.t,
@@ -69,7 +69,7 @@ export function smooth(list: { t: moment.Moment, y: number }[], size: number) {
 
 export interface Series {
   label: string;
-  data: { t: moment.Moment, y: number }[];
+  data: { t: DateTime, y: number }[];
 }
 
 interface ChartProps {
@@ -77,7 +77,7 @@ interface ChartProps {
   fitType: string;
   fitItem: string | null | undefined;
   sCurveParams: null | { a: number, b: number, c: number };
-  normalize?: { t: moment.Moment; y: number; }[];
+  normalize?: { t: DateTime; y: number; }[];
   smooth: number;
 }
 
@@ -130,7 +130,7 @@ export default function Chart(props: ChartProps) {
             // backgroundColor: rgba(i),
             borderColor: rgbLabel(i, s.label),
             label: s.label,
-            data: s.data.map(d => ({ ...d, y: Math.round(d.y) }))
+            data: s.data.map(d => ({ ...d, t: d.t.toJSDate(), y: Math.round(d.y) }))
           },
           ... normalize === undefined ? [] : 
           [{
@@ -140,7 +140,7 @@ export default function Chart(props: ChartProps) {
             label: s.label + '%',
             borderDash: [10, 5],
             // data: props.normalize,
-            data: s.data.map((d, index) => ({ ...d, y: Math.round(1000 * d.y / normalize[index].y ) / 10 })),
+            data: s.data.map((d, index) => ({ ...d, t: d.t.toJSDate(), y: Math.round(1000 * d.y / normalize[index].y ) / 10 })),
           }]
         ];
       })
@@ -176,7 +176,7 @@ export default function Chart(props: ChartProps) {
         label: 'fit-' + props.fitItem,
         data: fitSeries
             .map(({ t }, i) =>
-            ({ t, y: func(i) }))
+            ({ t: t.toJSDate(), y: func(i) }))
       };
 
       formattedSeries.datasets?.push(dataset);

@@ -1,18 +1,17 @@
-import * as React from 'react';
-import * as moment from 'moment';
+import { DateTime } from 'luxon';
 import axios from 'axios';
+import * as React from 'react';
+import { Menu, MenuDivider, MenuItem, Popover, Button } from '@blueprintjs/core';
 import Chart, { Series, smooth } from './Chart';
-import { Menu, MenuDivider, MenuItem, Popover } from '@blueprintjs/core';
-import 'react-grid-layout/css/styles.css';
-import 'react-resizable/css/styles.css';
 import { getPetrolStatisticsNorway } from './ssbno';
 import worker from './worker.js';
 import WebWorker from './workerSetup';
 import scurveFit from './s-curve-regression';
-import { Button } from '@blueprintjs/core';
 import SelectCountries from './SelectCountries';
 import Pyramid from './Pyramid';
 import { basicProjection } from './simulator';
+import 'react-grid-layout/css/styles.css';
+import 'react-resizable/css/styles.css';
 
 const segments = [
   { text: 'Models', id: 'model' },
@@ -73,18 +72,18 @@ export function mapSeriesUnion(group: string[], countries: Record<string, Series
         if (aggModel) {
           const data = aggModel.data
             .concat(model.data)
-            .sort((a, b) => a.t.diff(b.t))
+            .sort((a, b) => a < b ? -1 : a > b ? 1 : 0)
             .reduce((aggData, m) => {
               if (aggData.length === 0) {
                 aggData.push(m);
-              } else if (aggData[aggData.length - 1].t.isSame(m.t)) {
+              } else if (aggData[aggData.length - 1].t.equals(m.t)) {
                 const d = aggData[aggData.length - 1];
                 aggData[aggData.length - 1] = { t: d.t, y: d.y + m.y };
               } else {
                 aggData.push(m);
               }
               return aggData;
-            }, [] as { t: moment.Moment, y: number }[])
+            }, [] as { t: DateTime, y: number }[])
 
           aggModel.data = data;
         } else {
@@ -110,14 +109,14 @@ export function mapSeriesCut(group: string[], countries: Record<string, Series[]
             // .concat(model.data)
             // .sort((a, b) => a.t.diff(b.t))
             .reduce((aggData, d1) => {
-              const d2 = model.data.find(dd2 => dd2.t.isSame(d1.t));
+              const d2 = model.data.find(dd2 => dd2.t.equals(d1.t));
 
               if (d2) {
                 aggData.push({ t: d1.t, y: d1.y + d2.y });
               }
 
               return aggData;
-            }, [] as { t: moment.Moment, y: number }[])
+            }, [] as { t: DateTime, y: number }[])
 
           aggModel.data = data;
         } else {
@@ -238,8 +237,8 @@ export class Main extends React.Component<MainProps, State> {
             data: s.data
               .reverse()
               .filter(d => typeof d[1] === 'number')
-              .map(d => ({ t: moment(d[0], 'YYYY'), y: d[1] }))
-              .map(d => Array(12).fill(0).map((_, i) => ({ t: moment(d.t).add(i, 'M'), y: d.y })))
+              .map(d => ({ t: DateTime.fromFormat(d[0], 'YYYY'), y: d[1] }))
+              .map(d => Array(12).fill(0).map((_, i) => ({ t: d.t.plus({ months: i }), y: d.y })))
               .reduce((agg, con) => agg.concat(con)),
           }));
 
@@ -319,7 +318,7 @@ export class Main extends React.Component<MainProps, State> {
 
           const dataList = headers.map((header: string, index: number) => ({
               label: header,
-              data: rows.map((row: any[]) => ({ t: moment(row[0]), y: Number(row[index]?.replace(/\s+/g, '')) }))
+              data: rows.map((row: any[]) => ({ t: DateTime.fromFormat(row[0], 'yyyy-MM-dd'), y: Number(row[index]?.replace(/\s+/g, '')) }))
             }))
             .slice(1)
 
@@ -452,7 +451,7 @@ export class Main extends React.Component<MainProps, State> {
     // console.log('params', this.state.sCurveParams.a, this.state.sCurveParams.b, this.state.sCurveParams.c)
 
     let filteredData: Series[] = [];
-    let normalize: { t: moment.Moment; y: number; }[] | undefined = undefined;
+    let normalize: { t: DateTime; y: number; }[] | undefined = undefined;
     let remove: (label: string) => boolean = () => true;
 
     // console.log('this.state.countries', this.state.countries);

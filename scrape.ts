@@ -13,8 +13,10 @@ const getPetrolStatisticsSweden = require('./src/scb');
 // const spain2019 = require('./raw/spain2019');
 
 getPetrolStatisticsSweden(axios, moment)
-    .then((data: any) => fs.writeFile('public/swedenfuel.json', JSON.stringify(data)))
-    .then(() => console.log('Done Sweden Fuel'));
+    .then((data: any) => fs.writeFile('public/swedenfuel.json', JSON.stringify(data, null, 2)))
+    .then(() => {
+        console.log('Done Sweden Fuel')
+    });
     // .then((r: any) => console.log(r))
 
 // export function massageJson (urls: string[], jsonData: any[]) {

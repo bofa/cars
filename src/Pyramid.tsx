@@ -1,7 +1,7 @@
 // tslint:disable: jsx-wrap-multiline
 
+import { DateTime } from 'luxon';
 import * as React from 'react';
-import * as moment from 'moment';
 // import { Line } from 'react-chartjs-2';
 import 'chartjs-plugin-annotation';
 import { HorizontalBar } from 'react-chartjs-2';
@@ -13,7 +13,7 @@ export function rgba(index: number, alpha: number = 0.6) {
   return 'rgba(' + o(r(1) * s) + ',' + o(r(2) * s) + ',' + o(r(3) * s) + ',' + alpha + ')';
 }
 
-export function smooth(list: { t: moment.Moment, y: number }[], size: number) {
+export function smooth(list: { t: DateTime, y: number }[], size: number) {
   if (isNaN(size)) {
     const cumulative = list
       .map((v1, i1) => ({
