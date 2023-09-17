@@ -1,5 +1,4 @@
 import axios from 'axios';
-import * as moment from 'moment';
 import { Series } from './Chart';
 import { DateTime } from 'luxon';
 
@@ -59,11 +58,12 @@ export function getPetrolStatisticsNorway() {
     const oldData = values[0];
     const newData = values[1];
     
-    const output = oldData.map(s => ({
-      label: s.label,
-      data: s.data
-        .concat(newData.find(s2 => s2.label === oldNewMap[s.label])?.data || [])
-    }))
+    const output = oldData
+      .map(s => ({
+        label: s.label,
+        data: s.data
+          .concat(newData.find(s2 => s2.label === oldNewMap[s.label])?.data || [])
+      }))
     
     return output;
   })
@@ -84,13 +84,13 @@ function getPetrolStatisticsNorwayOld(): Promise<Series[]> {
         const valueIndex = reponse.data.dimension.Tid.category.index[key];
 
         return {
-            t: DateTime.fromFormat(key, 'YYYY-MM'),
-            y: reponse.data.value[valueIndex],
+          t: DateTime.fromFormat(key, "yyyy'M'MM"),
+          y: reponse.data.value[valueIndex],
         };
     }))
     .then(data => ({
-        label,
-        data,
+      label,
+      data,
     }) as Series)
   })
 
@@ -129,7 +129,7 @@ function getNorwayNew(): Promise<Series[]> {
     const data = r.data;  
 
     const time = Object.keys(data.dimension.Tid.category.index)
-      .map(t => DateTime.fromFormat(t, "YYYY-MM"))
+      .map(t => DateTime.fromFormat(t, "yyyy'M'MM"))
 
     const labelsObj = data.dimension.Produkter.category.label;
     const labels: string[] = Object.keys(labelsObj).map(key => labelsObj[key]);

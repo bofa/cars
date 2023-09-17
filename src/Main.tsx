@@ -198,9 +198,10 @@ export class Main extends React.Component<MainProps, State> {
     });
 
     axios.get('swedenfuel.json')
-      .then(r => r.data as Series[])
+      .then(r => r.data
+        .map((s: any) => ({ ...s, data: s.data
+          .map((p: any) => ({ ...p, t: DateTime.fromISO(p.t) })) })))
       .then(petrolSeries => {
-        // console.log('data', data);
         this.setState(({ countriesFuel }) => ({
           countriesFuel: { ...countriesFuel, sweden: petrolSeries },
         }));
@@ -490,10 +491,7 @@ export class Main extends React.Component<MainProps, State> {
         remove = (label: string) => !['Total', 'Total-None-Bev', 'Total-BEV'].includes(label);
         filteredData = series
           .filter(({ label }) => label !== 'Total' && remove(label))
-            .map(s => ({
-              ...s,
-              data: s.data
-            }));
+
         break;
 
       case 'brand':

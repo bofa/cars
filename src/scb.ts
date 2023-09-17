@@ -2,6 +2,8 @@
 // import * as moment from 'moment';
 // import { Series } from './Chart';
 
+import { DateTime } from "luxon";
+
 const query = (id: string) => ({
   'query': [
     {
@@ -69,7 +71,7 @@ const query3 = (id: string) => ({
 
 // https://api.scb.se/OV0104/v1/doris/sv/ssd/START/EN/EN0107/EN0107X/VaruflodBransle
 
-module.exports = function getPetrolStatisticsSweden(axios: any, moment: any) {
+module.exports = function getPetrolStatisticsSweden(axios: any) {
   const requests = [
     { id: '10', label: 'Petroleum' },
     // { id: '15', label: 'E85' },
@@ -87,7 +89,7 @@ module.exports = function getPetrolStatisticsSweden(axios: any, moment: any) {
 
     return req$
       .then((r: any) => r.data.data
-        .map((d: any) => ({ t: moment.utc(d.key[2], 'YYYY-MM'), y: Number(d.values[0]) / 1000 })))  
+        .map((d: any) => ({ t: DateTime.fromFormat(d.key[2], "yyyy'M'MM", { zone: 'utc' }), y: Number(d.values[0]) / 1000 })))  
       .then((data: any) => ({ label, data }));
 
     // return req$.then(reponse => Object.keys(reponse.data.dimension.Tid.category.index).map(key => {

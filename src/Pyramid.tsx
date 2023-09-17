@@ -31,8 +31,8 @@ export function smooth(list: { t: DateTime, y: number }[], size: number) {
     .map(d => ({
       y: d.y,
       t: d.t,
-      ms: moment(d.t).valueOf(),
-      msLow: moment(d.t).subtract(size - 1, 'months').subtract(3, 'days').valueOf(),
+      ms: d.t.valueOf(),
+      msLow: d.t.minus({ months: size }).minus({ days: 3 }).valueOf(),
     }))
     .map((v1, i1, a1) => ({
       t: v1.t,

@@ -26,6 +26,8 @@ export default function (props: { items: string[], selected: string[], onSelect:
       }
       tagRenderer={item => item}
       onItemSelect={(group) => props.onSelect(toggleItems(props.selected, group))}
+      onRemove={group => props.onSelect(toggleItems(props.selected, group))}
+      onClear={() => props.onSelect([])}
       selectedItems={props.selected}
     />
   );

@@ -47,19 +47,20 @@ export function smooth(list: { t: DateTime, y: number }[], size: number) {
     return cumulative;
   }
 
+  // TODO Control if it's correct
   const output = list
     .map(d => ({
       y: d.y,
       t: d.t,
-      ms: d.t.valueOf(),
-      msLow: d.t.minus({ months: size - 1 }).plus({ days: 3 }).valueOf(),
+      // ms: d.t.valueOf(),
+      // msLow: d.t.minus({ months: size }).plus({ days: 3 }).valueOf(),
     }))
     .map((v1, i1, a1) => ({
       t: v1.t,
       y: a1
-        .filter((v2) => v2.ms >= v1.msLow && v2.ms <= v1.ms)
+        .filter((v2, i2) => i2 <= i1 && v1.t.diff(v2.t.plus({ days: 3 }), 'months').months <= size)
         .map(({ y }, i, a) => y)
-        .reduce((acc, v) => acc + v)
+        .reduce((acc, v) => acc + v, 0)
       })
     )
     .slice(size - 1);
