@@ -9,9 +9,11 @@ import { ChartData, ChartOptions } from 'chart.js';
 import { exponentialFit, linearFit } from './regression';
 import { model } from './s-curve-regression';
 
+export type FitType = keyof typeof regression
 const regression = {
   linear: linearFit,
   exponential: exponentialFit,
+  scurve: () => console.log('Not implmented')
 };
 
 export function rgba(index: number, alpha: number = 0.6) {
@@ -34,35 +36,31 @@ export function rgbLabel(index: number, label: string) {
 }
 
 export function smooth(list: { t: DateTime, y: number }[], size: number) {
-  if (isNaN(size)) {
-    const cumulative = list
-      .map((v1, i1) => ({
-        t: v1.t,
-        y: list
-          .filter((_2, i2) => i2 <= i1 )
-          .map(({ y }) => y)
-          .reduce((acc, v) => acc + v)
-        }));
+  // if (isNaN(size)) {
+  //   const cumulative = list
+  //     .map((v1, i1) => ({
+  //       t: v1.t,
+  //       y: list
+  //         .filter((_2, i2) => i2 <= i1 )
+  //         .map(({ y }) => y)
+  //         .reduce((acc, v) => acc + v)
+  //       }));
 
-    return cumulative;
-  }
+  //   return cumulative;
+  // }
 
   // TODO Control if it's correct
   const output = list
-    .map(d => ({
-      y: d.y,
-      t: d.t,
-      // ms: d.t.valueOf(),
-      // msLow: d.t.minus({ months: size }).plus({ days: 3 }).valueOf(),
-    }))
-    .map((v1, i1, a1) => ({
-      t: v1.t,
-      y: a1
-        .filter((v2, i2) => i2 <= i1 && v1.t.diff(v2.t.plus({ days: 3 }), 'months').months <= size)
+    .map((v1, i1, a1) => {
+      const y = a1
+        .filter((v2, i2) => i2 <= i1 && v1.t.diff(v2.t.plus({ days: 3 }), 'months').months <= size - 1)
         .map(({ y }, i, a) => y)
-        .reduce((acc, v) => acc + v, 0)
-      })
-    )
+
+      return {
+        t: v1.t,
+        y: y.reduce((acc, v) => acc + v, 0)
+      }
+    })
     .slice(size - 1);
 
   return output;
@@ -75,7 +73,7 @@ export interface Series {
 
 interface ChartProps {
   series: Series[];
-  fitType: string;
+  fitType: FitType;
   fitItem: string | null | undefined;
   sCurveParams: null | { a: number, b: number, c: number };
   normalize?: { t: DateTime; y: number; }[];

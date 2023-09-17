@@ -2,7 +2,7 @@ import { DateTime } from 'luxon';
 import axios from 'axios';
 import * as React from 'react';
 import { Menu, MenuDivider, MenuItem, Popover, Button } from '@blueprintjs/core';
-import Chart, { Series, smooth } from './Chart';
+import Chart, { FitType, Series, smooth } from './Chart';
 import { getPetrolStatisticsNorway } from './ssbno';
 import worker from './worker.js';
 import WebWorker from './workerSetup';
@@ -36,7 +36,7 @@ const fitTypes = [
   { value: 'linear', text: 'Linear' },
   { value: 'exponential', text: 'Exponential' },
   { value: 'scurve', text: 'S Curve' },
-];
+] as const;
 
 function fetchPage(page: any, delay: number, std: number = 3000, sheet: string = '1l50qi3FAue2zqMOtc-vdGbXBWpb0I4lKByqUaz2nuFs')
   : Promise<any> {
@@ -136,7 +136,7 @@ export function groupBy(xs: any, key: string | number) {
   }, {});
 
   // Make into an array
-  const arr = [];
+  const arr: any[] = [];
   for (const value of Object.keys(object)) {
     if (object.hasOwnProperty((value))) {
       arr.push([value, object[value]]);
@@ -163,7 +163,7 @@ interface State {
   group: string[],
   segment: string,
   smooth: number,
-  fitType: string,
+  fitType: FitType,
   fitItem: string,
   sCurveParams: { a: number, b: number, c: number },
   manufacturer: { model: string, brand?: string, manufacturer?: string } [],
@@ -462,7 +462,7 @@ export class Main extends React.Component<MainProps, State> {
     }
 
     const manafacturer =  this.state.manufacturer;
-    let series = [];
+    let series: any[] = [];
     if (this.state.segment === 'fuel') {
       series = mapSeriesCut(this.state.group, this.state.countriesFuel);
     } else {
