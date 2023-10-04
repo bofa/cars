@@ -49,8 +49,9 @@
     "deploy": "gh-pages -d build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
-    "scrape": "ts-node scrape.ts",
+    "fuel": "node scrape/fuel.js",
     "euev": "node scrape/euev.js",
+    "process": "node scrape/process.js",
     "acea": "node scrape/acea-snippet.js"
   }
 }

@@ -1,8 +1,6 @@
-const axios = require('axios');
-const moment = require('moment');
-const fs = require('fs').promises;
-
-const getPetrolStatisticsSweden = require('./src/scb');
+import axios from 'axios'
+import { promises as fs } from 'fs'
+import getPetrolStatisticsSweden from './scb.js'
 
 // const Papa =  require('papaparse');
 // const norway2018 = require('./raw/norway2018');
@@ -12,12 +10,17 @@ const getPetrolStatisticsSweden = require('./src/scb');
 // const spain2018 = require('./raw/spain2018');
 // const spain2019 = require('./raw/spain2019');
 
-getPetrolStatisticsSweden(axios, moment)
-    .then((data: any) => fs.writeFile('public/swedenfuel.json', JSON.stringify(data, null, 2)))
-    .then(() => {
-        console.log('Done Sweden Fuel')
-    });
-    // .then((r: any) => console.log(r))
+Promise.all([
+  getPetrolStatisticsSweden(axios),
+  fs.readFile('public/swedenfuel.json', 'utf8').then(data => JSON.parse(data)),
+])
+.then(([data, oldData]) => {
+  // TODO merge
+  return fs.writeFile('public/swedenfuel.json', JSON.stringify(data, null, 2))
+})
+.then(() => {
+    console.log('Done Sweden Fuel')
+})
 
 // export function massageJson (urls: string[], jsonData: any[]) {
 //     // https://eu-evs.com/get_overall_stats_for_charts.php?year=2020&quarter=0&country=Norway

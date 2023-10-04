@@ -1,0 +1,42 @@
+[
+  {
+    "countryCode": "CH",
+    "filename": "CH-brand-sales.json"
+  },
+  {
+    "countryCode": "DE",
+    "filename": "DE-brand-sales.json"
+  },
+  {
+    "countryCode": "DK",
+    "filename": "DK-brand-sales.json"
+  },
+  {
+    "countryCode": "ES",
+    "filename": "ES-brand-sales.json"
+  },
+  {
+    "countryCode": "FI",
+    "filename": "FI-brand-sales.json"
+  },
+  {
+    "countryCode": "IE",
+    "filename": "IE-brand-sales.json"
+  },
+  {
+    "countryCode": "IT",
+    "filename": "IT-brand-sales.json"
+  },
+  {
+    "countryCode": "NL",
+    "filename": "NL-brand-sales.json"
+  },
+  {
+    "countryCode": "NO",
+    "filename": "NO-brand-sales.json"
+  },
+  {
+    "countryCode": "SE",
+    "filename": "SE-brand-sales.json"
+  }
+]
