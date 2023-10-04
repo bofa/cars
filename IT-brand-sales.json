@@ -1,0 +1,6204 @@
+{
+  "brandSales": [
+    {
+      "date": "2017-01-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-02-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-03-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-04-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-05-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-06-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-07-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-08-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-09-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-10-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-11-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2017-12-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-01-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-02-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-03-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-04-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-05-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-06-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-07-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-08-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-09-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-10-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-11-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2018-12-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-01-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-02-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-03-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-04-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-05-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-06-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-07-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-08-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-09-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-10-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-11-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2019-12-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-01-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-02-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-03-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-04-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-05-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-06-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-07-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-08-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-09-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-10-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-11-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2020-12-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-01-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-02-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-03-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-04-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-05-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-06-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-07-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-08-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-09-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-10-01T00:00:00.000+02:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-11-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2021-12-01T00:00:00.000+01:00",
+      "brands": [],
+      "total": 0
+    },
+    {
+      "date": "2022-01-01T00:00:00.000+01:00",
+      "brands": [
+        {
+          "id": "DACIA",
+          "sales": 656
+        },
+        {
+          "id": "FIAT",
+          "sales": 548
+        },
+        {
+          "id": "RENAULT",
+          "sales": 526
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 337
+        },
+        {
+          "id": "SMART",
+          "sales": 266
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 197
+        },
+        {
+          "id": "OPEL",
+          "sales": 131
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 117
+        },
+        {
+          "id": "AUDI",
+          "sales": 106
+        },
+        {
+          "id": "BMW",
+          "sales": 99
+        },
+        {
+          "id": "KIA",
+          "sales": 86
+        },
+        {
+          "id": "FORD",
+          "sales": 71
+        },
+        {
+          "id": "VOLVO",
+          "sales": 69
+        },
+        {
+          "id": "MINI",
+          "sales": 67
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 65
+        },
+        {
+          "id": "MG",
+          "sales": 43
+        },
+        {
+          "id": "SKODA",
+          "sales": 33
+        },
+        {
+          "id": "TESLA",
+          "sales": 32
+        },
+        {
+          "id": "DS",
+          "sales": 31
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 31
+        },
+        {
+          "id": "CITROEN",
+          "sales": 31
+        },
+        {
+          "id": "NISSAN",
+          "sales": 29
+        },
+        {
+          "id": "LEXUS",
+          "sales": 19
+        },
+        {
+          "id": "MAZDA",
+          "sales": 12
+        }
+      ],
+      "total": 3602
+    },
+    {
+      "date": "2022-02-01T00:00:00.000+01:00",
+      "brands": [
+        {
+          "id": "FIAT",
+          "sales": 509
+        },
+        {
+          "id": "SMART",
+          "sales": 322
+        },
+        {
+          "id": "TESLA",
+          "sales": 279
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 262
+        },
+        {
+          "id": "RENAULT",
+          "sales": 233
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 201
+        },
+        {
+          "id": "BMW",
+          "sales": 193
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 159
+        },
+        {
+          "id": "AUDI",
+          "sales": 145
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 99
+        },
+        {
+          "id": "NISSAN",
+          "sales": 96
+        },
+        {
+          "id": "OPEL",
+          "sales": 94
+        },
+        {
+          "id": "MINI",
+          "sales": 80
+        },
+        {
+          "id": "CITROEN",
+          "sales": 69
+        },
+        {
+          "id": "VOLVO",
+          "sales": 66
+        },
+        {
+          "id": "DACIA",
+          "sales": 61
+        },
+        {
+          "id": "FORD",
+          "sales": 55
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 51
+        },
+        {
+          "id": "KIA",
+          "sales": 50
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 43
+        },
+        {
+          "id": "SKODA",
+          "sales": 34
+        },
+        {
+          "id": "MG",
+          "sales": 31
+        },
+        {
+          "id": "CUPRA",
+          "sales": 16
+        },
+        {
+          "id": "MAZDA",
+          "sales": 15
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 11
+        },
+        {
+          "id": "DS",
+          "sales": 2
+        },
+        {
+          "id": "LEXUS",
+          "sales": 1
+        }
+      ],
+      "total": 3177
+    },
+    {
+      "date": "2022-03-01T00:00:00.000+01:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 1056
+        },
+        {
+          "id": "DACIA",
+          "sales": 517
+        },
+        {
+          "id": "FIAT",
+          "sales": 495
+        },
+        {
+          "id": "SMART",
+          "sales": 373
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 214
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 189
+        },
+        {
+          "id": "RENAULT",
+          "sales": 160
+        },
+        {
+          "id": "MINI",
+          "sales": 155
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 154
+        },
+        {
+          "id": "BMW",
+          "sales": 144
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 141
+        },
+        {
+          "id": "AUDI",
+          "sales": 140
+        },
+        {
+          "id": "OPEL",
+          "sales": 111
+        },
+        {
+          "id": "KIA",
+          "sales": 85
+        },
+        {
+          "id": "VOLVO",
+          "sales": 81
+        },
+        {
+          "id": "NISSAN",
+          "sales": 77
+        },
+        {
+          "id": "FORD",
+          "sales": 72
+        },
+        {
+          "id": "CITROEN",
+          "sales": 58
+        },
+        {
+          "id": "MG",
+          "sales": 48
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 46
+        },
+        {
+          "id": "SKODA",
+          "sales": 41
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 33
+        },
+        {
+          "id": "RIFTER",
+          "sales": 28
+        },
+        {
+          "id": "CUPRA",
+          "sales": 25
+        },
+        {
+          "id": "DS",
+          "sales": 23
+        },
+        {
+          "id": "LEXUS",
+          "sales": 13
+        },
+        {
+          "id": "EQV",
+          "sales": 12
+        },
+        {
+          "id": "MAZDA",
+          "sales": 8
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 6
+        }
+      ],
+      "total": 4505
+    },
+    {
+      "date": "2022-04-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "FIAT",
+          "sales": 497
+        },
+        {
+          "id": "SMART",
+          "sales": 427
+        },
+        {
+          "id": "DACIA",
+          "sales": 372
+        },
+        {
+          "id": "RENAULT",
+          "sales": 296
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 210
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 130
+        },
+        {
+          "id": "BMW",
+          "sales": 129
+        },
+        {
+          "id": "OPEL",
+          "sales": 117
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 114
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 105
+        },
+        {
+          "id": "MINI",
+          "sales": 94
+        },
+        {
+          "id": "AUDI",
+          "sales": 94
+        },
+        {
+          "id": "KIA",
+          "sales": 74
+        },
+        {
+          "id": "FORD",
+          "sales": 64
+        },
+        {
+          "id": "SKODA",
+          "sales": 61
+        },
+        {
+          "id": "VOLVO",
+          "sales": 58
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 34
+        },
+        {
+          "id": "DR",
+          "sales": 28
+        },
+        {
+          "id": "CUPRA",
+          "sales": 28
+        },
+        {
+          "id": "TESLA",
+          "sales": 27
+        },
+        {
+          "id": "NISSAN",
+          "sales": 24
+        },
+        {
+          "id": "MG",
+          "sales": 21
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 18
+        },
+        {
+          "id": "HONDA",
+          "sales": 18
+        },
+        {
+          "id": "MAZDA",
+          "sales": 13
+        },
+        {
+          "id": "CITROEN",
+          "sales": 11
+        },
+        {
+          "id": "SERES",
+          "sales": 10
+        },
+        {
+          "id": "DS",
+          "sales": 8
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 5
+        },
+        {
+          "id": "LEXUS",
+          "sales": 3
+        }
+      ],
+      "total": 3090
+    },
+    {
+      "date": "2022-05-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "FIAT",
+          "sales": 749
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 535
+        },
+        {
+          "id": "SMART",
+          "sales": 476
+        },
+        {
+          "id": "RENAULT",
+          "sales": 452
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 419
+        },
+        {
+          "id": "DACIA",
+          "sales": 269
+        },
+        {
+          "id": "MINI",
+          "sales": 177
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 160
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 153
+        },
+        {
+          "id": "OPEL",
+          "sales": 153
+        },
+        {
+          "id": "AUDI",
+          "sales": 121
+        },
+        {
+          "id": "CUPRA",
+          "sales": 120
+        },
+        {
+          "id": "BMW",
+          "sales": 116
+        },
+        {
+          "id": "KIA",
+          "sales": 101
+        },
+        {
+          "id": "MG",
+          "sales": 75
+        },
+        {
+          "id": "FORD",
+          "sales": 72
+        },
+        {
+          "id": "NISSAN",
+          "sales": 68
+        },
+        {
+          "id": "SKODA",
+          "sales": 60
+        },
+        {
+          "id": "CITROEN",
+          "sales": 60
+        },
+        {
+          "id": "VOLVO",
+          "sales": 51
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 51
+        },
+        {
+          "id": "MAZDA",
+          "sales": 20
+        },
+        {
+          "id": "MELEX",
+          "sales": 20
+        },
+        {
+          "id": "LEXUS",
+          "sales": 15
+        },
+        {
+          "id": "TESLA",
+          "sales": 14
+        },
+        {
+          "id": "AIWAYS",
+          "sales": 11
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 8
+        },
+        {
+          "id": "DS",
+          "sales": 4
+        },
+        {
+          "id": "HONDA",
+          "sales": 3
+        },
+        {
+          "id": "SERES",
+          "sales": 3
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 3
+        },
+        {
+          "id": "DR",
+          "sales": 2
+        }
+      ],
+      "total": 4541
+    },
+    {
+      "date": "2022-06-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 1143
+        },
+        {
+          "id": "FIAT",
+          "sales": 781
+        },
+        {
+          "id": "SMART",
+          "sales": 754
+        },
+        {
+          "id": "RENAULT",
+          "sales": 677
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 453
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 406
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 226
+        },
+        {
+          "id": "DACIA",
+          "sales": 165
+        },
+        {
+          "id": "SKODA",
+          "sales": 163
+        },
+        {
+          "id": "OPEL",
+          "sales": 146
+        },
+        {
+          "id": "MINI",
+          "sales": 140
+        },
+        {
+          "id": "CUPRA",
+          "sales": 134
+        },
+        {
+          "id": "AUDI",
+          "sales": 127
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 124
+        },
+        {
+          "id": "NISSAN",
+          "sales": 115
+        },
+        {
+          "id": "BMW",
+          "sales": 109
+        },
+        {
+          "id": "MG",
+          "sales": 99
+        },
+        {
+          "id": "KIA",
+          "sales": 52
+        },
+        {
+          "id": "CITROEN",
+          "sales": 47
+        },
+        {
+          "id": "FORD",
+          "sales": 45
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 45
+        },
+        {
+          "id": "MELEX",
+          "sales": 36
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 29
+        },
+        {
+          "id": "HONDA",
+          "sales": 27
+        },
+        {
+          "id": "DS",
+          "sales": 26
+        },
+        {
+          "id": "VOLVO",
+          "sales": 23
+        },
+        {
+          "id": "MAZDA",
+          "sales": 22
+        },
+        {
+          "id": "AIWAYS",
+          "sales": 16
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 13
+        },
+        {
+          "id": "SUBARU",
+          "sales": 12
+        },
+        {
+          "id": "SERES",
+          "sales": 8
+        },
+        {
+          "id": "LEXUS",
+          "sales": 5
+        },
+        {
+          "id": "DR",
+          "sales": 3
+        }
+      ],
+      "total": 6171
+    },
+    {
+      "date": "2022-07-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "FIAT",
+          "sales": 779
+        },
+        {
+          "id": "RENAULT",
+          "sales": 588
+        },
+        {
+          "id": "SMART",
+          "sales": 311
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 294
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 207
+        },
+        {
+          "id": "OPEL",
+          "sales": 159
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 141
+        },
+        {
+          "id": "BMW",
+          "sales": 134
+        },
+        {
+          "id": "AUDI",
+          "sales": 127
+        },
+        {
+          "id": "CUPRA",
+          "sales": 126
+        },
+        {
+          "id": "MINI",
+          "sales": 98
+        },
+        {
+          "id": "FORD",
+          "sales": 97
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 91
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 59
+        },
+        {
+          "id": "NISSAN",
+          "sales": 58
+        },
+        {
+          "id": "SKODA",
+          "sales": 54
+        },
+        {
+          "id": "DACIA",
+          "sales": 52
+        },
+        {
+          "id": "CITROEN",
+          "sales": 40
+        },
+        {
+          "id": "TESLA",
+          "sales": 37
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 37
+        },
+        {
+          "id": "KIA",
+          "sales": 30
+        },
+        {
+          "id": "MG",
+          "sales": 29
+        },
+        {
+          "id": "ISSIMA",
+          "sales": 16
+        },
+        {
+          "id": "VOLVO",
+          "sales": 15
+        },
+        {
+          "id": "AIWAYS",
+          "sales": 13
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 9
+        },
+        {
+          "id": "MAZDA",
+          "sales": 7
+        },
+        {
+          "id": "MELEX",
+          "sales": 6
+        },
+        {
+          "id": "HONDA",
+          "sales": 5
+        },
+        {
+          "id": "DS",
+          "sales": 4
+        },
+        {
+          "id": "DR",
+          "sales": 3
+        },
+        {
+          "id": "LEXUS",
+          "sales": 3
+        },
+        {
+          "id": "SERES",
+          "sales": 2
+        }
+      ],
+      "total": 3631
+    },
+    {
+      "date": "2022-08-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "FIAT",
+          "sales": 360
+        },
+        {
+          "id": "RENAULT",
+          "sales": 258
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 219
+        },
+        {
+          "id": "OPEL",
+          "sales": 161
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 160
+        },
+        {
+          "id": "SMART",
+          "sales": 134
+        },
+        {
+          "id": "NISSAN",
+          "sales": 124
+        },
+        {
+          "id": "AUDI",
+          "sales": 110
+        },
+        {
+          "id": "TESLA",
+          "sales": 100
+        },
+        {
+          "id": "BMW",
+          "sales": 94
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 91
+        },
+        {
+          "id": "CUPRA",
+          "sales": 80
+        },
+        {
+          "id": "MINI",
+          "sales": 72
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 71
+        },
+        {
+          "id": "VOLVO",
+          "sales": 67
+        },
+        {
+          "id": "SKODA",
+          "sales": 34
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 32
+        },
+        {
+          "id": "DACIA",
+          "sales": 26
+        },
+        {
+          "id": "FORD",
+          "sales": 24
+        },
+        {
+          "id": "DR",
+          "sales": 20
+        },
+        {
+          "id": "CITROEN",
+          "sales": 18
+        },
+        {
+          "id": "KIA",
+          "sales": 17
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 16
+        },
+        {
+          "id": "MAZDA",
+          "sales": 8
+        },
+        {
+          "id": "MG",
+          "sales": 6
+        },
+        {
+          "id": "LEXUS",
+          "sales": 1
+        }
+      ],
+      "total": 2303
+    },
+    {
+      "date": "2022-09-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 1206
+        },
+        {
+          "id": "FIAT",
+          "sales": 482
+        },
+        {
+          "id": "RENAULT",
+          "sales": 439
+        },
+        {
+          "id": "OPEL",
+          "sales": 394
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 348
+        },
+        {
+          "id": "SMART",
+          "sales": 325
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 256
+        },
+        {
+          "id": "BMW",
+          "sales": 220
+        },
+        {
+          "id": "VOLVO",
+          "sales": 218
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 168
+        },
+        {
+          "id": "AUDI",
+          "sales": 152
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 131
+        },
+        {
+          "id": "CUPRA",
+          "sales": 107
+        },
+        {
+          "id": "KIA",
+          "sales": 102
+        },
+        {
+          "id": "MINI",
+          "sales": 98
+        },
+        {
+          "id": "DACIA",
+          "sales": 90
+        },
+        {
+          "id": "NISSAN",
+          "sales": 82
+        },
+        {
+          "id": "MG",
+          "sales": 73
+        },
+        {
+          "id": "FORD",
+          "sales": 36
+        },
+        {
+          "id": "CITROEN",
+          "sales": 30
+        },
+        {
+          "id": "SKODA",
+          "sales": 28
+        },
+        {
+          "id": "AIWAYS",
+          "sales": 27
+        },
+        {
+          "id": "MAZDA",
+          "sales": 25
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 18
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 16
+        },
+        {
+          "id": "LEXUS",
+          "sales": 9
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 3
+        },
+        {
+          "id": "HONDA",
+          "sales": 3
+        },
+        {
+          "id": "DR",
+          "sales": 2
+        },
+        {
+          "id": "SERES",
+          "sales": 2
+        },
+        {
+          "id": "MELEX",
+          "sales": 2
+        },
+        {
+          "id": "DS",
+          "sales": 2
+        }
+      ],
+      "total": 5094
+    },
+    {
+      "date": "2022-10-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "RENAULT",
+          "sales": 629
+        },
+        {
+          "id": "SMART",
+          "sales": 470
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 404
+        },
+        {
+          "id": "FIAT",
+          "sales": 399
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 243
+        },
+        {
+          "id": "BMW",
+          "sales": 201
+        },
+        {
+          "id": "MINI",
+          "sales": 198
+        },
+        {
+          "id": "AUDI",
+          "sales": 154
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 148
+        },
+        {
+          "id": "VOLVO",
+          "sales": 112
+        },
+        {
+          "id": "CUPRA",
+          "sales": 99
+        },
+        {
+          "id": "OPEL",
+          "sales": 96
+        },
+        {
+          "id": "NISSAN",
+          "sales": 68
+        },
+        {
+          "id": "MG",
+          "sales": 65
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 63
+        },
+        {
+          "id": "FORD",
+          "sales": 47
+        },
+        {
+          "id": "KIA",
+          "sales": 45
+        },
+        {
+          "id": "DACIA",
+          "sales": 35
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 35
+        },
+        {
+          "id": "TESLA",
+          "sales": 32
+        },
+        {
+          "id": "SKODA",
+          "sales": 29
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 25
+        },
+        {
+          "id": "CITROEN",
+          "sales": 21
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 16
+        },
+        {
+          "id": "MAZDA",
+          "sales": 11
+        },
+        {
+          "id": "LEXUS",
+          "sales": 6
+        },
+        {
+          "id": "SUBARU",
+          "sales": 5
+        },
+        {
+          "id": "MELEX",
+          "sales": 4
+        },
+        {
+          "id": "DR",
+          "sales": 2
+        },
+        {
+          "id": "DS",
+          "sales": 2
+        },
+        {
+          "id": "SERES",
+          "sales": 2
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 1
+        },
+        {
+          "id": "HONDA",
+          "sales": 1
+        }
+      ],
+      "total": 3668
+    },
+    {
+      "date": "2022-11-01T00:00:00.000+01:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 1107
+        },
+        {
+          "id": "RENAULT",
+          "sales": 539
+        },
+        {
+          "id": "SMART",
+          "sales": 472
+        },
+        {
+          "id": "FIAT",
+          "sales": 421
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 369
+        },
+        {
+          "id": "DACIA",
+          "sales": 351
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 338
+        },
+        {
+          "id": "BMW",
+          "sales": 284
+        },
+        {
+          "id": "MINI",
+          "sales": 224
+        },
+        {
+          "id": "AUDI",
+          "sales": 189
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 133
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 82
+        },
+        {
+          "id": "CUPRA",
+          "sales": 82
+        },
+        {
+          "id": "NISSAN",
+          "sales": 79
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 79
+        },
+        {
+          "id": "OPEL",
+          "sales": 71
+        },
+        {
+          "id": "VOLVO",
+          "sales": 71
+        },
+        {
+          "id": "MG",
+          "sales": 68
+        },
+        {
+          "id": "KIA",
+          "sales": 40
+        },
+        {
+          "id": "SUBARU",
+          "sales": 40
+        },
+        {
+          "id": "FORD",
+          "sales": 36
+        },
+        {
+          "id": "SKODA",
+          "sales": 31
+        },
+        {
+          "id": "CITROEN",
+          "sales": 22
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 20
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 17
+        },
+        {
+          "id": "MAZDA",
+          "sales": 7
+        },
+        {
+          "id": "LEXUS",
+          "sales": 2
+        },
+        {
+          "id": "DS",
+          "sales": 1
+        },
+        {
+          "id": "MELEX",
+          "sales": 1
+        },
+        {
+          "id": "SERES",
+          "sales": 1
+        },
+        {
+          "id": "DR",
+          "sales": 1
+        }
+      ],
+      "total": 5178
+    },
+    {
+      "date": "2022-12-01T00:00:00.000+01:00",
+      "brands": [
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 593
+        },
+        {
+          "id": "TESLA",
+          "sales": 567
+        },
+        {
+          "id": "SMART",
+          "sales": 449
+        },
+        {
+          "id": "BMW",
+          "sales": 341
+        },
+        {
+          "id": "RENAULT",
+          "sales": 337
+        },
+        {
+          "id": "FIAT",
+          "sales": 312
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 241
+        },
+        {
+          "id": "DACIA",
+          "sales": 231
+        },
+        {
+          "id": "AUDI",
+          "sales": 209
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 170
+        },
+        {
+          "id": "NISSAN",
+          "sales": 163
+        },
+        {
+          "id": "MINI",
+          "sales": 158
+        },
+        {
+          "id": "EVO",
+          "sales": 131
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 126
+        },
+        {
+          "id": "VOLVO",
+          "sales": 111
+        },
+        {
+          "id": "CUPRA",
+          "sales": 101
+        },
+        {
+          "id": "MG",
+          "sales": 97
+        },
+        {
+          "id": "OPEL",
+          "sales": 88
+        },
+        {
+          "id": "KIA",
+          "sales": 46
+        },
+        {
+          "id": "MELEX",
+          "sales": 34
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 27
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 25
+        },
+        {
+          "id": "SKODA",
+          "sales": 25
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 22
+        },
+        {
+          "id": "CITROEN",
+          "sales": 21
+        },
+        {
+          "id": "LEXUS",
+          "sales": 17
+        },
+        {
+          "id": "FORD",
+          "sales": 17
+        },
+        {
+          "id": "SUBARU",
+          "sales": 11
+        },
+        {
+          "id": "HONDA",
+          "sales": 4
+        },
+        {
+          "id": "DS",
+          "sales": 3
+        },
+        {
+          "id": "MAZDA",
+          "sales": 2
+        },
+        {
+          "id": "AIWAYS",
+          "sales": 1
+        }
+      ],
+      "total": 4680
+    },
+    {
+      "date": "2023-01-01T00:00:00.000+01:00",
+      "brands": [
+        {
+          "id": "FIAT",
+          "sales": 550
+        },
+        {
+          "id": "SMART",
+          "sales": 369
+        },
+        {
+          "id": "TESLA",
+          "sales": 326
+        },
+        {
+          "id": "RENAULT",
+          "sales": 264
+        },
+        {
+          "id": "AUDI",
+          "sales": 204
+        },
+        {
+          "id": "MG",
+          "sales": 199
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 193
+        },
+        {
+          "id": "BMW",
+          "sales": 191
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 180
+        },
+        {
+          "id": "DACIA",
+          "sales": 128
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 83
+        },
+        {
+          "id": "OPEL",
+          "sales": 72
+        },
+        {
+          "id": "VOLVO",
+          "sales": 61
+        },
+        {
+          "id": "MINI",
+          "sales": 60
+        },
+        {
+          "id": "NISSAN",
+          "sales": 52
+        },
+        {
+          "id": "CUPRA",
+          "sales": 51
+        },
+        {
+          "id": "KIA",
+          "sales": 39
+        },
+        {
+          "id": "MAZDA",
+          "sales": 39
+        },
+        {
+          "id": "CITROEN",
+          "sales": 37
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 35
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 33
+        },
+        {
+          "id": "FORD",
+          "sales": 28
+        },
+        {
+          "id": "SKODA",
+          "sales": 24
+        }
+      ],
+      "total": 3218
+    },
+    {
+      "date": "2023-02-01T00:00:00.000+01:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 1313
+        },
+        {
+          "id": "RENAULT",
+          "sales": 618
+        },
+        {
+          "id": "FIAT",
+          "sales": 591
+        },
+        {
+          "id": "SMART",
+          "sales": 409
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 215
+        },
+        {
+          "id": "MG",
+          "sales": 194
+        },
+        {
+          "id": "AUDI",
+          "sales": 184
+        },
+        {
+          "id": "BMW",
+          "sales": 174
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 156
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 111
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 109
+        },
+        {
+          "id": "CUPRA",
+          "sales": 108
+        },
+        {
+          "id": "CITROEN",
+          "sales": 99
+        },
+        {
+          "id": "NISSAN",
+          "sales": 87
+        },
+        {
+          "id": "VOLVO",
+          "sales": 80
+        },
+        {
+          "id": "MINI",
+          "sales": 79
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 77
+        },
+        {
+          "id": "OPEL",
+          "sales": 69
+        },
+        {
+          "id": "DACIA",
+          "sales": 60
+        },
+        {
+          "id": "KIA",
+          "sales": 56
+        },
+        {
+          "id": "FORD",
+          "sales": 55
+        },
+        {
+          "id": "DS",
+          "sales": 50
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 19
+        },
+        {
+          "id": "SKODA",
+          "sales": 14
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 13
+        },
+        {
+          "id": "ISSIMA",
+          "sales": 11
+        },
+        {
+          "id": "SUBARU",
+          "sales": 11
+        },
+        {
+          "id": "MAZDA",
+          "sales": 8
+        }
+      ],
+      "total": 4970
+    },
+    {
+      "date": "2023-03-01T00:00:00.000+01:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 2911
+        },
+        {
+          "id": "RENAULT",
+          "sales": 597
+        },
+        {
+          "id": "FIAT",
+          "sales": 580
+        },
+        {
+          "id": "SMART",
+          "sales": 554
+        },
+        {
+          "id": "MG",
+          "sales": 394
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 391
+        },
+        {
+          "id": "DACIA",
+          "sales": 366
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 365
+        },
+        {
+          "id": "BMW",
+          "sales": 332
+        },
+        {
+          "id": "AUDI",
+          "sales": 293
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 291
+        },
+        {
+          "id": "OPEL",
+          "sales": 164
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 144
+        },
+        {
+          "id": "CITROEN",
+          "sales": 144
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 137
+        },
+        {
+          "id": "MINI",
+          "sales": 135
+        },
+        {
+          "id": "CUPRA",
+          "sales": 131
+        },
+        {
+          "id": "FORD",
+          "sales": 99
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 88
+        },
+        {
+          "id": "VOLVO",
+          "sales": 82
+        },
+        {
+          "id": "NISSAN",
+          "sales": 47
+        },
+        {
+          "id": "JEEP",
+          "sales": 40
+        },
+        {
+          "id": "KIA",
+          "sales": 36
+        },
+        {
+          "id": "SKODA",
+          "sales": 32
+        },
+        {
+          "id": "MAZDA",
+          "sales": 21
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 19
+        },
+        {
+          "id": "HONDA",
+          "sales": 18
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 12
+        },
+        {
+          "id": "DS",
+          "sales": 8
+        },
+        {
+          "id": "SUBARU",
+          "sales": 3
+        }
+      ],
+      "total": 8434
+    },
+    {
+      "date": "2023-04-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 740
+        },
+        {
+          "id": "FIAT",
+          "sales": 387
+        },
+        {
+          "id": "SMART",
+          "sales": 365
+        },
+        {
+          "id": "RENAULT",
+          "sales": 319
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 273
+        },
+        {
+          "id": "MG",
+          "sales": 267
+        },
+        {
+          "id": "OPEL",
+          "sales": 178
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 178
+        },
+        {
+          "id": "BMW",
+          "sales": 165
+        },
+        {
+          "id": "AUDI",
+          "sales": 150
+        },
+        {
+          "id": "DACIA",
+          "sales": 148
+        },
+        {
+          "id": "MINI",
+          "sales": 120
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 109
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 96
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 92
+        },
+        {
+          "id": "VOLVO",
+          "sales": 87
+        },
+        {
+          "id": "KIA",
+          "sales": 67
+        },
+        {
+          "id": "CUPRA",
+          "sales": 67
+        },
+        {
+          "id": "CITROEN",
+          "sales": 50
+        },
+        {
+          "id": "FORD",
+          "sales": 40
+        },
+        {
+          "id": "NISSAN",
+          "sales": 26
+        },
+        {
+          "id": "SKODA",
+          "sales": 23
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 22
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 13
+        },
+        {
+          "id": "MELEX",
+          "sales": 10
+        },
+        {
+          "id": "SUBARU",
+          "sales": 9
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 6
+        },
+        {
+          "id": "MAZDA",
+          "sales": 5
+        },
+        {
+          "id": "DS",
+          "sales": 2
+        }
+      ],
+      "total": 4014
+    },
+    {
+      "date": "2023-05-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 1477
+        },
+        {
+          "id": "FIAT",
+          "sales": 549
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 468
+        },
+        {
+          "id": "OPEL",
+          "sales": 458
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 414
+        },
+        {
+          "id": "SMART",
+          "sales": 405
+        },
+        {
+          "id": "MG",
+          "sales": 388
+        },
+        {
+          "id": "RENAULT",
+          "sales": 275
+        },
+        {
+          "id": "BMW",
+          "sales": 209
+        },
+        {
+          "id": "VOLVO",
+          "sales": 195
+        },
+        {
+          "id": "AUDI",
+          "sales": 187
+        },
+        {
+          "id": "JEEP",
+          "sales": 156
+        },
+        {
+          "id": "DACIA",
+          "sales": 154
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 146
+        },
+        {
+          "id": "MINI",
+          "sales": 99
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 91
+        },
+        {
+          "id": "CITROEN",
+          "sales": 88
+        },
+        {
+          "id": "CUPRA",
+          "sales": 75
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 63
+        },
+        {
+          "id": "FORD",
+          "sales": 61
+        },
+        {
+          "id": "KIA",
+          "sales": 58
+        },
+        {
+          "id": "SKODA",
+          "sales": 35
+        },
+        {
+          "id": "NISSAN",
+          "sales": 30
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 29
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 28
+        },
+        {
+          "id": "LEXUS",
+          "sales": 24
+        },
+        {
+          "id": "BYD",
+          "sales": 21
+        },
+        {
+          "id": "DR",
+          "sales": 14
+        },
+        {
+          "id": "MELEX",
+          "sales": 13
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 5
+        },
+        {
+          "id": "DS",
+          "sales": 4
+        },
+        {
+          "id": "MAZDA",
+          "sales": 2
+        },
+        {
+          "id": "HONDA",
+          "sales": 2
+        }
+      ],
+      "total": 6223
+    },
+    {
+      "date": "2023-06-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 1751
+        },
+        {
+          "id": "RENAULT",
+          "sales": 495
+        },
+        {
+          "id": "FIAT",
+          "sales": 463
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 372
+        },
+        {
+          "id": "SMART",
+          "sales": 365
+        },
+        {
+          "id": "OPEL",
+          "sales": 354
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 290
+        },
+        {
+          "id": "JEEP",
+          "sales": 285
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 260
+        },
+        {
+          "id": "MG",
+          "sales": 247
+        },
+        {
+          "id": "BMW",
+          "sales": 185
+        },
+        {
+          "id": "AUDI",
+          "sales": 165
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 124
+        },
+        {
+          "id": "FORD",
+          "sales": 120
+        },
+        {
+          "id": "CITROEN",
+          "sales": 80
+        },
+        {
+          "id": "DACIA",
+          "sales": 79
+        },
+        {
+          "id": "DR",
+          "sales": 78
+        },
+        {
+          "id": "MINI",
+          "sales": 76
+        },
+        {
+          "id": "VOLVO",
+          "sales": 69
+        },
+        {
+          "id": "CUPRA",
+          "sales": 66
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 62
+        },
+        {
+          "id": "SKODA",
+          "sales": 59
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 54
+        },
+        {
+          "id": "NISSAN",
+          "sales": 33
+        },
+        {
+          "id": "KIA",
+          "sales": 27
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 12
+        },
+        {
+          "id": "EAGLE BUS",
+          "sales": 10
+        },
+        {
+          "id": "LEXUS",
+          "sales": 5
+        },
+        {
+          "id": "DS",
+          "sales": 5
+        },
+        {
+          "id": "MELEX",
+          "sales": 4
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 2
+        },
+        {
+          "id": "HONDA",
+          "sales": 1
+        }
+      ],
+      "total": 6198
+    },
+    {
+      "date": "2023-07-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 478
+        },
+        {
+          "id": "MG",
+          "sales": 395
+        },
+        {
+          "id": "FIAT",
+          "sales": 377
+        },
+        {
+          "id": "SMART",
+          "sales": 375
+        },
+        {
+          "id": "RENAULT",
+          "sales": 284
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 267
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 212
+        },
+        {
+          "id": "DACIA",
+          "sales": 208
+        },
+        {
+          "id": "OPEL",
+          "sales": 196
+        },
+        {
+          "id": "BMW",
+          "sales": 185
+        },
+        {
+          "id": "AUDI",
+          "sales": 154
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 143
+        },
+        {
+          "id": "JEEP",
+          "sales": 127
+        },
+        {
+          "id": "CITROEN",
+          "sales": 99
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 95
+        },
+        {
+          "id": "MINI",
+          "sales": 93
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 66
+        },
+        {
+          "id": "FORD",
+          "sales": 65
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 63
+        },
+        {
+          "id": "SKODA",
+          "sales": 54
+        },
+        {
+          "id": "DR",
+          "sales": 49
+        },
+        {
+          "id": "CUPRA",
+          "sales": 42
+        },
+        {
+          "id": "VOLVO",
+          "sales": 39
+        },
+        {
+          "id": "NISSAN",
+          "sales": 37
+        },
+        {
+          "id": "KIA",
+          "sales": 30
+        },
+        {
+          "id": "BYD",
+          "sales": 21
+        },
+        {
+          "id": "MELEX",
+          "sales": 12
+        },
+        {
+          "id": "DS",
+          "sales": 8
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 6
+        },
+        {
+          "id": "HONDA",
+          "sales": 2
+        },
+        {
+          "id": "MAZDA",
+          "sales": 1
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 1
+        }
+      ],
+      "total": 4184
+    },
+    {
+      "date": "2023-08-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 2129
+        },
+        {
+          "id": "RENAULT",
+          "sales": 200
+        },
+        {
+          "id": "BMW",
+          "sales": 166
+        },
+        {
+          "id": "SMART",
+          "sales": 161
+        },
+        {
+          "id": "FIAT",
+          "sales": 146
+        },
+        {
+          "id": "AUDI",
+          "sales": 127
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 114
+        },
+        {
+          "id": "FORD",
+          "sales": 111
+        },
+        {
+          "id": "DACIA",
+          "sales": 108
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 104
+        },
+        {
+          "id": "OPEL",
+          "sales": 103
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 94
+        },
+        {
+          "id": "MINI",
+          "sales": 60
+        },
+        {
+          "id": "MG",
+          "sales": 60
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 59
+        },
+        {
+          "id": "CITROEN",
+          "sales": 52
+        },
+        {
+          "id": "JEEP",
+          "sales": 47
+        },
+        {
+          "id": "CUPRA",
+          "sales": 37
+        },
+        {
+          "id": "DR",
+          "sales": 35
+        },
+        {
+          "id": "VOLVO",
+          "sales": 34
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 23
+        },
+        {
+          "id": "NISSAN",
+          "sales": 23
+        },
+        {
+          "id": "SKODA",
+          "sales": 22
+        },
+        {
+          "id": "AIWAYS",
+          "sales": 22
+        },
+        {
+          "id": "KIA",
+          "sales": 14
+        },
+        {
+          "id": "BYD",
+          "sales": 14
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 8
+        },
+        {
+          "id": "DS",
+          "sales": 6
+        },
+        {
+          "id": "MAZDA",
+          "sales": 4
+        },
+        {
+          "id": "MELEX",
+          "sales": 3
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 1
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 1
+        },
+        {
+          "id": "LEXUS",
+          "sales": 1
+        }
+      ],
+      "total": 4089
+    },
+    {
+      "date": "2023-09-01T00:00:00.000+02:00",
+      "brands": [
+        {
+          "id": "TESLA",
+          "sales": 907
+        },
+        {
+          "id": "SMART",
+          "sales": 465
+        },
+        {
+          "id": "VOLKSWAGEN",
+          "sales": 379
+        },
+        {
+          "id": "MERCEDES-BENZ",
+          "sales": 317
+        },
+        {
+          "id": "FIAT",
+          "sales": 284
+        },
+        {
+          "id": "AUDI",
+          "sales": 258
+        },
+        {
+          "id": "BMW",
+          "sales": 256
+        },
+        {
+          "id": "RENAULT",
+          "sales": 225
+        },
+        {
+          "id": "PEUGEOT",
+          "sales": 223
+        },
+        {
+          "id": "FORD",
+          "sales": 212
+        },
+        {
+          "id": "CUPRA",
+          "sales": 203
+        },
+        {
+          "id": "HYUNDAI",
+          "sales": 165
+        },
+        {
+          "id": "OPEL",
+          "sales": 162
+        },
+        {
+          "id": "POLESTAR",
+          "sales": 134
+        },
+        {
+          "id": "MINI",
+          "sales": 115
+        },
+        {
+          "id": "DACIA",
+          "sales": 109
+        },
+        {
+          "id": "JEEP",
+          "sales": 105
+        },
+        {
+          "id": "MG",
+          "sales": 92
+        },
+        {
+          "id": "DR",
+          "sales": 74
+        },
+        {
+          "id": "CITROEN",
+          "sales": 73
+        },
+        {
+          "id": "VOLVO",
+          "sales": 70
+        },
+        {
+          "id": "PORSCHE",
+          "sales": 57
+        },
+        {
+          "id": "SKODA",
+          "sales": 50
+        },
+        {
+          "id": "NISSAN",
+          "sales": 48
+        },
+        {
+          "id": "HONDA",
+          "sales": 44
+        },
+        {
+          "id": "BYD",
+          "sales": 16
+        },
+        {
+          "id": "KIA",
+          "sales": 14
+        },
+        {
+          "id": "SERES",
+          "sales": 10
+        },
+        {
+          "id": "TOYOTA",
+          "sales": 10
+        },
+        {
+          "id": "MAZDA",
+          "sales": 7
+        },
+        {
+          "id": "DS",
+          "sales": 5
+        },
+        {
+          "id": "MELEX",
+          "sales": 3
+        },
+        {
+          "id": "JAGUAR",
+          "sales": 2
+        },
+        {
+          "id": "AIWAYS",
+          "sales": 1
+        },
+        {
+          "id": "LEXUS",
+          "sales": 1
+        }
+      ],
+      "total": 5096
+    }
+  ],
+  "projection": [
+    {
+      "label": "Total-None-Bev",
+      "data": [
+        {
+          "t": "2017-01-01T00:00:00.000+01:00",
+          "y": 805939.9255552662
+        },
+        {
+          "t": "2017-02-01T00:00:00.000+01:00",
+          "y": 802451.4097038902
+        },
+        {
+          "t": "2017-03-01T00:00:00.000+01:00",
+          "y": 798961.9614037852
+        },
+        {
+          "t": "2017-04-01T00:00:00.000+02:00",
+          "y": 795471.6168017035
+        },
+        {
+          "t": "2017-05-01T00:00:00.000+02:00",
+          "y": 791980.4116824565
+        },
+        {
+          "t": "2017-06-01T00:00:00.000+02:00",
+          "y": 788488.3814830839
+        },
+        {
+          "t": "2017-07-01T00:00:00.000+02:00",
+          "y": 784995.5613068918
+        },
+        {
+          "t": "2017-08-01T00:00:00.000+02:00",
+          "y": 781501.9859373412
+        },
+        {
+          "t": "2017-09-01T00:00:00.000+02:00",
+          "y": 778007.6898518073
+        },
+        {
+          "t": "2017-10-01T00:00:00.000+02:00",
+          "y": 774512.7072352003
+        },
+        {
+          "t": "2017-11-01T00:00:00.000+01:00",
+          "y": 771017.0719934906
+        },
+        {
+          "t": "2017-12-01T00:00:00.000+01:00",
+          "y": 767520.8177670707
+        },
+        {
+          "t": "2018-01-01T00:00:00.000+01:00",
+          "y": 764023.9779440488
+        },
+        {
+          "t": "2018-02-01T00:00:00.000+01:00",
+          "y": 760526.5856733982
+        },
+        {
+          "t": "2018-03-01T00:00:00.000+01:00",
+          "y": 757028.6738780385
+        },
+        {
+          "t": "2018-04-01T00:00:00.000+02:00",
+          "y": 753530.2752677777
+        },
+        {
+          "t": "2018-05-01T00:00:00.000+02:00",
+          "y": 750031.4223521944
+        },
+        {
+          "t": "2018-06-01T00:00:00.000+02:00",
+          "y": 746532.1474534199
+        },
+        {
+          "t": "2018-07-01T00:00:00.000+02:00",
+          "y": 743032.4827188307
+        },
+        {
+          "t": "2018-08-01T00:00:00.000+02:00",
+          "y": 739532.4601336637
+        },
+        {
+          "t": "2018-09-01T00:00:00.000+02:00",
+          "y": 736032.1115335663
+        },
+        {
+          "t": "2018-10-01T00:00:00.000+02:00",
+          "y": 732531.4686170665
+        },
+        {
+          "t": "2018-11-01T00:00:00.000+01:00",
+          "y": 729030.5629579767
+        },
+        {
+          "t": "2018-12-01T00:00:00.000+01:00",
+          "y": 725529.4260177497
+        },
+        {
+          "t": "2019-01-01T00:00:00.000+01:00",
+          "y": 722028.0891577592
+        },
+        {
+          "t": "2019-02-01T00:00:00.000+01:00",
+          "y": 718526.5836515412
+        },
+        {
+          "t": "2019-03-01T00:00:00.000+01:00",
+          "y": 715024.9406969901
+        },
+        {
+          "t": "2019-04-01T00:00:00.000+02:00",
+          "y": 711523.1914285019
+        },
+        {
+          "t": "2019-05-01T00:00:00.000+02:00",
+          "y": 708021.3669290807
+        },
+        {
+          "t": "2019-06-01T00:00:00.000+02:00",
+          "y": 704519.4982424172
+        },
+        {
+          "t": "2019-07-01T00:00:00.000+02:00",
+          "y": 701017.6163849352
+        },
+        {
+          "t": "2019-08-01T00:00:00.000+02:00",
+          "y": 697515.7523578024
+        },
+        {
+          "t": "2019-09-01T00:00:00.000+02:00",
+          "y": 694013.9371589328
+        },
+        {
+          "t": "2019-10-01T00:00:00.000+02:00",
+          "y": 690512.2017949654
+        },
+        {
+          "t": "2019-11-01T00:00:00.000+01:00",
+          "y": 687010.5772932247
+        },
+        {
+          "t": "2019-12-01T00:00:00.000+01:00",
+          "y": 683509.0947136824
+        },
+        {
+          "t": "2020-01-01T00:00:00.000+01:00",
+          "y": 680007.7851609038
+        },
+        {
+          "t": "2020-02-01T00:00:00.000+01:00",
+          "y": 676506.6797959987
+        },
+        {
+          "t": "2020-03-01T00:00:00.000+01:00",
+          "y": 673005.8098485776
+        },
+        {
+          "t": "2020-04-01T00:00:00.000+02:00",
+          "y": 669505.2066287006
+        },
+        {
+          "t": "2020-05-01T00:00:00.000+02:00",
+          "y": 666004.9015388591
+        },
+        {
+          "t": "2020-06-01T00:00:00.000+02:00",
+          "y": 662504.9260859478
+        },
+        {
+          "t": "2020-07-01T00:00:00.000+02:00",
+          "y": 659005.3118932797
+        },
+        {
+          "t": "2020-08-01T00:00:00.000+02:00",
+          "y": 655506.0907126012
+        },
+        {
+          "t": "2020-09-01T00:00:00.000+02:00",
+          "y": 652007.294436149
+        },
+        {
+          "t": "2020-10-01T00:00:00.000+02:00",
+          "y": 648508.9551087294
+        },
+        {
+          "t": "2020-11-01T00:00:00.000+01:00",
+          "y": 645011.104939833
+        },
+        {
+          "t": "2020-12-01T00:00:00.000+01:00",
+          "y": 641513.776315793
+        },
+        {
+          "t": "2021-01-01T00:00:00.000+01:00",
+          "y": 638017.0018119694
+        },
+        {
+          "t": "2021-02-01T00:00:00.000+01:00",
+          "y": 634520.8142049961
+        },
+        {
+          "t": "2021-03-01T00:00:00.000+01:00",
+          "y": 631025.2464850678
+        },
+        {
+          "t": "2021-04-01T00:00:00.000+02:00",
+          "y": 627530.3318682801
+        },
+        {
+          "t": "2021-05-01T00:00:00.000+02:00",
+          "y": 624036.1038090213
+        },
+        {
+          "t": "2021-06-01T00:00:00.000+02:00",
+          "y": 620542.5960124357
+        },
+        {
+          "t": "2021-07-01T00:00:00.000+02:00",
+          "y": 617049.842446937
+        },
+        {
+          "t": "2021-08-01T00:00:00.000+02:00",
+          "y": 613557.877356797
+        },
+        {
+          "t": "2021-09-01T00:00:00.000+02:00",
+          "y": 610066.7352748004
+        },
+        {
+          "t": "2021-10-01T00:00:00.000+02:00",
+          "y": 606576.451034975
+        },
+        {
+          "t": "2021-11-01T00:00:00.000+01:00",
+          "y": 603087.0597853981
+        },
+        {
+          "t": "2021-12-01T00:00:00.000+01:00",
+          "y": 599598.59700108
+        },
+        {
+          "t": "2022-01-01T00:00:00.000+01:00",
+          "y": 603315.0984969474
+        },
+        {
+          "t": "2022-02-01T00:00:00.000+01:00",
+          "y": 606181.7202870955
+        },
+        {
+          "t": "2022-03-01T00:00:00.000+01:00",
+          "y": 611704.585084298
+        },
+        {
+          "t": "2022-04-01T00:00:00.000+02:00",
+          "y": 614397.3893651046
+        },
+        {
+          "t": "2022-05-01T00:00:00.000+02:00",
+          "y": 619992.4934219632
+        },
+        {
+          "t": "2022-06-01T00:00:00.000+02:00",
+          "y": 628847.5641299104
+        },
+        {
+          "t": "2022-07-01T00:00:00.000+02:00",
+          "y": 632622.2176019574
+        },
+        {
+          "t": "2022-08-01T00:00:00.000+02:00",
+          "y": 633741.0808605244
+        },
+        {
+          "t": "2022-09-01T00:00:00.000+02:00",
+          "y": 640442.4970401453
+        },
+        {
+          "t": "2022-10-01T00:00:00.000+02:00",
+          "y": 644291.8093619549
+        },
+        {
+          "t": "2022-11-01T00:00:00.000+01:00",
+          "y": 651161.3779761841
+        },
+        {
+          "t": "2022-12-01T00:00:00.000+01:00",
+          "y": 657034.8525395598
+        },
+        {
+          "t": "2023-01-01T00:00:00.000+01:00",
+          "y": 659984.3660280836
+        },
+        {
+          "t": "2023-02-01T00:00:00.000+01:00",
+          "y": 666438.2893430344
+        },
+        {
+          "t": "2023-03-01T00:00:00.000+01:00",
+          "y": 679820.2151915684
+        },
+        {
+          "t": "2023-04-01T00:00:00.000+02:00",
+          "y": 684361.3094822553
+        },
+        {
+          "t": "2023-05-01T00:00:00.000+02:00",
+          "y": 693320.6475576193
+        },
+        {
+          "t": "2023-06-01T00:00:00.000+02:00",
+          "y": 702229.7062633068
+        },
+        {
+          "t": "2023-07-01T00:00:00.000+02:00",
+          "y": 707110.4975432326
+        },
+        {
+          "t": "2023-08-01T00:00:00.000+02:00",
+          "y": 711801.5193214689
+        },
+        {
+          "t": "2023-09-01T00:00:00.000+02:00",
+          "y": 718506.8103372946
+        },
+        {
+          "t": "2023-10-01T00:00:00.000+02:00",
+          "y": 715731.7405635038
+        },
+        {
+          "t": "2023-11-01T00:00:00.000+01:00",
+          "y": 712957.8794252486
+        },
+        {
+          "t": "2023-12-01T00:00:00.000+01:00",
+          "y": 710185.2612890449
+        },
+        {
+          "t": "2024-01-01T00:00:00.000+01:00",
+          "y": 707413.9209490247
+        },
+        {
+          "t": "2024-02-01T00:00:00.000+01:00",
+          "y": 704643.8936380778
+        },
+        {
+          "t": "2024-03-01T00:00:00.000+01:00",
+          "y": 701875.2150390702
+        },
+        {
+          "t": "2024-04-01T00:00:00.000+02:00",
+          "y": 699107.9212961118
+        },
+        {
+          "t": "2024-05-01T00:00:00.000+02:00",
+          "y": 696342.0490259046
+        },
+        {
+          "t": "2024-06-01T00:00:00.000+02:00",
+          "y": 693577.635329155
+        },
+        {
+          "t": "2024-07-01T00:00:00.000+02:00",
+          "y": 690814.7178020505
+        },
+        {
+          "t": "2024-08-01T00:00:00.000+02:00",
+          "y": 688053.3345478012
+        },
+        {
+          "t": "2024-09-01T00:00:00.000+02:00",
+          "y": 685293.5241882554
+        },
+        {
+          "t": "2024-10-01T00:00:00.000+02:00",
+          "y": 682535.3258755677
+        },
+        {
+          "t": "2024-11-01T00:00:00.000+01:00",
+          "y": 679778.7793039429
+        },
+        {
+          "t": "2024-12-01T00:00:00.000+01:00",
+          "y": 677023.9247214434
+        },
+        {
+          "t": "2025-01-01T00:00:00.000+01:00",
+          "y": 674270.8029418457
+        },
+        {
+          "t": "2025-02-01T00:00:00.000+01:00",
+          "y": 671519.4553565786
+        },
+        {
+          "t": "2025-03-01T00:00:00.000+01:00",
+          "y": 668769.9239467008
+        },
+        {
+          "t": "2025-04-01T00:00:00.000+02:00",
+          "y": 666022.2512949572
+        },
+        {
+          "t": "2025-05-01T00:00:00.000+02:00",
+          "y": 663276.4805978675
+        },
+        {
+          "t": "2025-06-01T00:00:00.000+02:00",
+          "y": 660532.6556778946
+        },
+        {
+          "t": "2025-07-01T00:00:00.000+02:00",
+          "y": 657790.8209956392
+        },
+        {
+          "t": "2025-08-01T00:00:00.000+02:00",
+          "y": 655051.0216621093
+        },
+        {
+          "t": "2025-09-01T00:00:00.000+02:00",
+          "y": 652313.3034510147
+        },
+        {
+          "t": "2025-10-01T00:00:00.000+02:00",
+          "y": 649577.7128111126
+        },
+        {
+          "t": "2025-11-01T00:00:00.000+01:00",
+          "y": 646844.2968785975
+        },
+        {
+          "t": "2025-12-01T00:00:00.000+01:00",
+          "y": 644113.1034895184
+        },
+        {
+          "t": "2026-01-01T00:00:00.000+01:00",
+          "y": 641384.1811922363
+        },
+        {
+          "t": "2026-02-01T00:00:00.000+01:00",
+          "y": 638657.5792599013
+        },
+        {
+          "t": "2026-03-01T00:00:00.000+01:00",
+          "y": 635933.3477029661
+        },
+        {
+          "t": "2026-04-01T00:00:00.000+02:00",
+          "y": 633211.5372816983
+        },
+        {
+          "t": "2026-05-01T00:00:00.000+02:00",
+          "y": 630492.1995187271
+        },
+        {
+          "t": "2026-06-01T00:00:00.000+02:00",
+          "y": 627775.3867115806
+        },
+        {
+          "t": "2026-07-01T00:00:00.000+02:00",
+          "y": 625061.15194524
+        },
+        {
+          "t": "2026-08-01T00:00:00.000+02:00",
+          "y": 622349.5491046708
+        },
+        {
+          "t": "2026-09-01T00:00:00.000+02:00",
+          "y": 619640.6328873647
+        },
+        {
+          "t": "2026-10-01T00:00:00.000+02:00",
+          "y": 616934.4588158416
+        },
+        {
+          "t": "2026-11-01T00:00:00.000+01:00",
+          "y": 614231.0832501439
+        },
+        {
+          "t": "2026-12-01T00:00:00.000+01:00",
+          "y": 611530.5634002801
+        },
+        {
+          "t": "2027-01-01T00:00:00.000+01:00",
+          "y": 608832.957338651
+        },
+        {
+          "t": "2027-02-01T00:00:00.000+01:00",
+          "y": 606138.3240123873
+        },
+        {
+          "t": "2027-03-01T00:00:00.000+01:00",
+          "y": 603446.7232556653
+        },
+        {
+          "t": "2027-04-01T00:00:00.000+02:00",
+          "y": 600758.2158019287
+        },
+        {
+          "t": "2027-05-01T00:00:00.000+02:00",
+          "y": 598072.8632960364
+        },
+        {
+          "t": "2027-06-01T00:00:00.000+02:00",
+          "y": 595390.7283063197
+        },
+        {
+          "t": "2027-07-01T00:00:00.000+02:00",
+          "y": 592711.8743365349
+        },
+        {
+          "t": "2027-08-01T00:00:00.000+02:00",
+          "y": 590036.3658377012
+        },
+        {
+          "t": "2027-09-01T00:00:00.000+02:00",
+          "y": 587364.2682198139
+        },
+        {
+          "t": "2027-10-01T00:00:00.000+02:00",
+          "y": 584695.6478634104
+        },
+        {
+          "t": "2027-11-01T00:00:00.000+01:00",
+          "y": 582030.5721309877
+        },
+        {
+          "t": "2027-12-01T00:00:00.000+01:00",
+          "y": 579369.1093782462
+        },
+        {
+          "t": "2028-01-01T00:00:00.000+01:00",
+          "y": 576711.3289651553
+        },
+        {
+          "t": "2028-02-01T00:00:00.000+01:00",
+          "y": 574057.3012668097
+        },
+        {
+          "t": "2028-03-01T00:00:00.000+01:00",
+          "y": 571407.0976840808
+        },
+        {
+          "t": "2028-04-01T00:00:00.000+02:00",
+          "y": 568760.79065402
+        },
+        {
+          "t": "2028-05-01T00:00:00.000+02:00",
+          "y": 566118.4536600242
+        },
+        {
+          "t": "2028-06-01T00:00:00.000+02:00",
+          "y": 563480.1612417229
+        },
+        {
+          "t": "2028-07-01T00:00:00.000+02:00",
+          "y": 560845.9890045733
+        },
+        {
+          "t": "2028-08-01T00:00:00.000+02:00",
+          "y": 558216.0136291517
+        },
+        {
+          "t": "2028-09-01T00:00:00.000+02:00",
+          "y": 555590.3128801077
+        },
+        {
+          "t": "2028-10-01T00:00:00.000+02:00",
+          "y": 552968.9656147667
+        },
+        {
+          "t": "2028-11-01T00:00:00.000+01:00",
+          "y": 550352.0517913542
+        },
+        {
+          "t": "2028-12-01T00:00:00.000+01:00",
+          "y": 547739.6524768241
+        },
+        {
+          "t": "2029-01-01T00:00:00.000+01:00",
+          "y": 545131.8498542487
+        },
+        {
+          "t": "2029-02-01T00:00:00.000+01:00",
+          "y": 542528.7272297787
+        },
+        {
+          "t": "2029-03-01T00:00:00.000+01:00",
+          "y": 539930.3690391053
+        },
+        {
+          "t": "2029-04-01T00:00:00.000+02:00",
+          "y": 537336.8608534265
+        },
+        {
+          "t": "2029-05-01T00:00:00.000+02:00",
+          "y": 534748.2893848803
+        },
+        {
+          "t": "2029-06-01T00:00:00.000+02:00",
+          "y": 532164.74249141
+        },
+        {
+          "t": "2029-07-01T00:00:00.000+02:00",
+          "y": 529586.3091810371
+        },
+        {
+          "t": "2029-08-01T00:00:00.000+02:00",
+          "y": 527013.0796155042
+        },
+        {
+          "t": "2029-09-01T00:00:00.000+02:00",
+          "y": 524445.1451132708
+        },
+        {
+          "t": "2029-10-01T00:00:00.000+02:00",
+          "y": 521882.598151795
+        },
+        {
+          "t": "2029-11-01T00:00:00.000+01:00",
+          "y": 519325.5323691093
+        },
+        {
+          "t": "2029-12-01T00:00:00.000+01:00",
+          "y": 516774.0425646159
+        },
+        {
+          "t": "2030-01-01T00:00:00.000+01:00",
+          "y": 514228.2246990858
+        },
+        {
+          "t": "2030-02-01T00:00:00.000+01:00",
+          "y": 511688.17589381663
+        },
+        {
+          "t": "2030-03-01T00:00:00.000+01:00",
+          "y": 509153.99442891224
+        },
+        {
+          "t": "2030-04-01T00:00:00.000+02:00",
+          "y": 506625.7797406372
+        },
+        {
+          "t": "2030-05-01T00:00:00.000+02:00",
+          "y": 504103.6324178066
+        },
+        {
+          "t": "2030-06-01T00:00:00.000+02:00",
+          "y": 501587.6541971749
+        },
+        {
+          "t": "2030-07-01T00:00:00.000+02:00",
+          "y": 499077.9479577652
+        },
+        {
+          "t": "2030-08-01T00:00:00.000+02:00",
+          "y": 496574.61771410867
+        },
+        {
+          "t": "2030-09-01T00:00:00.000+02:00",
+          "y": 494077.7686083292
+        },
+        {
+          "t": "2030-10-01T00:00:00.000+02:00",
+          "y": 491587.5069010452
+        },
+        {
+          "t": "2030-11-01T00:00:00.000+01:00",
+          "y": 489103.93996102037
+        },
+        {
+          "t": "2030-12-01T00:00:00.000+01:00",
+          "y": 486627.1762535237
+        },
+        {
+          "t": "2031-01-01T00:00:00.000+01:00",
+          "y": 484157.3253273448
+        },
+        {
+          "t": "2031-02-01T00:00:00.000+01:00",
+          "y": 481694.4978004042
+        },
+        {
+          "t": "2031-03-01T00:00:00.000+01:00",
+          "y": 479238.8053439188
+        },
+        {
+          "t": "2031-04-01T00:00:00.000+02:00",
+          "y": 476790.3606650465
+        },
+        {
+          "t": "2031-05-01T00:00:00.000+02:00",
+          "y": 474349.2774879728
+        },
+        {
+          "t": "2031-06-01T00:00:00.000+02:00",
+          "y": 471915.6705333687
+        },
+        {
+          "t": "2031-07-01T00:00:00.000+02:00",
+          "y": 469489.6554961662
+        },
+        {
+          "t": "2031-08-01T00:00:00.000+02:00",
+          "y": 467071.34902158397
+        },
+        {
+          "t": "2031-09-01T00:00:00.000+02:00",
+          "y": 464660.86867935717
+        },
+        {
+          "t": "2031-10-01T00:00:00.000+02:00",
+          "y": 462258.3329360908
+        },
+        {
+          "t": "2031-11-01T00:00:00.000+01:00",
+          "y": 459863.86112568225
+        },
+        {
+          "t": "2031-12-01T00:00:00.000+01:00",
+          "y": 457477.5734177542
+        },
+        {
+          "t": "2032-01-01T00:00:00.000+01:00",
+          "y": 455099.5907840201
+        },
+        {
+          "t": "2032-02-01T00:00:00.000+01:00",
+          "y": 452730.0349625258
+        },
+        {
+          "t": "2032-03-01T00:00:00.000+01:00",
+          "y": 450369.028419697
+        },
+        {
+          "t": "2032-04-01T00:00:00.000+02:00",
+          "y": 448016.6943101325
+        },
+        {
+          "t": "2032-05-01T00:00:00.000+02:00",
+          "y": 445673.1564340562
+        },
+        {
+          "t": "2032-06-01T00:00:00.000+02:00",
+          "y": 443338.5391923866
+        },
+        {
+          "t": "2032-07-01T00:00:00.000+02:00",
+          "y": 441012.96753933607
+        },
+        {
+          "t": "2032-08-01T00:00:00.000+02:00",
+          "y": 438696.56693247566
+        },
+        {
+          "t": "2032-09-01T00:00:00.000+02:00",
+          "y": 436389.46328020166
+        },
+        {
+          "t": "2032-10-01T00:00:00.000+02:00",
+          "y": 434091.78288653493
+        },
+        {
+          "t": "2032-11-01T00:00:00.000+01:00",
+          "y": 431803.6523931684
+        },
+        {
+          "t": "2032-12-01T00:00:00.000+01:00",
+          "y": 429525.198718725
+        },
+        {
+          "t": "2033-01-01T00:00:00.000+01:00",
+          "y": 427256.548995135
+        },
+        {
+          "t": "2033-02-01T00:00:00.000+01:00",
+          "y": 424997.8305010672
+        },
+        {
+          "t": "2033-03-01T00:00:00.000+01:00",
+          "y": 422749.1705923642
+        },
+        {
+          "t": "2033-04-01T00:00:00.000+02:00",
+          "y": 420510.6966294014
+        },
+        {
+          "t": "2033-05-01T00:00:00.000+02:00",
+          "y": 418282.5359013134
+        },
+        {
+          "t": "2033-06-01T00:00:00.000+02:00",
+          "y": 416064.815547026
+        },
+        {
+          "t": "2033-07-01T00:00:00.000+02:00",
+          "y": 413857.66247303144
+        },
+        {
+          "t": "2033-08-01T00:00:00.000+02:00",
+          "y": 411661.20326785493
+        },
+        {
+          "t": "2033-09-01T00:00:00.000+02:00",
+          "y": 409475.5641131501
+        },
+        {
+          "t": "2033-10-01T00:00:00.000+02:00",
+          "y": 407300.87069137587
+        },
+        {
+          "t": "2033-11-01T00:00:00.000+01:00",
+          "y": 405137.24809000496
+        },
+        {
+          "t": "2033-12-01T00:00:00.000+01:00",
+          "y": 402984.8207022176
+        },
+        {
+          "t": "2034-01-01T00:00:00.000+01:00",
+          "y": 400843.71212403243
+        },
+        {
+          "t": "2034-02-01T00:00:00.000+01:00",
+          "y": 398714.0450478499
+        },
+        {
+          "t": "2034-03-01T00:00:00.000+01:00",
+          "y": 396595.9411523591
+        },
+        {
+          "t": "2034-04-01T00:00:00.000+02:00",
+          "y": 394489.52098879113
+        },
+        {
+          "t": "2034-05-01T00:00:00.000+02:00",
+          "y": 392394.9038634835
+        },
+        {
+          "t": "2034-06-01T00:00:00.000+02:00",
+          "y": 390312.2077167554
+        },
+        {
+          "t": "2034-07-01T00:00:00.000+02:00",
+          "y": 388241.5489980581
+        },
+        {
+          "t": "2034-08-01T00:00:00.000+02:00",
+          "y": 386183.0425374193
+        },
+        {
+          "t": "2034-09-01T00:00:00.000+02:00",
+          "y": 384136.8014131641
+        },
+        {
+          "t": "2034-10-01T00:00:00.000+02:00",
+          "y": 382102.9368159382
+        },
+        {
+          "t": "2034-11-01T00:00:00.000+01:00",
+          "y": 380081.5579090379
+        },
+        {
+          "t": "2034-12-01T00:00:00.000+01:00",
+          "y": 378072.7716850819
+        },
+        {
+          "t": "2035-01-01T00:00:00.000+01:00",
+          "y": 376076.68281905615
+        },
+        {
+          "t": "2035-02-01T00:00:00.000+01:00",
+          "y": 374093.3935177832
+        },
+        {
+          "t": "2035-03-01T00:00:00.000+01:00",
+          "y": 372123.0033658633
+        },
+        {
+          "t": "2035-04-01T00:00:00.000+02:00",
+          "y": 370165.6091681653
+        },
+        {
+          "t": "2035-05-01T00:00:00.000+02:00",
+          "y": 368221.3047889329
+        },
+        {
+          "t": "2035-06-01T00:00:00.000+02:00",
+          "y": 366290.1809876165
+        },
+        {
+          "t": "2035-07-01T00:00:00.000+02:00",
+          "y": 364372.32525151
+        },
+        {
+          "t": "2035-08-01T00:00:00.000+02:00",
+          "y": 362467.8216253376
+        },
+        {
+          "t": "2035-09-01T00:00:00.000+02:00",
+          "y": 360576.75053790223
+        },
+        {
+          "t": "2035-10-01T00:00:00.000+02:00",
+          "y": 358699.18862594943
+        },
+        {
+          "t": "2035-11-01T00:00:00.000+01:00",
+          "y": 356835.20855541376
+        },
+        {
+          "t": "2035-12-01T00:00:00.000+01:00",
+          "y": 354984.8788402245
+        },
+        {
+          "t": "2036-01-01T00:00:00.000+01:00",
+          "y": 353148.26365886204
+        },
+        {
+          "t": "2036-02-01T00:00:00.000+01:00",
+          "y": 351325.42266888544
+        },
+        {
+          "t": "2036-03-01T00:00:00.000+01:00",
+          "y": 349516.4108196647
+        },
+        {
+          "t": "2036-04-01T00:00:00.000+02:00",
+          "y": 347721.27816355985
+        },
+        {
+          "t": "2036-05-01T00:00:00.000+02:00",
+          "y": 345940.06966583
+        },
+        {
+          "t": "2036-06-01T00:00:00.000+02:00",
+          "y": 344172.8250135562
+        },
+        {
+          "t": "2036-07-01T00:00:00.000+02:00",
+          "y": 342419.5784238929
+        },
+        {
+          "t": "2036-08-01T00:00:00.000+02:00",
+          "y": 340680.35845198395
+        },
+        {
+          "t": "2036-09-01T00:00:00.000+02:00",
+          "y": 338955.18779889605
+        },
+        {
+          "t": "2036-10-01T00:00:00.000+02:00",
+          "y": 337244.08311995305
+        },
+        {
+          "t": "2036-11-01T00:00:00.000+01:00",
+          "y": 335547.0548338708
+        },
+        {
+          "t": "2036-12-01T00:00:00.000+01:00",
+          "y": 333864.1069331153
+        }
+      ]
+    },
+    {
+      "label": "Total-BEV",
+      "data": [
+        {
+          "t": "2017-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2022-01-01T00:00:00.000+01:00",
+          "y": 3602
+        },
+        {
+          "t": "2022-02-01T00:00:00.000+01:00",
+          "y": 6778.559923106823
+        },
+        {
+          "t": "2022-03-01T00:00:00.000+01:00",
+          "y": 11282.722858705447
+        },
+        {
+          "t": "2022-04-01T00:00:00.000+02:00",
+          "y": 14371.318588390988
+        },
+        {
+          "t": "2022-05-01T00:00:00.000+02:00",
+          "y": 18910.508605362702
+        },
+        {
+          "t": "2022-06-01T00:00:00.000+02:00",
+          "y": 25079.107491042425
+        },
+        {
+          "t": "2022-07-01T00:00:00.000+02:00",
+          "y": 28706.904236002418
+        },
+        {
+          "t": "2022-08-01T00:00:00.000+02:00",
+          "y": 31006.193068856115
+        },
+        {
+          "t": "2022-09-01T00:00:00.000+02:00",
+          "y": 36096.126050730665
+        },
+        {
+          "t": "2022-10-01T00:00:00.000+02:00",
+          "y": 39759.35505557514
+        },
+        {
+          "t": "2022-11-01T00:00:00.000+01:00",
+          "y": 44932.040184417376
+        },
+        {
+          "t": "2022-12-01T00:00:00.000+01:00",
+          "y": 49605.98604700817
+        },
+        {
+          "t": "2023-01-01T00:00:00.000+01:00",
+          "y": 52817.2386611038
+        },
+        {
+          "t": "2023-02-01T00:00:00.000+01:00",
+          "y": 57779.96274828626
+        },
+        {
+          "t": "2023-03-01T00:00:00.000+01:00",
+          "y": 66205.93366702992
+        },
+        {
+          "t": "2023-04-01T00:00:00.000+02:00",
+          "y": 70210.71310316763
+        },
+        {
+          "t": "2023-05-01T00:00:00.000+02:00",
+          "y": 76423.81717879244
+        },
+        {
+          "t": "2023-06-01T00:00:00.000+02:00",
+          "y": 82610.9624794062
+        },
+        {
+          "t": "2023-07-01T00:00:00.000+02:00",
+          "y": 86783.13284399132
+        },
+        {
+          "t": "2023-08-01T00:00:00.000+02:00",
+          "y": 90859.55479837868
+        },
+        {
+          "t": "2023-09-01T00:00:00.000+02:00",
+          "y": 95942.22496513555
+        },
+        {
+          "t": "2023-10-01T00:00:00.000+02:00",
+          "y": 98774.40526500113
+        },
+        {
+          "t": "2023-11-01T00:00:00.000+01:00",
+          "y": 101605.95272770611
+        },
+        {
+          "t": "2023-12-01T00:00:00.000+01:00",
+          "y": 104436.85470109082
+        },
+        {
+          "t": "2024-01-01T00:00:00.000+01:00",
+          "y": 107267.09828276518
+        },
+        {
+          "t": "2024-02-01T00:00:00.000+01:00",
+          "y": 110096.6703152707
+        },
+        {
+          "t": "2024-03-01T00:00:00.000+01:00",
+          "y": 112925.55738115359
+        },
+        {
+          "t": "2024-04-01T00:00:00.000+02:00",
+          "y": 115753.74579794772
+        },
+        {
+          "t": "2024-05-01T00:00:00.000+02:00",
+          "y": 118581.22161306521
+        },
+        {
+          "t": "2024-06-01T00:00:00.000+02:00",
+          "y": 121407.97059859395
+        },
+        {
+          "t": "2024-07-01T00:00:00.000+02:00",
+          "y": 124233.97824600023
+        },
+        {
+          "t": "2024-08-01T00:00:00.000+02:00",
+          "y": 127059.22976073512
+        },
+        {
+          "t": "2024-09-01T00:00:00.000+02:00",
+          "y": 129883.71005674267
+        },
+        {
+          "t": "2024-10-01T00:00:00.000+02:00",
+          "y": 132707.4037508691
+        },
+        {
+          "t": "2024-11-01T00:00:00.000+01:00",
+          "y": 135530.2951571705
+        },
+        {
+          "t": "2024-12-01T00:00:00.000+01:00",
+          "y": 138352.36828111875
+        },
+        {
+          "t": "2025-01-01T00:00:00.000+01:00",
+          "y": 141173.60681370273
+        },
+        {
+          "t": "2025-02-01T00:00:00.000+01:00",
+          "y": 143993.99412542395
+        },
+        {
+          "t": "2025-03-01T00:00:00.000+01:00",
+          "y": 146813.5132601852
+        },
+        {
+          "t": "2025-04-01T00:00:00.000+02:00",
+          "y": 149632.14692907012
+        },
+        {
+          "t": "2025-05-01T00:00:00.000+02:00",
+          "y": 152449.87750401231
+        },
+        {
+          "t": "2025-06-01T00:00:00.000+02:00",
+          "y": 155266.68701135216
+        },
+        {
+          "t": "2025-07-01T00:00:00.000+02:00",
+          "y": 158082.55712528032
+        },
+        {
+          "t": "2025-08-01T00:00:00.000+02:00",
+          "y": 160897.46916116524
+        },
+        {
+          "t": "2025-09-01T00:00:00.000+02:00",
+          "y": 163711.40406876415
+        },
+        {
+          "t": "2025-10-01T00:00:00.000+02:00",
+          "y": 166524.34242531497
+        },
+        {
+          "t": "2025-11-01T00:00:00.000+01:00",
+          "y": 169336.26442850786
+        },
+        {
+          "t": "2025-12-01T00:00:00.000+01:00",
+          "y": 172147.14988933512
+        },
+        {
+          "t": "2026-01-01T00:00:00.000+01:00",
+          "y": 174956.97822481694
+        },
+        {
+          "t": "2026-02-01T00:00:00.000+01:00",
+          "y": 177765.72845060137
+        },
+        {
+          "t": "2026-03-01T00:00:00.000+01:00",
+          "y": 180573.37917343876
+        },
+        {
+          "t": "2026-04-01T00:00:00.000+02:00",
+          "y": 183379.90858352525
+        },
+        {
+          "t": "2026-05-01T00:00:00.000+02:00",
+          "y": 186185.2944467177
+        },
+        {
+          "t": "2026-06-01T00:00:00.000+02:00",
+          "y": 188989.51409661546
+        },
+        {
+          "t": "2026-07-01T00:00:00.000+02:00",
+          "y": 191792.5444265086
+        },
+        {
+          "t": "2026-08-01T00:00:00.000+02:00",
+          "y": 194594.36188119106
+        },
+        {
+          "t": "2026-09-01T00:00:00.000+02:00",
+          "y": 197394.94244863556
+        },
+        {
+          "t": "2026-10-01T00:00:00.000+02:00",
+          "y": 200194.26165153168
+        },
+        {
+          "t": "2026-11-01T00:00:00.000+01:00",
+          "y": 202992.2945386811
+        },
+        {
+          "t": "2026-12-01T00:00:00.000+01:00",
+          "y": 205789.0156762532
+        },
+        {
+          "t": "2027-01-01T00:00:00.000+01:00",
+          "y": 208584.3991388949
+        },
+        {
+          "t": "2027-02-01T00:00:00.000+01:00",
+          "y": 211378.41850069692
+        },
+        {
+          "t": "2027-03-01T00:00:00.000+01:00",
+          "y": 214171.04682601165
+        },
+        {
+          "t": "2027-04-01T00:00:00.000+02:00",
+          "y": 216962.25666012435
+        },
+        {
+          "t": "2027-05-01T00:00:00.000+02:00",
+          "y": 219752.02001977255
+        },
+        {
+          "t": "2027-06-01T00:00:00.000+02:00",
+          "y": 222540.30838351528
+        },
+        {
+          "t": "2027-07-01T00:00:00.000+02:00",
+          "y": 225327.092681949
+        },
+        {
+          "t": "2027-08-01T00:00:00.000+02:00",
+          "y": 228112.34328776854
+        },
+        {
+          "t": "2027-09-01T00:00:00.000+02:00",
+          "y": 230896.03000567332
+        },
+        {
+          "t": "2027-10-01T00:00:00.000+02:00",
+          "y": 233678.12206211488
+        },
+        {
+          "t": "2027-11-01T00:00:00.000+01:00",
+          "y": 236458.5880948874
+        },
+        {
+          "t": "2027-12-01T00:00:00.000+01:00",
+          "y": 239237.39614255686
+        },
+        {
+          "t": "2028-01-01T00:00:00.000+01:00",
+          "y": 242014.51363372974
+        },
+        {
+          "t": "2028-02-01T00:00:00.000+01:00",
+          "y": 244789.90737615986
+        },
+        {
+          "t": "2028-03-01T00:00:00.000+01:00",
+          "y": 247563.54354569025
+        },
+        {
+          "t": "2028-04-01T00:00:00.000+02:00",
+          "y": 250335.38767503184
+        },
+        {
+          "t": "2028-05-01T00:00:00.000+02:00",
+          "y": 253105.40464237527
+        },
+        {
+          "t": "2028-06-01T00:00:00.000+02:00",
+          "y": 255873.5586598373
+        },
+        {
+          "t": "2028-07-01T00:00:00.000+02:00",
+          "y": 258639.8132617382
+        },
+        {
+          "t": "2028-08-01T00:00:00.000+02:00",
+          "y": 261404.13129271162
+        },
+        {
+          "t": "2028-09-01T00:00:00.000+02:00",
+          "y": 264166.4748956454
+        },
+        {
+          "t": "2028-10-01T00:00:00.000+02:00",
+          "y": 266926.8054994518
+        },
+        {
+          "t": "2028-11-01T00:00:00.000+01:00",
+          "y": 269685.08380666823
+        },
+        {
+          "t": "2028-12-01T00:00:00.000+01:00",
+          "y": 272441.26978088607
+        },
+        {
+          "t": "2029-01-01T00:00:00.000+01:00",
+          "y": 275195.322634009
+        },
+        {
+          "t": "2029-02-01T00:00:00.000+01:00",
+          "y": 277947.20081333915
+        },
+        {
+          "t": "2029-03-01T00:00:00.000+01:00",
+          "y": 280696.8619884927
+        },
+        {
+          "t": "2029-04-01T00:00:00.000+02:00",
+          "y": 283444.2630381411
+        },
+        {
+          "t": "2029-05-01T00:00:00.000+02:00",
+          "y": 286189.36003658373
+        },
+        {
+          "t": "2029-06-01T00:00:00.000+02:00",
+          "y": 288932.10824014695
+        },
+        {
+          "t": "2029-07-01T00:00:00.000+02:00",
+          "y": 291672.46207341284
+        },
+        {
+          "t": "2029-08-01T00:00:00.000+02:00",
+          "y": 294410.37511527643
+        },
+        {
+          "t": "2029-09-01T00:00:00.000+02:00",
+          "y": 297145.80008483364
+        },
+        {
+          "t": "2029-10-01T00:00:00.000+02:00",
+          "y": 299878.68882710085
+        },
+        {
+          "t": "2029-11-01T00:00:00.000+01:00",
+          "y": 302608.9922985639
+        },
+        {
+          "t": "2029-12-01T00:00:00.000+01:00",
+          "y": 305336.660552562
+        },
+        {
+          "t": "2030-01-01T00:00:00.000+01:00",
+          "y": 308061.6427245053
+        },
+        {
+          "t": "2030-02-01T00:00:00.000+01:00",
+          "y": 310783.88701692777
+        },
+        {
+          "t": "2030-03-01T00:00:00.000+01:00",
+          "y": 313503.34068437933
+        },
+        {
+          "t": "2030-04-01T00:00:00.000+02:00",
+          "y": 316219.9500181551
+        },
+        {
+          "t": "2030-05-01T00:00:00.000+02:00",
+          "y": 318933.6603308689
+        },
+        {
+          "t": "2030-06-01T00:00:00.000+02:00",
+          "y": 321644.41594086855
+        },
+        {
+          "t": "2030-07-01T00:00:00.000+02:00",
+          "y": 324352.16015650105
+        },
+        {
+          "t": "2030-08-01T00:00:00.000+02:00",
+          "y": 327056.83526022465
+        },
+        {
+          "t": "2030-09-01T00:00:00.000+02:00",
+          "y": 329758.3824925758
+        },
+        {
+          "t": "2030-10-01T00:00:00.000+02:00",
+          "y": 332456.74203599227
+        },
+        {
+          "t": "2030-11-01T00:00:00.000+01:00",
+          "y": 335151.8529984965
+        },
+        {
+          "t": "2030-12-01T00:00:00.000+01:00",
+          "y": 337843.65339724434
+        },
+        {
+          "t": "2031-01-01T00:00:00.000+01:00",
+          "y": 340532.08014194155
+        },
+        {
+          "t": "2031-02-01T00:00:00.000+01:00",
+          "y": 343217.06901813525
+        },
+        {
+          "t": "2031-03-01T00:00:00.000+01:00",
+          "y": 345898.5546703831
+        },
+        {
+          "t": "2031-04-01T00:00:00.000+02:00",
+          "y": 348576.4705853095
+        },
+        {
+          "t": "2031-05-01T00:00:00.000+02:00",
+          "y": 351250.7490745481
+        },
+        {
+          "t": "2031-06-01T00:00:00.000+02:00",
+          "y": 353921.3212575848
+        },
+        {
+          "t": "2031-07-01T00:00:00.000+02:00",
+          "y": 356588.1170445029
+        },
+        {
+          "t": "2031-08-01T00:00:00.000+02:00",
+          "y": 359251.06511863734
+        },
+        {
+          "t": "2031-09-01T00:00:00.000+02:00",
+          "y": 361910.0929191493
+        },
+        {
+          "t": "2031-10-01T00:00:00.000+02:00",
+          "y": 364565.126623526
+        },
+        {
+          "t": "2031-11-01T00:00:00.000+01:00",
+          "y": 367216.09113001503
+        },
+        {
+          "t": "2031-12-01T00:00:00.000+01:00",
+          "y": 369862.9100400036
+        },
+        {
+          "t": "2032-01-01T00:00:00.000+01:00",
+          "y": 372505.5056403498
+        },
+        {
+          "t": "2032-02-01T00:00:00.000+01:00",
+          "y": 375143.79888567893
+        },
+        {
+          "t": "2032-03-01T00:00:00.000+01:00",
+          "y": 377777.7093806531
+        },
+        {
+          "t": "2032-04-01T00:00:00.000+02:00",
+          "y": 380407.1553622273
+        },
+        {
+          "t": "2032-05-01T00:00:00.000+02:00",
+          "y": 383032.05368190137
+        },
+        {
+          "t": "2032-06-01T00:00:00.000+02:00",
+          "y": 385652.3197879853
+        },
+        {
+          "t": "2032-07-01T00:00:00.000+02:00",
+          "y": 388267.8677078834
+        },
+        {
+          "t": "2032-08-01T00:00:00.000+02:00",
+          "y": 390878.61003041983
+        },
+        {
+          "t": "2032-09-01T00:00:00.000+02:00",
+          "y": 393484.4578882119
+        },
+        {
+          "t": "2032-10-01T00:00:00.000+02:00",
+          "y": 396085.3209401137
+        },
+        {
+          "t": "2032-11-01T00:00:00.000+01:00",
+          "y": 398681.1073537413
+        },
+        {
+          "t": "2032-12-01T00:00:00.000+01:00",
+          "y": 401271.7237880968
+        },
+        {
+          "t": "2033-01-01T00:00:00.000+01:00",
+          "y": 403857.0753763118
+        },
+        {
+          "t": "2033-02-01T00:00:00.000+01:00",
+          "y": 406437.0657085251
+        },
+        {
+          "t": "2033-03-01T00:00:00.000+01:00",
+          "y": 409011.59681491705
+        },
+        {
+          "t": "2033-04-01T00:00:00.000+02:00",
+          "y": 411580.569148918
+        },
+        {
+          "t": "2033-05-01T00:00:00.000+02:00",
+          "y": 414143.8815706133
+        },
+        {
+          "t": "2033-06-01T00:00:00.000+02:00",
+          "y": 416701.43133036845
+        },
+        {
+          "t": "2033-07-01T00:00:00.000+02:00",
+          "y": 419253.1140526932
+        },
+        {
+          "t": "2033-08-01T00:00:00.000+02:00",
+          "y": 421798.8237203722
+        },
+        {
+          "t": "2033-09-01T00:00:00.000+02:00",
+          "y": 424338.45265888784
+        },
+        {
+          "t": "2033-10-01T00:00:00.000+02:00",
+          "y": 426871.891521156
+        },
+        {
+          "t": "2033-11-01T00:00:00.000+01:00",
+          "y": 429399.0292726079
+        },
+        {
+          "t": "2033-12-01T00:00:00.000+01:00",
+          "y": 431919.75317664404
+        },
+        {
+          "t": "2034-01-01T00:00:00.000+01:00",
+          "y": 434433.94878048653
+        },
+        {
+          "t": "2034-02-01T00:00:00.000+01:00",
+          "y": 436941.4999014675
+        },
+        {
+          "t": "2034-03-01T00:00:00.000+01:00",
+          "y": 439442.28861377656
+        },
+        {
+          "t": "2034-04-01T00:00:00.000+02:00",
+          "y": 441936.1952357081
+        },
+        {
+          "t": "2034-05-01T00:00:00.000+02:00",
+          "y": 444423.0983174376
+        },
+        {
+          "t": "2034-06-01T00:00:00.000+02:00",
+          "y": 446902.87462936365
+        },
+        {
+          "t": "2034-07-01T00:00:00.000+02:00",
+          "y": 449375.3991510553
+        },
+        {
+          "t": "2034-08-01T00:00:00.000+02:00",
+          "y": 451840.54506083793
+        },
+        {
+          "t": "2034-09-01T00:00:00.000+02:00",
+          "y": 454298.1837260628
+        },
+        {
+          "t": "2034-10-01T00:00:00.000+02:00",
+          "y": 456748.18469409423
+        },
+        {
+          "t": "2034-11-01T00:00:00.000+01:00",
+          "y": 459190.41568406625
+        },
+        {
+          "t": "2034-12-01T00:00:00.000+01:00",
+          "y": 461624.74257944257
+        },
+        {
+          "t": "2035-01-01T00:00:00.000+01:00",
+          "y": 464051.02942143177
+        },
+        {
+          "t": "2035-02-01T00:00:00.000+01:00",
+          "y": 466469.13840330346
+        },
+        {
+          "t": "2035-03-01T00:00:00.000+01:00",
+          "y": 468878.92986565206
+        },
+        {
+          "t": "2035-04-01T00:00:00.000+02:00",
+          "y": 471280.26229265827
+        },
+        {
+          "t": "2035-05-01T00:00:00.000+02:00",
+          "y": 473672.9923094015
+        },
+        {
+          "t": "2035-06-01T00:00:00.000+02:00",
+          "y": 476056.97468027694
+        },
+        {
+          "t": "2035-07-01T00:00:00.000+02:00",
+          "y": 478432.06230856624
+        },
+        {
+          "t": "2035-08-01T00:00:00.000+02:00",
+          "y": 480798.1062372268
+        },
+        {
+          "t": "2035-09-01T00:00:00.000+02:00",
+          "y": 483154.9556509505
+        },
+        {
+          "t": "2035-10-01T00:00:00.000+02:00",
+          "y": 485502.4578795549
+        },
+        {
+          "t": "2035-11-01T00:00:00.000+01:00",
+          "y": 487840.4584027688
+        },
+        {
+          "t": "2035-12-01T00:00:00.000+01:00",
+          "y": 490168.800856472
+        },
+        {
+          "t": "2036-01-01T00:00:00.000+01:00",
+          "y": 492487.3270404566
+        },
+        {
+          "t": "2036-02-01T00:00:00.000+01:00",
+          "y": 494795.87692777644
+        },
+        {
+          "t": "2036-03-01T00:00:00.000+01:00",
+          "y": 497094.28867575055
+        },
+        {
+          "t": "2036-04-01T00:00:00.000+02:00",
+          "y": 499382.3986386909
+        },
+        {
+          "t": "2036-05-01T00:00:00.000+02:00",
+          "y": 501660.0413824299
+        },
+        {
+          "t": "2036-06-01T00:00:00.000+02:00",
+          "y": 503927.04970071116
+        },
+        {
+          "t": "2036-07-01T00:00:00.000+02:00",
+          "y": 506183.25463353
+        },
+        {
+          "t": "2036-08-01T00:00:00.000+02:00",
+          "y": 508428.4854874901
+        },
+        {
+          "t": "2036-09-01T00:00:00.000+02:00",
+          "y": 510662.56985825946
+        },
+        {
+          "t": "2036-10-01T00:00:00.000+02:00",
+          "y": 512885.3336552033
+        },
+        {
+          "t": "2036-11-01T00:00:00.000+01:00",
+          "y": 515096.60112827405
+        },
+        {
+          "t": "2036-12-01T00:00:00.000+01:00",
+          "y": 517296.19489724305
+        }
+      ]
+    },
+    {
+      "label": "baseline",
+      "data": [
+        {
+          "t": "2017-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2022-01-01T00:00:00.000+01:00",
+          "y": 43224
+        },
+        {
+          "t": "2022-02-01T00:00:00.000+01:00",
+          "y": 38124
+        },
+        {
+          "t": "2022-03-01T00:00:00.000+01:00",
+          "y": 54060
+        },
+        {
+          "t": "2022-04-01T00:00:00.000+02:00",
+          "y": 37080
+        },
+        {
+          "t": "2022-05-01T00:00:00.000+02:00",
+          "y": 54492
+        },
+        {
+          "t": "2022-06-01T00:00:00.000+02:00",
+          "y": 74052
+        },
+        {
+          "t": "2022-07-01T00:00:00.000+02:00",
+          "y": 43572
+        },
+        {
+          "t": "2022-08-01T00:00:00.000+02:00",
+          "y": 27636
+        },
+        {
+          "t": "2022-09-01T00:00:00.000+02:00",
+          "y": 61128
+        },
+        {
+          "t": "2022-10-01T00:00:00.000+02:00",
+          "y": 44016
+        },
+        {
+          "t": "2022-11-01T00:00:00.000+01:00",
+          "y": 62136
+        },
+        {
+          "t": "2022-12-01T00:00:00.000+01:00",
+          "y": 56160
+        },
+        {
+          "t": "2023-01-01T00:00:00.000+01:00",
+          "y": 38616
+        },
+        {
+          "t": "2023-02-01T00:00:00.000+01:00",
+          "y": 59640
+        },
+        {
+          "t": "2023-03-01T00:00:00.000+01:00",
+          "y": 101208
+        },
+        {
+          "t": "2023-04-01T00:00:00.000+02:00",
+          "y": 48168
+        },
+        {
+          "t": "2023-05-01T00:00:00.000+02:00",
+          "y": 74676
+        },
+        {
+          "t": "2023-06-01T00:00:00.000+02:00",
+          "y": 74376
+        },
+        {
+          "t": "2023-07-01T00:00:00.000+02:00",
+          "y": 50208
+        },
+        {
+          "t": "2023-08-01T00:00:00.000+02:00",
+          "y": 49068
+        },
+        {
+          "t": "2023-09-01T00:00:00.000+02:00",
+          "y": 61152
+        }
+      ]
+    },
+    {
+      "label": "projectedSales",
+      "data": [
+        {
+          "t": "2017-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2017-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2017-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2018-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2018-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2019-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2019-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2020-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2020-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-01-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-02-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-03-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-04-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-05-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-06-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-07-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-08-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-09-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-10-01T00:00:00.000+02:00",
+          "y": 0
+        },
+        {
+          "t": "2021-11-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2021-12-01T00:00:00.000+01:00",
+          "y": 0
+        },
+        {
+          "t": "2022-01-01T00:00:00.000+01:00",
+          "y": 43224
+        },
+        {
+          "t": "2022-02-01T00:00:00.000+01:00",
+          "y": 38124
+        },
+        {
+          "t": "2022-03-01T00:00:00.000+01:00",
+          "y": 54060
+        },
+        {
+          "t": "2022-04-01T00:00:00.000+02:00",
+          "y": 37080
+        },
+        {
+          "t": "2022-05-01T00:00:00.000+02:00",
+          "y": 54492
+        },
+        {
+          "t": "2022-06-01T00:00:00.000+02:00",
+          "y": 74052
+        },
+        {
+          "t": "2022-07-01T00:00:00.000+02:00",
+          "y": 43572
+        },
+        {
+          "t": "2022-08-01T00:00:00.000+02:00",
+          "y": 27636
+        },
+        {
+          "t": "2022-09-01T00:00:00.000+02:00",
+          "y": 61128
+        },
+        {
+          "t": "2022-10-01T00:00:00.000+02:00",
+          "y": 44016
+        },
+        {
+          "t": "2022-11-01T00:00:00.000+01:00",
+          "y": 62136
+        },
+        {
+          "t": "2022-12-01T00:00:00.000+01:00",
+          "y": 56160
+        },
+        {
+          "t": "2023-01-01T00:00:00.000+01:00",
+          "y": 38616
+        },
+        {
+          "t": "2023-02-01T00:00:00.000+01:00",
+          "y": 59640
+        },
+        {
+          "t": "2023-03-01T00:00:00.000+01:00",
+          "y": 101208
+        },
+        {
+          "t": "2023-04-01T00:00:00.000+02:00",
+          "y": 48168
+        },
+        {
+          "t": "2023-05-01T00:00:00.000+02:00",
+          "y": 74676
+        },
+        {
+          "t": "2023-06-01T00:00:00.000+02:00",
+          "y": 74376
+        },
+        {
+          "t": "2023-07-01T00:00:00.000+02:00",
+          "y": 50208
+        },
+        {
+          "t": "2023-08-01T00:00:00.000+02:00",
+          "y": 49068
+        },
+        {
+          "t": "2023-09-01T00:00:00.000+02:00",
+          "y": 61152
+        },
+        {
+          "t": "2023-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2023-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2023-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2024-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2025-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2026-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2027-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2028-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2029-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2030-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2031-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2032-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2033-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2034-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2035-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-01-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-02-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-03-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-04-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-05-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-06-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-07-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-08-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-09-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-10-01T00:00:00.000+02:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-11-01T00:00:00.000+01:00",
+          "y": 34156.8
+        },
+        {
+          "t": "2036-12-01T00:00:00.000+01:00",
+          "y": 34156.8
+        }
+      ]
+    }
+  ]
+}
