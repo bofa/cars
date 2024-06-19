@@ -35,7 +35,7 @@ export function rgbLabel(index: number, label: string) {
   return rgba(index);
 }
 
-export function smooth(list: { t: DateTime, y: number }[], size: number) {
+export function smooth(list: { x: DateTime, y: number }[], size: number) {
   // if (isNaN(size)) {
   //   const cumulative = list
   //     .map((v1, i1) => ({
@@ -53,11 +53,11 @@ export function smooth(list: { t: DateTime, y: number }[], size: number) {
   const output = list
     .map((v1, i1, a1) => {
       const y = a1
-        .filter((v2, i2) => i2 <= i1 && v1.t.diff(v2.t.plus({ days: 3 }), 'months').months <= size - 1)
+        .filter((v2, i2) => i2 <= i1 && v1.x.diff(v2.x.plus({ days: 3 }), 'months').months <= size - 1)
         .map(({ y }, i, a) => y)
 
       return {
-        t: v1.t,
+        x: v1.x,
         y: y.reduce((acc, v) => acc + v, 0)
       }
     })
@@ -68,7 +68,7 @@ export function smooth(list: { t: DateTime, y: number }[], size: number) {
 
 export interface Series {
   label: string;
-  data: { t: DateTime, y: number }[];
+  data: { x: DateTime, y: number }[];
 }
 
 interface ChartProps {
@@ -76,7 +76,7 @@ interface ChartProps {
   fitType: FitType;
   fitItem: string | null | undefined;
   sCurveParams: null | { a: number, b: number, c: number };
-  normalize?: { t: DateTime; y: number; }[];
+  normalize?: { x: DateTime; y: number; }[];
   smooth: number;
 }
 
@@ -119,7 +119,7 @@ export default function Chart(props: ChartProps) {
   //   data: smooth(s.data, props.smooth),
   // }));
 
-  const formattedSeries: ChartData = {
+  const formattedSeries = {
     datasets: props.series
       .map((s, i) => {
         return [
@@ -129,7 +129,7 @@ export default function Chart(props: ChartProps) {
             // backgroundColor: rgba(i),
             borderColor: rgbLabel(i, s.label),
             label: s.label,
-            data: s.data.map(d => ({ ...d, t: d.t.toJSDate(), y: Math.round(d.y) }))
+            data: s.data.map(d => ({ ...d, x: d.x.toJSDate(), y: Math.round(d.y) }))
           },
           ... normalize === undefined ? [] : 
           [{
@@ -139,7 +139,7 @@ export default function Chart(props: ChartProps) {
             label: s.label + '%',
             borderDash: [10, 5],
             // data: props.normalize,
-            data: s.data.map((d, index) => ({ ...d, t: d.t.toJSDate(), y: Math.round(1000 * d.y / normalize[index].y ) / 10 })),
+            data: s.data.map((d, index) => ({ ...d, x: d.x.toJSDate(), y: Math.round(1000 * d.y / normalize[index].y ) / 10 })),
           }]
         ];
       })
@@ -174,8 +174,8 @@ export default function Chart(props: ChartProps) {
         borderColor: rgba(18),
         label: 'fit-' + props.fitItem,
         data: fitSeries
-            .map(({ t }, i) =>
-            ({ t: t.toJSDate(), y: func(i) }))
+            .map(({ x }, i) =>
+            ({ x: x.toJSDate(), y: func(i) }))
       };
 
       formattedSeries.datasets?.push(dataset);

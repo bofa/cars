@@ -13,11 +13,11 @@ export function rgba(index: number, alpha: number = 0.6) {
   return 'rgba(' + o(r(1) * s) + ',' + o(r(2) * s) + ',' + o(r(3) * s) + ',' + alpha + ')';
 }
 
-export function smooth(list: { t: DateTime, y: number }[], size: number) {
+export function smooth(list: { x: DateTime, y: number }[], size: number) {
   if (isNaN(size)) {
     const cumulative = list
       .map((v1, i1) => ({
-        t: v1.t,
+        x: v1.x,
         y: list
           .filter((_2, i2) => i2 <= i1 )
           .map(({ y }) => y)
@@ -30,12 +30,12 @@ export function smooth(list: { t: DateTime, y: number }[], size: number) {
   const output = list
     .map(d => ({
       y: d.y,
-      t: d.t,
-      ms: d.t.valueOf(),
-      msLow: d.t.minus({ months: size }).minus({ days: 3 }).valueOf(),
+      x: d.x,
+      ms: d.x.valueOf(),
+      msLow: d.x.minus({ months: size }).minus({ days: 3 }).valueOf(),
     }))
     .map((v1, i1, a1) => ({
-      t: v1.t,
+      x: v1.x,
       y: a1
         .filter((v2) => v2.ms >= v1.msLow && v2.ms <= v1.ms)
         .map(({ y }, i, a) => y)

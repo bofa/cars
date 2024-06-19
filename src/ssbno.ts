@@ -84,7 +84,7 @@ function getPetrolStatisticsNorwayOld(): Promise<Series[]> {
         const valueIndex = reponse.data.dimension.Tid.category.index[key];
 
         return {
-          t: DateTime.fromFormat(key, "yyyy'M'MM"),
+          x: DateTime.fromFormat(key, "yyyy'M'MM"),
           y: reponse.data.value[valueIndex],
         };
     }))

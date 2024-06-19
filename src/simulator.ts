@@ -64,22 +64,22 @@ export function basicProjection(uStart: number[][], startDate: DateTime) {
 
   const combustionSeries: Series = {
     label: 'Total-None-Bev',
-    data:  run.map((x, i) => ({ t: startDate.plus({ months: i }) , y: sum(multiply(sumCombustionMatrix, x)) as number }))
+    data:  run.map((x, i) => ({ x: startDate.plus({ months: i }) , y: sum(multiply(sumCombustionMatrix, x)) as number }))
   }
 
   const bevSeries: Series = {
     label: 'Total-BEV',
-    data:  run.map((x, i) => ({ t: startDate.plus({ months: i }), y: sum(multiply(sumBEVMatrix, x)) as number }))
+    data:  run.map((x, i) => ({ x: startDate.plus({ months: i }), y: sum(multiply(sumBEVMatrix, x)) as number }))
   }
 
   const baseLine = {
     label: 'baseline',
-    data: uStart[0].map((y, i) => ({ t: startDate.plus({ months: i }), y: 12*y }))
+    data: uStart[0].map((y, i) => ({ x: startDate.plus({ months: i }), y: 12*y }))
   }
 
   const projectedSales = {
     label: 'projectedSales',
-    data: Array(T).fill(0).map((_, i) => ({ t: startDate.plus({ months: i }), y: 12*u(i).get([1, 0])  as number }))
+    data: Array(T).fill(0).map((_, i) => ({ x: startDate.plus({ months: i }), y: 12*u(i).get([1, 0])  as number }))
   }
 
   // const init = Array(N).fill(0)

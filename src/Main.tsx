@@ -76,14 +76,14 @@ export function mapSeriesUnion(group: string[], countries: Record<string, Series
             .reduce((aggData, m) => {
               if (aggData.length === 0) {
                 aggData.push(m);
-              } else if (aggData[aggData.length - 1].t.equals(m.t)) {
+              } else if (aggData[aggData.length - 1].x.equals(m.x)) {
                 const d = aggData[aggData.length - 1];
-                aggData[aggData.length - 1] = { t: d.t, y: d.y + m.y };
+                aggData[aggData.length - 1] = { x: d.x, y: d.y + m.y };
               } else {
                 aggData.push(m);
               }
               return aggData;
-            }, [] as { t: DateTime, y: number }[])
+            }, [] as { x: DateTime, y: number }[])
 
           aggModel.data = data;
         } else {
@@ -109,14 +109,14 @@ export function mapSeriesCut(group: string[], countries: Record<string, Series[]
             // .concat(model.data)
             // .sort((a, b) => a.t.diff(b.t))
             .reduce((aggData, d1) => {
-              const d2 = model.data.find(dd2 => dd2.t.equals(d1.t));
+              const d2 = model.data.find(dd2 => dd2.x.equals(d1.x));
 
               if (d2) {
-                aggData.push({ t: d1.t, y: d1.y + d2.y });
+                aggData.push({ x: d1.x, y: d1.y + d2.y });
               }
 
               return aggData;
-            }, [] as { t: DateTime, y: number }[])
+            }, [] as { x: DateTime, y: number }[])
 
           aggModel.data = data;
         } else {
@@ -156,8 +156,7 @@ export const convertArrayToObject = (array: any[], key: string | number) => {
   }, initialValue);
 };
 
-interface MainProps {
-}
+interface MainProps {}
 
 interface State {
   group: string[],
@@ -200,7 +199,7 @@ export class Main extends React.Component<MainProps, State> {
     axios.get('swedenfuel.json')
       .then(r => r.data
         .map((s: any) => ({ ...s, data: s.data
-          .map((p: any) => ({ ...p, t: DateTime.fromISO(p.t) })) })))
+          .map((p: any) => ({ ...p, x: DateTime.fromISO(p.t) })) })))
       .then(petrolSeries => {
         this.setState(({ countriesFuel }) => ({
           countriesFuel: { ...countriesFuel, sweden: petrolSeries },
@@ -238,8 +237,8 @@ export class Main extends React.Component<MainProps, State> {
             data: s.data
               .reverse()
               .filter(d => typeof d[1] === 'number')
-              .map(d => ({ t: DateTime.fromFormat(d[0], 'YYYY'), y: d[1] }))
-              .map(d => Array(12).fill(0).map((_, i) => ({ t: d.t.plus({ months: i }), y: d.y })))
+              .map(d => ({ x: DateTime.fromFormat(d[0], 'YYYY'), y: d[1] }))
+              .map(d => Array(12).fill(0).map((_, i) => ({ x: d.x.plus({ months: i }), y: d.y })))
               .reduce((agg, con) => agg.concat(con)),
           }));
 
@@ -291,14 +290,15 @@ export class Main extends React.Component<MainProps, State> {
       { page: 3, id: 'germany'},
       { page: 4, id: 'norway'},
       { page: 5, id: 'finland'},
-      // { page: 6, id: 'france'},
+      { page: 6, id: 'france'},
       { page: 7, id: 'denmark'},
       { page: 8, id: 'netherlands'},
       { page: 9, id: 'spain'},
       { page: 10, id: 'schweiz'},
       { page: 11, id: 'ireland'},
-      // { page: 12, id: 'UK'},
+      { page: 12, id: 'UK'},
       { page: 13, id: 'italy'},
+      { page: 13, id: 'US'},
     ].forEach((country, i) => {
       fetchPage(country.id, 300 * i, 0)
         .catch(err => { 
@@ -319,7 +319,7 @@ export class Main extends React.Component<MainProps, State> {
 
           const dataList = headers.map((header: string, index: number) => ({
               label: header,
-              data: rows.map((row: any[]) => ({ t: DateTime.fromFormat(row[0], 'yyyy-MM-dd'), y: Number(row[index]?.replace(/\s+/g, '')) }))
+              data: rows.map((row: any[]) => ({ x: DateTime.fromFormat(row[0], 'yyyy-MM-dd'), y: Number(row[index]?.replace(/\s+/g, '')) }))
             }))
             .slice(1)
 
@@ -452,7 +452,7 @@ export class Main extends React.Component<MainProps, State> {
     // console.log('params', this.state.sCurveParams.a, this.state.sCurveParams.b, this.state.sCurveParams.c)
 
     let filteredData: Series[] = [];
-    let normalize: { t: DateTime; y: number; }[] | undefined = undefined;
+    let normalize: { x: DateTime; y: number; }[] | undefined = undefined;
     let remove: (label: string) => boolean = () => true;
 
     // console.log('this.state.countries', this.state.countries);
@@ -577,7 +577,7 @@ export class Main extends React.Component<MainProps, State> {
           const run = gurkburk.map(s => s.data.map(p => p.y))
           const projectionRun = basicProjection(run, gurkburk[0].data[0].t);
           
-          normalize = projectionRun[0].data.map(({t, y}, i) => ({ t, y: y + projectionRun[1].data[i].y }))
+          normalize = projectionRun[0].data.map(({x, y}, i) => ({ x, y: y + projectionRun[1].data[i].y }))
           normalize = normalize ? smooth(normalize, this.state.smooth) : undefined;
 
           filteredData = projectionRun
