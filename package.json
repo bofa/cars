@@ -6,11 +6,26 @@
   "keywords": [],
   "main": "src/index.tsx",
   "homepage": "./",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "fuel": "node scrape/fuel.js",
+    "euev": "node scrape/euev.js",
+    "scrape2": "node --import tsx scrape2/scrape.ts",
+    "process": "node scrape/process.js",
+    "acea": "node scrape/acea-snippet.js"
+  },
   "dependencies": {
     "@blueprintjs/core": "^5.0.0",
     "@blueprintjs/datetime": "^5.0.0",
     "@blueprintjs/icons": "^5.0.0",
     "@blueprintjs/select": "^5.0.0",
+    "@tanstack/react-query": "^4.36.1",
     "axios": "^0.20.0",
     "chart.js": "^2.9.4",
     "chartjs-plugin-annotation": "^0.5.7",
@@ -40,18 +55,5 @@
     "typescript": "^4.3.2",
     "vite": "^4.4.9",
     "write-json-file": "^4.3.0"
-  },
-  "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject",
-    "fuel": "node scrape/fuel.js",
-    "euev": "node scrape/euev.js",
-    "process": "node scrape/process.js",
-    "acea": "node scrape/acea-snippet.js"
   }
 }

@@ -139,8 +139,8 @@ function getNorwayNew(): Promise<Series[]> {
 
     const datasets = labels.map((label: string, i) => ({
       label,
-      data: time.map((t, j) => ({
-        t,
+      data: time.map((x, j) => ({
+        x,
         y: values[contentLength * i + j] 
       }))
       .filter(p => p.y)

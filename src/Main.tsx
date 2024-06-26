@@ -199,7 +199,7 @@ export class Main extends React.Component<MainProps, State> {
     axios.get('swedenfuel.json')
       .then(r => r.data
         .map((s: any) => ({ ...s, data: s.data
-          .map((p: any) => ({ ...p, x: DateTime.fromISO(p.t) })) })))
+          .map((p: any) => ({ ...p, x: DateTime.fromISO(p.x) })) })))
       .then(petrolSeries => {
         this.setState(({ countriesFuel }) => ({
           countriesFuel: { ...countriesFuel, sweden: petrolSeries },
@@ -228,7 +228,9 @@ export class Main extends React.Component<MainProps, State> {
         .map(id => `${id}-${countryId}-TBPD.A`)
         .join(';')
 
-      axios.get(`https://api.eia.gov/series/?api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2&series_id=${totalReq}`)
+      
+      //         https://api.eia.gov/v2/petroleum/cons/refmg/data/?api_key=3zjKYxV86AqtJWSRoAECir1wQFscVu6lxXnRVKG8
+      axios.get(`https://api.eia.gov/v2/series/?api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2&series_id=${totalReq}`)
         .then(response => response.data.series)
         .then((response: { name: string, data: [string, number][] }[] ) => {
           console.log('response', response);
@@ -575,7 +577,7 @@ export class Main extends React.Component<MainProps, State> {
 
         if (gurkburk.length > 0) {
           const run = gurkburk.map(s => s.data.map(p => p.y))
-          const projectionRun = basicProjection(run, gurkburk[0].data[0].t);
+          const projectionRun = basicProjection(run, gurkburk[0].data[0].x);
           
           normalize = projectionRun[0].data.map(({x, y}, i) => ({ x, y: y + projectionRun[1].data[i].y }))
           normalize = normalize ? smooth(normalize, this.state.smooth) : undefined;
