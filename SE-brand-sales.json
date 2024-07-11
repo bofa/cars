@@ -1,0 +1,9053 @@
+{
+  "historical": {
+    "electricBrands": [
+      {
+        "x": "2017-01-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 106
+          },
+          {
+            "id": "NISSAN",
+            "sales": 59
+          },
+          {
+            "id": "RENAULT",
+            "sales": 30
+          },
+          {
+            "id": "BMW",
+            "sales": 23
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 21
+          },
+          {
+            "id": "KIA",
+            "sales": 3
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2017-02-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 82
+          },
+          {
+            "id": "TESLA",
+            "sales": 75
+          },
+          {
+            "id": "RENAULT",
+            "sales": 31
+          },
+          {
+            "id": "BMW",
+            "sales": 14
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 7
+          },
+          {
+            "id": "KIA",
+            "sales": 6
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2017-03-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 257
+          },
+          {
+            "id": "NISSAN",
+            "sales": 186
+          },
+          {
+            "id": "RENAULT",
+            "sales": 93
+          },
+          {
+            "id": "BMW",
+            "sales": 15
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 6
+          },
+          {
+            "id": "KIA",
+            "sales": 6
+          }
+        ]
+      },
+      {
+        "x": "2017-04-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 189
+          },
+          {
+            "id": "TESLA",
+            "sales": 89
+          },
+          {
+            "id": "RENAULT",
+            "sales": 61
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 19
+          },
+          {
+            "id": "BMW",
+            "sales": 13
+          },
+          {
+            "id": "KIA",
+            "sales": 8
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 7
+          }
+        ]
+      },
+      {
+        "x": "2017-05-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 155
+          },
+          {
+            "id": "TESLA",
+            "sales": 87
+          },
+          {
+            "id": "RENAULT",
+            "sales": 47
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 35
+          },
+          {
+            "id": "BMW",
+            "sales": 20
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 16
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 8
+          },
+          {
+            "id": "KIA",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2017-06-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 127
+          },
+          {
+            "id": "TESLA",
+            "sales": 122
+          },
+          {
+            "id": "RENAULT",
+            "sales": 89
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 29
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 29
+          },
+          {
+            "id": "BMW",
+            "sales": 15
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 10
+          },
+          {
+            "id": "KIA",
+            "sales": 8
+          }
+        ]
+      },
+      {
+        "x": "2017-07-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 57
+          },
+          {
+            "id": "NISSAN",
+            "sales": 48
+          },
+          {
+            "id": "RENAULT",
+            "sales": 42
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 18
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 13
+          },
+          {
+            "id": "BMW",
+            "sales": 9
+          },
+          {
+            "id": "KIA",
+            "sales": 6
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 3
+          }
+        ]
+      },
+      {
+        "x": "2017-08-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "RENAULT",
+            "sales": 111
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 71
+          },
+          {
+            "id": "TESLA",
+            "sales": 70
+          },
+          {
+            "id": "NISSAN",
+            "sales": 58
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 43
+          },
+          {
+            "id": "BMW",
+            "sales": 34
+          },
+          {
+            "id": "KIA",
+            "sales": 5
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2017-09-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 113
+          },
+          {
+            "id": "RENAULT",
+            "sales": 113
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 94
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 82
+          },
+          {
+            "id": "BMW",
+            "sales": 39
+          },
+          {
+            "id": "NISSAN",
+            "sales": 28
+          },
+          {
+            "id": "SMART",
+            "sales": 3
+          },
+          {
+            "id": "KIA",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2017-10-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "RENAULT",
+            "sales": 119
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 67
+          },
+          {
+            "id": "NISSAN",
+            "sales": 57
+          },
+          {
+            "id": "TESLA",
+            "sales": 53
+          },
+          {
+            "id": "BMW",
+            "sales": 42
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 11
+          },
+          {
+            "id": "KIA",
+            "sales": 4
+          }
+        ]
+      },
+      {
+        "x": "2017-11-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 95
+          },
+          {
+            "id": "RENAULT",
+            "sales": 77
+          },
+          {
+            "id": "BMW",
+            "sales": 38
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 29
+          },
+          {
+            "id": "NISSAN",
+            "sales": 10
+          },
+          {
+            "id": "KIA",
+            "sales": 4
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 3
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2017-12-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 159
+          },
+          {
+            "id": "RENAULT",
+            "sales": 38
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 38
+          },
+          {
+            "id": "BMW",
+            "sales": 16
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 13
+          },
+          {
+            "id": "NISSAN",
+            "sales": 12
+          },
+          {
+            "id": "KIA",
+            "sales": 6
+          }
+        ]
+      },
+      {
+        "x": "2018-01-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "RENAULT",
+            "sales": 71
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 44
+          },
+          {
+            "id": "BMW",
+            "sales": 36
+          },
+          {
+            "id": "TESLA",
+            "sales": 19
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 13
+          },
+          {
+            "id": "NISSAN",
+            "sales": 2
+          },
+          {
+            "id": "KIA",
+            "sales": 1
+          },
+          {
+            "id": "SEAT",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-02-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "HYUNDAI",
+            "sales": 97
+          },
+          {
+            "id": "RENAULT",
+            "sales": 80
+          },
+          {
+            "id": "NISSAN",
+            "sales": 54
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 34
+          },
+          {
+            "id": "TESLA",
+            "sales": 29
+          },
+          {
+            "id": "BMW",
+            "sales": 23
+          },
+          {
+            "id": "VOLVO",
+            "sales": 4
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 2
+          },
+          {
+            "id": "SSANGYONG",
+            "sales": 1
+          },
+          {
+            "id": "KIA",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-03-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 250
+          },
+          {
+            "id": "TESLA",
+            "sales": 198
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 116
+          },
+          {
+            "id": "RENAULT",
+            "sales": 85
+          },
+          {
+            "id": "BMW",
+            "sales": 54
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 44
+          },
+          {
+            "id": "VOLVO",
+            "sales": 5
+          },
+          {
+            "id": "KIA",
+            "sales": 2
+          },
+          {
+            "id": "CITROEN",
+            "sales": 2
+          },
+          {
+            "id": "SKODA",
+            "sales": 2
+          },
+          {
+            "id": "SEAT",
+            "sales": 1
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-04-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 139
+          },
+          {
+            "id": "TESLA",
+            "sales": 67
+          },
+          {
+            "id": "RENAULT",
+            "sales": 56
+          },
+          {
+            "id": "BMW",
+            "sales": 43
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 32
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 28
+          },
+          {
+            "id": "KIA",
+            "sales": 5
+          },
+          {
+            "id": "SKODA",
+            "sales": 1
+          },
+          {
+            "id": "VOLVO",
+            "sales": 1
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-05-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "RENAULT",
+            "sales": 51
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 51
+          },
+          {
+            "id": "TESLA",
+            "sales": 49
+          },
+          {
+            "id": "NISSAN",
+            "sales": 48
+          },
+          {
+            "id": "BMW",
+            "sales": 38
+          },
+          {
+            "id": "KIA",
+            "sales": 21
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 19
+          },
+          {
+            "id": "MITSUBISHI",
+            "sales": 2
+          },
+          {
+            "id": "SSANGYONG",
+            "sales": 1
+          },
+          {
+            "id": "SEAT",
+            "sales": 1
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-06-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 116
+          },
+          {
+            "id": "BMW",
+            "sales": 68
+          },
+          {
+            "id": "RENAULT",
+            "sales": 43
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 34
+          },
+          {
+            "id": "NISSAN",
+            "sales": 32
+          },
+          {
+            "id": "KIA",
+            "sales": 29
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 13
+          },
+          {
+            "id": "CITROEN",
+            "sales": 2
+          },
+          {
+            "id": "AUDI",
+            "sales": 2
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-07-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 136
+          },
+          {
+            "id": "RENAULT",
+            "sales": 126
+          },
+          {
+            "id": "TESLA",
+            "sales": 96
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 61
+          },
+          {
+            "id": "BMW",
+            "sales": 50
+          },
+          {
+            "id": "KIA",
+            "sales": 26
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 16
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 9
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          },
+          {
+            "id": "AUDI",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-08-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "RENAULT",
+            "sales": 155
+          },
+          {
+            "id": "NISSAN",
+            "sales": 129
+          },
+          {
+            "id": "TESLA",
+            "sales": 97
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 67
+          },
+          {
+            "id": "BMW",
+            "sales": 48
+          },
+          {
+            "id": "KIA",
+            "sales": 38
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 25
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 1
+          },
+          {
+            "id": "AUDI",
+            "sales": 1
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 1
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-09-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 215
+          },
+          {
+            "id": "RENAULT",
+            "sales": 191
+          },
+          {
+            "id": "NISSAN",
+            "sales": 172
+          },
+          {
+            "id": "BMW",
+            "sales": 36
+          },
+          {
+            "id": "KIA",
+            "sales": 15
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 12
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 11
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 7
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 2
+          },
+          {
+            "id": "SEAT",
+            "sales": 1
+          },
+          {
+            "id": "SKODA",
+            "sales": 1
+          },
+          {
+            "id": "MINI",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-10-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "RENAULT",
+            "sales": 299
+          },
+          {
+            "id": "NISSAN",
+            "sales": 246
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 78
+          },
+          {
+            "id": "BMW",
+            "sales": 72
+          },
+          {
+            "id": "TESLA",
+            "sales": 54
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 29
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 13
+          },
+          {
+            "id": "KIA",
+            "sales": 7
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 2
+          },
+          {
+            "id": "MINI",
+            "sales": 2
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-11-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 390
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 232
+          },
+          {
+            "id": "RENAULT",
+            "sales": 166
+          },
+          {
+            "id": "KIA",
+            "sales": 129
+          },
+          {
+            "id": "TESLA",
+            "sales": 97
+          },
+          {
+            "id": "BMW",
+            "sales": 92
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 78
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 17
+          },
+          {
+            "id": "SMART",
+            "sales": 2
+          },
+          {
+            "id": "VOLVO",
+            "sales": 2
+          },
+          {
+            "id": "SKODA",
+            "sales": 2
+          },
+          {
+            "id": "AUDI",
+            "sales": 2
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 1
+          },
+          {
+            "id": "MITSUBISHI",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2018-12-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 345
+          },
+          {
+            "id": "RENAULT",
+            "sales": 340
+          },
+          {
+            "id": "TESLA",
+            "sales": 181
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 71
+          },
+          {
+            "id": "BMW",
+            "sales": 63
+          },
+          {
+            "id": "KIA",
+            "sales": 55
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 34
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 10
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 1
+          },
+          {
+            "id": "SKODA",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-01-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 265
+          },
+          {
+            "id": "RENAULT",
+            "sales": 239
+          },
+          {
+            "id": "KIA",
+            "sales": 228
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 143
+          },
+          {
+            "id": "BMW",
+            "sales": 95
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 58
+          },
+          {
+            "id": "TESLA",
+            "sales": 37
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 16
+          },
+          {
+            "id": "SMART",
+            "sales": 4
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 2
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 1
+          },
+          {
+            "id": "JEEP",
+            "sales": 1
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 1
+          },
+          {
+            "id": "MITSUBISHI",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-02-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "RENAULT",
+            "sales": 236
+          },
+          {
+            "id": "KIA",
+            "sales": 169
+          },
+          {
+            "id": "NISSAN",
+            "sales": 161
+          },
+          {
+            "id": "BMW",
+            "sales": 113
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 78
+          },
+          {
+            "id": "TESLA",
+            "sales": 59
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 46
+          },
+          {
+            "id": "AUDI",
+            "sales": 17
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 11
+          },
+          {
+            "id": "SEAT",
+            "sales": 3
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 2
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 1
+          },
+          {
+            "id": "SKODA",
+            "sales": 1
+          },
+          {
+            "id": "VOLVO",
+            "sales": 1
+          },
+          {
+            "id": "MINI",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-03-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 1098
+          },
+          {
+            "id": "KIA",
+            "sales": 297
+          },
+          {
+            "id": "RENAULT",
+            "sales": 195
+          },
+          {
+            "id": "BMW",
+            "sales": 147
+          },
+          {
+            "id": "NISSAN",
+            "sales": 137
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 121
+          },
+          {
+            "id": "AUDI",
+            "sales": 49
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 33
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 32
+          },
+          {
+            "id": "SEAT",
+            "sales": 3
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 3
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 2
+          },
+          {
+            "id": "FIAT",
+            "sales": 1
+          },
+          {
+            "id": "JEEP",
+            "sales": 1
+          },
+          {
+            "id": "SKODA",
+            "sales": 1
+          },
+          {
+            "id": "MITSUBISHI",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-04-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 559
+          },
+          {
+            "id": "RENAULT",
+            "sales": 204
+          },
+          {
+            "id": "KIA",
+            "sales": 179
+          },
+          {
+            "id": "NISSAN",
+            "sales": 119
+          },
+          {
+            "id": "BMW",
+            "sales": 112
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 72
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 54
+          },
+          {
+            "id": "AUDI",
+            "sales": 45
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 33
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 5
+          },
+          {
+            "id": "FIAT",
+            "sales": 3
+          },
+          {
+            "id": "VOLVO",
+            "sales": 1
+          },
+          {
+            "id": "SEAT",
+            "sales": 1
+          },
+          {
+            "id": "OPEL",
+            "sales": 1
+          },
+          {
+            "id": "SKODA",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-05-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 366
+          },
+          {
+            "id": "KIA",
+            "sales": 252
+          },
+          {
+            "id": "RENAULT",
+            "sales": 199
+          },
+          {
+            "id": "BMW",
+            "sales": 140
+          },
+          {
+            "id": "AUDI",
+            "sales": 80
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 78
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 67
+          },
+          {
+            "id": "NISSAN",
+            "sales": 25
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 23
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 4
+          },
+          {
+            "id": "OPEL",
+            "sales": 3
+          },
+          {
+            "id": "VOLVO",
+            "sales": 2
+          },
+          {
+            "id": "SEAT",
+            "sales": 1
+          },
+          {
+            "id": "ALFA ROMEO",
+            "sales": 1
+          },
+          {
+            "id": "JEEP",
+            "sales": 1
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-06-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 819
+          },
+          {
+            "id": "RENAULT",
+            "sales": 229
+          },
+          {
+            "id": "KIA",
+            "sales": 185
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 112
+          },
+          {
+            "id": "BMW",
+            "sales": 98
+          },
+          {
+            "id": "NISSAN",
+            "sales": 85
+          },
+          {
+            "id": "AUDI",
+            "sales": 75
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 53
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 10
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 9
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 3
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 2
+          },
+          {
+            "id": "SMART",
+            "sales": 2
+          },
+          {
+            "id": "FIAT",
+            "sales": 1
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-07-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 576
+          },
+          {
+            "id": "RENAULT",
+            "sales": 122
+          },
+          {
+            "id": "NISSAN",
+            "sales": 86
+          },
+          {
+            "id": "BMW",
+            "sales": 67
+          },
+          {
+            "id": "KIA",
+            "sales": 66
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 61
+          },
+          {
+            "id": "AUDI",
+            "sales": 49
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 35
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 13
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 6
+          },
+          {
+            "id": "FIAT",
+            "sales": 6
+          },
+          {
+            "id": "OPEL",
+            "sales": 2
+          },
+          {
+            "id": "SKODA",
+            "sales": 1
+          },
+          {
+            "id": "DACIA",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-08-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 324
+          },
+          {
+            "id": "RENAULT",
+            "sales": 138
+          },
+          {
+            "id": "NISSAN",
+            "sales": 127
+          },
+          {
+            "id": "BMW",
+            "sales": 78
+          },
+          {
+            "id": "AUDI",
+            "sales": 75
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 73
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 65
+          },
+          {
+            "id": "KIA",
+            "sales": 60
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 11
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 10
+          },
+          {
+            "id": "SEAT",
+            "sales": 1
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 1
+          },
+          {
+            "id": "SKODA",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-09-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 1002
+          },
+          {
+            "id": "RENAULT",
+            "sales": 148
+          },
+          {
+            "id": "NISSAN",
+            "sales": 146
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 134
+          },
+          {
+            "id": "KIA",
+            "sales": 92
+          },
+          {
+            "id": "AUDI",
+            "sales": 87
+          },
+          {
+            "id": "BMW",
+            "sales": 69
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 54
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 13
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 5
+          },
+          {
+            "id": "FIAT",
+            "sales": 3
+          }
+        ]
+      },
+      {
+        "x": "2019-10-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "NISSAN",
+            "sales": 147
+          },
+          {
+            "id": "RENAULT",
+            "sales": 128
+          },
+          {
+            "id": "KIA",
+            "sales": 113
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 104
+          },
+          {
+            "id": "TESLA",
+            "sales": 83
+          },
+          {
+            "id": "AUDI",
+            "sales": 79
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 71
+          },
+          {
+            "id": "BMW",
+            "sales": 62
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 17
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 5
+          },
+          {
+            "id": "FIAT",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2019-11-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 230
+          },
+          {
+            "id": "NISSAN",
+            "sales": 226
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 156
+          },
+          {
+            "id": "RENAULT",
+            "sales": 113
+          },
+          {
+            "id": "KIA",
+            "sales": 94
+          },
+          {
+            "id": "BMW",
+            "sales": 90
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 47
+          },
+          {
+            "id": "AUDI",
+            "sales": 46
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 23
+          },
+          {
+            "id": "MINI",
+            "sales": 4
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2019-12-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 1038
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 187
+          },
+          {
+            "id": "BMW",
+            "sales": 108
+          },
+          {
+            "id": "RENAULT",
+            "sales": 86
+          },
+          {
+            "id": "NISSAN",
+            "sales": 73
+          },
+          {
+            "id": "AUDI",
+            "sales": 47
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 30
+          },
+          {
+            "id": "KIA",
+            "sales": 13
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 13
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 11
+          }
+        ]
+      },
+      {
+        "x": "2020-01-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 399
+          },
+          {
+            "id": "TESLA",
+            "sales": 165
+          },
+          {
+            "id": "RENAULT",
+            "sales": 133
+          },
+          {
+            "id": "AUDI",
+            "sales": 116
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 106
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 96
+          },
+          {
+            "id": "NISSAN",
+            "sales": 91
+          },
+          {
+            "id": "BMW",
+            "sales": 73
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 25
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 14
+          },
+          {
+            "id": "SEAT",
+            "sales": 5
+          },
+          {
+            "id": "MINI",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2020-02-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 421
+          },
+          {
+            "id": "AUDI",
+            "sales": 208
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 151
+          },
+          {
+            "id": "TESLA",
+            "sales": 139
+          },
+          {
+            "id": "RENAULT",
+            "sales": 138
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 113
+          },
+          {
+            "id": "NISSAN",
+            "sales": 96
+          },
+          {
+            "id": "BMW",
+            "sales": 61
+          },
+          {
+            "id": "SKODA",
+            "sales": 35
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 18
+          },
+          {
+            "id": "MINI",
+            "sales": 15
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 11
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 3
+          }
+        ]
+      },
+      {
+        "x": "2020-03-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 1359
+          },
+          {
+            "id": "AUDI",
+            "sales": 315
+          },
+          {
+            "id": "RENAULT",
+            "sales": 310
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 215
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 184
+          },
+          {
+            "id": "NISSAN",
+            "sales": 162
+          },
+          {
+            "id": "KIA",
+            "sales": 161
+          },
+          {
+            "id": "BMW",
+            "sales": 84
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 50
+          },
+          {
+            "id": "MINI",
+            "sales": 50
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 42
+          },
+          {
+            "id": "SKODA",
+            "sales": 33
+          },
+          {
+            "id": "SEAT",
+            "sales": 22
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 9
+          },
+          {
+            "id": "DS",
+            "sales": 2
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2020-04-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "RENAULT",
+            "sales": 159
+          },
+          {
+            "id": "AUDI",
+            "sales": 146
+          },
+          {
+            "id": "NISSAN",
+            "sales": 144
+          },
+          {
+            "id": "TESLA",
+            "sales": 141
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 108
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 100
+          },
+          {
+            "id": "KIA",
+            "sales": 74
+          },
+          {
+            "id": "BMW",
+            "sales": 64
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 36
+          },
+          {
+            "id": "MINI",
+            "sales": 25
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 16
+          },
+          {
+            "id": "SKODA",
+            "sales": 13
+          },
+          {
+            "id": "SEAT",
+            "sales": 7
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 5
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          },
+          {
+            "id": "DS",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2020-05-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 159
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 147
+          },
+          {
+            "id": "TESLA",
+            "sales": 109
+          },
+          {
+            "id": "RENAULT",
+            "sales": 98
+          },
+          {
+            "id": "NISSAN",
+            "sales": 96
+          },
+          {
+            "id": "AUDI",
+            "sales": 70
+          },
+          {
+            "id": "BMW",
+            "sales": 52
+          },
+          {
+            "id": "KIA",
+            "sales": 47
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 12
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 10
+          },
+          {
+            "id": "SEAT",
+            "sales": 9
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 6
+          },
+          {
+            "id": "MINI",
+            "sales": 5
+          },
+          {
+            "id": "SKODA",
+            "sales": 5
+          },
+          {
+            "id": "HONDA",
+            "sales": 4
+          }
+        ]
+      },
+      {
+        "x": "2020-06-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 466
+          },
+          {
+            "id": "RENAULT",
+            "sales": 299
+          },
+          {
+            "id": "AUDI",
+            "sales": 218
+          },
+          {
+            "id": "KIA",
+            "sales": 149
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 127
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 117
+          },
+          {
+            "id": "NISSAN",
+            "sales": 85
+          },
+          {
+            "id": "BMW",
+            "sales": 57
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 37
+          },
+          {
+            "id": "HONDA",
+            "sales": 23
+          },
+          {
+            "id": "SEAT",
+            "sales": 20
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 19
+          },
+          {
+            "id": "SKODA",
+            "sales": 14
+          },
+          {
+            "id": "MINI",
+            "sales": 13
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 9
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 6
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 5
+          },
+          {
+            "id": "SMART",
+            "sales": 3
+          }
+        ]
+      },
+      {
+        "x": "2020-07-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 248
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 179
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 145
+          },
+          {
+            "id": "AUDI",
+            "sales": 138
+          },
+          {
+            "id": "RENAULT",
+            "sales": 136
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 88
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 72
+          },
+          {
+            "id": "BMW",
+            "sales": 69
+          },
+          {
+            "id": "NISSAN",
+            "sales": 65
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 50
+          },
+          {
+            "id": "MINI",
+            "sales": 31
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 24
+          },
+          {
+            "id": "SEAT",
+            "sales": 15
+          },
+          {
+            "id": "TESLA",
+            "sales": 11
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 7
+          },
+          {
+            "id": "OPEL",
+            "sales": 7
+          },
+          {
+            "id": "SKODA",
+            "sales": 5
+          },
+          {
+            "id": "HONDA",
+            "sales": 2
+          },
+          {
+            "id": "DS",
+            "sales": 1
+          },
+          {
+            "id": "VOLVO",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2020-08-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 386
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 269
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 268
+          },
+          {
+            "id": "TESLA",
+            "sales": 239
+          },
+          {
+            "id": "AUDI",
+            "sales": 233
+          },
+          {
+            "id": "NISSAN",
+            "sales": 185
+          },
+          {
+            "id": "RENAULT",
+            "sales": 117
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 105
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 78
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 57
+          },
+          {
+            "id": "BMW",
+            "sales": 48
+          },
+          {
+            "id": "MINI",
+            "sales": 34
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 34
+          },
+          {
+            "id": "SKODA",
+            "sales": 13
+          },
+          {
+            "id": "HONDA",
+            "sales": 10
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 8
+          },
+          {
+            "id": "SEAT",
+            "sales": 8
+          },
+          {
+            "id": "OPEL",
+            "sales": 5
+          }
+        ]
+      },
+      {
+        "x": "2020-09-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 1058
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 591
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 564
+          },
+          {
+            "id": "KIA",
+            "sales": 259
+          },
+          {
+            "id": "RENAULT",
+            "sales": 211
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 206
+          },
+          {
+            "id": "NISSAN",
+            "sales": 175
+          },
+          {
+            "id": "AUDI",
+            "sales": 130
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 78
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 78
+          },
+          {
+            "id": "MAZDA",
+            "sales": 75
+          },
+          {
+            "id": "BMW",
+            "sales": 64
+          },
+          {
+            "id": "MINI",
+            "sales": 36
+          },
+          {
+            "id": "SKODA",
+            "sales": 36
+          },
+          {
+            "id": "HONDA",
+            "sales": 31
+          },
+          {
+            "id": "OPEL",
+            "sales": 21
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 14
+          },
+          {
+            "id": "SEAT",
+            "sales": 9
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 6
+          },
+          {
+            "id": "DS",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2020-10-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 411
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 274
+          },
+          {
+            "id": "KIA",
+            "sales": 271
+          },
+          {
+            "id": "NISSAN",
+            "sales": 191
+          },
+          {
+            "id": "RENAULT",
+            "sales": 165
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 159
+          },
+          {
+            "id": "AUDI",
+            "sales": 151
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 107
+          },
+          {
+            "id": "MAZDA",
+            "sales": 103
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 101
+          },
+          {
+            "id": "BMW",
+            "sales": 70
+          },
+          {
+            "id": "HONDA",
+            "sales": 57
+          },
+          {
+            "id": "TESLA",
+            "sales": 55
+          },
+          {
+            "id": "MINI",
+            "sales": 48
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 48
+          },
+          {
+            "id": "OPEL",
+            "sales": 30
+          },
+          {
+            "id": "SKODA",
+            "sales": 24
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 7
+          },
+          {
+            "id": "VOLVO",
+            "sales": 3
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          },
+          {
+            "id": "SEAT",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2020-11-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 840
+          },
+          {
+            "id": "NISSAN",
+            "sales": 233
+          },
+          {
+            "id": "KIA",
+            "sales": 197
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 166
+          },
+          {
+            "id": "AUDI",
+            "sales": 161
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 148
+          },
+          {
+            "id": "TESLA",
+            "sales": 143
+          },
+          {
+            "id": "RENAULT",
+            "sales": 142
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 132
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 118
+          },
+          {
+            "id": "MAZDA",
+            "sales": 101
+          },
+          {
+            "id": "VOLVO",
+            "sales": 80
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 74
+          },
+          {
+            "id": "BMW",
+            "sales": 58
+          },
+          {
+            "id": "MINI",
+            "sales": 44
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 28
+          },
+          {
+            "id": "HONDA",
+            "sales": 16
+          },
+          {
+            "id": "SKODA",
+            "sales": 14
+          },
+          {
+            "id": "OPEL",
+            "sales": 4
+          },
+          {
+            "id": "MAXUS",
+            "sales": 2
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2020-12-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 2738
+          },
+          {
+            "id": "TESLA",
+            "sales": 1064
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 432
+          },
+          {
+            "id": "KIA",
+            "sales": 417
+          },
+          {
+            "id": "NISSAN",
+            "sales": 333
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 260
+          },
+          {
+            "id": "RENAULT",
+            "sales": 253
+          },
+          {
+            "id": "AUDI",
+            "sales": 181
+          },
+          {
+            "id": "VOLVO",
+            "sales": 177
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 168
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 126
+          },
+          {
+            "id": "MAZDA",
+            "sales": 104
+          },
+          {
+            "id": "HONDA",
+            "sales": 78
+          },
+          {
+            "id": "BMW",
+            "sales": 69
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 54
+          },
+          {
+            "id": "SKODA",
+            "sales": 54
+          },
+          {
+            "id": "MINI",
+            "sales": 50
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 39
+          },
+          {
+            "id": "FIAT",
+            "sales": 17
+          },
+          {
+            "id": "OPEL",
+            "sales": 11
+          },
+          {
+            "id": "MAXUS",
+            "sales": 5
+          },
+          {
+            "id": "SEAT",
+            "sales": 3
+          },
+          {
+            "id": "FORD",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2021-01-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 273
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 150
+          },
+          {
+            "id": "NISSAN",
+            "sales": 122
+          },
+          {
+            "id": "AUDI",
+            "sales": 105
+          },
+          {
+            "id": "RENAULT",
+            "sales": 58
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 49
+          },
+          {
+            "id": "VOLVO",
+            "sales": 44
+          },
+          {
+            "id": "SKODA",
+            "sales": 44
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 37
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 35
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 34
+          },
+          {
+            "id": "TESLA",
+            "sales": 33
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 30
+          },
+          {
+            "id": "BMW",
+            "sales": 28
+          },
+          {
+            "id": "FIAT",
+            "sales": 25
+          },
+          {
+            "id": "MINI",
+            "sales": 17
+          },
+          {
+            "id": "MAXUS",
+            "sales": 10
+          },
+          {
+            "id": "OPEL",
+            "sales": 8
+          },
+          {
+            "id": "HONDA",
+            "sales": 2
+          },
+          {
+            "id": "ÖVRIGA",
+            "sales": 1
+          },
+          {
+            "id": "SEAT",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2021-02-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 209
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 179
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 151
+          },
+          {
+            "id": "AUDI",
+            "sales": 145
+          },
+          {
+            "id": "TESLA",
+            "sales": 134
+          },
+          {
+            "id": "NISSAN",
+            "sales": 127
+          },
+          {
+            "id": "VOLVO",
+            "sales": 84
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 77
+          },
+          {
+            "id": "RENAULT",
+            "sales": 54
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 47
+          },
+          {
+            "id": "BMW",
+            "sales": 36
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 34
+          },
+          {
+            "id": "OPEL",
+            "sales": 26
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 24
+          },
+          {
+            "id": "FIAT",
+            "sales": 21
+          },
+          {
+            "id": "SKODA",
+            "sales": 11
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 10
+          },
+          {
+            "id": "MINI",
+            "sales": 8
+          },
+          {
+            "id": "MAZDA",
+            "sales": 5
+          },
+          {
+            "id": "MAXUS",
+            "sales": 4
+          },
+          {
+            "id": "SEAT",
+            "sales": 3
+          },
+          {
+            "id": "HONDA",
+            "sales": 2
+          },
+          {
+            "id": "NEVS",
+            "sales": 2
+          },
+          {
+            "id": "DS",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2021-03-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 1192
+          },
+          {
+            "id": "KIA",
+            "sales": 361
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 225
+          },
+          {
+            "id": "NISSAN",
+            "sales": 158
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 129
+          },
+          {
+            "id": "RENAULT",
+            "sales": 73
+          },
+          {
+            "id": "AUDI",
+            "sales": 70
+          },
+          {
+            "id": "VOLVO",
+            "sales": 70
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 59
+          },
+          {
+            "id": "BMW",
+            "sales": 47
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 44
+          },
+          {
+            "id": "OPEL",
+            "sales": 34
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 29
+          },
+          {
+            "id": "FIAT",
+            "sales": 28
+          },
+          {
+            "id": "MINI",
+            "sales": 26
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 24
+          },
+          {
+            "id": "MAZDA",
+            "sales": 18
+          },
+          {
+            "id": "SKODA",
+            "sales": 9
+          },
+          {
+            "id": "LEXUS",
+            "sales": 4
+          },
+          {
+            "id": "MAXUS",
+            "sales": 3
+          },
+          {
+            "id": "SEAT",
+            "sales": 2
+          },
+          {
+            "id": "CITROEN",
+            "sales": 1
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 1
+          },
+          {
+            "id": "HONDA",
+            "sales": 1
+          },
+          {
+            "id": "DS",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2021-04-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1936
+          },
+          {
+            "id": "KIA",
+            "sales": 470
+          },
+          {
+            "id": "AUDI",
+            "sales": 360
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 280
+          },
+          {
+            "id": "NISSAN",
+            "sales": 236
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 229
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 212
+          },
+          {
+            "id": "VOLVO",
+            "sales": 166
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 162
+          },
+          {
+            "id": "SKODA",
+            "sales": 159
+          },
+          {
+            "id": "RENAULT",
+            "sales": 138
+          },
+          {
+            "id": "BMW",
+            "sales": 116
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 89
+          },
+          {
+            "id": "OPEL",
+            "sales": 66
+          },
+          {
+            "id": "MINI",
+            "sales": 61
+          },
+          {
+            "id": "FIAT",
+            "sales": 44
+          },
+          {
+            "id": "MAZDA",
+            "sales": 40
+          },
+          {
+            "id": "SEAT",
+            "sales": 30
+          },
+          {
+            "id": "CITROEN",
+            "sales": 19
+          },
+          {
+            "id": "LEXUS",
+            "sales": 16
+          },
+          {
+            "id": "TESLA",
+            "sales": 11
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 7
+          },
+          {
+            "id": "HONDA",
+            "sales": 7
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 6
+          },
+          {
+            "id": "DS",
+            "sales": 3
+          },
+          {
+            "id": "MAXUS",
+            "sales": 3
+          },
+          {
+            "id": "ÖVRIGA",
+            "sales": 2
+          },
+          {
+            "id": "DACIA",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2021-05-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1040
+          },
+          {
+            "id": "KIA",
+            "sales": 479
+          },
+          {
+            "id": "SKODA",
+            "sales": 369
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 276
+          },
+          {
+            "id": "AUDI",
+            "sales": 260
+          },
+          {
+            "id": "TESLA",
+            "sales": 228
+          },
+          {
+            "id": "NISSAN",
+            "sales": 217
+          },
+          {
+            "id": "VOLVO",
+            "sales": 164
+          },
+          {
+            "id": "RENAULT",
+            "sales": 132
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 118
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 117
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 107
+          },
+          {
+            "id": "BMW",
+            "sales": 77
+          },
+          {
+            "id": "MAZDA",
+            "sales": 75
+          },
+          {
+            "id": "FIAT",
+            "sales": 65
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 62
+          },
+          {
+            "id": "OPEL",
+            "sales": 60
+          },
+          {
+            "id": "MINI",
+            "sales": 36
+          },
+          {
+            "id": "SEAT",
+            "sales": 19
+          },
+          {
+            "id": "CITROEN",
+            "sales": 14
+          },
+          {
+            "id": "HONDA",
+            "sales": 9
+          },
+          {
+            "id": "LEXUS",
+            "sales": 9
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 6
+          },
+          {
+            "id": "DS",
+            "sales": 3
+          },
+          {
+            "id": "MG",
+            "sales": 3
+          },
+          {
+            "id": "MAXUS",
+            "sales": 2
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2021-06-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1709
+          },
+          {
+            "id": "MG",
+            "sales": 1665
+          },
+          {
+            "id": "TESLA",
+            "sales": 1499
+          },
+          {
+            "id": "KIA",
+            "sales": 718
+          },
+          {
+            "id": "SKODA",
+            "sales": 642
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 387
+          },
+          {
+            "id": "AUDI",
+            "sales": 278
+          },
+          {
+            "id": "RENAULT",
+            "sales": 217
+          },
+          {
+            "id": "BMW",
+            "sales": 215
+          },
+          {
+            "id": "NISSAN",
+            "sales": 210
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 171
+          },
+          {
+            "id": "FORD",
+            "sales": 166
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 158
+          },
+          {
+            "id": "VOLVO",
+            "sales": 144
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 115
+          },
+          {
+            "id": "MINI",
+            "sales": 97
+          },
+          {
+            "id": "OPEL",
+            "sales": 84
+          },
+          {
+            "id": "FIAT",
+            "sales": 59
+          },
+          {
+            "id": "MAZDA",
+            "sales": 43
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 27
+          },
+          {
+            "id": "CITROEN",
+            "sales": 18
+          },
+          {
+            "id": "LEXUS",
+            "sales": 17
+          },
+          {
+            "id": "SEAT",
+            "sales": 16
+          },
+          {
+            "id": "HONDA",
+            "sales": 14
+          },
+          {
+            "id": "MAXUS",
+            "sales": 6
+          },
+          {
+            "id": "DS",
+            "sales": 5
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 5
+          },
+          {
+            "id": "ÖVRIGA",
+            "sales": 1
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2021-07-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 612
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 386
+          },
+          {
+            "id": "AUDI",
+            "sales": 180
+          },
+          {
+            "id": "FORD",
+            "sales": 177
+          },
+          {
+            "id": "MG",
+            "sales": 168
+          },
+          {
+            "id": "SKODA",
+            "sales": 129
+          },
+          {
+            "id": "BMW",
+            "sales": 116
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 115
+          },
+          {
+            "id": "NISSAN",
+            "sales": 93
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 85
+          },
+          {
+            "id": "MINI",
+            "sales": 68
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 64
+          },
+          {
+            "id": "FIAT",
+            "sales": 47
+          },
+          {
+            "id": "VOLVO",
+            "sales": 45
+          },
+          {
+            "id": "MAZDA",
+            "sales": 45
+          },
+          {
+            "id": "CITROEN",
+            "sales": 40
+          },
+          {
+            "id": "RENAULT",
+            "sales": 38
+          },
+          {
+            "id": "OPEL",
+            "sales": 33
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 31
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 24
+          },
+          {
+            "id": "SEAT",
+            "sales": 12
+          },
+          {
+            "id": "LEXUS",
+            "sales": 7
+          },
+          {
+            "id": "HONDA",
+            "sales": 6
+          },
+          {
+            "id": "TESLA",
+            "sales": 6
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 3
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 3
+          },
+          {
+            "id": "MAXUS",
+            "sales": 1
+          },
+          {
+            "id": "DS",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2021-08-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 898
+          },
+          {
+            "id": "KIA",
+            "sales": 799
+          },
+          {
+            "id": "MG",
+            "sales": 465
+          },
+          {
+            "id": "AUDI",
+            "sales": 308
+          },
+          {
+            "id": "FORD",
+            "sales": 303
+          },
+          {
+            "id": "TESLA",
+            "sales": 249
+          },
+          {
+            "id": "NISSAN",
+            "sales": 180
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 177
+          },
+          {
+            "id": "SKODA",
+            "sales": 164
+          },
+          {
+            "id": "BMW",
+            "sales": 158
+          },
+          {
+            "id": "MAZDA",
+            "sales": 156
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 151
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 150
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 106
+          },
+          {
+            "id": "RENAULT",
+            "sales": 99
+          },
+          {
+            "id": "MINI",
+            "sales": 83
+          },
+          {
+            "id": "FIAT",
+            "sales": 68
+          },
+          {
+            "id": "VOLVO",
+            "sales": 68
+          },
+          {
+            "id": "OPEL",
+            "sales": 64
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 49
+          },
+          {
+            "id": "CITROEN",
+            "sales": 29
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 14
+          },
+          {
+            "id": "SEAT",
+            "sales": 12
+          },
+          {
+            "id": "HONDA",
+            "sales": 11
+          },
+          {
+            "id": "LEXUS",
+            "sales": 11
+          },
+          {
+            "id": "MAXUS",
+            "sales": 4
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 3
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          },
+          {
+            "id": "DS",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2021-09-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 1979
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1060
+          },
+          {
+            "id": "KIA",
+            "sales": 903
+          },
+          {
+            "id": "MG",
+            "sales": 854
+          },
+          {
+            "id": "AUDI",
+            "sales": 389
+          },
+          {
+            "id": "SKODA",
+            "sales": 347
+          },
+          {
+            "id": "FORD",
+            "sales": 277
+          },
+          {
+            "id": "NISSAN",
+            "sales": 257
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 188
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 179
+          },
+          {
+            "id": "BMW",
+            "sales": 154
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 131
+          },
+          {
+            "id": "MAZDA",
+            "sales": 129
+          },
+          {
+            "id": "RENAULT",
+            "sales": 112
+          },
+          {
+            "id": "FIAT",
+            "sales": 105
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 103
+          },
+          {
+            "id": "OPEL",
+            "sales": 75
+          },
+          {
+            "id": "VOLVO",
+            "sales": 68
+          },
+          {
+            "id": "MINI",
+            "sales": 37
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 30
+          },
+          {
+            "id": "CITROEN",
+            "sales": 27
+          },
+          {
+            "id": "SEAT",
+            "sales": 18
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 10
+          },
+          {
+            "id": "HONDA",
+            "sales": 10
+          },
+          {
+            "id": "LEXUS",
+            "sales": 6
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 2
+          },
+          {
+            "id": "MAXUS",
+            "sales": 2
+          },
+          {
+            "id": "ÖVRIGA",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2021-10-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 925
+          },
+          {
+            "id": "KIA",
+            "sales": 418
+          },
+          {
+            "id": "SKODA",
+            "sales": 380
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 379
+          },
+          {
+            "id": "NISSAN",
+            "sales": 349
+          },
+          {
+            "id": "MG",
+            "sales": 275
+          },
+          {
+            "id": "FORD",
+            "sales": 246
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 234
+          },
+          {
+            "id": "AUDI",
+            "sales": 195
+          },
+          {
+            "id": "BMW",
+            "sales": 188
+          },
+          {
+            "id": "VOLVO",
+            "sales": 166
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 133
+          },
+          {
+            "id": "OPEL",
+            "sales": 118
+          },
+          {
+            "id": "RENAULT",
+            "sales": 96
+          },
+          {
+            "id": "MAZDA",
+            "sales": 89
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 81
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 76
+          },
+          {
+            "id": "MINI",
+            "sales": 56
+          },
+          {
+            "id": "FIAT",
+            "sales": 38
+          },
+          {
+            "id": "TESLA",
+            "sales": 36
+          },
+          {
+            "id": "CITROEN",
+            "sales": 28
+          },
+          {
+            "id": "SEAT",
+            "sales": 19
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 14
+          },
+          {
+            "id": "HONDA",
+            "sales": 14
+          },
+          {
+            "id": "MAXUS",
+            "sales": 8
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 7
+          },
+          {
+            "id": "DS",
+            "sales": 3
+          },
+          {
+            "id": "LEXUS",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2021-11-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 908
+          },
+          {
+            "id": "KIA",
+            "sales": 776
+          },
+          {
+            "id": "NISSAN",
+            "sales": 448
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 443
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 313
+          },
+          {
+            "id": "RENAULT",
+            "sales": 300
+          },
+          {
+            "id": "TESLA",
+            "sales": 299
+          },
+          {
+            "id": "FORD",
+            "sales": 265
+          },
+          {
+            "id": "SKODA",
+            "sales": 242
+          },
+          {
+            "id": "BMW",
+            "sales": 224
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 207
+          },
+          {
+            "id": "VOLVO",
+            "sales": 189
+          },
+          {
+            "id": "AUDI",
+            "sales": 143
+          },
+          {
+            "id": "MG",
+            "sales": 125
+          },
+          {
+            "id": "MINI",
+            "sales": 104
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 98
+          },
+          {
+            "id": "OPEL",
+            "sales": 95
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 85
+          },
+          {
+            "id": "SEAT",
+            "sales": 54
+          },
+          {
+            "id": "MAZDA",
+            "sales": 49
+          },
+          {
+            "id": "FIAT",
+            "sales": 23
+          },
+          {
+            "id": "CITROEN",
+            "sales": 22
+          },
+          {
+            "id": "HONDA",
+            "sales": 17
+          },
+          {
+            "id": "LEXUS",
+            "sales": 14
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 10
+          },
+          {
+            "id": "ÖVRIGA",
+            "sales": 7
+          },
+          {
+            "id": "MAXUS",
+            "sales": 4
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 2
+          },
+          {
+            "id": "DS",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2021-12-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 2414
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1470
+          },
+          {
+            "id": "KIA",
+            "sales": 1032
+          },
+          {
+            "id": "RENAULT",
+            "sales": 1030
+          },
+          {
+            "id": "NISSAN",
+            "sales": 720
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 655
+          },
+          {
+            "id": "FORD",
+            "sales": 387
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 342
+          },
+          {
+            "id": "BMW",
+            "sales": 336
+          },
+          {
+            "id": "SKODA",
+            "sales": 283
+          },
+          {
+            "id": "VOLVO",
+            "sales": 277
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 223
+          },
+          {
+            "id": "AUDI",
+            "sales": 183
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 152
+          },
+          {
+            "id": "MINI",
+            "sales": 133
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 91
+          },
+          {
+            "id": "SEAT",
+            "sales": 73
+          },
+          {
+            "id": "MG",
+            "sales": 72
+          },
+          {
+            "id": "OPEL",
+            "sales": 61
+          },
+          {
+            "id": "CITROEN",
+            "sales": 37
+          },
+          {
+            "id": "LEXUS",
+            "sales": 28
+          },
+          {
+            "id": "HONDA",
+            "sales": 16
+          },
+          {
+            "id": "MAZDA",
+            "sales": 14
+          },
+          {
+            "id": "FIAT",
+            "sales": 10
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 3
+          },
+          {
+            "id": "ÖVRIGA",
+            "sales": 1
+          },
+          {
+            "id": "SMART",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2022-01-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 1357
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 802
+          },
+          {
+            "id": "VOLVO",
+            "sales": 535
+          },
+          {
+            "id": "BMW",
+            "sales": 295
+          },
+          {
+            "id": "NISSAN",
+            "sales": 259
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 247
+          },
+          {
+            "id": "AUDI",
+            "sales": 242
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 228
+          },
+          {
+            "id": "SKODA",
+            "sales": 200
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 184
+          },
+          {
+            "id": "OPEL",
+            "sales": 179
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 135
+          },
+          {
+            "id": "FORD",
+            "sales": 121
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 96
+          },
+          {
+            "id": "MINI",
+            "sales": 82
+          },
+          {
+            "id": "MG",
+            "sales": 70
+          },
+          {
+            "id": "RENAULT",
+            "sales": 53
+          },
+          {
+            "id": "CITROEN",
+            "sales": 37
+          },
+          {
+            "id": "CUPRA",
+            "sales": 30
+          },
+          {
+            "id": "AIWAYS",
+            "sales": 21
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 19
+          },
+          {
+            "id": "HONDA",
+            "sales": 17
+          },
+          {
+            "id": "MAXUS",
+            "sales": 15
+          },
+          {
+            "id": "FIAT",
+            "sales": 13
+          },
+          {
+            "id": "TESLA",
+            "sales": 11
+          },
+          {
+            "id": "MAZDA",
+            "sales": 8
+          },
+          {
+            "id": "DFSK",
+            "sales": 7
+          },
+          {
+            "id": "ABT",
+            "sales": 5
+          }
+        ]
+      },
+      {
+        "x": "2022-02-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 958
+          },
+          {
+            "id": "TESLA",
+            "sales": 769
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 545
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 436
+          },
+          {
+            "id": "BMW",
+            "sales": 379
+          },
+          {
+            "id": "VOLVO",
+            "sales": 377
+          },
+          {
+            "id": "AUDI",
+            "sales": 290
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 274
+          },
+          {
+            "id": "SKODA",
+            "sales": 211
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 190
+          },
+          {
+            "id": "MG",
+            "sales": 189
+          },
+          {
+            "id": "OPEL",
+            "sales": 187
+          },
+          {
+            "id": "NISSAN",
+            "sales": 174
+          },
+          {
+            "id": "FORD",
+            "sales": 107
+          },
+          {
+            "id": "RENAULT",
+            "sales": 96
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 92
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 85
+          },
+          {
+            "id": "MINI",
+            "sales": 61
+          },
+          {
+            "id": "CITROEN",
+            "sales": 49
+          },
+          {
+            "id": "MAXUS",
+            "sales": 25
+          },
+          {
+            "id": "FIAT",
+            "sales": 25
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 23
+          },
+          {
+            "id": "HONDA",
+            "sales": 14
+          },
+          {
+            "id": "CUPRA",
+            "sales": 12
+          },
+          {
+            "id": "MAZDA",
+            "sales": 8
+          },
+          {
+            "id": "LEXUS",
+            "sales": 3
+          },
+          {
+            "id": "DS",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2022-03-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 2356
+          },
+          {
+            "id": "KIA",
+            "sales": 1092
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1084
+          },
+          {
+            "id": "VOLVO",
+            "sales": 695
+          },
+          {
+            "id": "BMW",
+            "sales": 595
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 505
+          },
+          {
+            "id": "AUDI",
+            "sales": 488
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 405
+          },
+          {
+            "id": "NISSAN",
+            "sales": 404
+          },
+          {
+            "id": "MG",
+            "sales": 259
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 234
+          },
+          {
+            "id": "FORD",
+            "sales": 194
+          },
+          {
+            "id": "OPEL",
+            "sales": 167
+          },
+          {
+            "id": "RENAULT",
+            "sales": 147
+          },
+          {
+            "id": "SKODA",
+            "sales": 129
+          },
+          {
+            "id": "MINI",
+            "sales": 96
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 90
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 90
+          },
+          {
+            "id": "FIAT",
+            "sales": 72
+          },
+          {
+            "id": "CUPRA",
+            "sales": 72
+          },
+          {
+            "id": "CITROEN",
+            "sales": 41
+          },
+          {
+            "id": "MAXUS",
+            "sales": 38
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 21
+          },
+          {
+            "id": "DS",
+            "sales": 18
+          },
+          {
+            "id": "HONDA",
+            "sales": 17
+          },
+          {
+            "id": "LEXUS",
+            "sales": 10
+          },
+          {
+            "id": "MAZDA",
+            "sales": 7
+          },
+          {
+            "id": "GOUPIL",
+            "sales": 2
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2022-04-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 1116
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 533
+          },
+          {
+            "id": "VOLVO",
+            "sales": 511
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 497
+          },
+          {
+            "id": "BMW",
+            "sales": 459
+          },
+          {
+            "id": "NISSAN",
+            "sales": 395
+          },
+          {
+            "id": "MG",
+            "sales": 336
+          },
+          {
+            "id": "AUDI",
+            "sales": 295
+          },
+          {
+            "id": "SKODA",
+            "sales": 259
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 169
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 169
+          },
+          {
+            "id": "CUPRA",
+            "sales": 133
+          },
+          {
+            "id": "FORD",
+            "sales": 128
+          },
+          {
+            "id": "RENAULT",
+            "sales": 101
+          },
+          {
+            "id": "MAZDA",
+            "sales": 60
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 59
+          },
+          {
+            "id": "OPEL",
+            "sales": 58
+          },
+          {
+            "id": "MINI",
+            "sales": 52
+          },
+          {
+            "id": "CITROEN",
+            "sales": 50
+          },
+          {
+            "id": "FIAT",
+            "sales": 42
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 39
+          },
+          {
+            "id": "MAXUS",
+            "sales": 27
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 22
+          },
+          {
+            "id": "HONDA",
+            "sales": 11
+          },
+          {
+            "id": "TESLA",
+            "sales": 10
+          },
+          {
+            "id": "DS",
+            "sales": 10
+          }
+        ]
+      },
+      {
+        "x": "2022-05-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "KIA",
+            "sales": 882
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 847
+          },
+          {
+            "id": "MG",
+            "sales": 571
+          },
+          {
+            "id": "AUDI",
+            "sales": 482
+          },
+          {
+            "id": "BMW",
+            "sales": 393
+          },
+          {
+            "id": "SKODA",
+            "sales": 391
+          },
+          {
+            "id": "VOLVO",
+            "sales": 368
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 321
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 314
+          },
+          {
+            "id": "TESLA",
+            "sales": 311
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 276
+          },
+          {
+            "id": "NISSAN",
+            "sales": 231
+          },
+          {
+            "id": "CUPRA",
+            "sales": 205
+          },
+          {
+            "id": "MINI",
+            "sales": 162
+          },
+          {
+            "id": "CITROEN",
+            "sales": 120
+          },
+          {
+            "id": "FORD",
+            "sales": 115
+          },
+          {
+            "id": "RENAULT",
+            "sales": 94
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 76
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 71
+          },
+          {
+            "id": "FIAT",
+            "sales": 70
+          },
+          {
+            "id": "MAZDA",
+            "sales": 63
+          },
+          {
+            "id": "MAXUS",
+            "sales": 55
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 32
+          },
+          {
+            "id": "LEXUS",
+            "sales": 11
+          },
+          {
+            "id": "OPEL",
+            "sales": 11
+          },
+          {
+            "id": "DS",
+            "sales": 10
+          },
+          {
+            "id": "DFSK",
+            "sales": 9
+          },
+          {
+            "id": "HONDA",
+            "sales": 9
+          },
+          {
+            "id": "GOUPIL",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2022-06-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 2052
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 960
+          },
+          {
+            "id": "KIA",
+            "sales": 945
+          },
+          {
+            "id": "MG",
+            "sales": 605
+          },
+          {
+            "id": "SKODA",
+            "sales": 526
+          },
+          {
+            "id": "AUDI",
+            "sales": 524
+          },
+          {
+            "id": "BMW",
+            "sales": 439
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 380
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 311
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 289
+          },
+          {
+            "id": "CITROEN",
+            "sales": 235
+          },
+          {
+            "id": "CUPRA",
+            "sales": 170
+          },
+          {
+            "id": "RENAULT",
+            "sales": 148
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 109
+          },
+          {
+            "id": "VOLVO",
+            "sales": 107
+          },
+          {
+            "id": "OPEL",
+            "sales": 92
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 92
+          },
+          {
+            "id": "MAXUS",
+            "sales": 79
+          },
+          {
+            "id": "FORD",
+            "sales": 71
+          },
+          {
+            "id": "NISSAN",
+            "sales": 68
+          },
+          {
+            "id": "MINI",
+            "sales": 67
+          },
+          {
+            "id": "MAZDA",
+            "sales": 51
+          },
+          {
+            "id": "FIAT",
+            "sales": 50
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 31
+          },
+          {
+            "id": "AIWAYS",
+            "sales": 18
+          },
+          {
+            "id": "DS",
+            "sales": 16
+          },
+          {
+            "id": "HONDA",
+            "sales": 11
+          }
+        ]
+      },
+      {
+        "x": "2022-07-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "MG",
+            "sales": 786
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 731
+          },
+          {
+            "id": "KIA",
+            "sales": 450
+          },
+          {
+            "id": "BMW",
+            "sales": 395
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 252
+          },
+          {
+            "id": "SKODA",
+            "sales": 243
+          },
+          {
+            "id": "FORD",
+            "sales": 229
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 210
+          },
+          {
+            "id": "AUDI",
+            "sales": 194
+          },
+          {
+            "id": "RENAULT",
+            "sales": 188
+          },
+          {
+            "id": "CUPRA",
+            "sales": 148
+          },
+          {
+            "id": "NISSAN",
+            "sales": 144
+          },
+          {
+            "id": "CITROEN",
+            "sales": 131
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 130
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 93
+          },
+          {
+            "id": "OPEL",
+            "sales": 84
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 69
+          },
+          {
+            "id": "TESLA",
+            "sales": 69
+          },
+          {
+            "id": "MINI",
+            "sales": 67
+          },
+          {
+            "id": "MAXUS",
+            "sales": 56
+          },
+          {
+            "id": "VOLVO",
+            "sales": 54
+          },
+          {
+            "id": "FIAT",
+            "sales": 38
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 30
+          },
+          {
+            "id": "LEXUS",
+            "sales": 11
+          },
+          {
+            "id": "DFSK",
+            "sales": 4
+          },
+          {
+            "id": "HONDA",
+            "sales": 4
+          },
+          {
+            "id": "MAZDA",
+            "sales": 4
+          },
+          {
+            "id": "AIWAYS",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2022-08-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 958
+          },
+          {
+            "id": "MG",
+            "sales": 778
+          },
+          {
+            "id": "NISSAN",
+            "sales": 528
+          },
+          {
+            "id": "SKODA",
+            "sales": 472
+          },
+          {
+            "id": "KIA",
+            "sales": 468
+          },
+          {
+            "id": "TESLA",
+            "sales": 458
+          },
+          {
+            "id": "BMW",
+            "sales": 373
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 308
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 194
+          },
+          {
+            "id": "CUPRA",
+            "sales": 185
+          },
+          {
+            "id": "OPEL",
+            "sales": 170
+          },
+          {
+            "id": "MINI",
+            "sales": 168
+          },
+          {
+            "id": "FORD",
+            "sales": 156
+          },
+          {
+            "id": "AUDI",
+            "sales": 116
+          },
+          {
+            "id": "CITROEN",
+            "sales": 113
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 109
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 74
+          },
+          {
+            "id": "VOLVO",
+            "sales": 63
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 58
+          },
+          {
+            "id": "RENAULT",
+            "sales": 44
+          },
+          {
+            "id": "MAXUS",
+            "sales": 42
+          },
+          {
+            "id": "FIAT",
+            "sales": 38
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 27
+          },
+          {
+            "id": "AIWAYS",
+            "sales": 21
+          },
+          {
+            "id": "MAZDA",
+            "sales": 10
+          },
+          {
+            "id": "LEXUS",
+            "sales": 5
+          },
+          {
+            "id": "DFSK",
+            "sales": 4
+          },
+          {
+            "id": "HONDA",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2022-09-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 928
+          },
+          {
+            "id": "VOLVO",
+            "sales": 919
+          },
+          {
+            "id": "TESLA",
+            "sales": 917
+          },
+          {
+            "id": "KIA",
+            "sales": 877
+          },
+          {
+            "id": "BMW",
+            "sales": 549
+          },
+          {
+            "id": "MG",
+            "sales": 545
+          },
+          {
+            "id": "SKODA",
+            "sales": 516
+          },
+          {
+            "id": "NISSAN",
+            "sales": 341
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 331
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 272
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 270
+          },
+          {
+            "id": "CITROEN",
+            "sales": 225
+          },
+          {
+            "id": "AUDI",
+            "sales": 186
+          },
+          {
+            "id": "MAZDA",
+            "sales": 180
+          },
+          {
+            "id": "CUPRA",
+            "sales": 164
+          },
+          {
+            "id": "FORD",
+            "sales": 145
+          },
+          {
+            "id": "MINI",
+            "sales": 120
+          },
+          {
+            "id": "FIAT",
+            "sales": 113
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 105
+          },
+          {
+            "id": "OPEL",
+            "sales": 84
+          },
+          {
+            "id": "RENAULT",
+            "sales": 69
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 66
+          },
+          {
+            "id": "MAXUS",
+            "sales": 37
+          },
+          {
+            "id": "AIWAYS",
+            "sales": 16
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 7
+          },
+          {
+            "id": "GOUPIL",
+            "sales": 6
+          },
+          {
+            "id": "DS",
+            "sales": 5
+          },
+          {
+            "id": "LEXUS",
+            "sales": 3
+          }
+        ]
+      },
+      {
+        "x": "2022-10-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLVO",
+            "sales": 1505
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1128
+          },
+          {
+            "id": "KIA",
+            "sales": 835
+          },
+          {
+            "id": "MG",
+            "sales": 590
+          },
+          {
+            "id": "NISSAN",
+            "sales": 489
+          },
+          {
+            "id": "SKODA",
+            "sales": 442
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 439
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 371
+          },
+          {
+            "id": "FORD",
+            "sales": 317
+          },
+          {
+            "id": "BMW",
+            "sales": 312
+          },
+          {
+            "id": "AUDI",
+            "sales": 302
+          },
+          {
+            "id": "RENAULT",
+            "sales": 224
+          },
+          {
+            "id": "CUPRA",
+            "sales": 200
+          },
+          {
+            "id": "MINI",
+            "sales": 191
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 139
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 117
+          },
+          {
+            "id": "MAZDA",
+            "sales": 78
+          },
+          {
+            "id": "FIAT",
+            "sales": 63
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 56
+          },
+          {
+            "id": "MAXUS",
+            "sales": 51
+          },
+          {
+            "id": "TESLA",
+            "sales": 43
+          },
+          {
+            "id": "CITROEN",
+            "sales": 38
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 28
+          },
+          {
+            "id": "OPEL",
+            "sales": 21
+          },
+          {
+            "id": "DS",
+            "sales": 15
+          },
+          {
+            "id": "NIO",
+            "sales": 12
+          },
+          {
+            "id": "GOUPIL",
+            "sales": 3
+          },
+          {
+            "id": "LEXUS",
+            "sales": 2
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2022-11-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "VOLVO",
+            "sales": 2505
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1764
+          },
+          {
+            "id": "MG",
+            "sales": 924
+          },
+          {
+            "id": "KIA",
+            "sales": 731
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 613
+          },
+          {
+            "id": "TESLA",
+            "sales": 552
+          },
+          {
+            "id": "NISSAN",
+            "sales": 413
+          },
+          {
+            "id": "SKODA",
+            "sales": 395
+          },
+          {
+            "id": "FORD",
+            "sales": 374
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 373
+          },
+          {
+            "id": "BMW",
+            "sales": 356
+          },
+          {
+            "id": "CUPRA",
+            "sales": 309
+          },
+          {
+            "id": "RENAULT",
+            "sales": 282
+          },
+          {
+            "id": "AUDI",
+            "sales": 272
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 261
+          },
+          {
+            "id": "MINI",
+            "sales": 179
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 162
+          },
+          {
+            "id": "MAXUS",
+            "sales": 114
+          },
+          {
+            "id": "MAZDA",
+            "sales": 114
+          },
+          {
+            "id": "BYD",
+            "sales": 104
+          },
+          {
+            "id": "FIAT",
+            "sales": 77
+          },
+          {
+            "id": "SUBARU",
+            "sales": 74
+          },
+          {
+            "id": "CITROEN",
+            "sales": 65
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 63
+          },
+          {
+            "id": "OPEL",
+            "sales": 49
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 47
+          },
+          {
+            "id": "AIWAYS",
+            "sales": 17
+          },
+          {
+            "id": "NIO",
+            "sales": 15
+          }
+        ]
+      },
+      {
+        "x": "2022-12-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "VOLVO",
+            "sales": 3963
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 2571
+          },
+          {
+            "id": "TESLA",
+            "sales": 1641
+          },
+          {
+            "id": "MG",
+            "sales": 1459
+          },
+          {
+            "id": "KIA",
+            "sales": 1306
+          },
+          {
+            "id": "BYD",
+            "sales": 983
+          },
+          {
+            "id": "BMW",
+            "sales": 760
+          },
+          {
+            "id": "CUPRA",
+            "sales": 705
+          },
+          {
+            "id": "NISSAN",
+            "sales": 643
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 595
+          },
+          {
+            "id": "SKODA",
+            "sales": 573
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 547
+          },
+          {
+            "id": "RENAULT",
+            "sales": 516
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 443
+          },
+          {
+            "id": "AUDI",
+            "sales": 377
+          },
+          {
+            "id": "FORD",
+            "sales": 342
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 207
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 142
+          },
+          {
+            "id": "MAXUS",
+            "sales": 135
+          },
+          {
+            "id": "ORA",
+            "sales": 134
+          },
+          {
+            "id": "MINI",
+            "sales": 132
+          },
+          {
+            "id": "AIWAYS",
+            "sales": 79
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 75
+          },
+          {
+            "id": "OPEL",
+            "sales": 71
+          },
+          {
+            "id": "CITROEN",
+            "sales": 50
+          },
+          {
+            "id": "FIAT",
+            "sales": 31
+          },
+          {
+            "id": "HONDA",
+            "sales": 22
+          },
+          {
+            "id": "SUBARU",
+            "sales": 14
+          }
+        ]
+      },
+      {
+        "x": "2023-01-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "VOLVO",
+            "sales": 1073
+          },
+          {
+            "id": "KIA",
+            "sales": 642
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 397
+          },
+          {
+            "id": "BMW",
+            "sales": 325
+          },
+          {
+            "id": "TESLA",
+            "sales": 226
+          },
+          {
+            "id": "MG",
+            "sales": 218
+          },
+          {
+            "id": "MAZDA",
+            "sales": 179
+          },
+          {
+            "id": "SKODA",
+            "sales": 153
+          },
+          {
+            "id": "AUDI",
+            "sales": 143
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 141
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 137
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 102
+          },
+          {
+            "id": "NISSAN",
+            "sales": 100
+          },
+          {
+            "id": "RENAULT",
+            "sales": 87
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 83
+          },
+          {
+            "id": "OPEL",
+            "sales": 66
+          },
+          {
+            "id": "CUPRA",
+            "sales": 33
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 28
+          },
+          {
+            "id": "MINI",
+            "sales": 27
+          },
+          {
+            "id": "BYD",
+            "sales": 18
+          },
+          {
+            "id": "MAXUS",
+            "sales": 16
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 15
+          },
+          {
+            "id": "ORA",
+            "sales": 10
+          },
+          {
+            "id": "DS",
+            "sales": 6
+          },
+          {
+            "id": "FIAT",
+            "sales": 4
+          },
+          {
+            "id": "HONDA",
+            "sales": 2
+          },
+          {
+            "id": "SUBARU",
+            "sales": 2
+          },
+          {
+            "id": "CITROEN",
+            "sales": 1
+          },
+          {
+            "id": "FORD",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2023-02-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1108
+          },
+          {
+            "id": "VOLVO",
+            "sales": 982
+          },
+          {
+            "id": "KIA",
+            "sales": 568
+          },
+          {
+            "id": "TESLA",
+            "sales": 522
+          },
+          {
+            "id": "MG",
+            "sales": 458
+          },
+          {
+            "id": "BMW",
+            "sales": 450
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 293
+          },
+          {
+            "id": "AUDI",
+            "sales": 252
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 252
+          },
+          {
+            "id": "SKODA",
+            "sales": 249
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 204
+          },
+          {
+            "id": "RENAULT",
+            "sales": 133
+          },
+          {
+            "id": "BYD",
+            "sales": 132
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 125
+          },
+          {
+            "id": "NISSAN",
+            "sales": 124
+          },
+          {
+            "id": "CUPRA",
+            "sales": 81
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 75
+          },
+          {
+            "id": "OPEL",
+            "sales": 71
+          },
+          {
+            "id": "MINI",
+            "sales": 66
+          },
+          {
+            "id": "MAXUS",
+            "sales": 61
+          },
+          {
+            "id": "MAZDA",
+            "sales": 52
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 51
+          },
+          {
+            "id": "FORD",
+            "sales": 43
+          },
+          {
+            "id": "FIAT",
+            "sales": 35
+          },
+          {
+            "id": "CITROEN",
+            "sales": 20
+          },
+          {
+            "id": "SUBARU",
+            "sales": 18
+          },
+          {
+            "id": "NIO",
+            "sales": 17
+          },
+          {
+            "id": "HONGQI",
+            "sales": 4
+          },
+          {
+            "id": "ORA",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2023-03-01T00:00:00.000+01:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 4111
+          },
+          {
+            "id": "VOLVO",
+            "sales": 1541
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1519
+          },
+          {
+            "id": "KIA",
+            "sales": 981
+          },
+          {
+            "id": "MG",
+            "sales": 874
+          },
+          {
+            "id": "BMW",
+            "sales": 682
+          },
+          {
+            "id": "SKODA",
+            "sales": 589
+          },
+          {
+            "id": "AUDI",
+            "sales": 471
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 351
+          },
+          {
+            "id": "RENAULT",
+            "sales": 313
+          },
+          {
+            "id": "NISSAN",
+            "sales": 292
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 263
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 222
+          },
+          {
+            "id": "CITROEN",
+            "sales": 185
+          },
+          {
+            "id": "OPEL",
+            "sales": 156
+          },
+          {
+            "id": "CUPRA",
+            "sales": 146
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 140
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 119
+          },
+          {
+            "id": "MAXUS",
+            "sales": 111
+          },
+          {
+            "id": "MINI",
+            "sales": 100
+          },
+          {
+            "id": "FORD",
+            "sales": 77
+          },
+          {
+            "id": "MAZDA",
+            "sales": 66
+          },
+          {
+            "id": "BYD",
+            "sales": 58
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 48
+          },
+          {
+            "id": "NIO",
+            "sales": 23
+          },
+          {
+            "id": "FIAT",
+            "sales": 20
+          },
+          {
+            "id": "HONGQI",
+            "sales": 19
+          },
+          {
+            "id": "SUBARU",
+            "sales": 19
+          },
+          {
+            "id": "ORA",
+            "sales": 11
+          }
+        ]
+      },
+      {
+        "x": "2023-04-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1292
+          },
+          {
+            "id": "VOLVO",
+            "sales": 956
+          },
+          {
+            "id": "TESLA",
+            "sales": 746
+          },
+          {
+            "id": "KIA",
+            "sales": 648
+          },
+          {
+            "id": "BMW",
+            "sales": 570
+          },
+          {
+            "id": "MG",
+            "sales": 415
+          },
+          {
+            "id": "AUDI",
+            "sales": 348
+          },
+          {
+            "id": "SKODA",
+            "sales": 346
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 296
+          },
+          {
+            "id": "RENAULT",
+            "sales": 286
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 227
+          },
+          {
+            "id": "NISSAN",
+            "sales": 167
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 116
+          },
+          {
+            "id": "CUPRA",
+            "sales": 113
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 113
+          },
+          {
+            "id": "CITROEN",
+            "sales": 90
+          },
+          {
+            "id": "MAXUS",
+            "sales": 84
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 71
+          },
+          {
+            "id": "OPEL",
+            "sales": 66
+          },
+          {
+            "id": "BYD",
+            "sales": 64
+          },
+          {
+            "id": "MINI",
+            "sales": 56
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 56
+          },
+          {
+            "id": "FORD",
+            "sales": 24
+          },
+          {
+            "id": "NIO",
+            "sales": 14
+          },
+          {
+            "id": "ORA",
+            "sales": 12
+          },
+          {
+            "id": "LEXUS",
+            "sales": 12
+          },
+          {
+            "id": "SUBARU",
+            "sales": 10
+          },
+          {
+            "id": "AIWAYS",
+            "sales": 3
+          }
+        ]
+      },
+      {
+        "x": "2023-05-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 2443
+          },
+          {
+            "id": "VOLVO",
+            "sales": 1603
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1521
+          },
+          {
+            "id": "MG",
+            "sales": 1056
+          },
+          {
+            "id": "KIA",
+            "sales": 756
+          },
+          {
+            "id": "BMW",
+            "sales": 708
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 687
+          },
+          {
+            "id": "AUDI",
+            "sales": 529
+          },
+          {
+            "id": "SKODA",
+            "sales": 518
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 375
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 279
+          },
+          {
+            "id": "OPEL",
+            "sales": 196
+          },
+          {
+            "id": "CITROEN",
+            "sales": 184
+          },
+          {
+            "id": "NISSAN",
+            "sales": 174
+          },
+          {
+            "id": "CUPRA",
+            "sales": 152
+          },
+          {
+            "id": "BYD",
+            "sales": 146
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 94
+          },
+          {
+            "id": "RENAULT",
+            "sales": 89
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 73
+          },
+          {
+            "id": "MAXUS",
+            "sales": 63
+          },
+          {
+            "id": "MINI",
+            "sales": 61
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 52
+          },
+          {
+            "id": "SUBARU",
+            "sales": 29
+          },
+          {
+            "id": "FIAT",
+            "sales": 28
+          },
+          {
+            "id": "NIO",
+            "sales": 20
+          },
+          {
+            "id": "FORD",
+            "sales": 19
+          },
+          {
+            "id": "LEXUS",
+            "sales": 16
+          },
+          {
+            "id": "MAZDA",
+            "sales": 9
+          },
+          {
+            "id": "ORA",
+            "sales": 9
+          },
+          {
+            "id": "JAGUAR",
+            "sales": 1
+          }
+        ]
+      },
+      {
+        "x": "2023-06-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 3049
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1673
+          },
+          {
+            "id": "KIA",
+            "sales": 972
+          },
+          {
+            "id": "VOLVO",
+            "sales": 750
+          },
+          {
+            "id": "BMW",
+            "sales": 724
+          },
+          {
+            "id": "SKODA",
+            "sales": 671
+          },
+          {
+            "id": "AUDI",
+            "sales": 625
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 465
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 450
+          },
+          {
+            "id": "MG",
+            "sales": 413
+          },
+          {
+            "id": "BYD",
+            "sales": 313
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 274
+          },
+          {
+            "id": "OPEL",
+            "sales": 218
+          },
+          {
+            "id": "NISSAN",
+            "sales": 207
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 199
+          },
+          {
+            "id": "CUPRA",
+            "sales": 128
+          },
+          {
+            "id": "CITROEN",
+            "sales": 118
+          },
+          {
+            "id": "RENAULT",
+            "sales": 108
+          },
+          {
+            "id": "MAXUS",
+            "sales": 104
+          },
+          {
+            "id": "FORD",
+            "sales": 88
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 70
+          },
+          {
+            "id": "MINI",
+            "sales": 62
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 50
+          },
+          {
+            "id": "FIAT",
+            "sales": 40
+          },
+          {
+            "id": "ORA",
+            "sales": 30
+          },
+          {
+            "id": "NIO",
+            "sales": 24
+          },
+          {
+            "id": "LEXUS",
+            "sales": 18
+          },
+          {
+            "id": "SUBARU",
+            "sales": 16
+          },
+          {
+            "id": "HONGQI",
+            "sales": 11
+          }
+        ]
+      },
+      {
+        "x": "2023-07-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1133
+          },
+          {
+            "id": "BYD",
+            "sales": 843
+          },
+          {
+            "id": "KIA",
+            "sales": 633
+          },
+          {
+            "id": "BMW",
+            "sales": 522
+          },
+          {
+            "id": "TESLA",
+            "sales": 477
+          },
+          {
+            "id": "AUDI",
+            "sales": 441
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 388
+          },
+          {
+            "id": "SKODA",
+            "sales": 370
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 281
+          },
+          {
+            "id": "VOLVO",
+            "sales": 240
+          },
+          {
+            "id": "MG",
+            "sales": 225
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 190
+          },
+          {
+            "id": "CUPRA",
+            "sales": 145
+          },
+          {
+            "id": "OPEL",
+            "sales": 143
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 131
+          },
+          {
+            "id": "CITROEN",
+            "sales": 121
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 121
+          },
+          {
+            "id": "NISSAN",
+            "sales": 114
+          },
+          {
+            "id": "MINI",
+            "sales": 84
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 66
+          },
+          {
+            "id": "RENAULT",
+            "sales": 52
+          },
+          {
+            "id": "ORA",
+            "sales": 19
+          },
+          {
+            "id": "SUBARU",
+            "sales": 10
+          },
+          {
+            "id": "FORD",
+            "sales": 8
+          },
+          {
+            "id": "MAXUS",
+            "sales": 7
+          },
+          {
+            "id": "NIO",
+            "sales": 6
+          },
+          {
+            "id": "HONGQI",
+            "sales": 5
+          },
+          {
+            "id": "MAZDA",
+            "sales": 5
+          },
+          {
+            "id": "LEXUS",
+            "sales": 5
+          }
+        ]
+      },
+      {
+        "x": "2023-08-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1902
+          },
+          {
+            "id": "TESLA",
+            "sales": 1726
+          },
+          {
+            "id": "BMW",
+            "sales": 759
+          },
+          {
+            "id": "AUDI",
+            "sales": 690
+          },
+          {
+            "id": "MG",
+            "sales": 619
+          },
+          {
+            "id": "VOLVO",
+            "sales": 618
+          },
+          {
+            "id": "KIA",
+            "sales": 597
+          },
+          {
+            "id": "SKODA",
+            "sales": 595
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 343
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 338
+          },
+          {
+            "id": "BYD",
+            "sales": 326
+          },
+          {
+            "id": "CUPRA",
+            "sales": 280
+          },
+          {
+            "id": "NISSAN",
+            "sales": 231
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 198
+          },
+          {
+            "id": "FORD",
+            "sales": 185
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 103
+          },
+          {
+            "id": "RENAULT",
+            "sales": 78
+          },
+          {
+            "id": "MINI",
+            "sales": 77
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 70
+          },
+          {
+            "id": "ORA",
+            "sales": 66
+          },
+          {
+            "id": "OPEL",
+            "sales": 52
+          },
+          {
+            "id": "CITROEN",
+            "sales": 48
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 44
+          },
+          {
+            "id": "NIO",
+            "sales": 27
+          },
+          {
+            "id": "XPENG",
+            "sales": 25
+          },
+          {
+            "id": "MAXUS",
+            "sales": 18
+          },
+          {
+            "id": "FIAT",
+            "sales": 17
+          },
+          {
+            "id": "HONDA",
+            "sales": 16
+          },
+          {
+            "id": "MAZDA",
+            "sales": 8
+          },
+          {
+            "id": "LEXUS",
+            "sales": 7
+          },
+          {
+            "id": "LOTUS",
+            "sales": 2
+          }
+        ]
+      },
+      {
+        "x": "2023-09-01T00:00:00.000+02:00",
+        "y": [
+          {
+            "id": "TESLA",
+            "sales": 3175
+          },
+          {
+            "id": "VOLKSWAGEN",
+            "sales": 1862
+          },
+          {
+            "id": "MG",
+            "sales": 1275
+          },
+          {
+            "id": "VOLVO",
+            "sales": 1127
+          },
+          {
+            "id": "SKODA",
+            "sales": 708
+          },
+          {
+            "id": "KIA",
+            "sales": 680
+          },
+          {
+            "id": "BYD",
+            "sales": 603
+          },
+          {
+            "id": "BMW",
+            "sales": 594
+          },
+          {
+            "id": "AUDI",
+            "sales": 514
+          },
+          {
+            "id": "MERCEDES-BENZ",
+            "sales": 488
+          },
+          {
+            "id": "POLESTAR",
+            "sales": 304
+          },
+          {
+            "id": "NISSAN",
+            "sales": 264
+          },
+          {
+            "id": "CUPRA",
+            "sales": 246
+          },
+          {
+            "id": "TOYOTA",
+            "sales": 200
+          },
+          {
+            "id": "RENAULT",
+            "sales": 171
+          },
+          {
+            "id": "HYUNDAI",
+            "sales": 145
+          },
+          {
+            "id": "PEUGEOT",
+            "sales": 120
+          },
+          {
+            "id": "ORA",
+            "sales": 100
+          },
+          {
+            "id": "FIAT",
+            "sales": 61
+          },
+          {
+            "id": "MINI",
+            "sales": 58
+          },
+          {
+            "id": "XPENG",
+            "sales": 51
+          },
+          {
+            "id": "FORD",
+            "sales": 47
+          },
+          {
+            "id": "PORSCHE",
+            "sales": 47
+          },
+          {
+            "id": "CITROEN",
+            "sales": 35
+          },
+          {
+            "id": "OPEL",
+            "sales": 32
+          },
+          {
+            "id": "MAXUS",
+            "sales": 30
+          },
+          {
+            "id": "HONDA",
+            "sales": 16
+          },
+          {
+            "id": "SUBARU",
+            "sales": 13
+          },
+          {
+            "id": "NIO",
+            "sales": 11
+          },
+          {
+            "id": "MAZDA",
+            "sales": 3
+          },
+          {
+            "id": "LOTUS",
+            "sales": 3
+          }
+        ]
+      }
+    ],
+    "electric": [
+      {
+        "x": "2017-01-01T00:00:00.000+01:00",
+        "y": 243
+      },
+      {
+        "x": "2017-02-01T00:00:00.000+01:00",
+        "y": 216
+      },
+      {
+        "x": "2017-03-01T00:00:00.000+01:00",
+        "y": 563
+      },
+      {
+        "x": "2017-04-01T00:00:00.000+02:00",
+        "y": 386
+      },
+      {
+        "x": "2017-05-01T00:00:00.000+02:00",
+        "y": 369
+      },
+      {
+        "x": "2017-06-01T00:00:00.000+02:00",
+        "y": 429
+      },
+      {
+        "x": "2017-07-01T00:00:00.000+02:00",
+        "y": 196
+      },
+      {
+        "x": "2017-08-01T00:00:00.000+02:00",
+        "y": 393
+      },
+      {
+        "x": "2017-09-01T00:00:00.000+02:00",
+        "y": 473
+      },
+      {
+        "x": "2017-10-01T00:00:00.000+02:00",
+        "y": 353
+      },
+      {
+        "x": "2017-11-01T00:00:00.000+01:00",
+        "y": 257
+      },
+      {
+        "x": "2017-12-01T00:00:00.000+01:00",
+        "y": 282
+      },
+      {
+        "x": "2018-01-01T00:00:00.000+01:00",
+        "y": 187
+      },
+      {
+        "x": "2018-02-01T00:00:00.000+01:00",
+        "y": 325
+      },
+      {
+        "x": "2018-03-01T00:00:00.000+01:00",
+        "y": 760
+      },
+      {
+        "x": "2018-04-01T00:00:00.000+02:00",
+        "y": 373
+      },
+      {
+        "x": "2018-05-01T00:00:00.000+02:00",
+        "y": 282
+      },
+      {
+        "x": "2018-06-01T00:00:00.000+02:00",
+        "y": 340
+      },
+      {
+        "x": "2018-07-01T00:00:00.000+02:00",
+        "y": 522
+      },
+      {
+        "x": "2018-08-01T00:00:00.000+02:00",
+        "y": 563
+      },
+      {
+        "x": "2018-09-01T00:00:00.000+02:00",
+        "y": 664
+      },
+      {
+        "x": "2018-10-01T00:00:00.000+02:00",
+        "y": 803
+      },
+      {
+        "x": "2018-11-01T00:00:00.000+01:00",
+        "y": 1211
+      },
+      {
+        "x": "2018-12-01T00:00:00.000+01:00",
+        "y": 1102
+      },
+      {
+        "x": "2019-01-01T00:00:00.000+01:00",
+        "y": 1091
+      },
+      {
+        "x": "2019-02-01T00:00:00.000+01:00",
+        "y": 899
+      },
+      {
+        "x": "2019-03-01T00:00:00.000+01:00",
+        "y": 2121
+      },
+      {
+        "x": "2019-04-01T00:00:00.000+02:00",
+        "y": 1389
+      },
+      {
+        "x": "2019-05-01T00:00:00.000+02:00",
+        "y": 1243
+      },
+      {
+        "x": "2019-06-01T00:00:00.000+02:00",
+        "y": 1684
+      },
+      {
+        "x": "2019-07-01T00:00:00.000+02:00",
+        "y": 1091
+      },
+      {
+        "x": "2019-08-01T00:00:00.000+02:00",
+        "y": 964
+      },
+      {
+        "x": "2019-09-01T00:00:00.000+02:00",
+        "y": 1753
+      },
+      {
+        "x": "2019-10-01T00:00:00.000+02:00",
+        "y": 811
+      },
+      {
+        "x": "2019-11-01T00:00:00.000+01:00",
+        "y": 1030
+      },
+      {
+        "x": "2019-12-01T00:00:00.000+01:00",
+        "y": 1606
+      },
+      {
+        "x": "2020-01-01T00:00:00.000+01:00",
+        "y": 1225
+      },
+      {
+        "x": "2020-02-01T00:00:00.000+01:00",
+        "y": 1409
+      },
+      {
+        "x": "2020-03-01T00:00:00.000+01:00",
+        "y": 2999
+      },
+      {
+        "x": "2020-04-01T00:00:00.000+02:00",
+        "y": 1040
+      },
+      {
+        "x": "2020-05-01T00:00:00.000+02:00",
+        "y": 829
+      },
+      {
+        "x": "2020-06-01T00:00:00.000+02:00",
+        "y": 1667
+      },
+      {
+        "x": "2020-07-01T00:00:00.000+02:00",
+        "y": 1294
+      },
+      {
+        "x": "2020-08-01T00:00:00.000+02:00",
+        "y": 2097
+      },
+      {
+        "x": "2020-09-01T00:00:00.000+02:00",
+        "y": 3643
+      },
+      {
+        "x": "2020-10-01T00:00:00.000+02:00",
+        "y": 2277
+      },
+      {
+        "x": "2020-11-01T00:00:00.000+01:00",
+        "y": 2702
+      },
+      {
+        "x": "2020-12-01T00:00:00.000+01:00",
+        "y": 6634
+      },
+      {
+        "x": "2021-01-01T00:00:00.000+01:00",
+        "y": 1106
+      },
+      {
+        "x": "2021-02-01T00:00:00.000+01:00",
+        "y": 1394
+      },
+      {
+        "x": "2021-03-01T00:00:00.000+01:00",
+        "y": 2609
+      },
+      {
+        "x": "2021-04-01T00:00:00.000+02:00",
+        "y": 4869
+      },
+      {
+        "x": "2021-05-01T00:00:00.000+02:00",
+        "y": 3949
+      },
+      {
+        "x": "2021-06-01T00:00:00.000+02:00",
+        "y": 8687
+      },
+      {
+        "x": "2021-07-01T00:00:00.000+02:00",
+        "y": 2535
+      },
+      {
+        "x": "2021-08-01T00:00:00.000+02:00",
+        "y": 4781
+      },
+      {
+        "x": "2021-09-01T00:00:00.000+02:00",
+        "y": 7454
+      },
+      {
+        "x": "2021-10-01T00:00:00.000+02:00",
+        "y": 4573
+      },
+      {
+        "x": "2021-11-01T00:00:00.000+01:00",
+        "y": 5468
+      },
+      {
+        "x": "2021-12-01T00:00:00.000+01:00",
+        "y": 10044
+      },
+      {
+        "x": "2022-01-01T00:00:00.000+01:00",
+        "y": 5268
+      },
+      {
+        "x": "2022-02-01T00:00:00.000+01:00",
+        "y": 5581
+      },
+      {
+        "x": "2022-03-01T00:00:00.000+01:00",
+        "y": 9330
+      },
+      {
+        "x": "2022-04-01T00:00:00.000+02:00",
+        "y": 5541
+      },
+      {
+        "x": "2022-05-01T00:00:00.000+02:00",
+        "y": 6502
+      },
+      {
+        "x": "2022-06-01T00:00:00.000+02:00",
+        "y": 8446
+      },
+      {
+        "x": "2022-07-01T00:00:00.000+02:00",
+        "y": 4816
+      },
+      {
+        "x": "2022-08-01T00:00:00.000+02:00",
+        "y": 5942
+      },
+      {
+        "x": "2022-09-01T00:00:00.000+02:00",
+        "y": 7996
+      },
+      {
+        "x": "2022-10-01T00:00:00.000+02:00",
+        "y": 8013
+      },
+      {
+        "x": "2022-11-01T00:00:00.000+01:00",
+        "y": 11204
+      },
+      {
+        "x": "2022-12-01T00:00:00.000+01:00",
+        "y": 18516
+      },
+      {
+        "x": "2023-01-01T00:00:00.000+01:00",
+        "y": 4235
+      },
+      {
+        "x": "2023-02-01T00:00:00.000+01:00",
+        "y": 6448
+      },
+      {
+        "x": "2023-03-01T00:00:00.000+01:00",
+        "y": 13507
+      },
+      {
+        "x": "2023-04-01T00:00:00.000+02:00",
+        "y": 7201
+      },
+      {
+        "x": "2023-05-01T00:00:00.000+02:00",
+        "y": 11890
+      },
+      {
+        "x": "2023-06-01T00:00:00.000+02:00",
+        "y": 11870
+      },
+      {
+        "x": "2023-07-01T00:00:00.000+02:00",
+        "y": 6785
+      },
+      {
+        "x": "2023-08-01T00:00:00.000+02:00",
+        "y": 10065
+      },
+      {
+        "x": "2023-09-01T00:00:00.000+02:00",
+        "y": 12983
+      }
+    ],
+    "noneElectric": [
+      {
+        "x": "2017-01-01T00:00:00.000+01:00",
+        "y": 23040
+      },
+      {
+        "x": "2017-02-01T00:00:00.000+01:00",
+        "y": 27457
+      },
+      {
+        "x": "2017-03-01T00:00:00.000+01:00",
+        "y": 37796
+      },
+      {
+        "x": "2017-04-01T00:00:00.000+02:00",
+        "y": 30083
+      },
+      {
+        "x": "2017-05-01T00:00:00.000+02:00",
+        "y": 34948
+      },
+      {
+        "x": "2017-06-01T00:00:00.000+02:00",
+        "y": 37888
+      },
+      {
+        "x": "2017-07-01T00:00:00.000+02:00",
+        "y": 24523
+      },
+      {
+        "x": "2017-08-01T00:00:00.000+02:00",
+        "y": 29520
+      },
+      {
+        "x": "2017-09-01T00:00:00.000+02:00",
+        "y": 31356
+      },
+      {
+        "x": "2017-10-01T00:00:00.000+02:00",
+        "y": 31972
+      },
+      {
+        "x": "2017-11-01T00:00:00.000+01:00",
+        "y": 32312
+      },
+      {
+        "x": "2017-12-01T00:00:00.000+01:00",
+        "y": 34663
+      },
+      {
+        "x": "2018-01-01T00:00:00.000+01:00",
+        "y": 1808
+      },
+      {
+        "x": "2018-02-01T00:00:00.000+01:00",
+        "y": 26891
+      },
+      {
+        "x": "2018-03-01T00:00:00.000+01:00",
+        "y": 36456
+      },
+      {
+        "x": "2018-04-01T00:00:00.000+02:00",
+        "y": 23832
+      },
+      {
+        "x": "2018-05-01T00:00:00.000+02:00",
+        "y": 37406
+      },
+      {
+        "x": "2018-06-01T00:00:00.000+02:00",
+        "y": 65892
+      },
+      {
+        "x": "2018-07-01T00:00:00.000+02:00",
+        "y": 11982
+      },
+      {
+        "x": "2018-08-01T00:00:00.000+02:00",
+        "y": 24111
+      },
+      {
+        "x": "2018-09-01T00:00:00.000+02:00",
+        "y": 18450
+      },
+      {
+        "x": "2018-10-01T00:00:00.000+02:00",
+        "y": 22212
+      },
+      {
+        "x": "2018-11-01T00:00:00.000+01:00",
+        "y": 24607
+      },
+      {
+        "x": "2018-12-01T00:00:00.000+01:00",
+        "y": 21900
+      },
+      {
+        "x": "2019-01-01T00:00:00.000+01:00",
+        "y": 19389
+      },
+      {
+        "x": "2019-02-01T00:00:00.000+01:00",
+        "y": 22247
+      },
+      {
+        "x": "2019-03-01T00:00:00.000+01:00",
+        "y": 28141
+      },
+      {
+        "x": "2019-04-01T00:00:00.000+02:00",
+        "y": 28872
+      },
+      {
+        "x": "2019-05-01T00:00:00.000+02:00",
+        "y": 30690
+      },
+      {
+        "x": "2019-06-01T00:00:00.000+02:00",
+        "y": 30155
+      },
+      {
+        "x": "2019-07-01T00:00:00.000+02:00",
+        "y": 22577
+      },
+      {
+        "x": "2019-08-01T00:00:00.000+02:00",
+        "y": 28516
+      },
+      {
+        "x": "2019-09-01T00:00:00.000+02:00",
+        "y": 25004
+      },
+      {
+        "x": "2019-10-01T00:00:00.000+02:00",
+        "y": 28822
+      },
+      {
+        "x": "2019-11-01T00:00:00.000+01:00",
+        "y": 29470
+      },
+      {
+        "x": "2019-12-01T00:00:00.000+01:00",
+        "y": 46520
+      },
+      {
+        "x": "2020-01-01T00:00:00.000+01:00",
+        "y": 15569
+      },
+      {
+        "x": "2020-02-01T00:00:00.000+01:00",
+        "y": 20283
+      },
+      {
+        "x": "2020-03-01T00:00:00.000+01:00",
+        "y": 24644
+      },
+      {
+        "x": "2020-04-01T00:00:00.000+02:00",
+        "y": 17872
+      },
+      {
+        "x": "2020-05-01T00:00:00.000+02:00",
+        "y": 15050
+      },
+      {
+        "x": "2020-06-01T00:00:00.000+02:00",
+        "y": 23069
+      },
+      {
+        "x": "2020-07-01T00:00:00.000+02:00",
+        "y": 21394
+      },
+      {
+        "x": "2020-08-01T00:00:00.000+02:00",
+        "y": 23393
+      },
+      {
+        "x": "2020-09-01T00:00:00.000+02:00",
+        "y": 25076
+      },
+      {
+        "x": "2020-10-01T00:00:00.000+02:00",
+        "y": 25870
+      },
+      {
+        "x": "2020-11-01T00:00:00.000+01:00",
+        "y": 23869
+      },
+      {
+        "x": "2020-12-01T00:00:00.000+01:00",
+        "y": 28028
+      },
+      {
+        "x": "2021-01-01T00:00:00.000+01:00",
+        "y": 19467
+      },
+      {
+        "x": "2021-02-01T00:00:00.000+01:00",
+        "y": 21443
+      },
+      {
+        "x": "2021-03-01T00:00:00.000+01:00",
+        "y": 44851
+      },
+      {
+        "x": "2021-04-01T00:00:00.000+02:00",
+        "y": 17004
+      },
+      {
+        "x": "2021-05-01T00:00:00.000+02:00",
+        "y": 20378
+      },
+      {
+        "x": "2021-06-01T00:00:00.000+02:00",
+        "y": 27408
+      },
+      {
+        "x": "2021-07-01T00:00:00.000+02:00",
+        "y": 14243
+      },
+      {
+        "x": "2021-08-01T00:00:00.000+02:00",
+        "y": 15027
+      },
+      {
+        "x": "2021-09-01T00:00:00.000+02:00",
+        "y": 15180
+      },
+      {
+        "x": "2021-10-01T00:00:00.000+02:00",
+        "y": 15389
+      },
+      {
+        "x": "2021-11-01T00:00:00.000+01:00",
+        "y": 15588
+      },
+      {
+        "x": "2021-12-01T00:00:00.000+01:00",
+        "y": 17561
+      },
+      {
+        "x": "2022-01-01T00:00:00.000+01:00",
+        "y": 14625
+      },
+      {
+        "x": "2022-02-01T00:00:00.000+01:00",
+        "y": 15723
+      },
+      {
+        "x": "2022-03-01T00:00:00.000+01:00",
+        "y": 19380
+      },
+      {
+        "x": "2022-04-01T00:00:00.000+02:00",
+        "y": 16401
+      },
+      {
+        "x": "2022-05-01T00:00:00.000+02:00",
+        "y": 19911
+      },
+      {
+        "x": "2022-06-01T00:00:00.000+02:00",
+        "y": 17642
+      },
+      {
+        "x": "2022-07-01T00:00:00.000+02:00",
+        "y": 13018
+      },
+      {
+        "x": "2022-08-01T00:00:00.000+02:00",
+        "y": 14634
+      },
+      {
+        "x": "2022-09-01T00:00:00.000+02:00",
+        "y": 14052
+      },
+      {
+        "x": "2022-10-01T00:00:00.000+02:00",
+        "y": 14370
+      },
+      {
+        "x": "2022-11-01T00:00:00.000+01:00",
+        "y": 14384
+      },
+      {
+        "x": "2022-12-01T00:00:00.000+01:00",
+        "y": 16876
+      },
+      {
+        "x": "2023-01-01T00:00:00.000+01:00",
+        "y": 10362
+      },
+      {
+        "x": "2023-02-01T00:00:00.000+01:00",
+        "y": 11994
+      },
+      {
+        "x": "2023-03-01T00:00:00.000+01:00",
+        "y": 16754
+      },
+      {
+        "x": "2023-04-01T00:00:00.000+02:00",
+        "y": 13385
+      },
+      {
+        "x": "2023-05-01T00:00:00.000+02:00",
+        "y": 16600
+      },
+      {
+        "x": "2023-06-01T00:00:00.000+02:00",
+        "y": 16413
+      },
+      {
+        "x": "2023-07-01T00:00:00.000+02:00",
+        "y": 10515
+      },
+      {
+        "x": "2023-08-01T00:00:00.000+02:00",
+        "y": 13806
+      },
+      {
+        "x": "2023-09-01T00:00:00.000+02:00",
+        "y": 15152
+      }
+    ]
+  },
+  "projection": {
+    "noneElectric": [
+      {
+        "x": "2017-01-01T00:00:00.000+01:00",
+        "y": 6034238.621908034
+      },
+      {
+        "x": "2017-02-01T00:00:00.000+01:00",
+        "y": 6035673.297319858
+      },
+      {
+        "x": "2017-03-01T00:00:00.000+01:00",
+        "y": 6047436.606859301
+      },
+      {
+        "x": "2017-04-01T00:00:00.000+02:00",
+        "y": 6051475.488480356
+      },
+      {
+        "x": "2017-05-01T00:00:00.000+02:00",
+        "y": 6060369.056227141
+      },
+      {
+        "x": "2017-06-01T00:00:00.000+02:00",
+        "y": 6072191.901844497
+      },
+      {
+        "x": "2017-07-01T00:00:00.000+02:00",
+        "y": 6070638.836284563
+      },
+      {
+        "x": "2017-08-01T00:00:00.000+02:00",
+        "y": 6074073.651150121
+      },
+      {
+        "x": "2017-09-01T00:00:00.000+02:00",
+        "y": 6079334.923146598
+      },
+      {
+        "x": "2017-10-01T00:00:00.000+02:00",
+        "y": 6085202.5993461
+      },
+      {
+        "x": "2017-11-01T00:00:00.000+01:00",
+        "y": 6091400.767626824
+      },
+      {
+        "x": "2017-12-01T00:00:00.000+01:00",
+        "y": 6099940.544309144
+      },
+      {
+        "x": "2018-01-01T00:00:00.000+01:00",
+        "y": 6075615.795450585
+      },
+      {
+        "x": "2018-02-01T00:00:00.000+01:00",
+        "y": 6076368.678971618
+      },
+      {
+        "x": "2018-03-01T00:00:00.000+01:00",
+        "y": 6086678.351023012
+      },
+      {
+        "x": "2018-04-01T00:00:00.000+02:00",
+        "y": 6084354.8000734495
+      },
+      {
+        "x": "2018-05-01T00:00:00.000+02:00",
+        "y": 6095597.698866672
+      },
+      {
+        "x": "2018-06-01T00:00:00.000+02:00",
+        "y": 6135317.546726338
+      },
+      {
+        "x": "2018-07-01T00:00:00.000+02:00",
+        "y": 6121114.984839233
+      },
+      {
+        "x": "2018-08-01T00:00:00.000+02:00",
+        "y": 6119035.647749087
+      },
+      {
+        "x": "2018-09-01T00:00:00.000+02:00",
+        "y": 6111288.228967398
+      },
+      {
+        "x": "2018-10-01T00:00:00.000+02:00",
+        "y": 6107296.563511381
+      },
+      {
+        "x": "2018-11-01T00:00:00.000+01:00",
+        "y": 6105693.3462487
+      },
+      {
+        "x": "2018-12-01T00:00:00.000+01:00",
+        "y": 6101376.427393127
+      },
+      {
+        "x": "2019-01-01T00:00:00.000+01:00",
+        "y": 6094542.27206048
+      },
+      {
+        "x": "2019-02-01T00:00:00.000+01:00",
+        "y": 6090560.325435278
+      },
+      {
+        "x": "2019-03-01T00:00:00.000+01:00",
+        "y": 6092466.380460293
+      },
+      {
+        "x": "2019-04-01T00:00:00.000+02:00",
+        "y": 6095096.849880179
+      },
+      {
+        "x": "2019-05-01T00:00:00.000+02:00",
+        "y": 6099538.76042916
+      },
+      {
+        "x": "2019-06-01T00:00:00.000+02:00",
+        "y": 6103439.001660774
+      },
+      {
+        "x": "2019-07-01T00:00:00.000+02:00",
+        "y": 6099754.743576054
+      },
+      {
+        "x": "2019-08-01T00:00:00.000+02:00",
+        "y": 6102004.015353994
+      },
+      {
+        "x": "2019-09-01T00:00:00.000+02:00",
+        "y": 6100735.210762053
+      },
+      {
+        "x": "2019-10-01T00:00:00.000+02:00",
+        "y": 6103278.861543652
+      },
+      {
+        "x": "2019-11-01T00:00:00.000+01:00",
+        "y": 6106464.610126108
+      },
+      {
+        "x": "2019-12-01T00:00:00.000+01:00",
+        "y": 6126694.474698212
+      },
+      {
+        "x": "2020-01-01T00:00:00.000+01:00",
+        "y": 6115965.465618937
+      },
+      {
+        "x": "2020-02-01T00:00:00.000+01:00",
+        "y": 6109946.413673888
+      },
+      {
+        "x": "2020-03-01T00:00:00.000+01:00",
+        "y": 6108283.865066027
+      },
+      {
+        "x": "2020-04-01T00:00:00.000+02:00",
+        "y": 6099844.395992223
+      },
+      {
+        "x": "2020-05-01T00:00:00.000+02:00",
+        "y": 6088578.930380563
+      },
+      {
+        "x": "2020-06-01T00:00:00.000+02:00",
+        "y": 6085328.924251732
+      },
+      {
+        "x": "2020-07-01T00:00:00.000+02:00",
+        "y": 6080399.514486838
+      },
+      {
+        "x": "2020-08-01T00:00:00.000+02:00",
+        "y": 6077465.001295608
+      },
+      {
+        "x": "2020-09-01T00:00:00.000+02:00",
+        "y": 6076209.23840352
+      },
+      {
+        "x": "2020-10-01T00:00:00.000+02:00",
+        "y": 6075743.111640562
+      },
+      {
+        "x": "2020-11-01T00:00:00.000+01:00",
+        "y": 6073271.6096638525
+      },
+      {
+        "x": "2020-12-01T00:00:00.000+01:00",
+        "y": 6074955.058958884
+      },
+      {
+        "x": "2021-01-01T00:00:00.000+01:00",
+        "y": 6068073.036606958
+      },
+      {
+        "x": "2021-02-01T00:00:00.000+01:00",
+        "y": 6063163.66198293
+      },
+      {
+        "x": "2021-03-01T00:00:00.000+01:00",
+        "y": 6081658.786345827
+      },
+      {
+        "x": "2021-04-01T00:00:00.000+02:00",
+        "y": 6072300.636336333
+      },
+      {
+        "x": "2021-05-01T00:00:00.000+02:00",
+        "y": 6066313.641932105
+      },
+      {
+        "x": "2021-06-01T00:00:00.000+02:00",
+        "y": 6067353.48449573
+      },
+      {
+        "x": "2021-07-01T00:00:00.000+02:00",
+        "y": 6055224.389340198
+      },
+      {
+        "x": "2021-08-01T00:00:00.000+02:00",
+        "y": 6043877.030645983
+      },
+      {
+        "x": "2021-09-01T00:00:00.000+02:00",
+        "y": 6032680.409119041
+      },
+      {
+        "x": "2021-10-01T00:00:00.000+02:00",
+        "y": 6021690.599767664
+      },
+      {
+        "x": "2021-11-01T00:00:00.000+01:00",
+        "y": 6010897.669515359
+      },
+      {
+        "x": "2021-12-01T00:00:00.000+01:00",
+        "y": 6002075.685156802
+      },
+      {
+        "x": "2022-01-01T00:00:00.000+01:00",
+        "y": 5990315.49544724
+      },
+      {
+        "x": "2022-02-01T00:00:00.000+01:00",
+        "y": 5979651.543277757
+      },
+      {
+        "x": "2022-03-01T00:00:00.000+01:00",
+        "y": 5972642.785038262
+      },
+      {
+        "x": "2022-04-01T00:00:00.000+02:00",
+        "y": 5962652.861108727
+      },
+      {
+        "x": "2022-05-01T00:00:00.000+02:00",
+        "y": 5956171.21297013
+      },
+      {
+        "x": "2022-06-01T00:00:00.000+02:00",
+        "y": 5947418.495781306
+      },
+      {
+        "x": "2022-07-01T00:00:00.000+02:00",
+        "y": 5934040.0614904165
+      },
+      {
+        "x": "2022-08-01T00:00:00.000+02:00",
+        "y": 5922276.554542064
+      },
+      {
+        "x": "2022-09-01T00:00:00.000+02:00",
+        "y": 5909929.867694556
+      },
+      {
+        "x": "2022-10-01T00:00:00.000+02:00",
+        "y": 5897900.1578903375
+      },
+      {
+        "x": "2022-11-01T00:00:00.000+01:00",
+        "y": 5885883.473103941
+      },
+      {
+        "x": "2022-12-01T00:00:00.000+01:00",
+        "y": 5876357.897296541
+      },
+      {
+        "x": "2023-01-01T00:00:00.000+01:00",
+        "y": 5860317.211287851
+      },
+      {
+        "x": "2023-02-01T00:00:00.000+01:00",
+        "y": 5845908.2897770405
+      },
+      {
+        "x": "2023-03-01T00:00:00.000+01:00",
+        "y": 5836259.02778782
+      },
+      {
+        "x": "2023-04-01T00:00:00.000+02:00",
+        "y": 5823239.934115055
+      },
+      {
+        "x": "2023-05-01T00:00:00.000+02:00",
+        "y": 5813435.498941835
+      },
+      {
+        "x": "2023-06-01T00:00:00.000+02:00",
+        "y": 5803443.416010867
+      },
+      {
+        "x": "2023-07-01T00:00:00.000+02:00",
+        "y": 5787552.786717501
+      },
+      {
+        "x": "2023-08-01T00:00:00.000+02:00",
+        "y": 5774953.410435332
+      },
+      {
+        "x": "2023-09-01T00:00:00.000+02:00",
+        "y": 5763699.978147141
+      },
+      {
+        "x": "2023-10-01T00:00:00.000+02:00",
+        "y": 5753699.84262853
+      },
+      {
+        "x": "2023-11-01T00:00:00.000+01:00",
+        "y": 5743285.333809633
+      },
+      {
+        "x": "2023-12-01T00:00:00.000+01:00",
+        "y": 5732456.5810304945
+      },
+      {
+        "x": "2024-01-01T00:00:00.000+01:00",
+        "y": 5721213.714597354
+      },
+      {
+        "x": "2024-02-01T00:00:00.000+01:00",
+        "y": 5709556.865834428
+      },
+      {
+        "x": "2024-03-01T00:00:00.000+01:00",
+        "y": 5697486.167136089
+      },
+      {
+        "x": "2024-04-01T00:00:00.000+02:00",
+        "y": 5685001.752019383
+      },
+      {
+        "x": "2024-05-01T00:00:00.000+02:00",
+        "y": 5672103.755177116
+      },
+      {
+        "x": "2024-06-01T00:00:00.000+02:00",
+        "y": 5658792.312531273
+      },
+      {
+        "x": "2024-07-01T00:00:00.000+02:00",
+        "y": 5645067.561286906
+      },
+      {
+        "x": "2024-08-01T00:00:00.000+02:00",
+        "y": 5630929.639986629
+      },
+      {
+        "x": "2024-09-01T00:00:00.000+02:00",
+        "y": 5616378.688565497
+      },
+      {
+        "x": "2024-10-01T00:00:00.000+02:00",
+        "y": 5601414.848406532
+      },
+      {
+        "x": "2024-11-01T00:00:00.000+01:00",
+        "y": 5586038.262396669
+      },
+      {
+        "x": "2024-12-01T00:00:00.000+01:00",
+        "y": 5570249.07498345
+      },
+      {
+        "x": "2025-01-01T00:00:00.000+01:00",
+        "y": 5554047.432232134
+      },
+      {
+        "x": "2025-02-01T00:00:00.000+01:00",
+        "y": 5537433.481883625
+      },
+      {
+        "x": "2025-03-01T00:00:00.000+01:00",
+        "y": 5520407.373412821
+      },
+      {
+        "x": "2025-04-01T00:00:00.000+02:00",
+        "y": 5502969.2580878325
+      },
+      {
+        "x": "2025-05-01T00:00:00.000+02:00",
+        "y": 5485119.289029738
+      },
+      {
+        "x": "2025-06-01T00:00:00.000+02:00",
+        "y": 5466857.621273149
+      },
+      {
+        "x": "2025-07-01T00:00:00.000+02:00",
+        "y": 5448184.411827424
+      },
+      {
+        "x": "2025-08-01T00:00:00.000+02:00",
+        "y": 5429099.819738687
+      },
+      {
+        "x": "2025-09-01T00:00:00.000+02:00",
+        "y": 5409604.006152642
+      },
+      {
+        "x": "2025-10-01T00:00:00.000+02:00",
+        "y": 5389697.134378137
+      },
+      {
+        "x": "2025-11-01T00:00:00.000+01:00",
+        "y": 5369379.369951536
+      },
+      {
+        "x": "2025-12-01T00:00:00.000+01:00",
+        "y": 5348650.88070204
+      },
+      {
+        "x": "2026-01-01T00:00:00.000+01:00",
+        "y": 5327596.457805437
+      },
+      {
+        "x": "2026-02-01T00:00:00.000+01:00",
+        "y": 5306545.809216167
+      },
+      {
+        "x": "2026-03-01T00:00:00.000+01:00",
+        "y": 5285499.059233554
+      },
+      {
+        "x": "2026-04-01T00:00:00.000+02:00",
+        "y": 5264456.333699647
+      },
+      {
+        "x": "2026-05-01T00:00:00.000+02:00",
+        "y": 5243417.7600487685
+      },
+      {
+        "x": "2026-06-01T00:00:00.000+02:00",
+        "y": 5222383.467357572
+      },
+      {
+        "x": "2026-07-01T00:00:00.000+02:00",
+        "y": 5201353.586395808
+      },
+      {
+        "x": "2026-08-01T00:00:00.000+02:00",
+        "y": 5180328.249677644
+      },
+      {
+        "x": "2026-09-01T00:00:00.000+02:00",
+        "y": 5159307.5915136915
+      },
+      {
+        "x": "2026-10-01T00:00:00.000+02:00",
+        "y": 5138291.748063618
+      },
+      {
+        "x": "2026-11-01T00:00:00.000+01:00",
+        "y": 5117280.85738954
+      },
+      {
+        "x": "2026-12-01T00:00:00.000+01:00",
+        "y": 5096275.0595100345
+      },
+      {
+        "x": "2027-01-01T00:00:00.000+01:00",
+        "y": 5075274.496454987
+      },
+      {
+        "x": "2027-02-01T00:00:00.000+01:00",
+        "y": 5054279.312320981
+      },
+      {
+        "x": "2027-03-01T00:00:00.000+01:00",
+        "y": 5033289.653327698
+      },
+      {
+        "x": "2027-04-01T00:00:00.000+02:00",
+        "y": 5012305.667874886
+      },
+      {
+        "x": "2027-05-01T00:00:00.000+02:00",
+        "y": 4991327.506600236
+      },
+      {
+        "x": "2027-06-01T00:00:00.000+02:00",
+        "y": 4970355.322438041
+      },
+      {
+        "x": "2027-07-01T00:00:00.000+02:00",
+        "y": 4949389.270678706
+      },
+      {
+        "x": "2027-08-01T00:00:00.000+02:00",
+        "y": 4928429.509029067
+      },
+      {
+        "x": "2027-09-01T00:00:00.000+02:00",
+        "y": 4907476.197673691
+      },
+      {
+        "x": "2027-10-01T00:00:00.000+02:00",
+        "y": 4886529.499336926
+      },
+      {
+        "x": "2027-11-01T00:00:00.000+01:00",
+        "y": 4865589.579345975
+      },
+      {
+        "x": "2027-12-01T00:00:00.000+01:00",
+        "y": 4844656.605694877
+      },
+      {
+        "x": "2028-01-01T00:00:00.000+01:00",
+        "y": 4823730.749109388
+      },
+      {
+        "x": "2028-02-01T00:00:00.000+01:00",
+        "y": 4802812.1831129305
+      },
+      {
+        "x": "2028-03-01T00:00:00.000+01:00",
+        "y": 4781901.084093419
+      },
+      {
+        "x": "2028-04-01T00:00:00.000+02:00",
+        "y": 4760997.631371274
+      },
+      {
+        "x": "2028-05-01T00:00:00.000+02:00",
+        "y": 4740102.007268228
+      },
+      {
+        "x": "2028-06-01T00:00:00.000+02:00",
+        "y": 4719214.39717737
+      },
+      {
+        "x": "2028-07-01T00:00:00.000+02:00",
+        "y": 4698334.989634272
+      },
+      {
+        "x": "2028-08-01T00:00:00.000+02:00",
+        "y": 4677463.976389053
+      },
+      {
+        "x": "2028-09-01T00:00:00.000+02:00",
+        "y": 4656601.552479682
+      },
+      {
+        "x": "2028-10-01T00:00:00.000+02:00",
+        "y": 4635747.916306419
+      },
+      {
+        "x": "2028-11-01T00:00:00.000+01:00",
+        "y": 4614903.269707294
+      },
+      {
+        "x": "2028-12-01T00:00:00.000+01:00",
+        "y": 4594067.8180349255
+      },
+      {
+        "x": "2029-01-01T00:00:00.000+01:00",
+        "y": 4573241.770234397
+      },
+      {
+        "x": "2029-02-01T00:00:00.000+01:00",
+        "y": 4552425.3389224
+      },
+      {
+        "x": "2029-03-01T00:00:00.000+01:00",
+        "y": 4531618.740467602
+      },
+      {
+        "x": "2029-04-01T00:00:00.000+02:00",
+        "y": 4510822.195072309
+      },
+      {
+        "x": "2029-05-01T00:00:00.000+02:00",
+        "y": 4490035.926855302
+      },
+      {
+        "x": "2029-06-01T00:00:00.000+02:00",
+        "y": 4469260.163936069
+      },
+      {
+        "x": "2029-07-01T00:00:00.000+02:00",
+        "y": 4448495.138520266
+      },
+      {
+        "x": "2029-08-01T00:00:00.000+02:00",
+        "y": 4427741.086986594
+      },
+      {
+        "x": "2029-09-01T00:00:00.000+02:00",
+        "y": 4406998.249974904
+      },
+      {
+        "x": "2029-10-01T00:00:00.000+02:00",
+        "y": 4386266.872475775
+      },
+      {
+        "x": "2029-11-01T00:00:00.000+01:00",
+        "y": 4365547.203921429
+      },
+      {
+        "x": "2029-12-01T00:00:00.000+01:00",
+        "y": 4344839.498278025
+      },
+      {
+        "x": "2030-01-01T00:00:00.000+01:00",
+        "y": 4324144.014139434
+      },
+      {
+        "x": "2030-02-01T00:00:00.000+01:00",
+        "y": 4303461.014822357
+      },
+      {
+        "x": "2030-03-01T00:00:00.000+01:00",
+        "y": 4282790.76846296
+      },
+      {
+        "x": "2030-04-01T00:00:00.000+02:00",
+        "y": 4262133.548114944
+      },
+      {
+        "x": "2030-05-01T00:00:00.000+02:00",
+        "y": 4241489.6318491325
+      },
+      {
+        "x": "2030-06-01T00:00:00.000+02:00",
+        "y": 4220859.302854447
+      },
+      {
+        "x": "2030-07-01T00:00:00.000+02:00",
+        "y": 4200242.849540528
+      },
+      {
+        "x": "2030-08-01T00:00:00.000+02:00",
+        "y": 4179640.565641756
+      },
+      {
+        "x": "2030-09-01T00:00:00.000+02:00",
+        "y": 4159052.7503228416
+      },
+      {
+        "x": "2030-10-01T00:00:00.000+02:00",
+        "y": 4138479.7082859953
+      },
+      {
+        "x": "2030-11-01T00:00:00.000+01:00",
+        "y": 4117921.7498795353
+      },
+      {
+        "x": "2030-12-01T00:00:00.000+01:00",
+        "y": 4097379.1912081945
+      },
+      {
+        "x": "2031-01-01T00:00:00.000+01:00",
+        "y": 4076852.354244852
+      },
+      {
+        "x": "2031-02-01T00:00:00.000+01:00",
+        "y": 4056341.5669439067
+      },
+      {
+        "x": "2031-03-01T00:00:00.000+01:00",
+        "y": 4035847.1633562264
+      },
+      {
+        "x": "2031-04-01T00:00:00.000+02:00",
+        "y": 4015369.483745625
+      },
+      {
+        "x": "2031-05-01T00:00:00.000+02:00",
+        "y": 3994908.874706941
+      },
+      {
+        "x": "2031-06-01T00:00:00.000+02:00",
+        "y": 3974465.6892856937
+      },
+      {
+        "x": "2031-07-01T00:00:00.000+02:00",
+        "y": 3954040.2870992995
+      },
+      {
+        "x": "2031-08-01T00:00:00.000+02:00",
+        "y": 3933633.034459851
+      },
+      {
+        "x": "2031-09-01T00:00:00.000+02:00",
+        "y": 3913244.3044984993
+      },
+      {
+        "x": "2031-10-01T00:00:00.000+02:00",
+        "y": 3892874.47729127
+      },
+      {
+        "x": "2031-11-01T00:00:00.000+01:00",
+        "y": 3872523.939986598
+      },
+      {
+        "x": "2031-12-01T00:00:00.000+01:00",
+        "y": 3852193.0869342154
+      },
+      {
+        "x": "2032-01-01T00:00:00.000+01:00",
+        "y": 3831882.3198156534
+      },
+      {
+        "x": "2032-02-01T00:00:00.000+01:00",
+        "y": 3811592.047776218
+      },
+      {
+        "x": "2032-03-01T00:00:00.000+01:00",
+        "y": 3791322.6875583893
+      },
+      {
+        "x": "2032-04-01T00:00:00.000+02:00",
+        "y": 3771074.6636367324
+      },
+      {
+        "x": "2032-05-01T00:00:00.000+02:00",
+        "y": 3750848.4083541855
+      },
+      {
+        "x": "2032-06-01T00:00:00.000+02:00",
+        "y": 3730644.362059698
+      },
+      {
+        "x": "2032-07-01T00:00:00.000+02:00",
+        "y": 3710462.973247329
+      },
+      {
+        "x": "2032-08-01T00:00:00.000+02:00",
+        "y": 3690304.6986965104
+      },
+      {
+        "x": "2032-09-01T00:00:00.000+02:00",
+        "y": 3670170.0036136876
+      },
+      {
+        "x": "2032-10-01T00:00:00.000+02:00",
+        "y": 3650059.361775155
+      },
+      {
+        "x": "2032-11-01T00:00:00.000+01:00",
+        "y": 3629973.255670989
+      },
+      {
+        "x": "2032-12-01T00:00:00.000+01:00",
+        "y": 3609912.176650212
+      },
+      {
+        "x": "2033-01-01T00:00:00.000+01:00",
+        "y": 3589876.6250668783
+      },
+      {
+        "x": "2033-02-01T00:00:00.000+01:00",
+        "y": 3569867.110427242
+      },
+      {
+        "x": "2033-03-01T00:00:00.000+01:00",
+        "y": 3549884.151537753
+      },
+      {
+        "x": "2033-04-01T00:00:00.000+02:00",
+        "y": 3529928.2766539836
+      },
+      {
+        "x": "2033-05-01T00:00:00.000+02:00",
+        "y": 3510000.0236301376
+      },
+      {
+        "x": "2033-06-01T00:00:00.000+02:00",
+        "y": 3490099.940069431
+      },
+      {
+        "x": "2033-07-01T00:00:00.000+02:00",
+        "y": 3470228.5834748195
+      },
+      {
+        "x": "2033-08-01T00:00:00.000+02:00",
+        "y": 3450386.521400336
+      },
+      {
+        "x": "2033-09-01T00:00:00.000+02:00",
+        "y": 3430574.3316026703
+      },
+      {
+        "x": "2033-10-01T00:00:00.000+02:00",
+        "y": 3410792.602193032
+      },
+      {
+        "x": "2033-11-01T00:00:00.000+01:00",
+        "y": 3391041.9317891016
+      },
+      {
+        "x": "2033-12-01T00:00:00.000+01:00",
+        "y": 3371322.9296668964
+      },
+      {
+        "x": "2034-01-01T00:00:00.000+01:00",
+        "y": 3351636.2159125204
+      },
+      {
+        "x": "2034-02-01T00:00:00.000+01:00",
+        "y": 3331982.4215735234
+      },
+      {
+        "x": "2034-03-01T00:00:00.000+01:00",
+        "y": 3312362.1888098298
+      },
+      {
+        "x": "2034-04-01T00:00:00.000+02:00",
+        "y": 3292776.1710439287
+      },
+      {
+        "x": "2034-05-01T00:00:00.000+02:00",
+        "y": 3273225.0331102614
+      },
+      {
+        "x": "2034-06-01T00:00:00.000+02:00",
+        "y": 3253709.451403573
+      },
+      {
+        "x": "2034-07-01T00:00:00.000+02:00",
+        "y": 3234230.114025967
+      },
+      {
+        "x": "2034-08-01T00:00:00.000+02:00",
+        "y": 3214787.7209326117
+      },
+      {
+        "x": "2034-09-01T00:00:00.000+02:00",
+        "y": 3195382.9840756403
+      },
+      {
+        "x": "2034-10-01T00:00:00.000+02:00",
+        "y": 3176016.627546227
+      },
+      {
+        "x": "2034-11-01T00:00:00.000+01:00",
+        "y": 3156689.3877144787
+      },
+      {
+        "x": "2034-12-01T00:00:00.000+01:00",
+        "y": 3137402.013366866
+      },
+      {
+        "x": "2035-01-01T00:00:00.000+01:00",
+        "y": 3118155.2658409816
+      },
+      {
+        "x": "2035-02-01T00:00:00.000+01:00",
+        "y": 3098949.9191573253
+      },
+      {
+        "x": "2035-03-01T00:00:00.000+01:00",
+        "y": 3079786.7601477494
+      },
+      {
+        "x": "2035-04-01T00:00:00.000+02:00",
+        "y": 3060666.5885803546
+      },
+      {
+        "x": "2035-05-01T00:00:00.000+02:00",
+        "y": 3041590.2172803935
+      },
+      {
+        "x": "2035-06-01T00:00:00.000+02:00",
+        "y": 3022558.472246948
+      },
+      {
+        "x": "2035-07-01T00:00:00.000+02:00",
+        "y": 3003572.1927648997
+      },
+      {
+        "x": "2035-08-01T00:00:00.000+02:00",
+        "y": 2984632.2315119426
+      },
+      {
+        "x": "2035-09-01T00:00:00.000+02:00",
+        "y": 2965739.4546601446
+      },
+      {
+        "x": "2035-10-01T00:00:00.000+02:00",
+        "y": 2946894.741971711
+      },
+      {
+        "x": "2035-11-01T00:00:00.000+01:00",
+        "y": 2928098.98688849
+      },
+      {
+        "x": "2035-12-01T00:00:00.000+01:00",
+        "y": 2909353.0966147985
+      },
+      {
+        "x": "2036-01-01T00:00:00.000+01:00",
+        "y": 2890657.992193112
+      },
+      {
+        "x": "2036-02-01T00:00:00.000+01:00",
+        "y": 2872014.6085721487
+      },
+      {
+        "x": "2036-03-01T00:00:00.000+01:00",
+        "y": 2853423.894666786
+      },
+      {
+        "x": "2036-04-01T00:00:00.000+02:00",
+        "y": 2834886.8134094384
+      },
+      {
+        "x": "2036-05-01T00:00:00.000+02:00",
+        "y": 2816404.3417922594
+      },
+      {
+        "x": "2036-06-01T00:00:00.000+02:00",
+        "y": 2797977.4708996355
+      },
+      {
+        "x": "2036-07-01T00:00:00.000+02:00",
+        "y": 2779607.2059304323
+      },
+      {
+        "x": "2036-08-01T00:00:00.000+02:00",
+        "y": 2761294.566209458
+      },
+      {
+        "x": "2036-09-01T00:00:00.000+02:00",
+        "y": 2743040.585187474
+      },
+      {
+        "x": "2036-10-01T00:00:00.000+02:00",
+        "y": 2724846.3104291605
+      },
+      {
+        "x": "2036-11-01T00:00:00.000+01:00",
+        "y": 2706712.803588445
+      },
+      {
+        "x": "2036-12-01T00:00:00.000+01:00",
+        "y": 2688641.1403705403
+      }
+    ],
+    "electric": [
+      {
+        "x": "2017-01-01T00:00:00.000+01:00",
+        "y": 243
+      },
+      {
+        "x": "2017-02-01T00:00:00.000+01:00",
+        "y": 458.9703113034309
+      },
+      {
+        "x": "2017-03-01T00:00:00.000+01:00",
+        "y": 1021.9136366034139
+      },
+      {
+        "x": "2017-04-01T00:00:00.000+02:00",
+        "y": 1407.7870392164145
+      },
+      {
+        "x": "2017-05-01T00:00:00.000+02:00",
+        "y": 1776.6107405745306
+      },
+      {
+        "x": "2017-06-01T00:00:00.000+02:00",
+        "y": 2205.385820162087
+      },
+      {
+        "x": "2017-07-01T00:00:00.000+02:00",
+        "y": 2401.1039717477797
+      },
+      {
+        "x": "2017-08-01T00:00:00.000+02:00",
+        "y": 2793.7925199647225
+      },
+      {
+        "x": "2017-09-01T00:00:00.000+02:00",
+        "y": 3266.426802652214
+      },
+      {
+        "x": "2017-10-01T00:00:00.000+02:00",
+        "y": 3618.995957180667
+      },
+      {
+        "x": "2017-11-01T00:00:00.000+01:00",
+        "y": 3875.5133381519445
+      },
+      {
+        "x": "2017-12-01T00:00:00.000+01:00",
+        "y": 4156.989636278258
+      },
+      {
+        "x": "2018-01-01T00:00:00.000+01:00",
+        "y": 4343.420973830853
+      },
+      {
+        "x": "2018-02-01T00:00:00.000+01:00",
+        "y": 4667.818056479069
+      },
+      {
+        "x": "2018-03-01T00:00:00.000+01:00",
+        "y": 5427.163338069239
+      },
+      {
+        "x": "2018-04-01T00:00:00.000+02:00",
+        "y": 5799.402634156128
+      },
+      {
+        "x": "2018-05-01T00:00:00.000+02:00",
+        "y": 6080.581101093787
+      },
+      {
+        "x": "2018-06-01T00:00:00.000+02:00",
+        "y": 6419.708638179092
+      },
+      {
+        "x": "2018-07-01T00:00:00.000+02:00",
+        "y": 6940.777139534012
+      },
+      {
+        "x": "2018-08-01T00:00:00.000+02:00",
+        "y": 7502.763186998948
+      },
+      {
+        "x": "2018-09-01T00:00:00.000+02:00",
+        "y": 8165.660119305609
+      },
+      {
+        "x": "2018-10-01T00:00:00.000+02:00",
+        "y": 8967.453811254449
+      },
+      {
+        "x": "2018-11-01T00:00:00.000+01:00",
+        "y": 10177.125211760329
+      },
+      {
+        "x": "2018-12-01T00:00:00.000+01:00",
+        "y": 11277.622022420575
+      },
+      {
+        "x": "2019-01-01T00:00:00.000+01:00",
+        "y": 12366.954060190019
+      },
+      {
+        "x": "2019-02-01T00:00:00.000+01:00",
+        "y": 13264.11936654745
+      },
+      {
+        "x": "2019-03-01T00:00:00.000+01:00",
+        "y": 15383.138058106158
+      },
+      {
+        "x": "2019-04-01T00:00:00.000+02:00",
+        "y": 16769.857899590075
+      },
+      {
+        "x": "2019-05-01T00:00:00.000+02:00",
+        "y": 18010.362331331307
+      },
+      {
+        "x": "2019-06-01T00:00:00.000+02:00",
+        "y": 19691.66487498218
+      },
+      {
+        "x": "2019-07-01T00:00:00.000+02:00",
+        "y": 20779.707607432865
+      },
+      {
+        "x": "2019-08-01T00:00:00.000+02:00",
+        "y": 21740.557773258184
+      },
+      {
+        "x": "2019-09-01T00:00:00.000+02:00",
+        "y": 23490.227034297804
+      },
+      {
+        "x": "2019-10-01T00:00:00.000+02:00",
+        "y": 24297.615374542565
+      },
+      {
+        "x": "2019-11-01T00:00:00.000+01:00",
+        "y": 25323.832257115337
+      },
+      {
+        "x": "2019-12-01T00:00:00.000+01:00",
+        "y": 26925.84749807452
+      },
+      {
+        "x": "2020-01-01T00:00:00.000+01:00",
+        "y": 28146.586691800476
+      },
+      {
+        "x": "2020-02-01T00:00:00.000+01:00",
+        "y": 29551.090862167883
+      },
+      {
+        "x": "2020-03-01T00:00:00.000+01:00",
+        "y": 32545.332828802242
+      },
+      {
+        "x": "2020-04-01T00:00:00.000+02:00",
+        "y": 33580.11308794651
+      },
+      {
+        "x": "2020-05-01T00:00:00.000+02:00",
+        "y": 34403.66173352496
+      },
+      {
+        "x": "2020-06-01T00:00:00.000+02:00",
+        "y": 36064.99991790273
+      },
+      {
+        "x": "2020-07-01T00:00:00.000+02:00",
+        "y": 37353.02105734017
+      },
+      {
+        "x": "2020-08-01T00:00:00.000+02:00",
+        "y": 39443.76438457767
+      },
+      {
+        "x": "2020-09-01T00:00:00.000+02:00",
+        "y": 43080.126243274965
+      },
+      {
+        "x": "2020-10-01T00:00:00.000+02:00",
+        "y": 45349.91012132686
+      },
+      {
+        "x": "2020-11-01T00:00:00.000+01:00",
+        "y": 48044.27133917329
+      },
+      {
+        "x": "2020-12-01T00:00:00.000+01:00",
+        "y": 54670.14952168301
+      },
+      {
+        "x": "2021-01-01T00:00:00.000+01:00",
+        "y": 55767.05461390206
+      },
+      {
+        "x": "2021-02-01T00:00:00.000+01:00",
+        "y": 57151.64250713921
+      },
+      {
+        "x": "2021-03-01T00:00:00.000+01:00",
+        "y": 59750.871691066524
+      },
+      {
+        "x": "2021-04-01T00:00:00.000+02:00",
+        "y": 64609.5865677086
+      },
+      {
+        "x": "2021-05-01T00:00:00.000+02:00",
+        "y": 68547.50074441846
+      },
+      {
+        "x": "2021-06-01T00:00:00.000+02:00",
+        "y": 77222.7106008255
+      },
+      {
+        "x": "2021-07-01T00:00:00.000+02:00",
+        "y": 79744.62318561893
+      },
+      {
+        "x": "2021-08-01T00:00:00.000+02:00",
+        "y": 84511.96414056691
+      },
+      {
+        "x": "2021-09-01T00:00:00.000+02:00",
+        "y": 91951.4476501822
+      },
+      {
+        "x": "2021-10-01T00:00:00.000+02:00",
+        "y": 96508.72999592668
+      },
+      {
+        "x": "2021-11-01T00:00:00.000+01:00",
+        "y": 101960.13912751232
+      },
+      {
+        "x": "2021-12-01T00:00:00.000+01:00",
+        "y": 111986.54824953218
+      },
+      {
+        "x": "2022-01-01T00:00:00.000+01:00",
+        "y": 117235.37829778204
+      },
+      {
+        "x": "2022-02-01T00:00:00.000+01:00",
+        "y": 122796.18117572636
+      },
+      {
+        "x": "2022-03-01T00:00:00.000+01:00",
+        "y": 132104.898122958
+      },
+      {
+        "x": "2022-04-01T00:00:00.000+02:00",
+        "y": 137623.04941042984
+      },
+      {
+        "x": "2022-05-01T00:00:00.000+02:00",
+        "y": 144101.06664541873
+      },
+      {
+        "x": "2022-06-01T00:00:00.000+02:00",
+        "y": 152521.80977459744
+      },
+      {
+        "x": "2022-07-01T00:00:00.000+02:00",
+        "y": 157311.0158421072
+      },
+      {
+        "x": "2022-08-01T00:00:00.000+02:00",
+        "y": 163225.09762886917
+      },
+      {
+        "x": "2022-09-01T00:00:00.000+02:00",
+        "y": 171191.89514512877
+      },
+      {
+        "x": "2022-10-01T00:00:00.000+02:00",
+        "y": 179174.131819048
+      },
+      {
+        "x": "2022-11-01T00:00:00.000+01:00",
+        "y": 190345.77440786615
+      },
+      {
+        "x": "2022-12-01T00:00:00.000+01:00",
+        "y": 208827.40122664665
+      },
+      {
+        "x": "2023-01-01T00:00:00.000+01:00",
+        "y": 213025.07864977393
+      },
+      {
+        "x": "2023-02-01T00:00:00.000+01:00",
+        "y": 219434.49246052664
+      },
+      {
+        "x": "2023-03-01T00:00:00.000+01:00",
+        "y": 232901.3471369609
+      },
+      {
+        "x": "2023-04-01T00:00:00.000+02:00",
+        "y": 240059.74917278512
+      },
+      {
+        "x": "2023-05-01T00:00:00.000+02:00",
+        "y": 251905.42001484352
+      },
+      {
+        "x": "2023-06-01T00:00:00.000+02:00",
+        "y": 263728.75228868093
+      },
+      {
+        "x": "2023-07-01T00:00:00.000+02:00",
+        "y": 270464.701766293
+      },
+      {
+        "x": "2023-08-01T00:00:00.000+02:00",
+        "y": 280478.8421689688
+      },
+      {
+        "x": "2023-09-01T00:00:00.000+02:00",
+        "y": 293408.73675474944
+      },
+      {
+        "x": "2023-10-01T00:00:00.000+02:00",
+        "y": 303485.3175916417
+      },
+      {
+        "x": "2023-11-01T00:00:00.000+01:00",
+        "y": 313973.7135016759
+      },
+      {
+        "x": "2023-12-01T00:00:00.000+01:00",
+        "y": 324873.8270436563
+      },
+      {
+        "x": "2024-01-01T00:00:00.000+01:00",
+        "y": 336185.5588411623
+      },
+      {
+        "x": "2024-02-01T00:00:00.000+01:00",
+        "y": 347908.8075447983
+      },
+      {
+        "x": "2024-03-01T00:00:00.000+01:00",
+        "y": 360043.4697937268
+      },
+      {
+        "x": "2024-04-01T00:00:00.000+02:00",
+        "y": 372589.4401764883
+      },
+      {
+        "x": "2024-05-01T00:00:00.000+02:00",
+        "y": 385546.6111910824
+      },
+      {
+        "x": "2024-06-01T00:00:00.000+02:00",
+        "y": 398914.8732043039
+      },
+      {
+        "x": "2024-07-01T00:00:00.000+02:00",
+        "y": 412694.1144103236
+      },
+      {
+        "x": "2024-08-01T00:00:00.000+02:00",
+        "y": 426884.2207884917
+      },
+      {
+        "x": "2024-09-01T00:00:00.000+02:00",
+        "y": 441485.0760603624
+      },
+      {
+        "x": "2024-10-01T00:00:00.000+02:00",
+        "y": 456496.5616459189
+      },
+      {
+        "x": "2024-11-01T00:00:00.000+01:00",
+        "y": 471918.5566189845
+      },
+      {
+        "x": "2024-12-01T00:00:00.000+01:00",
+        "y": 487750.93766181485
+      },
+      {
+        "x": "2025-01-01T00:00:00.000+01:00",
+        "y": 503993.5790188475
+      },
+      {
+        "x": "2025-02-01T00:00:00.000+01:00",
+        "y": 520646.3524496022
+      },
+      {
+        "x": "2025-03-01T00:00:00.000+01:00",
+        "y": 537709.1271807135
+      },
+      {
+        "x": "2025-04-01T00:00:00.000+02:00",
+        "y": 555181.7698570839
+      },
+      {
+        "x": "2025-05-01T00:00:00.000+02:00",
+        "y": 573064.1444921478
+      },
+      {
+        "x": "2025-06-01T00:00:00.000+02:00",
+        "y": 591356.1124172162
+      },
+      {
+        "x": "2025-07-01T00:00:00.000+02:00",
+        "y": 610057.5322299079
+      },
+      {
+        "x": "2025-08-01T00:00:00.000+02:00",
+        "y": 629168.2597416405
+      },
+      {
+        "x": "2025-09-01T00:00:00.000+02:00",
+        "y": 648688.1479241643
+      },
+      {
+        "x": "2025-10-01T00:00:00.000+02:00",
+        "y": 668617.0468551331
+      },
+      {
+        "x": "2025-11-01T00:00:00.000+01:00",
+        "y": 688954.8036626915
+      },
+      {
+        "x": "2025-12-01T00:00:00.000+01:00",
+        "y": 709701.2624690644
+      },
+      {
+        "x": "2026-01-01T00:00:00.000+01:00",
+        "y": 730771.6433454735
+      },
+      {
+        "x": "2026-02-01T00:00:00.000+01:00",
+        "y": 751836.2488886114
+      },
+      {
+        "x": "2026-03-01T00:00:00.000+01:00",
+        "y": 772894.964662925
+      },
+      {
+        "x": "2026-04-01T00:00:00.000+02:00",
+        "y": 793947.6740110433
+      },
+      {
+        "x": "2026-05-01T00:00:00.000+02:00",
+        "y": 814994.2580124945
+      },
+      {
+        "x": "2026-06-01T00:00:00.000+02:00",
+        "y": 836034.5954417185
+      },
+      {
+        "x": "2026-07-01T00:00:00.000+02:00",
+        "y": 857068.5627253904
+      },
+      {
+        "x": "2026-08-01T00:00:00.000+02:00",
+        "y": 878096.0338990298
+      },
+      {
+        "x": "2026-09-01T00:00:00.000+02:00",
+        "y": 899116.8805628918
+      },
+      {
+        "x": "2026-10-01T00:00:00.000+02:00",
+        "y": 920130.9718371384
+      },
+      {
+        "x": "2026-11-01T00:00:00.000+01:00",
+        "y": 941138.1743162688
+      },
+      {
+        "x": "2026-12-01T00:00:00.000+01:00",
+        "y": 962138.3520228121
+      },
+      {
+        "x": "2027-01-01T00:00:00.000+01:00",
+        "y": 983131.3663602713
+      },
+      {
+        "x": "2027-02-01T00:00:00.000+01:00",
+        "y": 1004117.0760653019
+      },
+      {
+        "x": "2027-03-01T00:00:00.000+01:00",
+        "y": 1025095.3371591375
+      },
+      {
+        "x": "2027-04-01T00:00:00.000+02:00",
+        "y": 1046066.0028982239
+      },
+      {
+        "x": "2027-05-01T00:00:00.000+02:00",
+        "y": 1067028.923724093
+      },
+      {
+        "x": "2027-06-01T00:00:00.000+02:00",
+        "y": 1087983.9472124286
+      },
+      {
+        "x": "2027-07-01T00:00:00.000+02:00",
+        "y": 1108930.9180213467
+      },
+      {
+        "x": "2027-08-01T00:00:00.000+02:00",
+        "y": 1129869.677838868
+      },
+      {
+        "x": "2027-09-01T00:00:00.000+02:00",
+        "y": 1150800.0653295866
+      },
+      {
+        "x": "2027-10-01T00:00:00.000+02:00",
+        "y": 1171721.9160805144
+      },
+      {
+        "x": "2027-11-01T00:00:00.000+01:00",
+        "y": 1192635.062546101
+      },
+      {
+        "x": "2027-12-01T00:00:00.000+01:00",
+        "y": 1213539.3339924293
+      },
+      {
+        "x": "2028-01-01T00:00:00.000+01:00",
+        "y": 1234434.556440572
+      },
+      {
+        "x": "2028-02-01T00:00:00.000+01:00",
+        "y": 1255320.552609106
+      },
+      {
+        "x": "2028-03-01T00:00:00.000+01:00",
+        "y": 1276197.1418557812
+      },
+      {
+        "x": "2028-04-01T00:00:00.000+02:00",
+        "y": 1297064.1401183303
+      },
+      {
+        "x": "2028-05-01T00:00:00.000+02:00",
+        "y": 1317921.3598544258
+      },
+      {
+        "x": "2028-06-01T00:00:00.000+02:00",
+        "y": 1338768.6099807746
+      },
+      {
+        "x": "2028-07-01T00:00:00.000+02:00",
+        "y": 1359605.6958113513
+      },
+      {
+        "x": "2028-08-01T00:00:00.000+02:00",
+        "y": 1380432.418994741
+      },
+      {
+        "x": "2028-09-01T00:00:00.000+02:00",
+        "y": 1401248.5774506324
+      },
+      {
+        "x": "2028-10-01T00:00:00.000+02:00",
+        "y": 1422053.9653054203
+      },
+      {
+        "x": "2028-11-01T00:00:00.000+01:00",
+        "y": 1442848.3728269308
+      },
+      {
+        "x": "2028-12-01T00:00:00.000+01:00",
+        "y": 1463631.5863582669
+      },
+      {
+        "x": "2029-01-01T00:00:00.000+01:00",
+        "y": 1484403.388250774
+      },
+      {
+        "x": "2029-02-01T00:00:00.000+01:00",
+        "y": 1505163.556796106
+      },
+      {
+        "x": "2029-03-01T00:00:00.000+01:00",
+        "y": 1525911.8661574335
+      },
+      {
+        "x": "2029-04-01T00:00:00.000+02:00",
+        "y": 1546648.086299738
+      },
+      {
+        "x": "2029-05-01T00:00:00.000+02:00",
+        "y": 1567371.9829192485
+      },
+      {
+        "x": "2029-06-01T00:00:00.000+02:00",
+        "y": 1588083.3173719794
+      },
+      {
+        "x": "2029-07-01T00:00:00.000+02:00",
+        "y": 1608781.8466013928
+      },
+      {
+        "x": "2029-08-01T00:00:00.000+02:00",
+        "y": 1629467.323065194
+      },
+      {
+        "x": "2029-09-01T00:00:00.000+02:00",
+        "y": 1650139.4946612313
+      },
+      {
+        "x": "2029-10-01T00:00:00.000+02:00",
+        "y": 1670798.1046525487
+      },
+      {
+        "x": "2029-11-01T00:00:00.000+01:00",
+        "y": 1691442.891591572
+      },
+      {
+        "x": "2029-12-01T00:00:00.000+01:00",
+        "y": 1712073.5892434148
+      },
+      {
+        "x": "2030-01-01T00:00:00.000+01:00",
+        "y": 1732689.9265083796
+      },
+      {
+        "x": "2030-02-01T00:00:00.000+01:00",
+        "y": 1753291.627343563
+      },
+      {
+        "x": "2030-03-01T00:00:00.000+01:00",
+        "y": 1773878.4106836675
+      },
+      {
+        "x": "2030-04-01T00:00:00.000+02:00",
+        "y": 1794449.9903609818
+      },
+      {
+        "x": "2030-05-01T00:00:00.000+02:00",
+        "y": 1815006.0750245363
+      },
+      {
+        "x": "2030-06-01T00:00:00.000+02:00",
+        "y": 1835546.3680584703
+      },
+      {
+        "x": "2030-07-01T00:00:00.000+02:00",
+        "y": 1856070.567499615
+      },
+      {
+        "x": "2030-08-01T00:00:00.000+02:00",
+        "y": 1876578.365954303
+      },
+      {
+        "x": "2030-09-01T00:00:00.000+02:00",
+        "y": 1897069.450514418
+      },
+      {
+        "x": "2030-10-01T00:00:00.000+02:00",
+        "y": 1917543.5026727195
+      },
+      {
+        "x": "2030-11-01T00:00:00.000+01:00",
+        "y": 1938000.198237431
+      },
+      {
+        "x": "2030-12-01T00:00:00.000+01:00",
+        "y": 1958439.2072461552
+      },
+      {
+        "x": "2031-01-01T00:00:00.000+01:00",
+        "y": 1978860.193879086
+      },
+      {
+        "x": "2031-02-01T00:00:00.000+01:00",
+        "y": 1999262.8163715862
+      },
+      {
+        "x": "2031-03-01T00:00:00.000+01:00",
+        "y": 2019646.7269261351
+      },
+      {
+        "x": "2031-04-01T00:00:00.000+02:00",
+        "y": 2040011.5716236623
+      },
+      {
+        "x": "2031-05-01T00:00:00.000+02:00",
+        "y": 2060356.9903343248
+      },
+      {
+        "x": "2031-06-01T00:00:00.000+02:00",
+        "y": 2080682.6166277411
+      },
+      {
+        "x": "2031-07-01T00:00:00.000+02:00",
+        "y": 2100988.0776826874
+      },
+      {
+        "x": "2031-08-01T00:00:00.000+02:00",
+        "y": 2121272.9941963684
+      },
+      {
+        "x": "2031-09-01T00:00:00.000+02:00",
+        "y": 2141536.9802931934
+      },
+      {
+        "x": "2031-10-01T00:00:00.000+02:00",
+        "y": 2161779.643433195
+      },
+      {
+        "x": "2031-11-01T00:00:00.000+01:00",
+        "y": 2182000.5843200563
+      },
+      {
+        "x": "2031-12-01T00:00:00.000+01:00",
+        "y": 2202199.39680883
+      },
+      {
+        "x": "2032-01-01T00:00:00.000+01:00",
+        "y": 2222375.66781339
+      },
+      {
+        "x": "2032-02-01T00:00:00.000+01:00",
+        "y": 2242528.977213638
+      },
+      {
+        "x": "2032-03-01T00:00:00.000+01:00",
+        "y": 2262658.8977625696
+      },
+      {
+        "x": "2032-04-01T00:00:00.000+02:00",
+        "y": 2282764.994993156
+      },
+      {
+        "x": "2032-05-01T00:00:00.000+02:00",
+        "y": 2302846.8271252057
+      },
+      {
+        "x": "2032-06-01T00:00:00.000+02:00",
+        "y": 2322903.9449722045
+      },
+      {
+        "x": "2032-07-01T00:00:00.000+02:00",
+        "y": 2342935.8918481804
+      },
+      {
+        "x": "2032-08-01T00:00:00.000+02:00",
+        "y": 2362942.2034746986
+      },
+      {
+        "x": "2032-09-01T00:00:00.000+02:00",
+        "y": 2382922.4078880246
+      },
+      {
+        "x": "2032-10-01T00:00:00.000+02:00",
+        "y": 2402876.0253465306
+      },
+      {
+        "x": "2032-11-01T00:00:00.000+01:00",
+        "y": 2422802.568238442
+      },
+      {
+        "x": "2032-12-01T00:00:00.000+01:00",
+        "y": 2442701.5409899247
+      },
+      {
+        "x": "2033-01-01T00:00:00.000+01:00",
+        "y": 2462572.439973696
+      },
+      {
+        "x": "2033-02-01T00:00:00.000+01:00",
+        "y": 2482414.7534181597
+      },
+      {
+        "x": "2033-03-01T00:00:00.000+01:00",
+        "y": 2502227.9613171667
+      },
+      {
+        "x": "2033-04-01T00:00:00.000+02:00",
+        "y": 2522011.535340555
+      },
+      {
+        "x": "2033-05-01T00:00:00.000+02:00",
+        "y": 2541764.9387454186
+      },
+      {
+        "x": "2033-06-01T00:00:00.000+02:00",
+        "y": 2561487.626288374
+      },
+      {
+        "x": "2033-07-01T00:00:00.000+02:00",
+        "y": 2581179.0441387957
+      },
+      {
+        "x": "2033-08-01T00:00:00.000+02:00",
+        "y": 2600838.6297931615
+      },
+      {
+        "x": "2033-09-01T00:00:00.000+02:00",
+        "y": 2620465.811990634
+      },
+      {
+        "x": "2033-10-01T00:00:00.000+02:00",
+        "y": 2640060.010630001
+      },
+      {
+        "x": "2033-11-01T00:00:00.000+01:00",
+        "y": 2659620.6366879907
+      },
+      {
+        "x": "2033-12-01T00:00:00.000+01:00",
+        "y": 2679147.092139218
+      },
+      {
+        "x": "2034-01-01T00:00:00.000+01:00",
+        "y": 2698638.769877798
+      },
+      {
+        "x": "2034-02-01T00:00:00.000+01:00",
+        "y": 2718095.053640774
+      },
+      {
+        "x": "2034-03-01T00:00:00.000+01:00",
+        "y": 2737515.317933493
+      },
+      {
+        "x": "2034-04-01T00:00:00.000+02:00",
+        "y": 2756898.927957061
+      },
+      {
+        "x": "2034-05-01T00:00:00.000+02:00",
+        "y": 2776245.2395380363
+      },
+      {
+        "x": "2034-06-01T00:00:00.000+02:00",
+        "y": 2795553.599060463
+      },
+      {
+        "x": "2034-07-01T00:00:00.000+02:00",
+        "y": 2814823.3434004523
+      },
+      {
+        "x": "2034-08-01T00:00:00.000+02:00",
+        "y": 2834053.7998634195
+      },
+      {
+        "x": "2034-09-01T00:00:00.000+02:00",
+        "y": 2853244.2861241316
+      },
+      {
+        "x": "2034-10-01T00:00:00.000+02:00",
+        "y": 2872394.1101697655
+      },
+      {
+        "x": "2034-11-01T00:00:00.000+01:00",
+        "y": 2891502.5702461354
+      },
+      {
+        "x": "2034-12-01T00:00:00.000+01:00",
+        "y": 2910568.9548072005
+      },
+      {
+        "x": "2035-01-01T00:00:00.000+01:00",
+        "y": 2929592.5424681404
+      },
+      {
+        "x": "2035-02-01T00:00:00.000+01:00",
+        "y": 2948572.6019620537
+      },
+      {
+        "x": "2035-03-01T00:00:00.000+01:00",
+        "y": 2967508.3921005838
+      },
+      {
+        "x": "2035-04-01T00:00:00.000+02:00",
+        "y": 2986399.161738555
+      },
+      {
+        "x": "2035-05-01T00:00:00.000+02:00",
+        "y": 3005244.149742903
+      },
+      {
+        "x": "2035-06-01T00:00:00.000+02:00",
+        "y": 3024042.5849660467
+      },
+      {
+        "x": "2035-07-01T00:00:00.000+02:00",
+        "y": 3042793.686223903
+      },
+      {
+        "x": "2035-08-01T00:00:00.000+02:00",
+        "y": 3061496.6622787835
+      },
+      {
+        "x": "2035-09-01T00:00:00.000+02:00",
+        "y": 3080150.7118273783
+      },
+      {
+        "x": "2035-10-01T00:00:00.000+02:00",
+        "y": 3098755.02349401
+      },
+      {
+        "x": "2035-11-01T00:00:00.000+01:00",
+        "y": 3117308.7758294255
+      },
+      {
+        "x": "2035-12-01T00:00:00.000+01:00",
+        "y": 3135811.1373153203
+      },
+      {
+        "x": "2036-01-01T00:00:00.000+01:00",
+        "y": 3154261.2663748125
+      },
+      {
+        "x": "2036-02-01T00:00:00.000+01:00",
+        "y": 3172658.3113891794
+      },
+      {
+        "x": "2036-03-01T00:00:00.000+01:00",
+        "y": 3191001.410720951
+      },
+      {
+        "x": "2036-04-01T00:00:00.000+02:00",
+        "y": 3209289.6927437675
+      },
+      {
+        "x": "2036-05-01T00:00:00.000+02:00",
+        "y": 3227522.2758790934
+      },
+      {
+        "x": "2036-06-01T00:00:00.000+02:00",
+        "y": 3245698.268640131
+      },
+      {
+        "x": "2036-07-01T00:00:00.000+02:00",
+        "y": 3263816.769683169
+      },
+      {
+        "x": "2036-08-01T00:00:00.000+02:00",
+        "y": 3281876.867866575
+      },
+      {
+        "x": "2036-09-01T00:00:00.000+02:00",
+        "y": 3299877.642317734
+      },
+      {
+        "x": "2036-10-01T00:00:00.000+02:00",
+        "y": 3317818.162508164
+      },
+      {
+        "x": "2036-11-01T00:00:00.000+01:00",
+        "y": 3335697.4883370954
+      },
+      {
+        "x": "2036-12-01T00:00:00.000+01:00",
+        "y": 3353514.6702237334
+      }
+    ]
+  }
+}
