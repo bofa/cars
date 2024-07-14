@@ -44,7 +44,7 @@ export default function getPetrolStatisticsSweden(axios) {
 
     return req$
       .then((r) => r.data.data
-        .map((d) => ({ t: DateTime.fromFormat(d.key[2], "yyyy'M'MM", { zone: 'utc' }), y: Number(d.values[0]) / 1000 })))  
+        .map((d) => ({ x: DateTime.fromFormat(d.key[2], "yyyy'M'MM", { zone: 'utc' }), y: Number(d.values[0]) / 1000 })))  
       .then((data) => ({ label, data }));
   })
 
