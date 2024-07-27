@@ -207,10 +207,10 @@ export class Main extends React.Component<MainProps, State> {
       });
 
     [
-      {
-        countryId: 'NLD',
-        name: 'netherlands',
-      },
+      // {
+      //   countryId: 'NLD',
+      //   name: 'netherlands',
+      // },
       {
         countryId: 'DEU',
         name: 'germany',
@@ -219,32 +219,31 @@ export class Main extends React.Component<MainProps, State> {
         countryId: 'FRA',
         name: 'france',
       },
-      {
-        countryId: 'DNK',
-        name: 'denmark',
-      },
+      // {
+      //   countryId: 'DNK',
+      //   name: 'denmark',
+      // },
     ].forEach(({ countryId, name }) => {
       const totalReq = ['INTL.5-2', 'INTL.62-2', 'INTL.65-2', 'INTL.63-2']
         .map(id => `${id}-${countryId}-TBPD.A`)
         .join(';')
 
       
-      //         https://api.eia.gov/v2/petroleum/cons/refmg/data/?api_key=3zjKYxV86AqtJWSRoAECir1wQFscVu6lxXnRVKG8
-      axios.get(`https://api.eia.gov/v2/series/?api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2&series_id=${totalReq}`)
-        .then(response => response.data.series)
-        .then((response: { name: string, data: [string, number][] }[] ) => {
-          console.log('response', response);
-          const series = response.map(s => ({
-            label: s.name.split(',')[0],
-            data: s.data
+      // https://api.eia.gov/v2/petroleum/cons/refmg/data/?api_key=3zjKYxV86AqtJWSRoAECir1wQFscVu6lxXnRVKG8
+      // axios.get(`https://api.eia.gov/v2/series/?api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2&series_id=${totalReq}`)
+        axios.get(`https://api.eia.gov/v2/international/data/?frequency=monthly&data[0]=value&facets[activityId][]=2&facets[countryRegionId][]=${countryId}&facets[unit][]=TBPD&sort[0][column]=period&sort[0][direction]=desc&offset=0&length=5000&api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2`)
+        .then<{ period: string, value: string }[]>(response => response.data.response.data)
+        .then((data) => {
+          console.log('data', data);
+          const series = [{
+            label: 'Petroleum Products',
+            data: data
               .reverse()
-              .filter(d => typeof d[1] === 'number')
-              .map(d => ({ x: DateTime.fromFormat(d[0], 'YYYY'), y: d[1] }))
-              .map(d => Array(12).fill(0).map((_, i) => ({ x: d.x.plus({ months: i }), y: d.y })))
-              .reduce((agg, con) => agg.concat(con)),
-          }));
+              .map(d => ({ x: DateTime.fromFormat(d.period, 'yyyy-MM'), y: Number(d.value) }))
+              .filter(d => d.y)
+          }]
 
-          console.log('netherlands', series);
+          console.log('countryId', countryId, series);
           this.setState(({ countriesFuel }) => ({
             countriesFuel: { ...countriesFuel, [name]: series },
           }));
