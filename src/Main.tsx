@@ -192,7 +192,7 @@ export class Main extends React.Component<MainProps, State> {
     getPetrolStatisticsNorway().then(petrolSeries => {
       // console.log('data', data);
       this.setState(({ countriesFuel }) => ({
-        countriesFuel: { ...countriesFuel, norway: petrolSeries },
+        countriesFuel: { ...countriesFuel, norway: (countriesFuel.norway ?? []).concat(petrolSeries) },
       }));
     });
 
@@ -207,10 +207,10 @@ export class Main extends React.Component<MainProps, State> {
       });
 
     [
-      // {
-      //   countryId: 'NLD',
-      //   name: 'netherlands',
-      // },
+      {
+        countryId: 'NLD',
+        name: 'netherlands',
+      },
       {
         countryId: 'DEU',
         name: 'germany',
@@ -219,38 +219,55 @@ export class Main extends React.Component<MainProps, State> {
         countryId: 'FRA',
         name: 'france',
       },
-      // {
-      //   countryId: 'DNK',
-      //   name: 'denmark',
-      // },
+      {
+        countryId: 'DNK',
+        name: 'denmark',
+      },
+      {
+        countryId: 'SWE',
+        name: 'sweden',
+      },
+      {
+        countryId: 'NOR',
+        name: 'norway',
+      },
     ].forEach(({ countryId, name }) => {
       const totalReq = ['INTL.5-2', 'INTL.62-2', 'INTL.65-2', 'INTL.63-2']
         .map(id => `${id}-${countryId}-TBPD.A`)
         .join(';')
 
-      
-      // https://api.eia.gov/v2/petroleum/cons/refmg/data/?api_key=3zjKYxV86AqtJWSRoAECir1wQFscVu6lxXnRVKG8
-      // axios.get(`https://api.eia.gov/v2/series/?api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2&series_id=${totalReq}`)
-        axios.get(`https://api.eia.gov/v2/international/data/?frequency=monthly&data[0]=value&facets[activityId][]=2&facets[countryRegionId][]=${countryId}&facets[unit][]=TBPD&sort[0][column]=period&sort[0][direction]=desc&offset=0&length=5000&api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2`)
+      const products = [
+        {
+          label: 'Gasoline',
+          productId: 62,
+        },
+        {
+          label: 'Jet fuel (EIA)',
+          productId: 63,
+        },
+        {
+          label: 'Diesel',
+          productId: 65,
+        }
+      ].map(({ productId, label }) =>
+        axios.get(`https://api.eia.gov/v2/international/data/?frequency=annual&data[0]=value&facets[activityId][]=2&facets[productId][]=${productId}&facets[countryRegionId][]=${countryId}&facets[unit][]=MT&sort[0][column]=period&sort[0][direction]=asc&offset=0&length=5000&api_key=TsVtImL6otz3dyW4hKcias01zxPnVymkRSvDq8B2`)
         .then<{ period: string, value: string }[]>(response => response.data.response.data)
         .then((data) => {
           console.log('data', data);
           const series = [{
-            label: 'Petroleum Products',
+            label,
             data: data
-              .reverse()
-              .map(d => ({ x: DateTime.fromFormat(d.period, 'yyyy-MM'), y: Number(d.value) }))
+              .map(d => ({ x: DateTime.fromFormat(d.period, 'yyyy'), y: Number(d.value) }))
               .filter(d => d.y)
+              .flatMap(d => Array(12).fill(0).map((_, i) => ({ x: d.x.plus({ months: i }), y: d.y/12 })))
           }]
 
           console.log('countryId', countryId, series);
           this.setState(({ countriesFuel }) => ({
-            countriesFuel: { ...countriesFuel, [name]: series },
-          }));
+            countriesFuel: { ...countriesFuel, [name]: (countriesFuel[name] ?? []).concat(series) },
+          }))
         })
-        .catch(error => {
-          console.error(countryId, name, error);
-        })
+      )
     });
 
     // getNorwayMotorGas().then((swedenGas: Series[]) => this.setState(({ countriesFuel }) => ({
