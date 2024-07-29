@@ -231,12 +231,12 @@ export class Main extends React.Component<MainProps, State> {
         countryId: 'NOR',
         name: 'norway',
       },
+      {
+        countryId: 'FIN',
+        name: 'finland',
+      },
     ].forEach(({ countryId, name }) => {
-      const totalReq = ['INTL.5-2', 'INTL.62-2', 'INTL.65-2', 'INTL.63-2']
-        .map(id => `${id}-${countryId}-TBPD.A`)
-        .join(';')
-
-      const products = [
+      [
         {
           label: 'Gasoline',
           productId: 62,
