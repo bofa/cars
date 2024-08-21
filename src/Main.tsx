@@ -238,7 +238,7 @@ export class Main extends React.Component<MainProps, State> {
     ].forEach(({ countryId, name }) => {
       [
         {
-          label: 'Gasoline',
+          label: 'Gasoline (EIA)',
           productId: 62,
         },
         {
@@ -246,7 +246,7 @@ export class Main extends React.Component<MainProps, State> {
           productId: 63,
         },
         {
-          label: 'Diesel',
+          label: 'Diesel (EIA)',
           productId: 65,
         }
       ].map(({ productId, label }) =>
@@ -259,6 +259,7 @@ export class Main extends React.Component<MainProps, State> {
             data: data
               .map(d => ({ x: DateTime.fromFormat(d.period, 'yyyy'), y: Number(d.value) }))
               .filter(d => d.y)
+              .filter(d => d.x.year >= 2000)
               .flatMap(d => Array(12).fill(0).map((_, i) => ({ x: d.x.plus({ months: i }), y: d.y/12 })))
           }]
 
