@@ -29,7 +29,7 @@ export default function (props: { items: string[], selected: string[], onSelect:
       onRemove={group => props.onSelect(toggleItems(props.selected, group))}
       onClear={() => props.onSelect([])}
       selectedItems={props.selected}
-      itemPredicate={(query, item) => item.includes(query)}
+      itemPredicate={(query, item) => item.toLocaleLowerCase().includes(query.toLocaleLowerCase())}
     />
   );
 }
