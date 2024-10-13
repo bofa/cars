@@ -37,14 +37,6 @@ files.forEach(({ date, file }) => {
       result.push(item.text ?? '?')
     }
     else if (!item) {
-      // [
-      //   // ['Austria', 'EUROPEAN UNION'],
-      //   ['Austria', 'Bulgaria'],
-      //   ['Sweden', 'EUROPEAN UNION'],
-      //   // ['Iceland', 'EFTA'],
-      //   // ['United Kingdom', 'EU + EFTA + UK']
-      // ]
-      // getPairwise(countries)
       [
         "Austria", 
         "Belgium", 
@@ -162,16 +154,6 @@ function uniq<T extends Record<string, any>>(array: T[], key: keyof T) {
   return array.filter(function(item) {
     return seen.hasOwnProperty(item[key]) ? false : (seen[item[key]] = true)
   })
-}
-
-function getPairwise<T>(arr: T[]): [T, T][] {
-  const pairs: [T, T][] = [];
-
-  for (let i = 0; i < arr.length - 1; i++) {
-    pairs.push([arr[i], arr[i+1]]);
-  }
-
-  return pairs;
 }
 
 function isFirstCharLetter(str: string): boolean {
