@@ -8,7 +8,10 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "acea": "ts-node acea/parse.ts"
+    "acea": "ts-node acea/parse.ts",
+    "adhoc": "ts-node adhoc/sweden.ts",
+    "commitbuild": "git add docs && git commit -m deploy && git push",
+    "deploy": "npm run build && npm run commitbuild"
   },
   "dependencies": {
     "@blueprintjs/core": "^5.12.0",
@@ -20,8 +23,7 @@
     "luxon": "^3.5.0",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18.3.1"
-  },
+    "react-dom": "^18.3.1"},
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@types/luxon": "^3.4.2",
