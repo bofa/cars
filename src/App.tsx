@@ -7,13 +7,13 @@ import { HTMLSelect } from '@blueprintjs/core'
 
 type Point = {
   x: string
-  bev: number
-  phev: number
-  hybrid: number
-  other: number
-  petrol: number
-  disel: number
   total: number
+  bev: number|null
+  phev: number|null
+  hybrid: number|null
+  other: number|null
+  petrol: number|null
+  disel: number|null
 }
 
 const makes = [
@@ -23,6 +23,7 @@ const makes = [
   'other',
   'petrol',
   'disel',
+  'total',
 ]
 
 const counstries = [
@@ -76,24 +77,28 @@ function App() {
 
   const dataset = [{
     label: country,
-    data: data?.map(d => ({ x: DateTime.fromISO(d.x), y: d[make] })) ?? [],
+    data: data?.map(d => ({ x: DateTime.fromISO(d.x), y: d[make]! }))
+      .filter(d => d.y)
+      ?? [],
   }]
 
   const normalize = data?.map(d => ({ x: DateTime.fromISO(d.x), y: d.total }))
 
   return (
     <>
-      <HTMLSelect value={country} onChange={e => setCountry(e.target.value)}>
-        {counstries.map(country => <option key={country} value={country}>{country}</option>)}
-      </HTMLSelect>
-      <HTMLSelect value={'' + smooth} onChange={e => setSmooth(+e.target.value)}>
-        <option value="1">Month</option>
-        <option value="3">Quarter</option>
-        <option value="12">Year</option>
-      </HTMLSelect>
-      <HTMLSelect value={make} onChange={e => setMake(e.target.value as any)}>
-        {makes.map(make => <option key={make} value={make}>{make}</option>)}
-      </HTMLSelect>
+      <div style={{ display: 'flex', gap: 10 }}>
+        <HTMLSelect value={country} onChange={e => setCountry(e.target.value)}>
+          {counstries.map(country => <option key={country} value={country}>{country}</option>)}
+        </HTMLSelect>
+        <HTMLSelect value={'' + smooth} onChange={e => setSmooth(+e.target.value)}>
+          <option value="1">Month</option>
+          <option value="3">Quarter</option>
+          <option value="12">Year</option>
+        </HTMLSelect>
+        <HTMLSelect value={make} onChange={e => setMake(e.target.value as any)}>
+          {makes.map(make => <option key={make} value={make}>{make}</option>)}
+        </HTMLSelect>
+      </div>
       <div>
         <Chart series={dataset} normalize={normalize} fitType={'linear'} sCurveParams={null} smooth={smooth}/>
       </div>
