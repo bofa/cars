@@ -63,8 +63,9 @@ function App() {
   const [country, setCountry] = useState("Sweden")
   const [smooth, setSmooth] = useState(12)
   const [make, setMake] = useState<keyof Omit<Point, 'x'>>('bev')
+  const [normal, setNormal] = useState<keyof Omit<Point, 'x'>>('total')
 
-  const { data } = useQuery({
+  const query = useQuery({
     queryKey: ['salesCountry', country],
     queryFn: () =>
       fetch(`sales-${country}.json`).then((res) =>
@@ -72,6 +73,9 @@ function App() {
       ),
     staleTime: Infinity,
   })
+
+  const data = query.data?.filter(d => d[make] && d[normal])
+    ?? []
 
   console.log('asdf', data)
 
@@ -82,7 +86,7 @@ function App() {
       ?? [],
   }]
 
-  const normalize = data?.map(d => ({ x: DateTime.fromISO(d.x), y: d.total }))
+  const normalize = data?.map(d => ({ x: DateTime.fromISO(d.x), y: d[normal]! }))
 
   return (
     <>
@@ -97,6 +101,9 @@ function App() {
         </HTMLSelect>
         <HTMLSelect value={make} onChange={e => setMake(e.target.value as any)}>
           {makes.map(make => <option key={make} value={make}>{make}</option>)}
+        </HTMLSelect>
+        <HTMLSelect value={normal} onChange={e => setNormal(e.target.value as any)}>
+          {makes.map(normal => <option key={normal} value={normal}>{normal}</option>)}
         </HTMLSelect>
       </div>
       <div>
