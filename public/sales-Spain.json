@@ -81,13 +81,13 @@
   },
   {
     "x": "2022-09-01T00:00:00.000+02:00",
-    "bev": null,
-    "phev": null,
-    "hybrid": 0,
-    "other": null,
-    "petrol": null,
-    "disel": null,
-    "total": 0
+    "bev": 3287,
+    "phev": 4174,
+    "hybrid": 20862,
+    "other": 1261,
+    "petrol": 25489,
+    "disel": 12167,
+    "total": 67240
   },
   {
     "x": "2022-10-01T00:00:00.000+02:00",
