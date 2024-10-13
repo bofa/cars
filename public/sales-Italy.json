@@ -41,13 +41,13 @@
   },
   {
     "x": "2022-05-01T00:00:00.000+02:00",
-    "bev": null,
-    "phev": 0,
-    "hybrid": null,
-    "other": null,
-    "petrol": null,
-    "disel": 0,
-    "total": null
+    "bev": 4473,
+    "phev": 7261,
+    "hybrid": 40746,
+    "other": 10833,
+    "petrol": 34800,
+    "disel": 23255,
+    "total": 121368
   },
   {
     "x": "2022-06-01T00:00:00.000+02:00",
