@@ -3,18 +3,18 @@ import { DateTime } from 'luxon'
 const fs = require('fs')
 
 const files = [
-  { date: '2023-01-01', file: './acea/2023-01.pdf' },
-  { date: '2023-02-01', file: './acea/2023-02.pdf' },
-  { date: '2023-03-01', file: './acea/2023-03.pdf' },
-  { date: '2023-04-01', file: './acea/2023-04.pdf' },
-  { date: '2023-05-01', file: './acea/2023-05.pdf' },
-  { date: '2023-06-01', file: './acea/2023-06.pdf' },
-  { date: '2023-07-01', file: './acea/2023-07.pdf' },
-  { date: '2023-08-01', file: './acea/2023-08.pdf' },
-  { date: '2023-09-01', file: './acea/2023-09.pdf' },
-  { date: '2023-10-01', file: './acea/2023-10.pdf' },
-  { date: '2023-11-01', file: './acea/2023-11.pdf' },
-  { date: '2023-12-01', file: './acea/2023-12.pdf' },
+  // { date: '2023-01-01', file: './acea/2023-01.pdf' },
+  // { date: '2023-02-01', file: './acea/2023-02.pdf' },
+  // { date: '2023-03-01', file: './acea/2023-03.pdf' },
+  // { date: '2023-04-01', file: './acea/2023-04.pdf' },
+  // { date: '2023-05-01', file: './acea/2023-05.pdf' },
+  // { date: '2023-06-01', file: './acea/2023-06.pdf' },
+  // { date: '2023-07-01', file: './acea/2023-07.pdf' },
+  // { date: '2023-08-01', file: './acea/2023-08.pdf' },
+  // { date: '2023-09-01', file: './acea/2023-09.pdf' },
+  // { date: '2023-10-01', file: './acea/2023-10.pdf' },
+  // { date: '2023-11-01', file: './acea/2023-11.pdf' },
+  // { date: '2023-12-01', file: './acea/2023-12.pdf' },
 
   { date: '2024-01-01', file: './acea/2024-01.pdf' },
   { date: '2024-02-01', file: './acea/2024-02.pdf' },
@@ -57,7 +57,7 @@ files.forEach(({ date, file }) => {
         "Estonia", 
         "Finland", 
         "France", 
-        "Germany", 
+        "Germany",
         "Greece", 
         "Hungary", 
         "Ireland", 
@@ -79,11 +79,14 @@ files.forEach(({ date, file }) => {
         "United Kingdom",
       ]
       .forEach((startString) => {
-        const startIndex = result.findIndex(s => s === startString)
+        const monthlyIndex = result.findIndex(s => s === 'MONTHLY')
+        const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex)
+          + monthlyIndex
+        console.log('monthlyIndex', monthlyIndex, startIndex)
         // const endTableIndex = result.findIndex(s => s === endString) - 1
         
         const countrySegment = result.slice(startIndex, startIndex + rowOffset)
-          .filter(s => !((s.includes('+') || s.includes('-'))))
+          .filter(s => !((s.includes('+') || s.includes('-') || s.includes('!'))))
           .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
 
         console.log(countrySegment[0], countrySegment.length)
