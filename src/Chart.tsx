@@ -37,7 +37,7 @@ export default function (props: ChartProps) {
   const options: ChartOptions<'line'> = {
     // responsive: true,
     maintainAspectRatio: false,
-    // animation: false,
+    animation: false,
     scales: {
       x: {
         type: 'time'
