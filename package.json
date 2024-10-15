@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "acea": "ts-node acea/parse.ts",
-    "adhoc": "ts-node adhoc/adhoc.ts",
+    "adhoc": "ts-node adhoc/us.ts",
     "commitbuild": "git add docs && git commit -m deploy && git push",
     "deploy": "npm run build && npm run commitbuild"
   },

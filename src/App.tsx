@@ -1,9 +1,10 @@
 import { DateTime } from 'luxon'
 import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import './App.css'
-import Chart from './Chart'
 import { HTMLSelect } from '@blueprintjs/core'
+import Chart from './Chart'
+import { MultiMergeSelect } from './MultiMergeSelect'
+import './App.css'
 
 type Point = {
   x: string
@@ -57,6 +58,7 @@ const counstries = [
   "Norway",
   "Switzerland",
   "United Kingdom",
+  "United States",
 ] as const
 
 function App() {
@@ -106,8 +108,15 @@ function App() {
           {makes.map(normal => <option key={normal} value={normal}>{normal}</option>)}
         </HTMLSelect>
       </div>
-      <div>
+      <div style={{ display: 'flex' }}>
         <Chart series={dataset} normalize={normalize} fitType={'linear'} sCurveParams={null} smooth={smooth}/>
+        <MultiMergeSelect
+          items={counstries.map(c => ({ id: c, name: c }))}
+          selected={[{
+            name: 'Test Group',
+            series: ['Norway', 'Sweden', 'Denmark']
+          }]}
+        />
       </div>
     </>
   )

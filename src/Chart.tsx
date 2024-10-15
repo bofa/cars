@@ -149,7 +149,11 @@ export default function (props: ChartProps) {
 
   console.log('formattedSeries', formattedSeries)
   
-  return <Line width={2000} height={500} data={formattedSeries} options={options} />;
+  return (
+    <div style={{ flexGrow: 1, width: '100%', height: 500 }}>
+      <Line data={formattedSeries} options={options} />
+    </div>
+  )
 }
 
 export function rgba(index: number, alpha: number = 0.6) {
