@@ -26,7 +26,7 @@ type ChartProps = {
   fitType: FitType
   fitItem?: string | null
   sCurveParams: null | { a: number, b: number, c: number }
-  normalize?: { x: DateTime; y: number; }[]
+  // normalize?: { x: DateTime; y: number; }[]
   smooth: number
 }
 
@@ -80,9 +80,9 @@ export default function (props: ChartProps) {
     data: smooth(s.data, props.smooth),
   }));
 
-  const smoothedNormalize = props.normalize
-    ? smooth(props.normalize, props.smooth)
-    : undefined
+  // const smoothedNormalize = props.normalize
+  //   ? smooth(props.normalize, props.smooth)
+  //   : undefined
 
   const formattedSeries = {
     datasets: smoothedSeries
@@ -96,16 +96,16 @@ export default function (props: ChartProps) {
             label: s.label,
             data: s.data.map(d => ({ ...d, x: d.x.toJSDate(), y: Math.round(d.y) }))
           },
-          ... smoothedNormalize === undefined ? [] : 
-          [{
-            yAxisID: 'y2',
-            fill: false,
-            borderColor: rgbLabel(i, s.label),
-            label: s.label + '%',
-            borderDash: [10, 5],
-            // data: props.normalize,
-            data: s.data.map((d, index) => ({ ...d, x: d.x.toJSDate(), y: Math.round(1000 * d.y / smoothedNormalize[index].y ) / 10 })),
-          }]
+          // ... smoothedNormalize === undefined ? [] : 
+          // [{
+          //   yAxisID: 'y2',
+          //   fill: false,
+          //   borderColor: rgbLabel(i, s.label),
+          //   label: s.label + '%',
+          //   borderDash: [10, 5],
+          //   // data: props.normalize,
+          //   data: s.data.map((d, index) => ({ ...d, x: d.x.toJSDate(), y: Math.round(1000 * d.y / smoothedNormalize[index].y ) / 10 })),
+          // }]
         ];
       })
       .reduce((out, arr) => out.concat(arr), [])

@@ -1,13 +1,13 @@
 import { DateTime } from 'luxon'
 import { useState } from 'react'
-import { useQuery } from '@tanstack/react-query'
+import { useQueries, useQuery } from '@tanstack/react-query'
 import { HTMLSelect } from '@blueprintjs/core'
 import Chart from './Chart'
-import { MultiMergeSelect } from './MultiMergeSelect'
+import { MergeSelect, MultiMergeSelect } from './MultiMergeSelect'
 import './App.css'
 
 type Point = {
-  x: string
+  x: DateTime
   total: number
   bev: number|null
   phev: number|null
@@ -27,7 +27,7 @@ const makes = [
   'total',
 ]
 
-const counstries = [
+const countries = [
   "Austria", 
   "Belgium", 
   "Bulgaria", 
@@ -62,40 +62,43 @@ const counstries = [
 ] as const
 
 function App() {
-  const [country, setCountry] = useState("Sweden")
   const [smooth, setSmooth] = useState(12)
   const [make, setMake] = useState<keyof Omit<Point, 'x'>>('bev')
   const [normal, setNormal] = useState<keyof Omit<Point, 'x'>>('total')
+  const [selected, setSelected] = useState<MergeSelect[]>([])
 
-  const query = useQuery({
-    queryKey: ['salesCountry', country],
-    queryFn: () =>
-      fetch(`sales-${country}.json`).then((res) =>
-        res.json() as Promise<Point[]>,
-      ),
-    staleTime: Infinity,
+  const queries = useQueries({
+    queries: selected.map(group => group.series[0]).map(country => ({
+      queryKey: ['salesCountry', country],
+      queryFn: () =>
+        fetch(`sales-${country}.json`)
+        .then(res => res.json())
+        .then(data => ({
+          label: country,
+          data: data.map((d: any) => ({
+            ...d,
+            x: DateTime.fromISO(d.x)
+          })) as Point[]
+      })),
+      staleTime: Infinity,
+    }))
   })
 
-  const data = query.data?.filter(d => d[make] && d[normal])
-    ?? []
+  // const datas = queries.map(query => query.data?.filter(d => d[make] && d[normal])!)
+  //   .filter(d => d)
 
-  console.log('asdf', data)
-
-  const dataset = [{
-    label: country,
-    data: data?.map(d => ({ x: DateTime.fromISO(d.x), y: d[make]! }))
+  const dataset = queries.map(query => query.data).filter(d => d).map(d => d!).map((country, index) => ({
+    label: country.label,
+    data: country.data.map(d => ({ x: d.x!, y: d[make]! }))
       .filter(d => d.y)
       ?? [],
-  }]
+  }))
 
-  const normalize = data?.map(d => ({ x: DateTime.fromISO(d.x), y: d[normal]! }))
+  console.log('dataset', dataset)
 
   return (
     <>
       <div style={{ display: 'flex', gap: 10 }}>
-        <HTMLSelect value={country} onChange={e => setCountry(e.target.value)}>
-          {counstries.map(country => <option key={country} value={country}>{country}</option>)}
-        </HTMLSelect>
         <HTMLSelect value={'' + smooth} onChange={e => setSmooth(+e.target.value)}>
           <option value="1">Month</option>
           <option value="3">Quarter</option>
@@ -109,13 +112,11 @@ function App() {
         </HTMLSelect>
       </div>
       <div style={{ display: 'flex' }}>
-        <Chart series={dataset} normalize={normalize} fitType={'linear'} sCurveParams={null} smooth={smooth}/>
+        <Chart series={dataset} fitType={'linear'} sCurveParams={null} smooth={smooth}/>
         <MultiMergeSelect
-          items={counstries.map(c => ({ id: c, name: c }))}
-          selected={[{
-            name: 'Test Group',
-            series: ['Norway', 'Sweden', 'Denmark']
-          }]}
+          items={countries.map(c => ({ id: c, name: c }))}
+          selected={selected}
+          setSelected={setSelected}
         />
       </div>
     </>
