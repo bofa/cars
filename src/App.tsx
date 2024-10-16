@@ -64,7 +64,7 @@ const countries = [
 function App() {
   const [smooth, setSmooth] = useState(12)
   const [make, setMake] = useState<keyof Omit<Point, 'x'>>('bev')
-  const [normal, setNormal] = useState<keyof Omit<Point, 'x'>>('total')
+  const [normal, setNormal] = useState<keyof Omit<Point, 'x'> | null>('total')
   const [selected, setSelected] = useState<MergeSelect[]>([])
 
   const queries = useQueries({
@@ -89,7 +89,7 @@ function App() {
 
   const dataset: Series[] = queries.map(query => query.data).filter(d => d).map(d => d!).map((country, index) => {
     const series = country.data.map(d => ({ x: d.x!, y: d[make]! }))
-    const seriesNormal = country.data.map(d => ({ x: d.x!, y: d[normal]! }))
+    const seriesNormal = normal === null ? [] : country.data.map(d => ({ x: d.x!, y: d[normal]! }))
     const seriesSmooth = smoothSeries(series, smooth)
     const seriesNormalSmooth = smoothSeries(seriesNormal, smooth)
     
@@ -99,12 +99,12 @@ function App() {
         type: 'raw' as const,
         data: seriesSmooth,
       },
-      {
+      normal === null ? null : {
         label: country.label + '%',
         type: 'percent' as const,
         data: seriesSmooth.map((d, i) => ({ x: d.x, y: Math.round(1000 * d.y / seriesNormalSmooth[i].y) / 10 })),
       }
-    ]
+    ].filter(v => v).map(v => v!)
   })
   .flat()
 
@@ -121,8 +121,9 @@ function App() {
         <HTMLSelect value={make} onChange={e => setMake(e.target.value as any)}>
           {makes.map(make => <option key={make} value={make}>{make}</option>)}
         </HTMLSelect>
-        <HTMLSelect value={normal} onChange={e => setNormal(e.target.value as any)}>
+        <HTMLSelect value={normal ?? 'off'} onChange={e => setNormal(e.target.value === 'off' ? null : e.target.value as any)}>
           {makes.map(normal => <option key={normal} value={normal}>{normal}</option>)}
+          <option value="off">-</option>
         </HTMLSelect>
       </div>
       <div style={{ width: '80vw', display: 'flex' }}>
