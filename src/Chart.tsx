@@ -82,7 +82,7 @@ export default function (props: ChartProps) {
             yAxisID: s.type !== 'percent' ? 'y' : 'y2',
             fill: false,
             // backgroundColor: rgba(i),
-            borderColor: rgbLabel(i, s.label),
+            borderColor: rgbLabel(Math.floor(i/2), s.label),
             borderDash: s.type !== 'percent' ? undefined : [10, 5],
             label: s.label,
             data: s.data.map(d => ({ ...d, x: d.x.toJSDate(), y: Math.round(d.y) }))

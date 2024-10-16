@@ -17,8 +17,17 @@ export function MultiMergeSelect(props: {
     <div style={{ height: '80vh', width: 300, overflowY: 'scroll' }}>
       <Menu>
         {props.selected.map((g, i) => <>
-          {g.series.length > 1 && <MenuDivider title={g.name ?? g.series.join()}/>}
-          {g.series.map(v => <MenuItem text={v} onClick={() => {}}/>)}
+          {g.series.length > 1 &&
+            <MenuDivider
+              title={g.name ?? g.series.join()}
+            />
+          }
+          {g.series.map(v =>
+            <MenuItem
+              text={v}
+              onClick={() => props.setSelected(props.selected.filter((_, i2) => i2 !== i))}
+            />
+          )}
           </>
         )}
       </Menu>
