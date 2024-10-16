@@ -11,6 +11,8 @@ export function MultiMergeSelect(props: {
   setSelected: (selected: MergeSelect[]) => void
 }) {
 
+  // const SelectGroup = () => <HTMLSelect value={undefined} minimal options={['', ...props.selected.map(g => g.name ?? g.series.join())]} />
+
   return (
     <div style={{ height: '80vh', width: 300, overflowY: 'scroll' }}>
       <Menu>
@@ -24,7 +26,7 @@ export function MultiMergeSelect(props: {
       <Menu>
         {props.items.map(item =>
           <MenuItem
-            labelElement={<SelectElement/>}
+            // labelElement={<SelectGroup/>}
             key={item.id}
             text={item.name}
             onClick={(e: any) => {

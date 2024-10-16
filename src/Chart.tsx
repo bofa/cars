@@ -7,7 +7,6 @@ import { Line } from 'react-chartjs-2'
 import { ChartOptions } from 'chart.js'
 import { exponentialFit, linearFit } from './regression'
 import { model } from './s-curve-regression'
-import { smooth } from './series'
 
 export type FitType = keyof typeof regression
 const regression = {
@@ -17,7 +16,8 @@ const regression = {
 }
 
 export type Series = {
-  label: string
+  type?: 'raw'|'percent'
+  label: string 
   data: { x: DateTime, y: number }[]
 }
 
@@ -72,27 +72,18 @@ export default function (props: ChartProps) {
       //     : []
       // ]
     }
-  };
-
-  // const normalizedSmoothed = props.normalize.length > 0 ? smooth(props.normalize, props.smooth) : null;
-  const smoothedSeries = props.series.map(s => ({
-    label: s.label,
-    data: smooth(s.data, props.smooth),
-  }));
-
-  // const smoothedNormalize = props.normalize
-  //   ? smooth(props.normalize, props.smooth)
-  //   : undefined
+  }
 
   const formattedSeries = {
-    datasets: smoothedSeries
+    datasets: props.series
       .map((s, i) => {
         return [
           {
-            yAxisID: 'y',
+            yAxisID: s.type !== 'percent' ? 'y' : 'y2',
             fill: false,
             // backgroundColor: rgba(i),
             borderColor: rgbLabel(i, s.label),
+            borderDash: s.type !== 'percent' ? undefined : [10, 5],
             label: s.label,
             data: s.data.map(d => ({ ...d, x: d.x.toJSDate(), y: Math.round(d.y) }))
           },
@@ -119,33 +110,33 @@ export default function (props: ChartProps) {
       // })))
   };
 
-  const fitSeries = props.series?.find(s => s.label === props.fitItem)?.data;
-  if (fitSeries) {
+  // const fitSeries = props.series?.find(s => s.label === props.fitItem)?.data;
+  // if (fitSeries) {
 
-    let func: any;
-    const sCurveParams = props.sCurveParams;
-    if (props.fitType === 'scurve' && sCurveParams !== null) {
-      func = (x: number) => model([x], sCurveParams.a, sCurveParams.b, sCurveParams.c)[0];
-    } else if (props.fitType !== 'scurve') {
-      const output = regression[props.fitType](fitSeries.map(({ y }) => y));
-      func = output.func;
-    }
+  //   let func: any;
+  //   const sCurveParams = props.sCurveParams;
+  //   if (props.fitType === 'scurve' && sCurveParams !== null) {
+  //     func = (x: number) => model([x], sCurveParams.a, sCurveParams.b, sCurveParams.c)[0];
+  //   } else if (props.fitType !== 'scurve') {
+  //     const output = regression[props.fitType](fitSeries.map(({ y }) => y));
+  //     func = output.func;
+  //   }
 
-    if (func) {
-      const dataset = {
-        yAxisID: 'mainY',
-        fill: false,
-        // backgroundColor: rgba(i),
-        borderColor: rgba(18),
-        label: 'fit-' + props.fitItem,
-        data: fitSeries
-            .map(({ x }, i) =>
-            ({ x: x.toJSDate(), y: func(i) }))
-      };
+  //   if (func) {
+  //     const dataset = {
+  //       yAxisID: 'mainY',
+  //       fill: false,
+  //       // backgroundColor: rgba(i),
+  //       borderColor: rgba(18),
+  //       label: 'fit-' + props.fitItem,
+  //       data: fitSeries
+  //           .map(({ x }, i) =>
+  //           ({ x: x.toJSDate(), y: func(i) }))
+  //     };
 
-      formattedSeries.datasets?.push(dataset);
-    }
-  }
+  //     formattedSeries.datasets?.push(dataset);
+  //   }
+  // }
 
   console.log('formattedSeries', formattedSeries)
   

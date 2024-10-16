@@ -1,10 +1,10 @@
 import { DateTime } from 'luxon'
 import { useState } from 'react'
-import { useQueries, useQuery } from '@tanstack/react-query'
+import { useQueries } from '@tanstack/react-query'
 import { HTMLSelect } from '@blueprintjs/core'
-import Chart from './Chart'
+import Chart, { Series } from './Chart'
 import { MergeSelect, MultiMergeSelect } from './MultiMergeSelect'
-import './App.css'
+import { smooth as smoothSeries } from './series'
 
 type Point = {
   x: DateTime
@@ -87,14 +87,28 @@ function App() {
   // const datas = queries.map(query => query.data?.filter(d => d[make] && d[normal])!)
   //   .filter(d => d)
 
-  const dataset = queries.map(query => query.data).filter(d => d).map(d => d!).map((country, index) => ({
-    label: country.label,
-    data: country.data.map(d => ({ x: d.x!, y: d[make]! }))
-      .filter(d => d.y)
-      ?? [],
-  }))
+  const dataset: Series[] = queries.map(query => query.data).filter(d => d).map(d => d!).map((country, index) => {
+    const series = country.data.map(d => ({ x: d.x!, y: d[make]! }))
+    const seriesNormal = country.data.map(d => ({ x: d.x!, y: d[normal]! }))
+    const seriesSmooth = smoothSeries(series, smooth)
+    const seriesNormalSmooth = smoothSeries(seriesNormal, smooth)
+    
+    return [
+      {
+        label: country.label,
+        type: 'raw' as const,
+        data: seriesSmooth,
+      },
+      {
+        label: country.label + '%',
+        type: 'percent' as const,
+        data: seriesSmooth.map((d, i) => ({ x: d.x, y: Math.round(1000 * d.y / seriesNormalSmooth[i].y) / 10 })),
+      }
+    ]
+  })
+  .flat()
 
-  console.log('dataset', dataset)
+  // console.log('dataset', dataset)
 
   return (
     <>
@@ -111,7 +125,7 @@ function App() {
           {makes.map(normal => <option key={normal} value={normal}>{normal}</option>)}
         </HTMLSelect>
       </div>
-      <div style={{ display: 'flex' }}>
+      <div style={{ width: '80vw', display: 'flex' }}>
         <Chart series={dataset} fitType={'linear'} sCurveParams={null} smooth={smooth}/>
         <MultiMergeSelect
           items={countries.map(c => ({ id: c, name: c }))}
