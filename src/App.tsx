@@ -2,7 +2,7 @@ import { DateTime } from 'luxon'
 import { useState } from 'react'
 import { useQueries } from '@tanstack/react-query'
 import { HTMLSelect } from '@blueprintjs/core'
-import Chart, { Series } from './Chart'
+import Chart, { rgba, Series } from './Chart'
 import { MergeSelect, MultiMergeSelect } from './MultiMergeSelect'
 import { smooth as smoothSeries } from './series'
 
@@ -105,16 +105,19 @@ function App() {
     : smoothSeries(mapSeriesCut(seriesNormal), smooth)
 
     const name = group.name ?? group.series.join()
+    const color = rgba(index)
 
     return [
       {
         label: name,
         type: 'raw' as const,
+        color,
         data: seriesMergeSmooth,
       },
       seriesNormalMergeSmooth === null ? null : {
         label: name + '%',
         type: 'percent' as const,
+        color,
         data: seriesMergeSmooth.map((d, i) => ({ x: d.x, y: Math.round(1000 * d.y / seriesNormalMergeSmooth[i].y) / 10 })),
       }
     ].filter(v => v).map(v => v!)

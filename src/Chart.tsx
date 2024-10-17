@@ -16,7 +16,8 @@ const regression = {
 }
 
 export type Series = {
-  type?: 'raw'|'percent'
+  type: 'raw'|'percent'
+  color: string
   label: string 
   data: { x: DateTime, y: number }[]
 }
@@ -82,7 +83,7 @@ export default function (props: ChartProps) {
             yAxisID: s.type !== 'percent' ? 'y' : 'y2',
             fill: false,
             // backgroundColor: rgba(i),
-            borderColor: rgbLabel(Math.floor(i/2), s.label),
+            borderColor: s.color,
             borderDash: s.type !== 'percent' ? undefined : [10, 5],
             label: s.label,
             data: s.data.map(d => ({ ...d, x: d.x.toJSDate(), y: Math.round(d.y) }))
