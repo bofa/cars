@@ -1,4 +1,4 @@
-import { Checkbox, Divider, HTMLSelect, Menu, MenuDivider, MenuItem } from "@blueprintjs/core"
+import { Divider, HTMLSelect, Menu, MenuDivider, MenuItem } from "@blueprintjs/core"
 
 export type MergeSelect = { name: string|null, series: string[] }
 
@@ -10,8 +10,6 @@ export function MultiMergeSelect(props: {
   selected: MergeSelect[]
   setSelected: (selected: MergeSelect[]) => void
 }) {
-
-  // const SelectGroup = () => <HTMLSelect value={undefined} minimal options={['', ...props.selected.map(g => g.name ?? g.series.join())]} />
 
   return (
     <div style={{ height: '80vh', width: 300, overflowY: 'scroll' }}>
@@ -35,25 +33,30 @@ export function MultiMergeSelect(props: {
       <Menu>
         {props.items.map(item =>
           <MenuItem
-            // labelElement={<SelectGroup/>}
             key={item.id}
             text={item.name}
-            onClick={(e: any) => {
-              if (e.target.localName !== 'select') {
-                props.setSelected(props.selected.concat({ name: null, series: [item.id] }))
-              }
-            }}
-          />
+            onClick={() => props.setSelected(props.selected.concat({ name: null, series: [item.id] }))}
+          >
+            {props.selected
+            .filter(group => !group.series.includes(item.id))
+            .map((group, index) =>
+              <MenuItem
+                text={group.name ?? group.series.join()}
+                onClick={() => props.setSelected(props.selected.map((group, i) => {
+                  if (i === index) {
+                    return {
+                      ...group,
+                      series: group.series.concat(item.id)
+                    }
+                  } else {
+                    return group
+                  }
+                }))}
+              />
+            )}
+          </MenuItem>
         )}
       </Menu>
     </div>
-  )
-}
-
-function SelectElement(props: {
-
-}) {
-  return (
-    <HTMLSelect minimal options={['1', '2', '3']} />
   )
 }

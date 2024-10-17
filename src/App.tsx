@@ -68,7 +68,11 @@ function App() {
   const [selected, setSelected] = useState<MergeSelect[]>([])
 
   const queries = useQueries({
-    queries: selected.map(group => group.series[0]).map(country => ({
+    queries: selected
+      .map(group => group.series)
+      .flat()
+      .filter((country, index, array) => array.indexOf(country) === index)
+      .map(country => ({
       queryKey: ['salesCountry', country],
       queryFn: () =>
         fetch(`sales-${country}.json`)
@@ -84,25 +88,34 @@ function App() {
     }))
   })
 
-  // const datas = queries.map(query => query.data?.filter(d => d[make] && d[normal])!)
-  //   .filter(d => d)
+  const data = queries
+    .map(query => query.data!)
+    .filter(v => v)
 
-  const dataset: Series[] = queries.map(query => query.data).filter(d => d).map(d => d!).map((country, index) => {
-    const series = country.data.map(d => ({ x: d.x!, y: d[make]! }))
-    const seriesNormal = normal === null ? [] : country.data.map(d => ({ x: d.x!, y: d[normal]! }))
-    const seriesSmooth = smoothSeries(series, smooth)
-    const seriesNormalSmooth = smoothSeries(seriesNormal, smooth)
-    
+  const dataset: Series[] = selected.map((group, index) => {
+    const series = mapOutField(group.series, data, make)
+    const seriesNormal = normal == null
+      ? null
+      : mapOutField(group.series, data, normal)
+
+    console.log('series', series)
+    const seriesMergeSmooth = smoothSeries(mapSeriesCut(series), smooth)
+    const seriesNormalMergeSmooth = seriesNormal == null
+    ? null
+    : smoothSeries(mapSeriesCut(seriesNormal), smooth)
+
+    const name = group.name ?? group.series.join()
+
     return [
       {
-        label: country.label,
+        label: name,
         type: 'raw' as const,
-        data: seriesSmooth,
+        data: seriesMergeSmooth,
       },
-      normal === null ? null : {
-        label: country.label + '%',
+      seriesNormalMergeSmooth === null ? null : {
+        label: name + '%',
         type: 'percent' as const,
-        data: seriesSmooth.map((d, i) => ({ x: d.x, y: Math.round(1000 * d.y / seriesNormalSmooth[i].y) / 10 })),
+        data: seriesMergeSmooth.map((d, i) => ({ x: d.x, y: Math.round(1000 * d.y / seriesNormalMergeSmooth[i].y) / 10 })),
       }
     ].filter(v => v).map(v => v!)
   })
@@ -139,3 +152,31 @@ function App() {
 }
 
 export default App
+
+function mapOutField(
+  group: string[],
+  data: { label: string, data: Point[] }[],
+  make: keyof Omit<Point, 'x'>
+) {
+  return group.map(country => data.find(country2 => country2.label === country)?.data)
+  .filter(s => s)
+  .map(s => s!)
+  .map(s => s.map(d => ({ x: d.x, y: d[make]! })))
+}
+
+function mapSeriesCut(series: { x: DateTime, y: number }[][]) {
+  if (series.length < 1) {
+    return []
+  }
+
+  const minDate = DateTime.fromMillis(Math.max(...series.map(s => s.at(0)!.x.toMillis())))
+  const maxDate = DateTime.fromMillis(Math.min(...series.map(s => s.at(-1)!.x.toMillis())))
+  const steps = maxDate.diff(minDate, 'months').months
+
+  return series.map((data) => {
+    const minIndex = data.findIndex(d => d.x.equals(minDate))
+    // const maxIndex = data.findIndex(d => d.x.equals(maxDate))
+    return data.slice(minIndex, minIndex + steps + 1)
+  })
+  .reduce((agg, s) => agg.map((d, i) => ({ x: d.x, y: d.y + s[i].y })))
+}
