@@ -1,12 +1,13 @@
 // tslint:disable: jsx-wrap-multiline
 
+import { round } from 'mathjs'
 import { DateTime } from 'luxon'
 // import { Line } from 'react-chartjs-2'
 // import 'chartjs-plugin-annotation'
 import { Line } from 'react-chartjs-2'
 import { ChartOptions } from 'chart.js'
 import { exponentialFit, linearFit } from './regression'
-import { model } from './s-curve-regression'
+// import { model } from './s-curve-regression'
 
 export type FitType = keyof typeof regression
 const regression = {
@@ -86,7 +87,7 @@ export default function (props: ChartProps) {
             borderColor: s.color,
             borderDash: s.type !== 'percent' ? undefined : [10, 5],
             label: s.label,
-            data: s.data.map(d => ({ ...d, x: d.x.toJSDate(), y: Math.round(d.y) }))
+            data: s.data.map(d => ({ ...d, x: d.x.toJSDate(), y: round(d.y, 1) }))
           },
           // ... smoothedNormalize === undefined ? [] : 
           // [{
