@@ -118,7 +118,7 @@ function App() {
         label: name + '%',
         type: 'percent' as const,
         color,
-        data: seriesMergeSmooth.map((d, i) => ({ x: d.x, y: Math.round(1000 * d.y / seriesNormalMergeSmooth[i].y) / 10 })),
+        data: seriesMergeSmooth.map((d, i) => ({ x: d.x, y: 100 * d.y / seriesNormalMergeSmooth[i].y })),
       }
     ].filter(v => v).map(v => v!)
   })
