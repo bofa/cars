@@ -58,7 +58,7 @@ export default function (props: ChartProps) {
         max: 100,
         // id: 'mainY',
         ticks: {
-          // min: 0,
+          callback: d => d + '%'
         }
       },
       //   ...normalize
