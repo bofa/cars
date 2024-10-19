@@ -17,7 +17,16 @@ const output = allFiles
   return {
     id: marketLabel,
     name: marketLabel,
-    latest: content.at(-1),
+    latest: content.slice(-12).reduce((out, month) => ({
+      x: month.x,
+      bev: out.bev + month.bev,
+      phev: out.phev + month.phev,
+      hybrid: out.hybrid + month.hybrid,
+      other: out.other + month.other,
+      petrol: out.petrol + month.petrol,
+      disel: out.disel + month.disel,
+      total: out.total + month.total,
+    })),
   }
 })
 
