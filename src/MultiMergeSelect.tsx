@@ -1,18 +1,22 @@
 import { Divider, HTMLSelect, Menu, MenuDivider, MenuItem } from "@blueprintjs/core"
+import countries from './assets/selection.json'
 
 export type MergeSelect = { name: string|null, series: string[] }
 
 export function MultiMergeSelect(props: {
-  items: {
-    id: string
-    name: string
-  }[]
+  make?: 'bev'
   selected: MergeSelect[]
   setSelected: (selected: MergeSelect[]) => void
 }) {
+  const { make = 'bev' } = props
+
+  const itemsSorted = countries.sort((a, b) => b.latest[make] - a.latest[make])
 
   return (
-    <div style={{ height: '80vh', width: 300, overflowY: 'scroll' }}>
+    <div style={{ height: '100%', width: 300, overflowY: 'scroll', flexShrink: 0 }}>
+      {/* <HTMLSelect content={[
+
+      ]}/> */}
       <Menu>
         {props.selected.map((g, i) => <>
           {g.series.length > 1 &&
@@ -31,7 +35,7 @@ export function MultiMergeSelect(props: {
       </Menu>
       <Divider/>
       <Menu>
-        {props.items.map(item =>
+        {itemsSorted.map(item =>
           <MenuItem
             key={item.id}
             text={item.name}

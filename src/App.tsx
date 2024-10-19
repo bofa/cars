@@ -27,40 +27,6 @@ const makes = [
   'total',
 ]
 
-const countries = [
-  "Austria", 
-  "Belgium", 
-  "Bulgaria", 
-  "Croatia", 
-  "Cyprus", 
-  "Czechia", 
-  "Denmark", 
-  "Estonia", 
-  "Finland", 
-  "France", 
-  "Germany", 
-  "Greece", 
-  "Hungary", 
-  "Ireland", 
-  "Italy", 
-  "Latvia", 
-  "Lithuania", 
-  "Luxembourg",
-  "Malta", 
-  "Netherlands", 
-  "Poland", 
-  "Portugal", 
-  "Romania", 
-  "Slovenia", 
-  "Spain", 
-  "Sweden",
-  "Iceland",
-  "Norway",
-  "Switzerland",
-  "United Kingdom",
-  "United States",
-] as const
-
 function App() {
   const [smooth, setSmooth] = useState(12)
   const [make, setMake] = useState<keyof Omit<Point, 'x'>>('bev')
@@ -127,7 +93,7 @@ function App() {
   // console.log('dataset', dataset)
 
   return (
-    <>
+    <div style={{ width: '100wv', height: '100vh', padding: 20, paddingBottom: 60 }}>
       <div style={{ display: 'flex', gap: 10 }}>
         <HTMLSelect value={'' + smooth} onChange={e => setSmooth(+e.target.value)}>
           <option value="1">Month</option>
@@ -142,15 +108,14 @@ function App() {
           <option value="off">-</option>
         </HTMLSelect>
       </div>
-      <div style={{ width: '80vw', display: 'flex' }}>
+      <div style={{ width: '100%', height: '100%', display: 'flex' }}>
         <Chart series={dataset} fitType={'linear'} sCurveParams={null} smooth={smooth}/>
         <MultiMergeSelect
-          items={countries.map(c => ({ id: c, name: c }))}
           selected={selected}
           setSelected={setSelected}
         />
       </div>
-    </>
+    </div>
   )
 }
 

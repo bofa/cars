@@ -143,7 +143,7 @@ export default function (props: ChartProps) {
   console.log('formattedSeries', formattedSeries)
   
   return (
-    <div style={{ flexGrow: 1, width: '100%', height: '80vh' }}>
+    <div style={{ flexGrow: 1, flexShrink: 1, width: '100%', height: '100%' }}>
       <Line data={formattedSeries} options={options} />
     </div>
   )
