@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "acea": "ts-node acea/parse.ts",
     "adhoc": "ts-node adhoc/us.ts",
+    "process": "ts-node process.ts",
     "commitbuild": "git add docs && git commit -m deploy && git push",
     "deploy": "npm run build && npm run commitbuild"
   },
