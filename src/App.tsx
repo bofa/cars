@@ -1,21 +1,11 @@
 import { DateTime } from 'luxon'
 import { useState } from 'react'
 import { useQueries } from '@tanstack/react-query'
-import { HTMLSelect } from '@blueprintjs/core'
+import { HTMLSelect, Switch } from '@blueprintjs/core'
 import Chart, { rgba, Series } from './Chart'
-import { MergeSelect, MultiMergeSelect } from './MultiMergeSelect'
+import { MergeSelect, MultiMergeSelect, Point } from './MultiMergeSelect'
 import { smooth as smoothSeries } from './series'
-
-type Point = {
-  x: DateTime
-  total: number
-  bev: number|null
-  phev: number|null
-  hybrid: number|null
-  other: number|null
-  petrol: number|null
-  disel: number|null
-}
+import { DateRangeSlider } from './DateRangeSlider'
 
 const makes = [
   'bev',
@@ -32,6 +22,11 @@ function App() {
   const [make, setMake] = useState<keyof Omit<Point, 'x'>>('bev')
   const [normal, setNormal] = useState<keyof Omit<Point, 'x'> | null>('total')
   const [selected, setSelected] = useState<MergeSelect[]>([])
+  const [stacked, setStacked] = useState(false)
+  const [range, setRange] = useState<[DateTime, DateTime]>([
+    DateTime.now().minus({ year: 5 }),
+    DateTime.now(),
+  ])
 
   const queries = useQueries({
     queries: selected
@@ -59,10 +54,10 @@ function App() {
     .filter(v => v)
 
   const dataset: Series[] = selected.map((group, index) => {
-    const series = mapOutField(group.series, data, make)
+    const series = mapOutField(group.series, data, make, range)
     const seriesNormal = normal == null
       ? null
-      : mapOutField(group.series, data, normal)
+      : mapOutField(group.series, data, normal, range)
 
     console.log('series', series)
     const seriesMergeSmooth = smoothSeries(mapSeriesCut(series), smooth)
@@ -72,18 +67,21 @@ function App() {
 
     const name = group.name ?? group.series.join()
     const color = rgba(index)
+    const backgroundColor = rgba(index, 0.2)
 
     return [
       {
         label: name,
         type: 'raw' as const,
         color,
+        backgroundColor,
         data: seriesMergeSmooth,
       },
-      seriesNormalMergeSmooth === null ? null : {
+      seriesNormalMergeSmooth === null || stacked ? null : {
         label: name + '%',
         type: 'percent' as const,
         color,
+        backgroundColor,
         data: seriesMergeSmooth.map((d, i) => ({ x: d.x, y: 100 * d.y / seriesNormalMergeSmooth[i].y })),
       }
     ].filter(v => v).map(v => v!)
@@ -107,10 +105,28 @@ function App() {
           {makes.map(normal => <option key={normal} value={normal}>{normal}</option>)}
           <option value="off">-</option>
         </HTMLSelect>
+        <Switch
+          label="Stacked"
+          checked={stacked}
+          onChange={e => setStacked(e.target.checked)}
+        />
       </div>
       <div style={{ width: '100%', height: '100%', display: 'flex' }}>
-        <Chart series={dataset} fitType={'linear'} sCurveParams={null} smooth={smooth}/>
+        <div style={{ flexGrow: 1, flexShrink: 1, width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
+          <Chart
+            series={dataset}
+            stacked={stacked}
+            fitType={'linear'}
+            sCurveParams={null}
+            smooth={smooth}
+          />
+          <DateRangeSlider
+            value={range[0]}
+            onValue={value => setRange([value, range[1]])}
+          />
+        </div>
         <MultiMergeSelect
+          make={make}
           selected={selected}
           setSelected={setSelected}
         />
@@ -124,12 +140,19 @@ export default App
 function mapOutField(
   group: string[],
   data: { label: string, data: Point[] }[],
-  make: keyof Omit<Point, 'x'>
+  make: keyof Omit<Point, 'x'>,
+  range: [DateTime, DateTime],
 ) {
   return group.map(country => data.find(country2 => country2.label === country)?.data)
   .filter(s => s)
   .map(s => s!)
-  .map(s => s.map(d => ({ x: d.x, y: d[make]! })))
+  .map(s => {
+    const rangeIndex = s.findIndex(p => p.x.diff(range[0]).milliseconds > 0)
+
+    return s
+    .slice(rangeIndex)
+    .map(d => ({ x: d.x, y: d[make]! }))
+  })
 }
 
 function mapSeriesCut(series: { x: DateTime, y: number }[][]) {

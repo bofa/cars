@@ -1,10 +1,22 @@
+import { DateTime } from "luxon"
 import { Divider, HTMLSelect, Menu, MenuDivider, MenuItem } from "@blueprintjs/core"
 import countries from './assets/selection.json'
+
+export type Point = {
+  x: DateTime
+  total: number
+  bev: number|null
+  phev: number|null
+  hybrid: number|null
+  other: number|null
+  petrol: number|null
+  disel: number|null
+}
 
 export type MergeSelect = { name: string|null, series: string[] }
 
 export function MultiMergeSelect(props: {
-  make?: 'bev'
+  make?: keyof Omit<Point, 'x'>
   selected: MergeSelect[]
   setSelected: (selected: MergeSelect[]) => void
 }) {

@@ -5,7 +5,7 @@ import { DateTime } from 'luxon'
 // import { Line } from 'react-chartjs-2'
 // import 'chartjs-plugin-annotation'
 import { Line } from 'react-chartjs-2'
-import { ChartOptions } from 'chart.js'
+import { ChartData, ChartOptions } from 'chart.js'
 import { exponentialFit, linearFit } from './regression'
 // import { model } from './s-curve-regression'
 
@@ -19,6 +19,7 @@ const regression = {
 export type Series = {
   type: 'raw'|'percent'
   color: string
+  backgroundColor: string
   label: string 
   data: { x: DateTime, y: number }[]
 }
@@ -30,6 +31,7 @@ type ChartProps = {
   sCurveParams: null | { a: number, b: number, c: number }
   // normalize?: { x: DateTime; y: number; }[]
   smooth: number
+  stacked: boolean
 }
 
 export default function (props: ChartProps) {
@@ -50,7 +52,8 @@ export default function (props: ChartProps) {
         min: 0,
         ticks: {
           // min: 0,
-        }
+        },
+        stacked: props.stacked,
       },
       y2: {
         position: 'left',
@@ -76,16 +79,22 @@ export default function (props: ChartProps) {
     }
   }
 
-  const formattedSeries = {
+  const formattedSeries: ChartData<'line', any, any> = {
     datasets: props.series
       .map((s, i) => {
+        const stacked = s.type !== 'percent' && props.stacked
+
         return [
           {
             yAxisID: s.type !== 'percent' ? 'y' : 'y2',
-            fill: false,
+            fill: !stacked ? false
+              : i === 0 ? 'origin'
+              : i - 1,
+            // color
             // backgroundColor: rgba(i),
             borderColor: s.color,
             borderDash: s.type !== 'percent' ? undefined : [10, 5],
+            backgroundColor: s.backgroundColor,
             label: s.label,
             data: s.data.map(d => ({ ...d, x: d.x.toJSDate(), y: round(d.y, 1) }))
           },
@@ -141,7 +150,7 @@ export default function (props: ChartProps) {
   // }
 
   console.log('formattedSeries', formattedSeries)
-  
+
   return (
     <div style={{ flexGrow: 1, flexShrink: 1, width: '100%', height: '100%' }}>
       <Line data={formattedSeries} options={options} />
