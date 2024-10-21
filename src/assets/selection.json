@@ -70,20 +70,6 @@
     }
   },
   {
-    "id": "Czech Republic",
-    "name": "Czech Republic",
-    "latest": {
-      "x": "2023-07-01T00:00:00.000+02:00",
-      "bev": 5245,
-      "phev": 4268,
-      "hybrid": 34528,
-      "other": 4581,
-      "petrol": 114753,
-      "disel": 50137,
-      "total": 213512
-    }
-  },
-  {
     "id": "Czechia",
     "name": "Czechia",
     "latest": {
