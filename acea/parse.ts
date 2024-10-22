@@ -3,11 +3,11 @@ import { DateTime } from 'luxon'
 const fs = require('fs')
 
 const files = [
-  // { date: '2023-01-01', file: './acea/2023-01.pdf' },
-  // { date: '2023-02-01', file: './acea/2023-02.pdf' },
-  // { date: '2023-03-01', file: './acea/2023-03.pdf' },
-  // { date: '2023-04-01', file: './acea/2023-04.pdf' },
-  // { date: '2023-05-01', file: './acea/2023-05.pdf' },
+  { date: '2023-01-01', file: './acea/2023-01.pdf' },
+  { date: '2023-02-01', file: './acea/2023-02.pdf' },
+  { date: '2023-03-01', file: './acea/2023-03.pdf' },
+  { date: '2023-04-01', file: './acea/2023-04.pdf' },
+  { date: '2023-05-01', file: './acea/2023-05.pdf' },
   // { date: '2023-06-01', file: './acea/2023-06.pdf' },
   // { date: '2023-07-01', file: './acea/2023-07.pdf' },
   // { date: '2023-08-01', file: './acea/2023-08.pdf' },
@@ -24,7 +24,7 @@ const files = [
   // { date: '2024-06-01', file: './acea/2024-06.pdf' },
   // { date: '2024-07-01', file: './acea/2024-07.pdf' },
   // { date: '2024-08-01', file: './acea/2024-08.pdf' },
-    { date: '2024-09-01', file: './acea/2024-09.pdf' },
+  // { date: '2024-09-01', file: './acea/2024-09.pdf' },
 ]
 
 const rowOffset = 22
@@ -39,40 +39,41 @@ files.forEach(({ date, file }) => {
     }
     else if (!item) {
       [
-        "Austria", 
-        "Belgium", 
-        "Bulgaria", 
-        "Croatia", 
-        "Cyprus", 
-        "Czechia",
-        "Czech Republic",
-        "Denmark", 
-        "Estonia", 
-        "Finland", 
-        "France", 
+        // "Austria", 
+        // "Belgium", 
+        // "Bulgaria", 
+        // "Croatia", 
+        // "Cyprus", 
+        // "Czechia",
+        // "Czech Republic",
+        // "Denmark", 
+        // "Estonia", 
+        // "Finland", 
+        // "France", 
         "Germany",
-        "Greece", 
-        "Hungary", 
-        "Ireland", 
-        "Italy", 
-        "Latvia", 
-        "Lithuania", 
-        "Luxembourg",
-        "Malta", 
-        "Netherlands", 
-        "Poland", 
-        "Portugal", 
-        "Romania", 
-        "Slovenia", 
-        "Spain", 
-        "Sweden",
-        "Iceland",
-        "Norway",
-        "Switzerland",
-        "United Kingdom",
+        // "Greece", 
+        // "Hungary", 
+        // "Ireland", 
+        // "Italy", 
+        // "Latvia", 
+        // "Lithuania", 
+        // "Luxembourg",
+        // "Malta", 
+        // "Netherlands", 
+        // "Poland", 
+        // "Portugal", 
+        // "Romania", 
+        // "Slovenia", 
+        // "Spain", 
+        // "Sweden",
+        // "Iceland",
+        // "Norway",
+        // "Switzerland",
+        // "United Kingdom",
       ]
       .forEach((startString) => {
-        const monthlyIndex = result.findIndex(s => s === 'MONTHLY')
+        console.log('result', result.filter(s => s.startsWith('NEW')))
+        const monthlyIndex = result.findIndex(s => s === 'MONTHLY' || s === 'NEW PASSENGER CAR REGISTRATIONS, BY MARKET AND FUEL TYPE ' || s === 'NEW PASSENGER CAR REGISTRATIONS BY MARKET AND FUEL TYPE ')
         const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex)
           + monthlyIndex
         console.log('monthlyIndex', monthlyIndex, startIndex)
@@ -91,26 +92,26 @@ files.forEach(({ date, file }) => {
         const market = {
           country: countrySegment[index],
           data: [
-            {
-              x: DateTime.fromISO(date),
-              bev: toNumber(countrySegment[index+1]),
-              phev: toNumber(countrySegment[index+3]),
-              hybrid: toNumber(countrySegment[index+5]),
-              other: toNumber(countrySegment[index+7]),
-              petrol: toNumber(countrySegment[index+9]),
-              disel: toNumber(countrySegment[index+11]),
-              total: toNumber(countrySegment[index+13]),
-            },
             // {
-            //   x: DateTime.fromISO(date).minus({ year: 1 }),
-            //   bev: toNumber(countrySegment[index+2]),
-            //   phev: toNumber(countrySegment[index+4]),
-            //   hybrid: toNumber(countrySegment[index+6]),
-            //   other: toNumber(countrySegment[index+8]),
-            //   petrol: toNumber(countrySegment[index+10]),
-            //   disel: toNumber(countrySegment[index+12]),
-            //   total: toNumber(countrySegment[index+14]),
+            //   x: DateTime.fromISO(date),
+            //   bev: toNumber(countrySegment[index+1]),
+            //   phev: toNumber(countrySegment[index+3]),
+            //   hybrid: toNumber(countrySegment[index+5]),
+            //   other: toNumber(countrySegment[index+7]),
+            //   petrol: toNumber(countrySegment[index+9]),
+            //   disel: toNumber(countrySegment[index+11]),
+            //   total: toNumber(countrySegment[index+13]),
             // },
+            {
+              x: DateTime.fromISO(date).minus({ year: 1 }),
+              bev: toNumber(countrySegment[index+2]),
+              phev: toNumber(countrySegment[index+4]),
+              hybrid: toNumber(countrySegment[index+6]),
+              other: toNumber(countrySegment[index+8]),
+              petrol: toNumber(countrySegment[index+10]),
+              disel: toNumber(countrySegment[index+12]),
+              total: toNumber(countrySegment[index+14]),
+            },
           ]
         }
 
