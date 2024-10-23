@@ -39,7 +39,7 @@ export default function (props: ChartProps) {
   // const { normalize } = props;
 
   const options: ChartOptions<'line'> = {
-    // responsive: true,
+    responsive: true,
     maintainAspectRatio: false,
     animation: false,
     scales: {
