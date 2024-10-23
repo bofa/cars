@@ -1,5 +1,7 @@
+import { max, round } from "mathjs"
 import { DateTime } from "luxon"
-import { Divider, HTMLSelect, Menu, MenuDivider, MenuItem } from "@blueprintjs/core"
+import { useState } from "react"
+import { Divider, HTMLSelect, Menu, MenuDivider, MenuItem, Switch } from "@blueprintjs/core"
 import countries from './assets/selection.json'
 
 export type Point = {
@@ -15,6 +17,8 @@ export type Point = {
 
 export type MergeSelect = { name: string|null, series: string[] }
 
+const sortOptions = ['bev', 'other', 'total', 'bevPercent'] as const
+
 export function MultiMergeSelect(props: {
   make?: keyof Omit<Point, 'x'>
   selected: MergeSelect[]
@@ -22,13 +26,37 @@ export function MultiMergeSelect(props: {
 }) {
   const { make = 'bev' } = props
 
-  const itemsSorted = countries.sort((a, b) => b.latest[make] - a.latest[make])
+  const [sort, setSort] = useState<typeof sortOptions[number]>('bev')
+  const [acending, setAcending] = useState<1|-1>(-1)
+
+  const itemsSorted = countries
+  .map(market => {
+    let sortValue
+    if (sort === 'bev' || sort === 'total' || sort === 'other') {
+      sortValue = market.latest[sort]
+    } else {
+      sortValue = market.latest['bev'] / market.latest['total']
+    }
+
+    return {
+      ...market,
+      sort: sortValue,
+    }
+  })
+  .sort((a, b) => acending * (a.sort - b.sort))
+
+  const largestValue = max(itemsSorted.map(market => market.sort))
 
   return (
     <div style={{ height: '100%', width: 300, overflowY: 'scroll', flexShrink: 0 }}>
-      {/* <HTMLSelect content={[
-
-      ]}/> */}
+      <div style={{ display: 'flex', gap: 10, alignItems: 'baseline' }}>
+        <HTMLSelect options={sortOptions} onChange={e => setSort(e.target.value as any)}/>
+        <Switch
+          label="Ascending"
+          checked={acending === 1}
+          onChange={e => setAcending(e.target.checked ? 1 : -1)}  
+        />
+      </div>
       <Menu>
         {props.selected.map((g, i) => <>
           {g.series.length > 1 &&
@@ -49,11 +77,12 @@ export function MultiMergeSelect(props: {
       <Menu>
         {itemsSorted.map(item =>
           <MenuItem
+            style={{ background: `linear-gradient(to right, #00000020 ${round(100 * item.sort/largestValue)}%, #FFFFFF33 ${round(100 * item.sort/largestValue)}%)` }}
             key={item.id}
             text={item.name}
             onClick={() => props.setSelected(props.selected.concat({ name: null, series: [item.id] }))}
           >
-            {props.selected
+            {/* {props.selected
             .filter(group => !group.series.includes(item.id))
             .map((group, index) =>
               <MenuItem
@@ -69,7 +98,7 @@ export function MultiMergeSelect(props: {
                   }
                 }))}
               />
-            )}
+            )} */}
           </MenuItem>
         )}
       </Menu>
