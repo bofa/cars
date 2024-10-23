@@ -37,6 +37,7 @@ function App() {
       queryKey: ['salesCountry', country],
       queryFn: () =>
         fetch(`sales-${country}.json`)
+        // fetch(`projections/${country}.json`)
         .then(res => res.json())
         .then(data => ({
           label: country,
@@ -92,7 +93,7 @@ function App() {
 
   return (
     <div style={{ width: '100wv', height: '100vh', padding: 20, paddingBottom: 60 }}>
-      <div style={{ display: 'flex', gap: 10 }}>
+      <div style={{ display: 'flex', gap: 10, alignItems: 'baseline' }}>
         <HTMLSelect value={'' + smooth} onChange={e => setSmooth(+e.target.value)}>
           <option value="1">Month</option>
           <option value="3">Quarter</option>
