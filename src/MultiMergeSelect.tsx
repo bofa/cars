@@ -20,14 +20,13 @@ export type MergeSelect = { name: string|null, series: string[] }
 const sortOptions = ['bev', 'other', 'total', 'bevPercent'] as const
 
 export function MultiMergeSelect(props: {
-  make?: keyof Omit<Point, 'x'>
   selected: MergeSelect[]
   setSelected: (selected: MergeSelect[]) => void
 }) {
-  const { make = 'bev' } = props
-
   const [sort, setSort] = useState<typeof sortOptions[number]>('bev')
   const [acending, setAcending] = useState<1|-1>(-1)
+
+  const percent = sort === 'bevPercent'
 
   const itemsSorted = countries
   .map(market => {
@@ -45,7 +44,7 @@ export function MultiMergeSelect(props: {
   })
   .sort((a, b) => acending * (a.sort - b.sort))
 
-  const largestValue = max(itemsSorted.map(market => market.sort))
+  const largestValue = percent ? 1 : max(itemsSorted.map(market => market.sort))
 
   return (
     <div style={{ height: '100%', width: 300, overflowY: 'scroll', flexShrink: 0 }}>

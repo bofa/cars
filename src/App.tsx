@@ -15,16 +15,18 @@ const makes = [
   'petrol',
   'disel',
   'total',
+  'projection',
 ]
 
 function App() {
   const [smooth, setSmooth] = useState(12)
   const [make, setMake] = useState<keyof Omit<Point, 'x'>>('bev')
+  const [projection, setProjection] = useState(false)
   const [normal, setNormal] = useState<keyof Omit<Point, 'x'> | null>('total')
   const [selected, setSelected] = useState<MergeSelect[]>([])
   const [stacked, setStacked] = useState(false)
   const [range, setRange] = useState<[DateTime, DateTime]>([
-    DateTime.now().minus({ year: 5 }),
+    DateTime.now().minus({ year: 5 }).set({ day: 0 }),
     DateTime.now(),
   ])
 
@@ -34,10 +36,14 @@ function App() {
       .flat()
       .filter((country, index, array) => array.indexOf(country) === index)
       .map(country => ({
-      queryKey: ['salesCountry', country],
-      queryFn: () =>
-        fetch(`sales-${country}.json`)
-        // fetch(`projections/${country}.json`)
+      queryKey: ['salesCountry', country, projection],
+      queryFn: () => {
+
+        const call = projection
+          ? fetch(`projections/${country}.json`)
+          : fetch(`sales-${country}.json`)
+
+        return call
         .then(res => res.json())
         .then(data => ({
           label: country,
@@ -45,8 +51,9 @@ function App() {
             ...d,
             x: DateTime.fromISO(d.x)
           })) as Point[]
-      })),
-      staleTime: Infinity,
+        }))
+    },
+    staleTime: Infinity,
     }))
   })
 
@@ -61,10 +68,10 @@ function App() {
       : mapOutField(group.series, data, normal, range)
 
     console.log('series', series)
-    const seriesMergeSmooth = smoothSeries(mapSeriesCut(series), smooth)
+    const seriesMergeSmooth = smoothSeries(mapSeriesCut(series), projection ? 1 : smooth)
     const seriesNormalMergeSmooth = seriesNormal == null
     ? null
-    : smoothSeries(mapSeriesCut(seriesNormal), smooth)
+    : smoothSeries(mapSeriesCut(seriesNormal), projection ? 1 : smooth)
 
     const name = group.name ?? group.series.join()
     const color = rgba(index)
@@ -111,6 +118,11 @@ function App() {
           checked={stacked}
           onChange={e => setStacked(e.target.checked)}
         />
+        <Switch
+          label="Projection"
+          checked={projection}
+          onChange={e => setProjection(e.target.checked)}
+        />
       </div>
       <div style={{ width: '100%', height: '100%', display: 'flex' }}>
         <div style={{ flexGrow: 1, flexShrink: 1, width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -122,12 +134,12 @@ function App() {
             smooth={smooth}
           />
           <DateRangeSlider
+            smooth={smooth}
             value={range[0]}
             onValue={value => setRange([value, range[1]])}
           />
         </div>
         <MultiMergeSelect
-          make={make}
           selected={selected}
           setSelected={setSelected}
         />

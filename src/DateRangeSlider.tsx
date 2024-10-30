@@ -9,6 +9,7 @@ const minDays = 0
 const maxDays = Math.ceil(maxDate.diff(minDate, 'months').months)
 
 export function DateRangeSlider(props: {
+  smooth: number
   value: DateTime
   onValue: (value: DateTime) => void
 }) {
@@ -18,7 +19,7 @@ export function DateRangeSlider(props: {
 
   useEffect(() => {
     const rangeDays = toMonths(props.value)
-    setDateRange(rangeDays)
+    setDateRange(rangeDays + props.smooth)
   }, [props.value])
 
   return (
@@ -29,13 +30,13 @@ export function DateRangeSlider(props: {
         value={dateRange}
         showTrackFill={false}
         onChange={setDateRange}
-        onRelease={months => props.onValue(minDate.plus({ months }))}
+        onRelease={months => props.onValue(minDate.plus({ months: months - props.smooth }))}
         labelRenderer={(months, opt) => {
           const date = minDate.plus({ months })
           const isFirstOfYear = date.month === 1 && date.day === 1
 
           return opt?.isHandleTooltip
-            ? <span style={{ whiteSpace: 'nowrap'  }}>{date.toFormat('yy-MM-dd')}</span>
+            ? <span style={{ whiteSpace: 'nowrap'  }}>{date.toFormat('yyyy-MM')}</span>
             : isFirstOfYear ? minDate.plus({ months }).toFormat('yyyy')
             : ""
         }}
