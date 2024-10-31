@@ -1,4 +1,4 @@
-import { readPdf } from './read-pdf'
+import { readPdf } from '../read-pdf'
 import { DateTime } from 'luxon'
 const fs = require('fs')
 
@@ -86,26 +86,26 @@ files.forEach(({ date, file }) => {
       const market = {
         country: countrySegment[index],
         data: [
-          // {
-          //   x: DateTime.fromISO(date),
-          //   bev: toNumber(countrySegment[index+1]),
-          //   phev: toNumber(countrySegment[index+3]),
-          //   hybrid: toNumber(countrySegment[index+5]),
-          //   other: toNumber(countrySegment[index+7]),
-          //   petrol: toNumber(countrySegment[index+9]),
-          //   disel: toNumber(countrySegment[index+11]),
-          //   total: toNumber(countrySegment[index+13]),
-          // },
           {
-            x: DateTime.fromISO(date).minus({ year: 1 }),
-            bev: toNumber(countrySegment[index+2]),
-            phev: toNumber(countrySegment[index+4]),
-            hybrid: toNumber(countrySegment[index+6]),
-            other: toNumber(countrySegment[index+8]),
-            petrol: toNumber(countrySegment[index+10]),
-            disel: toNumber(countrySegment[index+12]),
-            total: toNumber(countrySegment[index+14]),
+            x: DateTime.fromISO(date),
+            bev: toNumber(countrySegment[index+1]),
+            phev: toNumber(countrySegment[index+3]),
+            hybrid: toNumber(countrySegment[index+5]),
+            other: toNumber(countrySegment[index+7]),
+            petrol: toNumber(countrySegment[index+9]),
+            disel: toNumber(countrySegment[index+11]),
+            total: toNumber(countrySegment[index+13]),
           },
+          // {
+          //   x: DateTime.fromISO(date).minus({ year: 1 }),
+          //   bev: toNumber(countrySegment[index+2]),
+          //   phev: toNumber(countrySegment[index+4]),
+          //   hybrid: toNumber(countrySegment[index+6]),
+          //   other: toNumber(countrySegment[index+8]),
+          //   petrol: toNumber(countrySegment[index+10]),
+          //   disel: toNumber(countrySegment[index+12]),
+          //   total: toNumber(countrySegment[index+14]),
+          // },
         ]
       }
 
