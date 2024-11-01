@@ -1,30 +1,58 @@
-import { readPdf } from '../read-pdf'
 import { DateTime } from 'luxon'
+import { readPdf } from "../read-pdf"
 const fs = require('fs')
 
 const files = [
-  // { date: '2023-01-01', file: './acea/2023-01.pdf' },
-  // { date: '2023-02-01', file: './acea/2023-02.pdf' },
-  // { date: '2023-03-01', file: './acea/2023-03.pdf' },
-  // { date: '2023-04-01', file: './acea/2023-04.pdf' },
-  // { date: '2023-05-01', file: './acea/2023-05.pdf' },
-  // { date: '2023-06-01', file: './acea/2023-06.pdf' },
-  // { date: '2023-07-01', file: './acea/2023-07.pdf' },
-  // { date: '2023-08-01', file: './acea/2023-08.pdf' },
-  // { date: '2023-09-01', file: './acea/2023-09.pdf' },
-  // { date: '2023-10-01', file: './acea/2023-10.pdf' },
-  // { date: '2023-11-01', file: './acea/2023-11.pdf' },
-  // { date: '2023-12-01', file: './acea/2023-12.pdf' },
+  // { date: '2023-01-01', file: './acea_commercial/2023Q1.pdf' },
+  // { date: '2023-04-01', file: './acea_commercial/2023Q2.pdf' },
+  // { date: '2023-07-01', file: './acea_commercial/2023Q3.pdf' },
+  // { date: '2023-10-01', file: './acea_commercial/2023Q4.pdf' },
 
-  // { date: '2024-01-01', file: './acea/2024-01.pdf' },
-  // { date: '2024-02-01', file: './acea/2024-02.pdf' },
-  // { date: '2024-03-01', file: './acea/2024-03.pdf' },
-  // { date: '2024-04-01', file: './acea/2024-04.pdf' },
-  // { date: '2024-05-01', file: './acea/2024-05.pdf' },
-  // { date: '2024-06-01', file: './acea/2024-06.pdf' },
-  // { date: '2024-07-01', file: './acea/2024-07.pdf' },
-  // { date: '2024-08-01', file: './acea/2024-08.pdf' },
-  { date: '2024-09-01', file: './acea/2024-09.pdf' },
+  { date: '2024-01-01', file: './acea_commercial/2024Q1.pdf' },
+  { date: '2024-04-01', file: './acea_commercial/2024Q2.pdf' },
+  { date: '2024-07-01', file: './acea_commercial/2024Q3.pdf' },
+  // { date: '2024-10-01', file: './acea_commercial/2024Q4.pdf' },
+]
+
+const countries = [
+  // "Austria", 
+  "Belgium", 
+  // "Bulgaria", 
+  "Croatia", 
+  "Cyprus", 
+  // "Czechia",
+  // "Czech Republic",
+  "Denmark", 
+  "Estonia", 
+  "Finland", 
+  "France", 
+  "Germany",
+  "Greece", 
+  "Hungary", 
+  "Ireland", 
+  "Italy", 
+  "Latvia", 
+  // "Lithuania", 
+  "Luxembourg",
+  // "Malta", 
+  "Netherlands", 
+  "Poland", 
+  "Portugal", 
+  // "Romania", 
+  "Slovenia", 
+  // "Spain", 
+  "Sweden",
+  "Iceland",
+  "Norway",
+  "Switzerland",
+  "United Kingdom",
+]
+
+const categories = [
+  { label: 'van', search: 'NEW VAN' },
+  { label: 'mediumtrucks', search: 'NEW MEDIUM TRUCK' },
+  { label: 'heavytrucks', search: 'NEW HEAVY TRUCK' },
+  { label: 'busses', search: 'NEW BUS' },
 ]
 
 const rowOffset = 22
@@ -32,42 +60,8 @@ const rowOffset = 22
 files.forEach(({ date, file }) => {
   readPdf(file).then(result => {
 
-    [
-      "Austria", 
-      "Belgium", 
-      "Bulgaria", 
-      "Croatia", 
-      "Cyprus", 
-      "Czechia",
-      "Czech Republic",
-      "Denmark", 
-      "Estonia", 
-      "Finland", 
-      "France", 
-      "Germany",
-      "Greece", 
-      "Hungary", 
-      "Ireland", 
-      "Italy", 
-      "Latvia", 
-      "Lithuania", 
-      "Luxembourg",
-      "Malta", 
-      "Netherlands", 
-      "Poland", 
-      "Portugal", 
-      "Romania", 
-      "Slovenia", 
-      "Spain", 
-      "Sweden",
-      "Iceland",
-      "Norway",
-      "Switzerland",
-      "United Kingdom",
-    ]
-    .forEach((startString) => {
-      console.log('result', result.filter(s => s.startsWith('NEW')))
-      const monthlyIndex = result.findIndex(s => s === 'MONTHLY' || s === 'NEW PASSENGER CAR REGISTRATIONS, BY MARKET AND FUEL TYPE ' || s === 'NEW PASSENGER CAR REGISTRATIONS BY MARKET AND FUEL TYPE ')
+    categories.forEach(category => countries.forEach((startString) => {
+      const monthlyIndex = result.findIndex(s => s === category.search)
       const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex)
         + monthlyIndex
       console.log('monthlyIndex', monthlyIndex, startIndex)
@@ -113,7 +107,7 @@ files.forEach(({ date, file }) => {
 
       // Export data
       // countries.forEach(market => {
-        const filename = `./public/sales/cars-${market.country}.json`
+        const filename = `./acea_commercial/process/${category.label}-${market.country}.json`
         let importData: any[] = []
         try {
           importData = JSON.parse(fs.readFileSync(filename, { encoding: 'utf8', flag: 'r' }))
@@ -133,7 +127,7 @@ files.forEach(({ date, file }) => {
 
         fs.writeFileSync(filename, JSON.stringify(unique, null, 2))
         // console.log(countries)
-      })
+      }))
     // })
   })
 })

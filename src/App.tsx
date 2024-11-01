@@ -16,11 +16,20 @@ const makes = [
   'disel',
   'total',
   'projection',
-]
+] as const
+
+const segments = [
+  'cars',
+  'van',
+  'busses',
+  'mediumtrucks',
+  'heavytrucks',
+] as const
 
 function App() {
   const [smooth, setSmooth] = useState(12)
   const [make, setMake] = useState<keyof Omit<Point, 'x'>>('bev')
+  const [segment, setSegment] = useState<typeof segments[number]>('cars')
   const [projection, setProjection] = useState(false)
   const [normal, setNormal] = useState<keyof Omit<Point, 'x'> | null>('total')
   const [selected, setSelected] = useState<MergeSelect[]>([])
@@ -36,12 +45,12 @@ function App() {
       .flat()
       .filter((country, index, array) => array.indexOf(country) === index)
       .map(country => ({
-      queryKey: ['salesCountry', country, projection],
+      queryKey: ['salesCountry', country, segment, projection],
       queryFn: () => {
 
         const call = projection
           ? fetch(`projections/${country}.json`)
-          : fetch(`sales-${country}.json`)
+          : fetch(`sales/${segment}-${country}.json`)
 
         return call
         .then(res => res.json())
@@ -105,6 +114,9 @@ function App() {
           <option value="1">Month</option>
           <option value="3">Quarter</option>
           <option value="12">Year</option>
+        </HTMLSelect>
+        <HTMLSelect value={segment} onChange={e => setSegment(e.target.value as any)}>
+          {segments.map(make => <option key={make} value={make}>{make}</option>)}
         </HTMLSelect>
         <HTMLSelect value={make} onChange={e => setMake(e.target.value as any)}>
           {makes.map(make => <option key={make} value={make}>{make}</option>)}
