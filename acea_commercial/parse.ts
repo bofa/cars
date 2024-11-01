@@ -49,10 +49,10 @@ const countries = [
 ]
 
 const categories = [
-  { label: 'van', search: 'NEW VAN' },
-  { label: 'mediumtrucks', search: 'NEW MEDIUM TRUCK' },
-  { label: 'heavytrucks', search: 'NEW HEAVY TRUCK' },
-  { label: 'busses', search: 'NEW BUS' },
+  { label: 'van', search: ['NEW VAN'] },
+  { label: 'mediumtrucks', search: ['NEW MEDIUM TRUCK'] },
+  { label: 'heavytrucks', search: ['NEW HEAVY TRUCK'] },
+  { label: 'busses', search: ['NEW BUS', 'TOTAL NEW BUS'] },
 ]
 
 const rowOffset = 22
@@ -61,7 +61,8 @@ files.forEach(({ date, file }) => {
   readPdf(file).then(result => {
 
     categories.forEach(category => countries.forEach((startString) => {
-      const monthlyIndex = result.findIndex(s => s === category.search)
+      // console.log('starts With new', result.filter(s => s.includes('BUS')))
+      const monthlyIndex = result.findIndex(s => category.search.some(c => c === s))
       const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex)
         + monthlyIndex
       console.log('monthlyIndex', monthlyIndex, startIndex)
@@ -74,7 +75,7 @@ files.forEach(({ date, file }) => {
       console.log(countrySegment[0], countrySegment.length)
       // if (countrySegment.length < )
 
-      console.log('countrySegment', result.slice(startIndex, startIndex + rowOffset), countrySegment)
+      // console.log('countrySegment', result.slice(startIndex, startIndex + rowOffset), countrySegment)
 
       const index = 0
       const market = {
@@ -84,22 +85,24 @@ files.forEach(({ date, file }) => {
             x: DateTime.fromISO(date),
             bev: toNumber(countrySegment[index+1]),
             phev: toNumber(countrySegment[index+3]),
-            hybrid: toNumber(countrySegment[index+5]),
-            other: toNumber(countrySegment[index+7]),
-            petrol: toNumber(countrySegment[index+9]),
-            disel: toNumber(countrySegment[index+11]),
-            total: toNumber(countrySegment[index+13]),
+            hybrid: null,
+            // hybrid: toNumber(countrySegment[index+5]),
+            other: toNumber(countrySegment[index+5]),
+            petrol: toNumber(countrySegment[index+7]),
+            disel: toNumber(countrySegment[index+9]),
+            total: toNumber(countrySegment[index+11]),
           },
-          // {
-          //   x: DateTime.fromISO(date).minus({ year: 1 }),
-          //   bev: toNumber(countrySegment[index+2]),
-          //   phev: toNumber(countrySegment[index+4]),
-          //   hybrid: toNumber(countrySegment[index+6]),
-          //   other: toNumber(countrySegment[index+8]),
-          //   petrol: toNumber(countrySegment[index+10]),
-          //   disel: toNumber(countrySegment[index+12]),
-          //   total: toNumber(countrySegment[index+14]),
-          // },
+          {
+            x: DateTime.fromISO(date).minus({ year: 1 }),
+            bev: toNumber(countrySegment[index+2]),
+            phev: toNumber(countrySegment[index+4]),
+            hybrid: null,
+            // hybrid: toNumber(countrySegment[index+6]),
+            other: toNumber(countrySegment[index+6]),
+            petrol: toNumber(countrySegment[index+8]),
+            disel: toNumber(countrySegment[index+10]),
+            total: toNumber(countrySegment[index+12]),
+          },
         ]
       }
 

@@ -1,112 +1,112 @@
 [
   {
     "x": "2022-01-01T00:00:00.000+01:00",
-    "bev": 108,
-    "phev": 55,
-    "hybrid": 6,
-    "other": 28,
-    "petrol": 2790,
-    "disel": 2987,
-    "total": 3360
+    "bev": 1,
+    "phev": 0,
+    "hybrid": null,
+    "other": 1,
+    "petrol": 1,
+    "disel": 40,
+    "total": 43
   },
   {
     "x": "2022-04-01T00:00:00.000+02:00",
-    "bev": 233,
-    "phev": 210,
-    "hybrid": 10,
-    "other": 53,
-    "petrol": 7621,
-    "disel": 8127,
-    "total": 6610
+    "bev": 54,
+    "phev": 0,
+    "hybrid": null,
+    "other": 4,
+    "petrol": 1,
+    "disel": 61,
+    "total": 120
   },
   {
     "x": "2022-07-01T00:00:00.000+02:00",
     "bev": 153,
     "phev": 0,
-    "hybrid": 8,
-    "other": 1,
-    "petrol": 88,
-    "disel": 250,
-    "total": 424
+    "hybrid": null,
+    "other": 8,
+    "petrol": 1,
+    "disel": 88,
+    "total": 250
   },
   {
     "x": "2022-10-01T00:00:00.000+02:00",
-    "bev": 711,
-    "phev": 338,
-    "hybrid": 10,
-    "other": 103,
-    "petrol": 10029,
-    "disel": 11191,
-    "total": 17131
+    "bev": 279,
+    "phev": 0,
+    "hybrid": null,
+    "other": 12,
+    "petrol": 1,
+    "disel": 125,
+    "total": 417
   },
   {
     "x": "2023-01-01T00:00:00.000+01:00",
-    "bev": 434,
-    "phev": 34,
-    "hybrid": 5,
-    "other": 23,
-    "petrol": 2048,
-    "disel": 2544,
-    "total": 5824
+    "bev": 27,
+    "phev": 0,
+    "hybrid": null,
+    "other": 3,
+    "petrol": 0,
+    "disel": 39,
+    "total": 69
   },
   {
     "x": "2023-04-01T00:00:00.000+02:00",
-    "bev": 847,
-    "phev": 94,
-    "hybrid": 11,
-    "other": 51,
-    "petrol": 4693,
-    "disel": 5696,
-    "total": 14468
+    "bev": 48,
+    "phev": 0,
+    "hybrid": null,
+    "other": 3,
+    "petrol": 0,
+    "disel": 64,
+    "total": 115
   },
   {
     "x": "2023-07-01T00:00:00.000+02:00",
     "bev": 100,
     "phev": 0,
-    "hybrid": 3,
-    "other": 0,
-    "petrol": 112,
-    "disel": 215,
-    "total": 576
+    "hybrid": null,
+    "other": 3,
+    "petrol": 0,
+    "disel": 112,
+    "total": 215
   },
   {
     "x": "2023-10-01T00:00:00.000+02:00",
-    "bev": 1602,
-    "phev": 175,
-    "hybrid": 15,
-    "other": 83,
-    "petrol": 9146,
-    "disel": 11021,
-    "total": 30277
+    "bev": 106,
+    "phev": 0,
+    "hybrid": null,
+    "other": 3,
+    "petrol": 0,
+    "disel": 140,
+    "total": 249
   },
   {
     "x": "2024-01-01T00:00:00.000+01:00",
     "bev": 11,
     "phev": 0,
-    "hybrid": 1,
-    "other": 0,
-    "petrol": 64,
-    "disel": 76,
-    "total": 132
+    "hybrid": null,
+    "other": 1,
+    "petrol": 0,
+    "disel": 64,
+    "total": 76
   },
   {
     "x": "2024-04-01T00:00:00.000+02:00",
     "bev": 136,
     "phev": 0,
-    "hybrid": 1,
-    "other": 0,
-    "petrol": 123,
-    "disel": 260,
-    "total": 424
+    "hybrid": null,
+    "other": 1,
+    "petrol": 0,
+    "disel": 123,
+    "total": 260
   },
   {
     "x": "2024-07-01T00:00:00.000+02:00",
     "bev": 278,
     "phev": 0,
-    "hybrid": 1,
-    "other": 0,
-    "petrol": 196,
-    "disel": 475,
-    "total": 514
+    "hybrid": null,
+    "other": 1,
+    "petrol": 0,
+    "disel": 196,
+    "total": 475
   }
 ]

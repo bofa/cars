@@ -39,6 +39,8 @@ function App() {
     DateTime.now(),
   ])
 
+  const smoothAdjusted = segment === 'cars' ? smooth : Math.max(1, smooth / 3)
+
   const queries = useQueries({
     queries: selected
       .map(group => group.series)
@@ -77,10 +79,10 @@ function App() {
       : mapOutField(group.series, data, normal, range)
 
     console.log('series', series)
-    const seriesMergeSmooth = smoothSeries(mapSeriesCut(series), projection ? 1 : smooth)
+    const seriesMergeSmooth = smoothSeries(mapSeriesCut(series), projection ? 1 : smoothAdjusted)
     const seriesNormalMergeSmooth = seriesNormal == null
     ? null
-    : smoothSeries(mapSeriesCut(seriesNormal), projection ? 1 : smooth)
+    : smoothSeries(mapSeriesCut(seriesNormal), projection ? 1 : smoothAdjusted)
 
     const name = group.name ?? group.series.join()
     const color = rgba(index)
@@ -143,10 +145,10 @@ function App() {
             stacked={stacked}
             fitType={'linear'}
             sCurveParams={null}
-            smooth={smooth}
+            smooth={smoothAdjusted}
           />
           <DateRangeSlider
-            smooth={smooth}
+            smooth={smoothAdjusted}
             value={range[0]}
             onValue={value => setRange([value, range[1]])}
           />
