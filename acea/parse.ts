@@ -24,7 +24,8 @@ const files = [
   // { date: '2024-06-01', file: './acea/2024-06.pdf' },
   // { date: '2024-07-01', file: './acea/2024-07.pdf' },
   // { date: '2024-08-01', file: './acea/2024-08.pdf' },
-  { date: '2024-09-01', file: './acea/2024-09.pdf' },
+  // { date: '2024-09-01', file: './acea/2024-09.pdf' },
+  { date: '2024-10-01', file: './acea/2024-10.pdf' },
 ]
 
 const rowOffset = 22
@@ -96,16 +97,16 @@ files.forEach(({ date, file }) => {
             disel: toNumber(countrySegment[index+11]),
             total: toNumber(countrySegment[index+13]),
           },
-          // {
-          //   x: DateTime.fromISO(date).minus({ year: 1 }),
-          //   bev: toNumber(countrySegment[index+2]),
-          //   phev: toNumber(countrySegment[index+4]),
-          //   hybrid: toNumber(countrySegment[index+6]),
-          //   other: toNumber(countrySegment[index+8]),
-          //   petrol: toNumber(countrySegment[index+10]),
-          //   disel: toNumber(countrySegment[index+12]),
-          //   total: toNumber(countrySegment[index+14]),
-          // },
+          {
+            x: DateTime.fromISO(date).minus({ year: 1 }),
+            bev: toNumber(countrySegment[index+2]),
+            phev: toNumber(countrySegment[index+4]),
+            hybrid: toNumber(countrySegment[index+6]),
+            other: toNumber(countrySegment[index+8]),
+            petrol: toNumber(countrySegment[index+10]),
+            disel: toNumber(countrySegment[index+12]),
+            total: toNumber(countrySegment[index+14]),
+          },
         ]
       }
 

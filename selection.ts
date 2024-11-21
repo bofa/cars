@@ -1,11 +1,11 @@
 const fs = require('fs')
 
-const folderRead = './public/'
+const folderRead = './public/sales/'
 const outputFile = './src/assets/selection.json'
 
 const allFiles = fs.readdirSync(folderRead)
   .filter(file => file.includes('.json'))
-  .filter(file => file.startsWith('sales-'))
+  .filter(file => file.startsWith('cars-'))
 
 const output = allFiles
 // Debug
