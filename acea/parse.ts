@@ -88,7 +88,7 @@ files.forEach(({ date, file }) => {
         country: countrySegment[index],
         data: [
           {
-            x: DateTime.fromISO(date),
+            x: DateTime.fromISO(date, { zone: 'utc' }),
             bev: toNumber(countrySegment[index+1]),
             phev: toNumber(countrySegment[index+3]),
             hybrid: toNumber(countrySegment[index+5]),
@@ -98,7 +98,7 @@ files.forEach(({ date, file }) => {
             total: toNumber(countrySegment[index+13]),
           },
           {
-            x: DateTime.fromISO(date).minus({ year: 1 }),
+            x: DateTime.fromISO(date, { zone: 'utc' }).minus({ year: 1 }),
             bev: toNumber(countrySegment[index+2]),
             phev: toNumber(countrySegment[index+4]),
             hybrid: toNumber(countrySegment[index+6]),
@@ -122,7 +122,7 @@ files.forEach(({ date, file }) => {
         } catch (error) {
           // console.error(error)
         }
-        importData.forEach(p => p.x = DateTime.fromISO(p.x))
+        importData.forEach(p => p.x = DateTime.fromISO(p.x, { zone: 'utc' }))
 
         const flat = importData
           .concat(market.data)

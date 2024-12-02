@@ -1,4 +1,4 @@
-import { DateTime } from "luxon";
+import { DateTime } from "luxon"
 
 export function smooth(list: { x: DateTime, y: number }[], size: number) {
   // TODO Control if it's correct
@@ -14,8 +14,7 @@ export function smooth(list: { x: DateTime, y: number }[], size: number) {
         y: y.reduce((acc, v) => acc + v, 0)
       }
     })
-    .slice(size - 1);
+    .slice(size - 1)
 
-  return output;
+  return output
 }
-
