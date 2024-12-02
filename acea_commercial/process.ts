@@ -31,7 +31,7 @@ const output = allFiles
   const output = content
   .map(p => ({
     ...p,
-    x: DateTime.fromISO(p.x),
+    x: DateTime.fromISO(p.x, { zone: 'utc' }),
   }))
   .map((current, index, array) => {
     if (current.x.month === 1) {
