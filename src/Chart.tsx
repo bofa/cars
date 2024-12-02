@@ -62,7 +62,7 @@ export default function (props: ChartProps) {
         // id: 'mainY',
         ticks: {
           callback: d => d + '%'
-        }
+        },
       },
       //   ...normalize
       //   // ...props.normalize.length > 0
@@ -76,6 +76,13 @@ export default function (props: ChartProps) {
       //       }]
       //     : []
       // ]
+    },
+    plugins: {
+      tooltip: {
+        callbacks: {
+          title: d => DateTime.fromMillis(d[0].parsed.x).toFormat('yyyy LLL')
+        }
+      }
     }
   }
 
