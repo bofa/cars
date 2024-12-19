@@ -1421,12 +1421,12 @@
   },
   {
     "x": "2024-11-01T00:00:00.000Z",
-    "bev": 11003,
-    "phev": null,
-    "hybrid": null,
-    "other": null,
-    "petrol": null,
-    "disel": null,
-    "total": null
+    "bev": 10940,
+    "phev": 154,
+    "hybrid": 280,
+    "other": 0,
+    "petrol": 67,
+    "disel": 248,
+    "total": 11689
   }
 ]

@@ -14,8 +14,10 @@ type Point = {
 
 const fs = require('fs')
 
-const folderRead = './public/'
-const allFiles = fs.readdirSync(folderRead).filter(file => file.includes('.json'))
+const folderRead = './public/sales/'
+const allFiles = fs.readdirSync(folderRead)
+  .filter(file => file.includes('.json'))
+  .filter(file => file.startsWith('cars-'))
 
 // Run simulator
 allFiles
@@ -30,7 +32,7 @@ allFiles
     content.map(d => d[make]),
     content.map(d => d.total - d[make]),
   ]
-  const startDate = DateTime.fromISO(content[0].x)
+  const startDate = DateTime.fromISO(content[0].x, { zone: 'utc' })
 
   
   const [combustionSeries, bevSeries, baseLine, projectedSales] = basicProjection(series, startDate)
