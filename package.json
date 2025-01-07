@@ -9,7 +9,7 @@
     "cars": "ts-node acea/parse.ts",
     "trucks-parse": "ts-node acea_commercial/parse.ts",
     "trucks-process": "ts-node acea_commercial/process.ts",
-    "adhoc": "ts-node adhoc/us.ts",
+    "adhoc": "ts-node adhoc/adhoc.ts",
     "selection": "ts-node selection.ts",
     "projection": "ts-node projection.ts",
     "commitbuild": "git add docs && git commit -m deploy && git push",
