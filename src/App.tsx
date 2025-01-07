@@ -32,7 +32,12 @@ function App() {
   const [segment, setSegment] = useState<typeof segments[number]>('cars')
   const [projection, setProjection] = useState(false)
   const [normal, setNormal] = useState<keyof Omit<Point, 'x'> | null>('total')
-  const [selected, setSelected] = useState<MergeSelect[]>([])
+  const [selected, setSelected] = useState<MergeSelect[]>([
+    {
+      name: null,
+      series: ['Sweden']
+    }
+  ])
   const [stacked, setStacked] = useState(false)
   const [range, setRange] = useState<[DateTime, DateTime]>([
     DateTime.now().minus({ year: 5 }).set({ day: 0 }),

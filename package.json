@@ -3,11 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
     "start": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
     "cars": "ts-node acea/parse.ts",
     "trucks-parse": "ts-node acea_commercial/parse.ts",
     "trucks-process": "ts-node acea_commercial/process.ts",

@@ -17,7 +17,10 @@ const output = allFiles
   return {
     id: marketLabel,
     name: marketLabel,
-    latest: content.slice(-12).reduce((out, month) => ({
+    latest: content
+    .filter(month => month.total != null)
+    .slice(-12)
+    .reduce((out, month) => ({
       x: month.x,
       bev: out.bev + month.bev,
       phev: out.phev + month.phev,
