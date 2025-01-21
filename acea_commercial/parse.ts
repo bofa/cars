@@ -128,7 +128,7 @@ files.forEach(({ date, file }) => {
           .sort((a, b) => a.x - b.x)
         // console.log('unique', unique)
 
-        fs.writeFileSync(filename, JSON.stringify(unique, null, 2).replace(/\n/g, '\r\n'))
+        fs.writeFileSync(filename, JSON.stringify(unique, null, 2))
         // console.log(countries)
       }))
     // })

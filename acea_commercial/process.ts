@@ -50,7 +50,7 @@ const output = allFiles
     })
   })
 
-  fs.writeFileSync(outputFile, JSON.stringify(output, null, 2).replace(/\n/g, '\r\n'))
+  fs.writeFileSync(outputFile, JSON.stringify(output, null, 2))
 })
 
 console.log('output', output)

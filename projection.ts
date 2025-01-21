@@ -46,6 +46,6 @@ allFiles
   }))
 
   const outputFile = `./public/projections/${marketLabel}.json`
-  fs.writeFileSync(outputFile, JSON.stringify(projectionFormatted, null, 2).replace(/\n/g, '\r\n'))
+  fs.writeFileSync(outputFile, JSON.stringify(projectionFormatted, null, 2))
   console.log('Done ' + marketLabel)
 })
