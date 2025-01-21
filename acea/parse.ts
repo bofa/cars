@@ -2,6 +2,11 @@ import { readPdf } from '../read-pdf'
 import { DateTime } from 'luxon'
 const fs = require('fs')
 
+// Sources
+// Europe https://www.acea.auto/nav/?content=press-releases
+// USA https://www.anl.gov/esia/reference/light-duty-electric-drive-vehicles-monthly-sales-updates-historical-data
+
+
 const files = [
   // { date: '2023-01-01', file: './acea/2023-01.pdf' },
   // { date: '2023-02-01', file: './acea/2023-02.pdf' },
@@ -26,8 +31,8 @@ const files = [
   // { date: '2024-08-01', file: './acea/2024-08.pdf' },
   // { date: '2024-09-01', file: './acea/2024-09.pdf' },
   // { date: '2024-10-01', file: './acea/2024-10.pdf' },
-  { date: '2024-11-01', file: './acea/2024-11.pdf' },
-  // { date: '2024-12-01', file: './acea/2024-12.pdf' },
+  // { date: '2024-11-01', file: './acea/2024-11.pdf' },
+  { date: '2024-12-01', file: './acea/2024-12.pdf' },
 ]
 
 const rowOffset = 22
