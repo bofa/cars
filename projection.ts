@@ -34,8 +34,8 @@ allFiles
   ]
   const startDate = DateTime.fromISO(content[0].x, { zone: 'utc' })
 
-  
-  const [combustionSeries, bevSeries, baseLine, projectedSales] = basicProjection(series, startDate)
+  const projectionSteps = DateTime.fromISO('2039-12-01', { zone: 'utc' }).diff(startDate, 'months').months
+  const {combustionSeries, bevSeries, baseLine, projectedSales} = basicProjection(series, startDate, Math.ceil(projectionSteps) + 1)
   
   console.log('series', series)
   

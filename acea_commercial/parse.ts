@@ -2,6 +2,9 @@ import { DateTime } from 'luxon'
 import { readPdf } from "../read-pdf"
 const fs = require('fs')
 
+// Source
+// https://www.acea.auto/nav/?content=press-releases&tag=registrations-of-vehicles
+
 const files = [
   // { date: '2023-01-01', file: './acea_commercial/2023Q1.pdf' },
   // { date: '2023-04-01', file: './acea_commercial/2023Q2.pdf' },

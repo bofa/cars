@@ -45,7 +45,7 @@ function interpolate(n: number, scale: number) {
 const sale = (n: number, baseSales: number, slope: number, baseEV: number) =>
   Math.min(0.8*baseSales, n * Math.max(0, slope) + baseEV)
 
-export function basicProjection(uStart: number[][], startDate: DateTime) {
+export function basicProjection(uStart: number[][], startDate: DateTime, T = 12*20) {
   const baseSales = mean(uStart[0].map((_, i) => uStart[0][i] + uStart[1][i]))
   const baseEV = mean(uStart[0].slice(-6))
   const slope = (uStart[0][uStart[0].length-1] - uStart[0][uStart[0].length-12]) / 12
@@ -59,7 +59,7 @@ export function basicProjection(uStart: number[][], startDate: DateTime) {
     : matrix([[baseSales - sale(n - uStart[0].length, baseSales, slope, baseEV)], [sale(n - uStart[0].length, baseSales, slope, baseEV)]])
   // const u: (n: number) => Matrix = n => n === 0 ? matrix([[1000], [0]]) : matrix([[0], [0]])
 
-  const T = 12*20;
+  // const T = 12*20;
   const run = projection(x0, u, T);
 
   // console.log('run', run)
@@ -101,5 +101,5 @@ export function basicProjection(uStart: number[][], startDate: DateTime) {
 
   // console.log('x0Series', weight, x0Series)
 
-  return [combustionSeries, bevSeries, baseLine, projectedSales]
+  return {combustionSeries, bevSeries, baseLine, projectedSales}
 }
