@@ -11,10 +11,10 @@ const files = [
   // { date: '2023-07-01', file: './acea_commercial/2023Q3.pdf' },
   // { date: '2023-10-01', file: './acea_commercial/2023Q4.pdf' },
 
-  { date: '2024-01-01', file: './acea_commercial/2024Q1.pdf' },
-  { date: '2024-04-01', file: './acea_commercial/2024Q2.pdf' },
-  { date: '2024-07-01', file: './acea_commercial/2024Q3.pdf' },
-  // { date: '2024-10-01', file: './acea_commercial/2024Q4.pdf' },
+  // { date: '2024-01-01', file: './acea_commercial/2024Q1.pdf' },
+  // { date: '2024-04-01', file: './acea_commercial/2024Q2.pdf' },
+  // { date: '2024-07-01', file: './acea_commercial/2024Q3.pdf' },
+  { date: '2024-10-01', file: './acea_commercial/2024Q4.pdf' },
 ]
 
 const countries = [
@@ -54,7 +54,7 @@ const countries = [
 const categories = [
   { label: 'van', search: ['NEW VAN'] },
   { label: 'mediumtrucks', search: ['NEW MEDIUM TRUCK'] },
-  { label: 'heavytrucks', search: ['NEW HEAVY TRUCK'] },
+  { label: 'heavytrucks', search: ['NEW HEAVY TRUCK', 'NEWHEAVYTRUCKREGISTRATIONS'] },
   { label: 'busses', search: ['NEW BUS', 'TOTAL NEW BUS'] },
 ]
 
@@ -62,20 +62,18 @@ const rowOffset = 22
 
 files.forEach(({ date, file }) => {
   readPdf(file).then(result => {
-
     categories.forEach(category => countries.forEach((startString) => {
       // console.log('starts With new', result.filter(s => s.includes('BUS')))
-      const monthlyIndex = result.findIndex(s => category.search.some(c => c === s))
-      const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex)
-        + monthlyIndex
-      console.log('monthlyIndex', monthlyIndex, startIndex)
+      const monthlyIndex = result.findIndex(s => category.search.some(c => s.startsWith(c)))
+      const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex) + monthlyIndex
+      // console.log('monthlyIndex', startString, monthlyIndex, startIndex)
       // const endTableIndex = result.findIndex(s => s === endString) - 1
       
       const countrySegment = result.slice(startIndex, startIndex + rowOffset)
         .filter(s => !((s.includes('+') || s.includes('-') || s.includes('!'))))
         .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
 
-      console.log(countrySegment[0], countrySegment.length)
+      // console.log(countrySegment[0], countrySegment.length)
       // if (countrySegment.length < )
 
       // console.log('countrySegment', result.slice(startIndex, startIndex + rowOffset), countrySegment)
@@ -139,7 +137,7 @@ files.forEach(({ date, file }) => {
 })
 
 function toNumber(s: string) {
-  return Number(s?.replace(',', ''))
+  return Number(s?.replace(',', '').replace('.', ''))
 }
 
 function uniq<T extends Record<string, any>>(array: T[], key: keyof T) {
