@@ -32,7 +32,8 @@ const files = [
   // { date: '2024-09-01', file: './acea/2024-09.pdf' },
   // { date: '2024-10-01', file: './acea/2024-10.pdf' },
   // { date: '2024-11-01', file: './acea/2024-11.pdf' },
-  { date: '2024-12-01', file: './acea/2024-12.pdf' },
+  // { date: '2024-12-01', file: './acea/2024-12.pdf' },
+  { date: '2025-01-01', file: './acea/2025-01.pdf' },
 ]
 
 const rowOffset = 22
@@ -74,21 +75,21 @@ files.forEach(({ date, file }) => {
       "United Kingdom",
     ]
     .forEach((startString) => {
-      console.log('result', result.filter(s => s.startsWith('NEW')))
+      // console.log('result', result.filter(s => s.startsWith('NEW')))
       const monthlyIndex = result.findIndex(s => s === 'MONTHLY' || s === 'NEW PASSENGER CAR REGISTRATIONS, BY MARKET AND FUEL TYPE ' || s === 'NEW PASSENGER CAR REGISTRATIONS BY MARKET AND FUEL TYPE ')
       const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex)
         + monthlyIndex
-      console.log('monthlyIndex', monthlyIndex, startIndex)
+      // console.log('monthlyIndex', monthlyIndex, startIndex)
       // const endTableIndex = result.findIndex(s => s === endString) - 1
       
       const countrySegment = result.slice(startIndex, startIndex + rowOffset)
         .filter(s => !((s.includes('+') || s.includes('-') || s.includes('!'))))
         .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
 
-      console.log(countrySegment[0], countrySegment.length)
+      // console.log(countrySegment[0], countrySegment.length)
       // if (countrySegment.length < )
 
-      console.log('countrySegment', result.slice(startIndex, startIndex + rowOffset), countrySegment)
+      // console.log('countrySegment', result.slice(startIndex, startIndex + rowOffset), countrySegment)
 
       const index = 0
       const market = {
@@ -115,6 +116,11 @@ files.forEach(({ date, file }) => {
             total: toNumber(countrySegment[index+14]),
           },
         ]
+      }
+
+      if (market.country.length < 2) {
+        console.warn('No data', market.country, startString)
+        return
       }
 
       // console.log('countries', countries)
