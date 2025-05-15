@@ -112,8 +112,6 @@ function App() {
   })
   .flat()
 
-  // console.log('dataset', dataset)
-
   return (
     <div style={{ width: '100wv', height: '100vh', padding: 20, paddingBottom: 60 }}>
       <div style={{ display: 'flex', gap: 10, alignItems: 'baseline' }}>
@@ -194,12 +192,14 @@ function mapSeriesCut(series: { x: DateTime, y: number }[][]) {
 
   const minDate = DateTime.fromMillis(Math.max(...series.map(s => s.at(0)!.x.toMillis())))
   const maxDate = DateTime.fromMillis(Math.min(...series.map(s => s.at(-1)!.x.toMillis())))
-  const steps = maxDate.diff(minDate, 'months').months
+  const steps = Math.ceil(maxDate.diff(minDate, 'months').months)
 
-  return series.map((data) => {
+  const output = series.map((data) => {
     const minIndex = data.findIndex(d => d.x.equals(minDate))
     // const maxIndex = data.findIndex(d => d.x.equals(maxDate))
     return data.slice(minIndex, minIndex + steps + 1)
   })
   .reduce((agg, s) => agg.map((d, i) => ({ x: d.x, y: d.y + s[i].y })))
+
+  return output
 }
