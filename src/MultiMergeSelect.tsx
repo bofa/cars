@@ -17,7 +17,7 @@ export type Point = {
 
 export type MergeSelect = { name: string|null, series: string[] }
 
-const sortOptions = ['bev', 'other', 'total', 'bevPercent'] as const
+const sortOptions = ['bev', 'other', 'total', 'bevPercent', 'bevGrowth'] as const
 
 export function MultiMergeSelect(props: {
   selected: MergeSelect[]
@@ -31,10 +31,12 @@ export function MultiMergeSelect(props: {
   const itemsSorted = countries
   .map(market => {
     let sortValue
-    if (sort === 'bev' || sort === 'total' || sort === 'other') {
-      sortValue = market.latest[sort]
-    } else {
+    if (sort === 'bevPercent') {
       sortValue = market.latest['bev'] / market.latest['total']
+    } else if (sort === 'bevGrowth') {
+      sortValue = market.growth['bev']
+    } else {
+      sortValue = market.latest[sort]
     }
 
     return {
@@ -81,7 +83,8 @@ export function MultiMergeSelect(props: {
             text={item.name}
             onClick={() => props.setSelected(props.selected.concat({ name: null, series: [item.id] }))}
           >
-            {/* {props.selected
+            {/*
+            {props.selected
             .filter(group => !group.series.includes(item.id))
             .map((group, index) =>
               <MenuItem
@@ -97,7 +100,8 @@ export function MultiMergeSelect(props: {
                   }
                 }))}
               />
-            )} */}
+            )}
+            */}
           </MenuItem>
         )}
       </Menu>
