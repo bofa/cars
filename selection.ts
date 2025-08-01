@@ -42,22 +42,11 @@ const output = allFiles
       total: out.total + month.total,
     }))
 
-  const growth = {
-      x: latest.x,
-      bev: (latest.bev - before.bev)/before.bev,
-      phev: (latest.phev - before.phev)/before.phev,
-      hybrid: (latest.hybrid - before.hybrid)/before.hybrid,
-      other: (latest.other - before.other)/before.other,
-      petrol: (latest.petrol - before.petrol)/before.petrol,
-      disel: (latest.disel - before.disel)/before.disel,
-      total: (latest.total - before.total)/before.total,
-    }
-
   return {
     id: marketLabel,
     name: marketLabel,
     latest,
-    growth,
+    before,
   }
 })
 

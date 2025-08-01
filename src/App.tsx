@@ -15,7 +15,7 @@ const makes = [
   'petrol',
   'disel',
   'total',
-  'projection',
+  // 'projection',
 ] as const
 
 const segments = [
@@ -31,6 +31,7 @@ function App() {
   const [make, setMake] = useState<keyof Omit<Point, 'x'>>('bev')
   const [segment, setSegment] = useState<typeof segments[number]>('cars')
   const [projection, setProjection] = useState(false)
+  const [fleet, setCumulative] = useState(false)
   const [normal, setNormal] = useState<keyof Omit<Point, 'x'> | null>('total')
   const [selected, setSelected] = useState<MergeSelect[]>([
     {
@@ -52,11 +53,11 @@ function App() {
       .flat()
       .filter((country, index, array) => array.indexOf(country) === index)
       .map(country => ({
-      queryKey: ['salesCountry', country, segment, projection],
+      queryKey: ['salesCountry', country, segment, fleet, projection],
       queryFn: () => {
 
-        const call = projection
-          ? fetch(`projections/${country}.json`)
+        const call = fleet ? fetch(`projections/fleet/${country}.json`)
+          : projection ? fetch(`projections/sales/${country}.json`)
           : fetch(`sales/${segment}-${country}.json`)
 
         return call
@@ -84,10 +85,10 @@ function App() {
       : mapOutField(group.series, data, normal, range)
 
     console.log('series', series)
-    const seriesMergeSmooth = smoothSeries(mapSeriesCut(series), projection ? 1 : smoothAdjusted)
+    const seriesMergeSmooth = smoothSeries(mapSeriesCut(series), fleet ? 1 : smoothAdjusted)
     const seriesNormalMergeSmooth = seriesNormal == null
     ? null
-    : smoothSeries(mapSeriesCut(seriesNormal), projection ? 1 : smoothAdjusted)
+    : smoothSeries(mapSeriesCut(seriesNormal), fleet ? 1 : smoothAdjusted)
 
     const name = group.name ?? group.series.join()
     const color = rgba(index)
@@ -140,6 +141,11 @@ function App() {
           checked={projection}
           onChange={e => setProjection(e.target.checked)}
         />
+        <Switch
+          label="Fleet"
+          checked={fleet}
+          onChange={e => setCumulative(e.target.checked)}
+        />
       </div>
       <div style={{ width: '100%', height: '100%', display: 'flex' }}>
         <div style={{ flexGrow: 1, flexShrink: 1, width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -157,6 +163,7 @@ function App() {
           />
         </div>
         <MultiMergeSelect
+          type={make}
           selected={selected}
           setSelected={setSelected}
         />

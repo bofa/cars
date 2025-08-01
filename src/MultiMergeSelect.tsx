@@ -17,24 +17,29 @@ export type Point = {
 
 export type MergeSelect = { name: string|null, series: string[] }
 
-const sortOptions = ['bev', 'other', 'total', 'bevPercent', 'bevGrowth'] as const
+const sortOptions = ['bev', 'other', 'total', 'bevPercent', 'bevGrowthBev', 'bevGrowthTotal'] as const
 
 export function MultiMergeSelect(props: {
+  type: Exclude<keyof Point, 'x'>
   selected: MergeSelect[]
   setSelected: (selected: MergeSelect[]) => void
 }) {
+  const { type = 'bev' } = props
+
   const [sort, setSort] = useState<typeof sortOptions[number]>('bev')
   const [acending, setAcending] = useState<1|-1>(-1)
 
-  const percent = sort === 'bevPercent'
+  const percent = ['bevPercent'].includes(sort)
 
   const itemsSorted = countries
   .map(market => {
     let sortValue
     if (sort === 'bevPercent') {
-      sortValue = market.latest['bev'] / market.latest['total']
-    } else if (sort === 'bevGrowth') {
-      sortValue = market.growth['bev']
+      sortValue = market.latest[type] / market.latest['total']
+    } else if (sort === 'bevGrowthBev') {
+      sortValue = (market.latest[type] - market.before[type]) / market.before[type]
+    } else if (sort === 'bevGrowthTotal') {
+      sortValue = (market.latest[type] - market.before[type]) / market.before['total']
     } else {
       sortValue = market.latest[sort]
     }
