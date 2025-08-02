@@ -56,6 +56,7 @@ export default function (props: ChartProps) {
         stacked: props.stacked,
       },
       y2: {
+        display: !props.stacked,
         position: 'left',
         min: 0,
         max: 100,
