@@ -83,7 +83,10 @@ export function MultiMergeSelect(props: {
       <Menu>
         {itemsSorted.map(item =>
           <MenuItem
-            style={{ background: `linear-gradient(to right, #00000020 ${round(100 * item.sort/largestValue)}%, #FFFFFF33 ${round(100 * item.sort/largestValue)}%)` }}
+            style={{ background: item.sort > 0
+                ? `linear-gradient(to right, #00000020 ${round(100 * item.sort/largestValue)}%, #FFFFFF33 ${round(100 * item.sort/largestValue)}%)`
+                : `linear-gradient(to left, #00000020 ${round(-100 * item.sort/largestValue)}%, #FFFFFF33 ${round(-100 * item.sort/largestValue)}%)`
+            }}
             key={item.id}
             text={item.name}
             onClick={() => props.setSelected(props.selected.concat({ name: null, series: [item.id] }))}
