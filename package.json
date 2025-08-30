@@ -16,8 +16,8 @@
     "deploy": "npm run build && npm run commitbuild"
   },
   "dependencies": {
-    "@blueprintjs/core": "^5.12.0",
-    "@blueprintjs/select": "^5.2.5",
+    "@blueprintjs/core": "^6.1.0",
+    "@blueprintjs/select": "^6.0.1",
     "@tanstack/react-query": "^5.56.2",
     "@tanstack/react-router": "^1.57.15",
     "chartjs": "^0.3.24",
