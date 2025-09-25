@@ -6,6 +6,7 @@
     "start": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "fuel": "ts-node eia/fuel.ts",
     "cars": "ts-node acea/parse.ts",
     "trucks-parse": "ts-node acea_commercial/parse.ts",
     "trucks-process": "ts-node acea_commercial/process.ts",
