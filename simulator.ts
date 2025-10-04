@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon'
 import { matrix, zeros, ones, multiply, add, Matrix, sum, concat, mean } from 'mathjs'
-// import { Series } from './Chart';
+import scurveFit from './src/s-curve-regression'
 
 type Series = {
   label: string
@@ -48,15 +48,35 @@ const sale = (n: number, baseSales: number, slope: number, baseEV: number) =>
 export function basicProjection(uStart: number[][], startDate: DateTime, T = 12*20) {
   const baseSales = mean(uStart[0].map((_, i) => uStart[0][i] + uStart[1][i]))
   const baseEV = mean(uStart[0].slice(-6))
-  const slope = (uStart[0][uStart[0].length-1] - uStart[0][uStart[0].length-12]) / 12
+  const slope = (uStart[0][uStart[0].length-1] - uStart[0][uStart[0].length-24]) / 24
   // const u = (n: number) => multiply(180000, matrix([[1-interpolate(n-10, 12)], [interpolate(n-10, 12)]]))
-  
+
+  const basic = uStart[0]
+    // smooth
+    .map((v, i, a) => (v
+      + a[Math.min(Math.max(i-1, 1), a.length-1)]
+      + a[Math.min(Math.max(i+1, 1), a.length-1)]
+    )/3)
+
+  const a = baseSales
+  const b = 10
+  const c = 0.001
+  const curve = scurveFit(basic, a, b, c, 10000000)
+
+  // console.log('values', curve)
+
   // const x0 = matrix(concat(zeros(N, 1), zeros(N, 1), 0))
   const x0 = matrix([...Array(N).fill(0).map((_, i) => [baseSales*recursiveDecay(i)]), ...Array(N).fill(0).map(() => [0])])
   // const x0 = multiply(baseSales, matrix(concat(ones(N, 1), zeros(N, 1), 0)))
   const u: (n: number) => Matrix = n => n < uStart[0].length
-    ? matrix([[uStart[1][n]], [uStart[0][n]]])
-    : matrix([[baseSales - sale(n - uStart[0].length, baseSales, slope, baseEV)], [sale(n - uStart[0].length, baseSales, slope, baseEV)]])
+    ? matrix([
+      [uStart[1][n]],
+      [uStart[0][n]]
+    ])
+    : matrix([
+      [baseSales - curve.func(n)],
+      [curve.func(n)]
+    ])
   // const u: (n: number) => Matrix = n => n === 0 ? matrix([[1000], [0]]) : matrix([[0], [0]])
 
   // const T = 12*20;
@@ -75,31 +95,18 @@ export function basicProjection(uStart: number[][], startDate: DateTime, T = 12*
   const bevSeries: Series = {
     label: 'Total-BEV',
     data:  run.map((x, i) => ({ x: startDate.plus({ months: i }), y: sum(multiply(sumBEVMatrix, x)) as number }))
+    // data:  run.map((x, i) => ({ x: startDate.plus({ months: i }), y: curve.func(i) }))
   }
 
   const baseLine = {
     label: 'baseline',
-    data: uStart[0].map((y, i) => ({ x: startDate.plus({ months: i }), y: 12*y }))
+    data: uStart[0].map((y, i) => ({ x: startDate.plus({ months: i }), y }))
   }
 
   const projectedSales = {
     label: 'projectedSales',
-    data: Array(T).fill(0).map((_, i) => ({ x: startDate.plus({ months: i }), y: 12*u(i).get([1, 0])  as number }))
+    data: Array(T).fill(0).map((_, i) => ({ x: startDate.plus({ months: i }), y: curve.func(i) }))
   }
 
-  // const init = Array(N).fill(0)
-  //   .map((_, i) => 1000*recursiveDecay(i))
-
-  // const weight = sum(init.map((y, i) => y * i / 12)) / sum(init)
-
-  // const x0Series = {
-  //   label: 'x0', 
-  //   data: init
-  //     .slice(0, 240)
-  //     .map((y, i) => ({ t: startDate.clone().add(i, 'months'), y }))
-  // }
-
-  // console.log('x0Series', weight, x0Series)
-
-  return {combustionSeries, bevSeries, baseLine, projectedSales}
+  return { combustionSeries, bevSeries, baseLine, projectedSales }
 }
