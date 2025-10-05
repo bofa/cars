@@ -7,8 +7,9 @@ import { Make, makes, Segment, segments } from './input'
 import Sales from './Sales'
 import Projection from './Projection'
 import Fleet from './Fleet'
+import Fuel from './Fuel'
 
-type Frame = 'fleet'|'sales'|'projection'
+type Frame = 'fleet'|'sales'|'projection'|'fuel'
 
 function App() {
   const [smooth, setSmooth] = useState(12)
@@ -54,14 +55,15 @@ function App() {
           onChange={e => setStacked(e.target.checked)}
         />
         <RadioGroup
-            inline
-            name="group"
-            onChange={e => setFrame(e.currentTarget.value as Frame)}
-            selectedValue={frame}
+          inline
+          name="group"
+          onChange={e => setFrame(e.currentTarget.value as Frame)}
+          selectedValue={frame}
         >
           <Radio label="Sales" value="sales" />
           <Radio label="Projection" value="projection" />
           <Radio label="Fleet" value="fleet" />
+          <Radio label="Fuel" value="fuel" />
         </RadioGroup>
       </div>
       <div style={{ width: '100%', height: '100%', display: 'flex' }}>
@@ -93,8 +95,15 @@ function App() {
             range={range}
             stacked={stacked}
           />}
+          {frame === 'fuel' && <Fuel
+            make="gasoline"
+            smooth={smooth}
+            selected={selected}
+            range={range}
+            stacked={stacked}
+          />}
           <DateRangeSlider
-            smooth={smoothAdjusted}
+            smooth={1}
             value={range[0]}
             onValue={value => setRange([value, range[1]])}
           />

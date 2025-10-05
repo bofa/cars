@@ -86,7 +86,6 @@ function Projection(props: {
       stacked={stacked}
       fitType={'linear'}
       sCurveParams={null}
-      smooth={smoothAdjusted}
     />
   )
 }

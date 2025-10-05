@@ -94,7 +94,7 @@ export function DebugSCurve() {
         </FormGroup> */}
       </Card>
       <div style={{ height: 600 }}>
-        <Chart series={series} fitType="linear" sCurveParams={null} smooth={0} stacked={false}/>
+        <Chart series={series} fitType="linear" sCurveParams={null} stacked={false}/>
       </div>
     </div>
   )

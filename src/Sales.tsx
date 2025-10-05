@@ -79,7 +79,6 @@ function Sales(props: {
       stacked={stacked}
       fitType={'linear'}
       sCurveParams={null}
-      smooth={smoothAdjusted}
     />
   )
 }

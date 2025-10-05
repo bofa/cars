@@ -85,7 +85,6 @@ function Fleet(props: {
       stacked={stacked}
       fitType={'linear'}
       sCurveParams={null}
-      smooth={smoothAdjusted}
     />
   )
 }

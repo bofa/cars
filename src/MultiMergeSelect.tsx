@@ -15,6 +15,13 @@ export type Point = {
   disel: number|null
 }
 
+export type FuelPoint = {
+  x: DateTime
+  gasoline: number|null
+  jet: number|null
+  diesel: number|null
+}
+
 export type MergeSelect = { name: string|null, series: string[] }
 
 const sortOptions = ['bev', 'other', 'total', 'bevPercent', 'bevGrowthBev', 'bevGrowthTotal'] as const
