@@ -19,7 +19,7 @@ function Fuel(props: {
       .filter((country, index, array) => array.indexOf(country) === index)
       .map(country => ({
       queryKey: ['fuelCountry', country],
-      queryFn: () => fetchData(country as FuelMapKey),
+      queryFn: () => fetchData(country),
     staleTime: Infinity,
     }))
   })
@@ -100,19 +100,8 @@ function mapSeriesCut(series: { x: DateTime, y: number }[][]) {
   return output
 }
 
-type FuelMapKey = keyof typeof countryFuelMap
-const countryFuelMap = {
-  Germany: 'DEU',
-  Denmark: 'DNK',
-  Finland: 'FIN',
-  France: 'FRA',
-  Netherlands: 'NLD',
-  Norway: 'NOR',
-  Sweden: 'SWE',
-} as const
-
-function fetchData(countryId: FuelMapKey) {
-  const call = fetch(`fuel/fuel-${countryFuelMap[countryId]}.json`)
+function fetchData(countryId: string) {
+  const call = fetch(`fuel/fuel-${countryId}.json`)
 
   return call
   .then(res => res.json())

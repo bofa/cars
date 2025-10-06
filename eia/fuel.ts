@@ -4,31 +4,31 @@ import { DateTime } from 'luxon'
 [
   {
     countryId: 'NLD',
-    name: 'netherlands',
+    name: 'Netherlands',
   },
   {
     countryId: 'DEU',
-    name: 'germany',
+    name: 'Germany',
   },
   {
     countryId: 'FRA',
-    name: 'france',
+    name: 'France',
   },
   {
     countryId: 'DNK',
-    name: 'denmark',
+    name: 'Denmark',
   },
   {
     countryId: 'SWE',
-    name: 'sweden',
+    name: 'Sweden',
   },
   {
     countryId: 'NOR',
-    name: 'norway',
+    name: 'Norway',
   },
   {
     countryId: 'FIN',
-    name: 'finland',
+    name: 'Finland',
   },
 ].forEach(({ countryId, name }) =>
   Promise.all([
@@ -63,9 +63,9 @@ import { DateTime } from 'luxon'
           // .flatMap(d => Array(12).fill(0).map((_, i) => ({ x: d.x.plus({ months: i }), y: d.y / 12 })))
         }))
 
-        console.log('countryId', countryId, series)
+        console.log('countryId', name, series)
 
-        const filename = `./public/fuel/fuel-${countryId}.json`
+        const filename = `./public/fuel/fuel-${name}.json`
         fs.writeFileSync(filename, JSON.stringify(series, null, 2))
         // this.setState(({ countriesFuel }) => ({
         //   countriesFuel: { ...countriesFuel, [name]: (countriesFuel[name] ?? []).concat(series) },
