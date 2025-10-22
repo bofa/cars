@@ -15,9 +15,9 @@ type Point = {
 const fs = require('fs')
 
 const folderRead = './public/sales/'
-const allFiles = fs.readdirSync(folderRead)
-  .filter(file => file.includes('.json'))
-  .filter(file => file.startsWith('cars-'))
+const allFiles: string[] = fs.readdirSync(folderRead)
+  .filter((file: string) => file.includes('.json'))
+  .filter((file: string) => file.startsWith('cars-'))
   // .filter(file => file.includes('Germany'))
 
 // Run simulator
