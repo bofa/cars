@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon'
 import { matrix, zeros, ones, multiply, add, Matrix, sum, concat, mean } from 'mathjs'
-import scurveFit from './src/s-curve-regression'
+import scurveFit, { gridSearch } from './src/s-curve-regression'
 
 type Series = {
   label: string
@@ -58,12 +58,25 @@ export function basicProjection(uStart: number[][], startDate: DateTime, T = 12*
       + a[Math.min(Math.max(i+1, 1), a.length-1)]
     )/3)
 
-  const a = baseSales
-  const b = 10
-  const c = 0.001
+  // const a = baseSales
+  // const b = 10
+  // const c = 0.001
+
+  // Init with grid search
+  const { a, b, c } = gridSearch(basic,
+    40000,
+    baseSales,
+    [0.1, 200],
+    [0.000001, 0.1]
+  )
+
+  // Gradient decent 
   const curve = scurveFit(basic, a, b, c, 10000000)
 
-  // console.log('values', curve)
+  console.log('Diff grid search, decent')
+  console.log('a', a - curve.a, a, curve.a)
+  console.log('b', b - curve.b, b, curve.b)
+  console.log('c', c - curve.c, c, curve.c)
 
   // const x0 = matrix(concat(zeros(N, 1), zeros(N, 1), 0))
   const x0 = matrix([...Array(N).fill(0).map((_, i) => [baseSales*recursiveDecay(i)]), ...Array(N).fill(0).map(() => [0])])

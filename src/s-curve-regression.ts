@@ -55,6 +55,39 @@ export function mse(Y: number[], X: number[], a: number, b: number, c: number) {
     return error;
 }
 
+type SearchRange = [number, number]
+export function gridSearch(values: number[], points: number, a: number, rangeB: SearchRange, rangeC: SearchRange) {
+  const X = values.map((v, i) => i)
+  const Y = values
+
+  const gridLength = Math.sqrt(points)
+  const bStep = (rangeB[1]-rangeB[0]) / gridLength
+  const cStep = (rangeC[1]-rangeC[0]) / gridLength
+
+  let minMse = Infinity
+  let minParams = {
+    a,
+    b: 0,
+    c: 0,
+  }
+  // for (let a = rangeA[0]; a <= rangeA[2]; a += rangeA[1]) {
+    for (let b = rangeB[0]; b <= rangeB[1]; b += bStep) {
+      for (let c = rangeC[0]; c <= rangeC[1];  c += cStep) {
+        const currentMse = mse(Y, X, a, b, c)
+        if (currentMse < minMse) {
+          minMse = currentMse
+          minParams = { a, b, c}
+        }
+      }
+    }
+  // }
+
+  // console.log(minParams)
+
+
+  return minParams
+}
+
 export default function scurveFit(values: number[], a: number, b: number, c: number, interations = 1000) {
     const X = values.map((v, i) => i);
     const Y = values;
@@ -85,7 +118,7 @@ export default function scurveFit(values: number[], a: number, b: number, c: num
     const currentMse = mse(Y, X, a, b, c);
     // const yhat = model(X, a, b, c);
 
-    console.log('current_mse', Math.log10(currentMse));
+    // console.log('current_mse', {a, b, c}, Math.log10(currentMse));
 
     return {
         func: (x: number) => model([x], a, b, c)[0],

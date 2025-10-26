@@ -70,7 +70,7 @@ export default function (props: ChartProps) {
     plugins: {
       tooltip: {
         callbacks: {
-          title: d => DateTime.fromMillis(d[0].parsed.x).toFormat('yyyy LLL')
+          title: d => DateTime.fromMillis(d[0].parsed.x ?? 0).toFormat('yyyy LLL')
         }
       }
     }

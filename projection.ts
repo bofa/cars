@@ -38,8 +38,6 @@ allFiles
   const projectionSteps = DateTime.fromISO('2039-12-01', { zone: 'utc' }).diff(startDate, 'months').months
   const { combustionSeries, bevSeries, baseLine, projectedSales } = basicProjection(series, startDate, Math.ceil(projectionSteps) + 1)
   
-  console.log('series', bevSeries.data)
-  
   const fleetFormatted = bevSeries.data.map((d, i) => ({
     x: d.x,
     bev: d.y,
