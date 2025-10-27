@@ -7,6 +7,7 @@ import { DateTime } from 'luxon'
   { "countryId": "BEL", "name": "Belgium" },
   { "countryId": "HRV", "name": "Croatia" },
   { "countryId": "CZE", "name": "Czechia" },
+  { "countryId": "CYP", "name": "Cyprus" },
   { "countryId": "DNK", "name": "Denmark" },
   { "countryId": "EST", "name": "Estonia" },
   { "countryId": "FIN", "name": "Finland" },

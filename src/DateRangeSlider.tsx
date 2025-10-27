@@ -2,7 +2,7 @@ import { DateTime } from "luxon"
 import { useEffect, useState } from "react"
 import { Slider } from "@blueprintjs/core"
 
-const minDate = DateTime.fromISO('2015-01-01')
+const minDate = DateTime.fromISO('2010-01-01')
 const maxDate = DateTime.now().plus({ months: 2 })
 
 const minDays = 0
