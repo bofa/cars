@@ -89,24 +89,24 @@ export function gridSearch(values: number[], points: number, a: number, rangeB: 
 }
 
 export default function scurveFit(values: number[], a: number, b: number, c: number, interations = 1000) {
-    const X = values.map((v, i) => i);
-    const Y = values;
+    const X = [-200, ...values.map((v, i) => i)]
+    const Y = [0, ...values]
 
-    // let aStep = 0.00000000001;
-    let bStep = 0.0000000000001;
-    let cStep = 0.0000000000001;
+    // let aStep = 0.00000000001
+    let bStep = 0.0000000000001
+    let cStep = 0.0000000000001
 
     let da, db, dc;
     for (let i = 0; i < interations; ++i) {
       // da = aDirectionComponent(Y, X, a, b, c);
-      db = bDirectionComponent(Y, X, a, b, c);
-      dc = cDirectionComponent(Y, X, a, b, c);
+      db = bDirectionComponent(Y, X, a, b, c)
+      dc = cDirectionComponent(Y, X, a, b, c)
       
-      dc = Math.abs(dc) > 0.01 ? 0.01 * dc : dc;
+      dc = Math.abs(dc) > 0.01 ? 0.01 * dc : dc
 
       // a -= aStep * da;
-      b -= bStep * db;
-      c -= cStep * dc;
+      b -= bStep * db
+      c -= cStep * dc
 
       // aStep *= 1.0001
       // bStep *= 1.0001
@@ -115,7 +115,7 @@ export default function scurveFit(values: number[], a: number, b: number, c: num
 
     // console.log('a b c', a, b, c);
     // console.log('d/dx', da, db, dc);
-    const currentMse = mse(Y, X, a, b, c);
+    // const currentMse = mse(Y, X, a, b, c)
     // const yhat = model(X, a, b, c);
 
     // console.log('current_mse', {a, b, c}, Math.log10(currentMse));
@@ -126,5 +126,5 @@ export default function scurveFit(values: number[], a: number, b: number, c: num
         a,
         b,
         c,
-    };
+    }
 }

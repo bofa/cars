@@ -64,7 +64,7 @@ export function basicProjection(uStart: number[][], startDate: DateTime, T = 12*
 
   // Init with grid search
   const { a, b, c } = gridSearch(basic,
-    40000,
+    50000,
     baseSales,
     [0.1, 200],
     [0.000001, 0.1]
