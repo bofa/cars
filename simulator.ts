@@ -47,8 +47,8 @@ const sale = (n: number, baseSales: number, slope: number, baseEV: number) =>
 
 export function basicProjection(uStart: number[][], startDate: DateTime, T = 12*20) {
   const baseSales = mean(uStart[0].map((_, i) => uStart[0][i] + uStart[1][i]))
-  const baseEV = mean(uStart[0].slice(-6))
-  const slope = (uStart[0][uStart[0].length-1] - uStart[0][uStart[0].length-24]) / 24
+  // const baseEV = mean(uStart[0].slice(-6))
+  // const slope = (uStart[0][uStart[0].length-1] - uStart[0][uStart[0].length-24]) / 24
   // const u = (n: number) => multiply(180000, matrix([[1-interpolate(n-10, 12)], [interpolate(n-10, 12)]]))
 
   const basic = uStart[0]
@@ -64,14 +64,14 @@ export function basicProjection(uStart: number[][], startDate: DateTime, T = 12*
 
   // Init with grid search
   const { a, b, c } = gridSearch(basic,
-    50000,
+    100000,
     0.9 * baseSales,
     [0.1, 200],
     [0.000001, 0.1]
   )
 
   // Gradient decent 
-  const curve = scurveFit(basic, a, b, c, 10000000)
+  const curve = scurveFit(basic, a, b, c, 15000000)
 
   console.log('Diff grid search, decent')
   console.log('a', a - curve.a, a, curve.a)

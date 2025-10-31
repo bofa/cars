@@ -24,6 +24,7 @@ const allFiles: string[] = fs.readdirSync(folderRead)
 allFiles
 // Debug
 // .slice(0, 3)
+// .reverse()
 .forEach(file => {
   const marketLabel = file.split('-')[1].slice(0, -5)
   const content: Point[] = JSON.parse(fs.readFileSync(folderRead + file))
