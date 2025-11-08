@@ -2,7 +2,14 @@ import { max, round } from "mathjs"
 import { DateTime } from "luxon"
 import { useState } from "react"
 import { Divider, HTMLSelect, Menu, MenuDivider, MenuItem, Switch } from "@blueprintjs/core"
-import countries from './assets/selection.json'
+import { Segment } from "./input"
+import cars from './assets/selection.json'
+import van from './assets/selection-van.json'
+import busses from './assets/selection-busses.json'
+import mediumtrucks from './assets/selection-mediumtrucks.json'
+import heavytrucks from './assets/selection-heavytrucks.json'
+
+const categories = { cars, van, busses, mediumtrucks, heavytrucks } 
 
 export type Point = {
   x: DateTime
@@ -27,18 +34,19 @@ export type MergeSelect = { name: string|null, series: string[] }
 const sortOptions = ['bev', 'other', 'total', 'bevPercent', 'bevGrowthBev', 'bevGrowthTotal'] as const
 
 export function MultiMergeSelect(props: {
+  category?: Segment
   type: Exclude<keyof Point, 'x'>
   selected: MergeSelect[]
   setSelected: (selected: MergeSelect[]) => void
 }) {
-  const { type = 'bev' } = props
+  const { type = 'bev', category = 'cars' } = props
 
   const [sort, setSort] = useState<typeof sortOptions[number]>('bev')
   const [acending, setAcending] = useState<1|-1>(-1)
 
   const percent = ['bevPercent'].includes(sort)
 
-  const itemsSorted = countries
+  const itemsSorted = categories[category]
   .map(market => {
     let sortValue
     if (sort === 'bevPercent') {

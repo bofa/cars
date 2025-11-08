@@ -1,11 +1,15 @@
 const fs = require('fs')
 
-const folderRead = './public/sales/'
-const outputFile = './src/assets/selection.json'
+const categories = ['cars', 'van', 'busses', 'mediumtrucks', 'heavytrucks']
 
-const allFiles = fs.readdirSync(folderRead)
-  .filter(file => file.includes('.json'))
-  .filter(file => file.startsWith('cars-'))
+categories.forEach(category => {
+
+const folderRead = './public/sales/'
+const outputFile = `./src/assets/selection-${category}.json`
+
+const allFiles: string[] = fs.readdirSync(folderRead)
+  .filter((file: string) => file.includes('.json'))
+  .filter((file: string) => file.startsWith(category + '-'))
 
 const output = allFiles
 // Debug
@@ -51,3 +55,8 @@ const output = allFiles
 })
 
 fs.writeFileSync(outputFile, JSON.stringify(output, null, 2))
+
+console.log('Done ' + category)
+
+})
+

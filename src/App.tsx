@@ -109,6 +109,7 @@ function App() {
           />
         </div>
         <MultiMergeSelect
+          category={segment}
           type={make}
           selected={selected}
           setSelected={setSelected}
