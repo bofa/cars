@@ -54,9 +54,9 @@
     "bev": 43,
     "phev": 0,
     "hybrid": null,
-    "other": 3,
+    "other": 4,
     "petrol": 0,
-    "disel": 183,
+    "disel": 182,
     "total": 229
   },
   {
@@ -74,9 +74,9 @@
     "bev": 104,
     "phev": 0,
     "hybrid": null,
-    "other": 9,
+    "other": 10,
     "petrol": 0,
-    "disel": 416,
+    "disel": 415,
     "total": 529
   },
   {

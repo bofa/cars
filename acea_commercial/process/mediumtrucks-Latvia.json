@@ -54,10 +54,10 @@
     "bev": 0,
     "phev": 0,
     "hybrid": null,
-    "other": 0,
+    "other": 1,
     "petrol": 0,
     "disel": 42,
-    "total": 42
+    "total": 43
   },
   {
     "x": "2023-07-01T00:00:00.000Z",
