@@ -56,8 +56,8 @@
     "hybrid": 0,
     "other": 0,
     "petrol": 0,
-    "disel": 45,
-    "total": 48
+    "disel": 44,
+    "total": 47
   },
   {
     "x": "2023-07-01T00:00:00.000Z",
@@ -66,18 +66,18 @@
     "hybrid": 0,
     "other": 2,
     "petrol": 0,
-    "disel": 40,
-    "total": 52
+    "disel": 41,
+    "total": 53
   },
   {
     "x": "2023-10-01T00:00:00.000Z",
     "bev": 2,
     "phev": 0,
     "hybrid": 0,
-    "other": 0,
+    "other": -1,
     "petrol": 0,
-    "disel": 23,
-    "total": 25
+    "disel": 19,
+    "total": 20
   },
   {
     "x": "2024-01-01T00:00:00.000Z",
