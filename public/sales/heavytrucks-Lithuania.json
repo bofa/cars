@@ -1,15 +1,5 @@
 [
   {
-    "x": "2022-01-01T00:00:00.000Z",
-    "bev": null,
-    "phev": null,
-    "hybrid": null,
-    "other": null,
-    "petrol": null,
-    "disel": null,
-    "total": null
-  },
-  {
     "x": "2022-04-01T00:00:00.000Z",
     "bev": 0,
     "phev": 0,
