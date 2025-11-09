@@ -130,8 +130,8 @@ function mapSeriesCut(series: { x: DateTime, y: number }[][]) {
 }
 
 function fetchData(country: string, segment: string, fleet: boolean, projection: boolean) {
-  const call = fleet ? fetch(`projections/fleet/${country}.json`)
-  : projection ? fetch(`projections/sales/${country}.json`)
+  const call = fleet ? fetch(`projections/fleet/${segment}-${country}.json`)
+  : projection ? fetch(`projections/sales/${segment}-${country}.json`)
   : fetch(`sales/${segment}-${country}.json`)
 
   return call

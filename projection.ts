@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon'
 import { basicProjection } from './simulator'
+const fs = require('fs')
 
 type Point = {
   x: string
@@ -12,12 +13,20 @@ type Point = {
   disel: number|null
 }
 
-const fs = require('fs')
+const categories = [
+  { category: 'van', step: 'quarters' },
+  { category: 'busses', step: 'quarters' },
+  { category: 'mediumtrucks', step: 'quarters' },
+  { category: 'heavytrucks', step: 'quarters' },
+  { category: 'cars', step: 'months' },
+] as const
+
+categories.forEach(({ category, step }) => {
 
 const folderRead = './public/sales/'
 const allFiles: string[] = fs.readdirSync(folderRead)
   .filter((file: string) => file.includes('.json'))
-  .filter((file: string) => file.startsWith('cars-'))
+  .filter((file: string) => file.startsWith(category + '-'))
   // .filter(file => file.includes('Germany'))
 
 // Run simulator
@@ -36,8 +45,8 @@ allFiles
   ]
   const startDate = DateTime.fromISO(content[0].x, { zone: 'utc' })
 
-  const projectionSteps = DateTime.fromISO('2039-12-01', { zone: 'utc' }).diff(startDate, 'months').months
-  const { combustionSeries, bevSeries, baseLine, projectedSales } = basicProjection(series, startDate, Math.ceil(projectionSteps) + 1)
+  const projectionSteps = DateTime.fromISO('2039-12-01', { zone: 'utc' }).diff(startDate, step)[step]
+  const { combustionSeries, bevSeries, baseLine, projectedSales } = basicProjection(series, startDate, step, Math.ceil(projectionSteps) + 1)
   
   const fleetFormatted = bevSeries.data.map((d, i) => ({
     x: d.x,
@@ -52,11 +61,13 @@ allFiles
     // total: series[i][1]
   }))
 
-  const outputFileFleet = `./public/projections/fleet/${marketLabel}.json`
+  const outputFileFleet = `./public/projections/fleet/${category}-${marketLabel}.json`
   fs.writeFileSync(outputFileFleet, JSON.stringify(fleetFormatted, null, 2))
 
-  const outputFileSales = `./public/projections/sales/${marketLabel}.json`
+  const outputFileSales = `./public/projections/sales/${category}-${marketLabel}.json`
   fs.writeFileSync(outputFileSales, JSON.stringify(salesFormatted, null, 2))
 
-  console.log('Done ' + marketLabel)
+  console.log('Done', category, marketLabel)
+})
+
 })

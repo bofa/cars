@@ -45,7 +45,7 @@ function interpolate(n: number, scale: number) {
 const sale = (n: number, baseSales: number, slope: number, baseEV: number) =>
   Math.min(0.8*baseSales, n * Math.max(0, slope) + baseEV)
 
-export function basicProjection(uStart: number[][], startDate: DateTime, T = 12*20) {
+export function basicProjection(uStart: number[][], startDate: DateTime, step: 'months'|'quarters', T = 12*20) {
   const baseSales = mean(uStart[0].map((_, i) => uStart[0][i] + uStart[1][i]))
   // const baseEV = mean(uStart[0].slice(-6))
   // const slope = (uStart[0][uStart[0].length-1] - uStart[0][uStart[0].length-24]) / 24
@@ -102,23 +102,23 @@ export function basicProjection(uStart: number[][], startDate: DateTime, T = 12*
 
   const combustionSeries: Series = {
     label: 'Total-None-Bev',
-    data:  run.map((x, i) => ({ x: startDate.plus({ months: i }) , y: sum(multiply(sumCombustionMatrix, x)) as number }))
+    data:  run.map((x, i) => ({ x: startDate.plus({ [step]: i }) , y: sum(multiply(sumCombustionMatrix, x)) as number }))
   }
 
   const bevSeries: Series = {
     label: 'Total-BEV',
-    data:  run.map((x, i) => ({ x: startDate.plus({ months: i }), y: sum(multiply(sumBEVMatrix, x)) as number }))
+    data:  run.map((x, i) => ({ x: startDate.plus({ [step]: i }), y: sum(multiply(sumBEVMatrix, x)) as number }))
     // data:  run.map((x, i) => ({ x: startDate.plus({ months: i }), y: curve.func(i) }))
   }
 
   const baseLine = {
     label: 'baseline',
-    data: uStart[0].map((y, i) => ({ x: startDate.plus({ months: i }), y }))
+    data: uStart[0].map((y, i) => ({ x: startDate.plus({ [step]: i }), y }))
   }
 
   const projectedSales = {
     label: 'projectedSales',
-    data: Array(T).fill(0).map((_, i) => ({ x: startDate.plus({ months: i }), y: curve.func(i) }))
+    data: Array(T).fill(0).map((_, i) => ({ x: startDate.plus({ [step]: i }), y: curve.func(i) }))
   }
 
   return { combustionSeries, bevSeries, baseLine, projectedSales }
