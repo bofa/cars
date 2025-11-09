@@ -63,12 +63,12 @@ function App() {
           <Radio label="Sales" value="sales" />
           <Radio label="Projection" value="projection" />
           <Radio label="Fleet" value="fleet" />
-          <Radio label="Fuel" value="fuel" />
+          {/* <Radio label="Fuel" value="fuel" /> */}
         </RadioGroup>
       </div>
       <div style={{ width: '100%', height: '100%', display: 'flex' }}>
         <div style={{ flexGrow: 1, flexShrink: 1, width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
-          {frame === 'sales' && <Sales
+          {frame === 'sales' && segment !== 'fuel' && <Sales
             make={make}
             normal={normal}
             segment={segment}
@@ -77,7 +77,7 @@ function App() {
             range={range}
             stacked={stacked}
           />}
-          {frame === 'projection' && <Projection
+          {frame === 'projection' && segment !== 'fuel' && <Projection
             make={make}
             normal={normal}
             segment={segment}
@@ -86,7 +86,7 @@ function App() {
             range={range}
             stacked={stacked}
           />}
-          {frame === 'fleet' && <Fleet
+          {frame === 'fleet' && segment !== 'fuel' && <Fleet
             make={make}
             normal={normal}
             segment={segment}
@@ -95,7 +95,7 @@ function App() {
             range={range}
             stacked={stacked}
           />}
-          {frame === 'fuel' && <Fuel
+          {segment === 'fuel' && <Fuel
             make="gasoline"
             smooth={smooth}
             selected={selected}

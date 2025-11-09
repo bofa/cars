@@ -18,6 +18,7 @@ export const segments = [
   'busses',
   'mediumtrucks',
   'heavytrucks',
+  'fuel'
 ] as const
 
 export type Make = keyof Omit<Point, 'x'>

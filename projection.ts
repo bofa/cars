@@ -6,19 +6,19 @@ type Point = {
   x: string
   total: number
   bev: number
-  phev: number|null
+  phev:   number|null
   hybrid: number|null
-  other: number|null
+  other:  number|null
   petrol: number|null
-  disel: number|null
+  disel:  number|null
 }
 
 const categories = [
-  { category: 'van', step: 'quarters' },
-  { category: 'busses', step: 'quarters' },
+  { category: 'cars',         step: 'months' },
+  { category: 'heavytrucks',  step: 'quarters' },
   { category: 'mediumtrucks', step: 'quarters' },
-  { category: 'heavytrucks', step: 'quarters' },
-  { category: 'cars', step: 'months' },
+  { category: 'van',          step: 'quarters' },
+  { category: 'busses',       step: 'quarters' },
 ] as const
 
 categories.forEach(({ category, step }) => {

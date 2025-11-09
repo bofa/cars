@@ -9,7 +9,8 @@ import busses from './assets/selection-busses.json'
 import mediumtrucks from './assets/selection-mediumtrucks.json'
 import heavytrucks from './assets/selection-heavytrucks.json'
 
-const categories = { cars, van, busses, mediumtrucks, heavytrucks } 
+// TODO fuel own selection
+const categories = { cars, van, busses, mediumtrucks, heavytrucks, fuel: cars } 
 
 export type Point = {
   x: DateTime
