@@ -1,0 +1,22 @@
+[
+  {
+    "x": "2024-04-01T00:00:00.000Z",
+    "bev": 85,
+    "phev": 0,
+    "hybrid": null,
+    "other": 27,
+    "petrol": 0,
+    "disel": 4755,
+    "total": 4867
+  },
+  {
+    "x": "2025-04-01T00:00:00.000Z",
+    "bev": 117,
+    "phev": 0,
+    "hybrid": null,
+    "other": 3,
+    "petrol": 0,
+    "disel": 3516,
+    "total": 3636
+  }
+]

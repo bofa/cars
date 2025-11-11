@@ -94,10 +94,10 @@
     "bev": 196,
     "phev": 0,
     "hybrid": null,
-    "other": 6,
+    "other": 5,
     "petrol": 1,
-    "disel": 294,
-    "total": 497
+    "disel": 298,
+    "total": 500
   },
   {
     "x": "2024-07-01T00:00:00.000Z",
