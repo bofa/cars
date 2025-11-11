@@ -1,35 +1,5 @@
 [
   {
-    "x": "2022-04-01T00:00:00.000Z",
-    "bev": 18,
-    "phev": 0,
-    "hybrid": null,
-    "other": 125,
-    "petrol": 0,
-    "disel": 1400,
-    "total": 1543
-  },
-  {
-    "x": "2022-07-01T00:00:00.000Z",
-    "bev": 50,
-    "phev": 0,
-    "hybrid": null,
-    "other": 221,
-    "petrol": 0,
-    "disel": 2031,
-    "total": 2302
-  },
-  {
-    "x": "2022-10-01T00:00:00.000Z",
-    "bev": 82,
-    "phev": 0,
-    "hybrid": null,
-    "other": 345,
-    "petrol": 0,
-    "disel": 2672,
-    "total": 3099
-  },
-  {
     "x": "2023-01-01T00:00:00.000Z",
     "bev": 42,
     "phev": 0,
