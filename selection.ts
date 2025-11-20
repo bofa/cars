@@ -1,8 +1,14 @@
 const fs = require('fs')
 
-const categories = ['cars', 'van', 'busses', 'mediumtrucks', 'heavytrucks']
+const categories = [
+  { category: 'cars',         step: 12/1 },
+  { category: 'heavytrucks',  step: 12/3 },
+  { category: 'mediumtrucks', step: 12/3 },
+  { category: 'van',          step: 12/3 },
+  { category: 'busses',       step: 12/3 },
+] as const
 
-categories.forEach(category => {
+categories.forEach(({ category, step }) => {
 
 const folderRead = './public/sales/'
 const outputFile = `./src/assets/selection-${category}.json`
@@ -20,7 +26,7 @@ const output = allFiles
 
   const latest = content
     .filter(month => month.total != null)
-    .slice(-12)
+    .slice(-step)
     .reduce((out, month) => ({
       x: month.x,
       bev: out.bev + month.bev,
@@ -34,7 +40,7 @@ const output = allFiles
 
   const before = content
     .filter(month => month.total != null)
-    .slice(-24, -12)
+    .slice(-2*step, -step)
     .reduce((out, month) => ({
       x: month.x,
       bev: out.bev + month.bev,
