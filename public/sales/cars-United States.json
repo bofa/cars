@@ -961,12 +961,102 @@
   },
   {
     "x": "2025-01-01T00:00:00.000Z",
-    "bev": 94333,
-    "phev": 20987,
-    "hybrid": 131052,
+    "bev": 92069,
+    "phev": 19939,
+    "hybrid": 132576,
     "other": null,
     "petrol": null,
     "disel": null,
-    "total": 1110721
+    "total": 1103027
+  },
+  {
+    "x": "2025-02-01T00:00:00.000Z",
+    "bev": 85867,
+    "phev": 20944,
+    "hybrid": 146846,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1216677
+  },
+  {
+    "x": "2025-03-01T00:00:00.000Z",
+    "bev": 117882,
+    "phev": 35518,
+    "hybrid": 193384,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1591072
+  },
+  {
+    "x": "2025-04-01T00:00:00.000Z",
+    "bev": 96150,
+    "phev": 31003,
+    "hybrid": 188865,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1464300
+  },
+  {
+    "x": "2025-05-01T00:00:00.000Z",
+    "bev": 101243,
+    "phev": 25325,
+    "hybrid": 192226,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1463291
+  },
+  {
+    "x": "2025-06-01T00:00:00.000Z",
+    "bev": 92514,
+    "phev": 18255,
+    "hybrid": 154889,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1253028
+  },
+  {
+    "x": "2025-07-01T00:00:00.000Z",
+    "bev": 125466,
+    "phev": 21138,
+    "hybrid": 167183,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1388659
+  },
+  {
+    "x": "2025-08-01T00:00:00.000Z",
+    "bev": 148769,
+    "phev": 26004,
+    "hybrid": 150988,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1467250
+  },
+  {
+    "x": "2025-09-01T00:00:00.000Z",
+    "bev": 140579,
+    "phev": 20040,
+    "hybrid": 150988,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1241582
+  },
+  {
+    "x": "2025-10-01T00:00:00.000Z",
+    "bev": 74897,
+    "phev": 16170,
+    "hybrid": 159431,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1271331
   }
 ]
