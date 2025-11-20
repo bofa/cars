@@ -1,26 +1,74 @@
 [
   {
+    "id": "Austria",
+    "name": "Austria",
+    "latest": {
+      "x": "2025-07-01T00:00:00.000Z",
+      "bev": 4077,
+      "phev": 698,
+      "hybrid": 0,
+      "other": 20,
+      "petrol": 864,
+      "disel": 25927,
+      "total": 31586
+    },
+    "before": {
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 3004,
+      "phev": 157,
+      "hybrid": 0,
+      "other": 20,
+      "petrol": 2226,
+      "disel": 27970,
+      "total": 33377
+    }
+  },
+  {
     "id": "Belgium",
     "name": "Belgium",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 10016,
-      "phev": 729,
+      "bev": 4694,
+      "phev": 618,
       "hybrid": 0,
-      "other": 245,
-      "petrol": 13784,
-      "disel": 178280,
-      "total": 203054
+      "other": 33,
+      "petrol": 4468,
+      "disel": 62265,
+      "total": 72078
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 1265,
-      "phev": 39,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 2724,
+      "phev": 50,
       "hybrid": 0,
-      "other": 79,
-      "petrol": 2527,
-      "disel": 38620,
-      "total": 42530
+      "other": 111,
+      "petrol": 5115,
+      "disel": 57108,
+      "total": 65108
+    }
+  },
+  {
+    "id": "Bulgaria",
+    "name": "Bulgaria",
+    "latest": {
+      "x": "2025-07-01T00:00:00.000Z",
+      "bev": 153,
+      "phev": 0,
+      "hybrid": 0,
+      "other": 1,
+      "petrol": -140,
+      "disel": 5565,
+      "total": 5579
+    },
+    "before": {
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 112,
+      "phev": 0,
+      "hybrid": 0,
+      "other": 2,
+      "petrol": 545,
+      "disel": 5958,
+      "total": 6617
     }
   },
   {
@@ -28,23 +76,23 @@
     "name": "Croatia",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 435,
-      "phev": 85,
+      "bev": 90,
+      "phev": 52,
       "hybrid": 0,
-      "other": 162,
-      "petrol": 480,
-      "disel": 21536,
-      "total": 22698
+      "other": 57,
+      "petrol": 119,
+      "disel": 7290,
+      "total": 7608
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 104,
-      "phev": 6,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 72,
+      "phev": 11,
       "hybrid": 0,
-      "other": 71,
-      "petrol": 94,
-      "disel": 4114,
-      "total": 4389
+      "other": 37,
+      "petrol": 204,
+      "disel": 8290,
+      "total": 8614
     }
   },
   {
@@ -52,23 +100,47 @@
     "name": "Cyprus",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 123,
-      "phev": 367,
+      "bev": 77,
+      "phev": 191,
       "hybrid": 0,
-      "other": -6,
-      "petrol": 1183,
-      "disel": 4421,
-      "total": 6088
+      "other": 0,
+      "petrol": 388,
+      "disel": 1484,
+      "total": 2140
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 22,
-      "phev": 31,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 23,
+      "phev": 101,
       "hybrid": 0,
-      "other": 6,
-      "petrol": 236,
-      "disel": 1225,
-      "total": 1520
+      "other": 0,
+      "petrol": 402,
+      "disel": 1712,
+      "total": 2238
+    }
+  },
+  {
+    "id": "Czechia",
+    "name": "Czechia",
+    "latest": {
+      "x": "2025-07-01T00:00:00.000Z",
+      "bev": 1250,
+      "phev": 13,
+      "hybrid": 0,
+      "other": -206,
+      "petrol": 1090,
+      "disel": 17123,
+      "total": 19270
+    },
+    "before": {
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 513,
+      "phev": -1,
+      "hybrid": 0,
+      "other": -85,
+      "petrol": 1730,
+      "disel": 21563,
+      "total": 23720
     }
   },
   {
@@ -76,23 +148,23 @@
     "name": "Denmark",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 14587,
-      "phev": 2010,
+      "bev": 7775,
+      "phev": 525,
       "hybrid": 0,
       "other": 0,
-      "petrol": 2993,
-      "disel": 59195,
-      "total": 78785
+      "petrol": 683,
+      "disel": 16780,
+      "total": 25763
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 1497,
-      "phev": 564,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 3958,
+      "phev": 616,
       "hybrid": 0,
-      "other": 3,
-      "petrol": 1157,
-      "disel": 17733,
-      "total": 20954
+      "other": 0,
+      "petrol": 1169,
+      "disel": 22749,
+      "total": 28492
     }
   },
   {
@@ -100,23 +172,23 @@
     "name": "Estonia",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 324,
-      "phev": 125,
+      "bev": 125,
+      "phev": 46,
       "hybrid": 0,
       "other": 0,
-      "petrol": 783,
-      "disel": 9269,
-      "total": 10501
+      "petrol": 175,
+      "disel": 2738,
+      "total": 3084
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 47,
-      "phev": 29,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 73,
+      "phev": 52,
       "hybrid": 0,
       "other": 0,
-      "petrol": 149,
-      "disel": 2724,
-      "total": 2949
+      "petrol": 353,
+      "disel": 3255,
+      "total": 3733
     }
   },
   {
@@ -124,23 +196,23 @@
     "name": "Finland",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 4808,
-      "phev": 393,
+      "bev": 2152,
+      "phev": 80,
       "hybrid": 0,
-      "other": 26,
-      "petrol": 268,
-      "disel": 26180,
-      "total": 31675
+      "other": 1,
+      "petrol": 91,
+      "disel": 7885,
+      "total": 10209
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 428,
-      "phev": 291,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 1125,
+      "phev": 133,
       "hybrid": 0,
-      "other": 10,
-      "petrol": 82,
-      "disel": 7440,
-      "total": 8251
+      "other": 13,
+      "petrol": 81,
+      "disel": 8699,
+      "total": 10051
     }
   },
   {
@@ -148,23 +220,23 @@
     "name": "France",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 87758,
-      "phev": 34996,
+      "bev": 32661,
+      "phev": 15503,
       "hybrid": 0,
-      "other": 11324,
-      "petrol": 110619,
-      "disel": 865125,
-      "total": 1109822
+      "other": 1947,
+      "petrol": 29624,
+      "disel": 276174,
+      "total": 355909
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 9986,
-      "phev": 5239,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 32001,
+      "phev": 10395,
       "hybrid": 0,
-      "other": 1747,
-      "petrol": 16585,
-      "disel": 223313,
-      "total": 256870
+      "other": 5360,
+      "petrol": 44100,
+      "disel": 301942,
+      "total": 393798
     }
   },
   {
@@ -172,23 +244,23 @@
     "name": "Germany",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 63907,
-      "phev": 4922,
+      "bev": 23568,
+      "phev": 1590,
       "hybrid": 0,
-      "other": 8348,
-      "petrol": 40239,
-      "disel": 687409,
-      "total": 804825
+      "other": 2031,
+      "petrol": 11803,
+      "disel": 229552,
+      "total": 268544
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 10383,
-      "phev": 1316,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 14080,
+      "phev": 1609,
       "hybrid": 0,
-      "other": 1992,
-      "petrol": 7392,
-      "disel": 142575,
-      "total": 163658
+      "other": 2905,
+      "petrol": 15043,
+      "disel": 241606,
+      "total": 275243
     }
   },
   {
@@ -196,23 +268,23 @@
     "name": "Greece",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 3344,
-      "phev": 507,
+      "bev": 1334,
+      "phev": 385,
       "hybrid": 0,
-      "other": 99,
-      "petrol": 1524,
-      "disel": 24856,
-      "total": 30330
+      "other": 21,
+      "petrol": 372,
+      "disel": 8151,
+      "total": 10263
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 117,
-      "phev": 216,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 1220,
+      "phev": 109,
       "hybrid": 0,
-      "other": 30,
-      "petrol": 316,
-      "disel": 6501,
-      "total": 7180
+      "other": 37,
+      "petrol": 486,
+      "disel": 8195,
+      "total": 10047
     }
   },
   {
@@ -220,23 +292,23 @@
     "name": "Hungary",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 3618,
-      "phev": 722,
+      "bev": 1814,
+      "phev": 566,
       "hybrid": 0,
-      "other": 4087,
-      "petrol": 2301,
-      "disel": 55435,
-      "total": 66163
+      "other": 782,
+      "petrol": 630,
+      "disel": 19627,
+      "total": 23419
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 390,
-      "phev": 73,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 1148,
+      "phev": 54,
       "hybrid": 0,
-      "other": 37,
-      "petrol": 587,
-      "disel": 12963,
-      "total": 14050
+      "other": 2522,
+      "petrol": 723,
+      "disel": 19370,
+      "total": 23817
     }
   },
   {
@@ -244,23 +316,23 @@
     "name": "Iceland",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 854,
-      "phev": 88,
+      "bev": 264,
+      "phev": 72,
       "hybrid": 0,
-      "other": 20,
-      "petrol": 786,
-      "disel": 3455,
-      "total": 5203
+      "other": 16,
+      "petrol": 184,
+      "disel": 942,
+      "total": 1478
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 139,
-      "phev": 5,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 234,
+      "phev": 9,
       "hybrid": 0,
-      "other": 1,
-      "petrol": 207,
-      "disel": 983,
-      "total": 1335
+      "other": 4,
+      "petrol": 334,
+      "disel": 1348,
+      "total": 1929
     }
   },
   {
@@ -268,23 +340,23 @@
     "name": "Ireland",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 4029,
-      "phev": 328,
+      "bev": 2154,
+      "phev": 115,
       "hybrid": 0,
-      "other": 9,
-      "petrol": 883,
-      "disel": 86805,
-      "total": 92054
+      "other": 3,
+      "petrol": 219,
+      "disel": 29197,
+      "total": 31688
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 367,
-      "phev": 97,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 935,
+      "phev": 160,
       "hybrid": 0,
-      "other": 0,
-      "petrol": 150,
-      "disel": 20233,
-      "total": 20847
+      "other": 3,
+      "petrol": 386,
+      "disel": 29764,
+      "total": 31248
     }
   },
   {
@@ -292,23 +364,23 @@
     "name": "Italy",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 20772,
-      "phev": 45750,
+      "bev": 9085,
+      "phev": 13241,
       "hybrid": 0,
-      "other": 21553,
-      "petrol": 23941,
-      "disel": 464602,
-      "total": 576618
+      "other": 6726,
+      "petrol": 8261,
+      "disel": 152062,
+      "total": 189375
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 3408,
-      "phev": 12857,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 3988,
+      "phev": 16204,
       "hybrid": 0,
-      "other": 5380,
-      "petrol": 7062,
-      "disel": 90768,
-      "total": 119475
+      "other": 7885,
+      "petrol": 8090,
+      "disel": 169641,
+      "total": 205808
     }
   },
   {
@@ -316,23 +388,47 @@
     "name": "Latvia",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 243,
+      "bev": 125,
       "phev": 0,
       "hybrid": 0,
-      "other": 11,
-      "petrol": 404,
-      "disel": 7308,
-      "total": 7966
+      "other": 1,
+      "petrol": 112,
+      "disel": 2363,
+      "total": 2601
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 32,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 63,
       "phev": 0,
       "hybrid": 0,
       "other": 0,
-      "petrol": 75,
-      "disel": 1718,
-      "total": 1825
+      "petrol": 115,
+      "disel": 2499,
+      "total": 2677
+    }
+  },
+  {
+    "id": "Lithuania",
+    "name": "Lithuania",
+    "latest": {
+      "x": "2025-07-01T00:00:00.000Z",
+      "bev": 209,
+      "phev": 178,
+      "hybrid": 0,
+      "other": 0,
+      "petrol": 136,
+      "disel": 3236,
+      "total": 3759
+    },
+    "before": {
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 145,
+      "phev": 1,
+      "hybrid": 0,
+      "other": 0,
+      "petrol": 228,
+      "disel": 2594,
+      "total": 2968
     }
   },
   {
@@ -340,23 +436,47 @@
     "name": "Luxembourg",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 1159,
-      "phev": 12,
+      "bev": 491,
+      "phev": 6,
       "hybrid": 0,
-      "other": 6,
-      "petrol": 513,
-      "disel": 12586,
-      "total": 14276
+      "other": -2,
+      "petrol": 112,
+      "disel": 4046,
+      "total": 4653
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 90,
-      "phev": 4,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 253,
+      "phev": 0,
+      "hybrid": 0,
+      "other": 8,
+      "petrol": 207,
+      "disel": 3646,
+      "total": 4114
+    }
+  },
+  {
+    "id": "Malta",
+    "name": "Malta",
+    "latest": {
+      "x": "2025-07-01T00:00:00.000Z",
+      "bev": 195,
+      "phev": 11,
       "hybrid": 0,
       "other": 0,
-      "petrol": 58,
-      "disel": 2717,
-      "total": 2869
+      "petrol": 74,
+      "disel": 543,
+      "total": 823
+    },
+    "before": {
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 135,
+      "phev": 5,
+      "hybrid": 0,
+      "other": 0,
+      "petrol": 28,
+      "disel": 654,
+      "total": 822
     }
   },
   {
@@ -364,23 +484,23 @@
     "name": "Netherlands",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 35098,
-      "phev": 628,
+      "bev": 16175,
+      "phev": 305,
       "hybrid": 0,
-      "other": 3630,
-      "petrol": 4714,
-      "disel": 184273,
-      "total": 228343
+      "other": 859,
+      "petrol": 1261,
+      "disel": 54908,
+      "total": 73508
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 3139,
-      "phev": 440,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 9954,
+      "phev": 253,
       "hybrid": 0,
-      "other": 416,
-      "petrol": 788,
-      "disel": 39549,
-      "total": 44332
+      "other": 1512,
+      "petrol": 2077,
+      "disel": 72457,
+      "total": 86253
     }
   },
   {
@@ -388,23 +508,23 @@
     "name": "Norway",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 28839,
-      "phev": 33,
+      "bev": 10996,
+      "phev": 15,
       "hybrid": 0,
-      "other": 15,
-      "petrol": 1047,
-      "disel": 56360,
-      "total": 86294
+      "other": 2,
+      "petrol": 278,
+      "disel": 15584,
+      "total": 26875
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 4392,
-      "phev": 0,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 8667,
+      "phev": 18,
       "hybrid": 0,
-      "other": 12,
-      "petrol": 150,
-      "disel": 16287,
-      "total": 20841
+      "other": 4,
+      "petrol": 281,
+      "disel": 21538,
+      "total": 30508
     }
   },
   {
@@ -412,23 +532,23 @@
     "name": "Poland",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 6466,
-      "phev": 818,
+      "bev": 2119,
+      "phev": 590,
       "hybrid": 0,
-      "other": 395,
-      "petrol": 10246,
-      "disel": 178860,
-      "total": 196785
+      "other": 139,
+      "petrol": 2606,
+      "disel": 62514,
+      "total": 67968
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 797,
-      "phev": 127,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 1853,
+      "phev": 120,
       "hybrid": 0,
-      "other": 117,
-      "petrol": 2574,
-      "disel": 42375,
-      "total": 45990
+      "other": 105,
+      "petrol": 3946,
+      "disel": 59243,
+      "total": 65267
     }
   },
   {
@@ -436,23 +556,47 @@
     "name": "Portugal",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 7743,
-      "phev": 33,
+      "bev": 3071,
+      "phev": 10,
       "hybrid": 0,
-      "other": 112,
-      "petrol": 439,
-      "disel": 82197,
-      "total": 90524
+      "other": 10,
+      "petrol": 186,
+      "disel": 28397,
+      "total": 31674
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 502,
-      "phev": 14,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 2381,
+      "phev": 12,
       "hybrid": 0,
-      "other": 23,
-      "petrol": 30,
-      "disel": 16378,
-      "total": 16947
+      "other": 47,
+      "petrol": 112,
+      "disel": 29412,
+      "total": 31964
+    }
+  },
+  {
+    "id": "Romania",
+    "name": "Romania",
+    "latest": {
+      "x": "2025-07-01T00:00:00.000Z",
+      "bev": 1720,
+      "phev": 212,
+      "hybrid": 0,
+      "other": 75,
+      "petrol": 1401,
+      "disel": 14589,
+      "total": 17997
+    },
+    "before": {
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 819,
+      "phev": 70,
+      "hybrid": 0,
+      "other": 13,
+      "petrol": 1269,
+      "disel": 17673,
+      "total": 19844
     }
   },
   {
@@ -460,23 +604,47 @@
     "name": "Slovenia",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 360,
-      "phev": 115,
+      "bev": 183,
+      "phev": 78,
       "hybrid": 0,
-      "other": 21,
-      "petrol": 511,
-      "disel": 21940,
-      "total": 22947
+      "other": 1,
+      "petrol": 179,
+      "disel": 6995,
+      "total": 7436
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 35,
-      "phev": 56,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 82,
+      "phev": 14,
       "hybrid": 0,
-      "other": 17,
-      "petrol": 91,
-      "disel": 5296,
-      "total": 5495
+      "other": 8,
+      "petrol": 151,
+      "disel": 7969,
+      "total": 8224
+    }
+  },
+  {
+    "id": "Spain",
+    "name": "Spain",
+    "latest": {
+      "x": "2025-07-01T00:00:00.000Z",
+      "bev": 13928,
+      "phev": 742,
+      "hybrid": 0,
+      "other": 497,
+      "petrol": 7699,
+      "disel": 159532,
+      "total": 182398
+    },
+    "before": {
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 8141,
+      "phev": 2626,
+      "hybrid": 0,
+      "other": 592,
+      "petrol": 6825,
+      "disel": 145494,
+      "total": 163678
     }
   },
   {
@@ -484,23 +652,23 @@
     "name": "Sweden",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 25817,
-      "phev": 3,
+      "bev": 8629,
+      "phev": 2,
       "hybrid": 0,
-      "other": 7361,
-      "petrol": 2650,
-      "disel": 79914,
-      "total": 115745
+      "other": 2460,
+      "petrol": 681,
+      "disel": 21478,
+      "total": 33250
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 3269,
-      "phev": 0,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 9508,
+      "phev": 1,
       "hybrid": 0,
-      "other": 255,
-      "petrol": 743,
-      "disel": 20258,
-      "total": 24525
+      "other": 3259,
+      "petrol": 916,
+      "disel": 28063,
+      "total": 41747
     }
   },
   {
@@ -508,23 +676,23 @@
     "name": "Switzerland",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 10580,
-      "phev": 186,
+      "bev": 4063,
+      "phev": 37,
       "hybrid": 0,
-      "other": 232,
-      "petrol": 7993,
-      "disel": 69814,
-      "total": 88805
+      "other": 50,
+      "petrol": 2635,
+      "disel": 21986,
+      "total": 28771
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 1297,
-      "phev": 90,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 3166,
+      "phev": 45,
       "hybrid": 0,
-      "other": 54,
-      "petrol": 1691,
-      "disel": 15220,
-      "total": 18352
+      "other": 80,
+      "petrol": 2605,
+      "disel": 25473,
+      "total": 31369
     }
   },
   {
@@ -532,23 +700,23 @@
     "name": "United Kingdom",
     "latest": {
       "x": "2025-07-01T00:00:00.000Z",
-      "bev": 79193,
-      "phev": 23944,
+      "bev": 36595,
+      "phev": 8707,
       "hybrid": 0,
-      "other": 3,
-      "petrol": 19952,
-      "disel": 886752,
-      "total": 1009844
+      "other": 0,
+      "petrol": 6638,
+      "disel": 275881,
+      "total": 327821
     },
     "before": {
-      "x": "2022-07-01T00:00:00.000Z",
-      "bev": 13077,
-      "phev": 3351,
+      "x": "2024-07-01T00:00:00.000Z",
+      "bev": 20871,
+      "phev": 8163,
       "hybrid": 0,
-      "other": 1,
-      "petrol": 3823,
-      "disel": 194633,
-      "total": 214885
+      "other": 2,
+      "petrol": 7040,
+      "disel": 316147,
+      "total": 352223
     }
   }
 ]
