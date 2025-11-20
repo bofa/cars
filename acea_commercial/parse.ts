@@ -23,12 +23,12 @@ const files = [
 ]
 
 const countries = [
-  // "Austria", 
+  "Austria",
   "Belgium", 
-  // "Bulgaria", 
+  "Bulgaria",
   "Croatia", 
   "Cyprus", 
-  // "Czechia",
+  "Czechia",
   // "Czech Republic",
   "Denmark", 
   "Estonia", 
@@ -40,15 +40,15 @@ const countries = [
   "Ireland", 
   "Italy", 
   "Latvia", 
-  // "Lithuania", 
+  "Lithuania", 
   "Luxembourg",
-  // "Malta", 
+  "Malta", 
   "Netherlands", 
   "Poland", 
   "Portugal", 
-  // "Romania", 
+  "Romania",
   "Slovenia", 
-  // "Spain", 
+  "Spain",
   "Sweden",
   "Iceland",
   "Norway",
@@ -59,16 +59,21 @@ const countries = [
 const categories = [
   { label: 'van', search: ['NEW VAN'] },
   { label: 'mediumtrucks', search: ['NEW MEDIUM TRUCK'] },
-  { label: 'heavytrucks', search: ['NEW HEAVY TRUCK', 'NEWHEAVYTRUCKREGISTRATIONS', 'TRUCK'] },
+  { label: 'heavytrucks', search: [
+    'NEW HEAVY TRUCK', 'NEWHEAVYTRUCKREGISTRATIONS',
+    // 'TRUCK'
+  ] },
   { label: 'busses', search: ['NEW BUS', 'TOTAL NEW BUS'] },
 ]
 
 const rowOffset = 22
 
-files.forEach(({ date, file }) => {
+files
+.forEach(({ date, file }) => {
   readPdf(file).then(result => {
-    categories.forEach(category => countries.forEach((startString) => {
-      console.log('starts With new', result.filter(s => s.includes('TRUCK')))
+    categories
+    .forEach(category => countries.forEach((startString) => {
+      // console.log('starts With new', result.filter(s => s.includes('TRUCK')))
       const monthlyIndex = result.findIndex(s => category.search.some(c => s.startsWith(c)))
       const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex) + monthlyIndex
       // console.log('monthlyIndex', startString, monthlyIndex, startIndex)
@@ -134,7 +139,11 @@ files.forEach(({ date, file }) => {
           .sort((a, b) => a.x - b.x)
         // console.log('unique', unique)
 
-        fs.writeFileSync(filename, JSON.stringify(unique, null, 2))
+        if (unique.filter(el => isNaN(el.bev)).length > unique.length/3) {
+          console.warn('Lots of null', market.country, category.label)
+        } else {
+          fs.writeFileSync(filename, JSON.stringify(unique, null, 2))
+        }
         // console.log(countries)
       }))
     // })
