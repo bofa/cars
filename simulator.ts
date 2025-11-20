@@ -64,14 +64,14 @@ export function basicProjection(uStart: number[][], startDate: DateTime, step: '
 
   // Init with grid search
   const { a, b, c } = gridSearch(basic,
-    100000,
+    200000,
     0.9 * baseSales,
     [0.1, 200],
-    [0.000001, 0.1]
+    [0.00000001, 0.1]
   )
 
   // Gradient decent 
-  const curve = scurveFit(basic, a, b, c, 15000000)
+  const curve = scurveFit(basic, a, b, c, 1500000)
 
   console.log('Diff grid search, decent')
   console.log('a', a - curve.a, a, curve.a)

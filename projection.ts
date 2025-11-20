@@ -2,6 +2,8 @@ import { DateTime } from 'luxon'
 import { basicProjection } from './simulator'
 const fs = require('fs')
 
+const filterCountry = process.argv[2] ?? ''
+
 type Point = {
   x: string
   total: number
@@ -34,6 +36,7 @@ allFiles
 // Debug
 // .slice(0, 3)
 // .reverse()
+.filter(file => file.includes(filterCountry))
 .forEach(file => {
   const marketLabel = file.split('-')[1].slice(0, -5)
   const content: Point[] = JSON.parse(fs.readFileSync(folderRead + file))
@@ -46,7 +49,12 @@ allFiles
   const startDate = DateTime.fromISO(content[0].x, { zone: 'utc' })
 
   const projectionSteps = DateTime.fromISO('2039-12-01', { zone: 'utc' }).diff(startDate, step)[step]
-  const { combustionSeries, bevSeries, baseLine, projectedSales } = basicProjection(series, startDate, step, Math.ceil(projectionSteps) + 1)
+  const { combustionSeries, bevSeries, baseLine, projectedSales } = basicProjection(
+    series,
+    startDate,
+    step,
+    Math.ceil(projectionSteps) + 1
+  )
   
   const fleetFormatted = bevSeries.data.map((d, i) => ({
     x: d.x,
