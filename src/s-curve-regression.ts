@@ -57,8 +57,8 @@ export function mse(Y: number[], X: number[], a: number, b: number, c: number) {
 
 type SearchRange = [number, number]
 export function gridSearch(values: number[], points: number, a: number, rangeB: SearchRange, rangeC: SearchRange) {
-  const X = values.map((v, i) => i)
-  const Y = values
+  const X = [-200, ...values.map((v, i) => i)]
+  const Y = [0, ...values]
 
   const gridLength = Math.sqrt(points)
   const bStep = (rangeB[1]-rangeB[0]) / gridLength
@@ -93,8 +93,8 @@ export default function scurveFit(values: number[], a: number, b: number, c: num
     const Y = [0, ...values]
 
     // let aStep = 0.00000000001
-    let bStep = 0.0000000000001
-    let cStep = 0.0000000000001
+    let bStep = 0.000000000002
+    let cStep = 0.000000000002
 
     let da, db, dc;
     for (let i = 0; i < interations; ++i) {
@@ -102,7 +102,7 @@ export default function scurveFit(values: number[], a: number, b: number, c: num
       db = bDirectionComponent(Y, X, a, b, c)
       dc = cDirectionComponent(Y, X, a, b, c)
       
-      dc = Math.abs(dc) > 0.01 ? 0.01 * dc : dc
+      dc = Math.abs(dc) > 0.01 ? 0.0001 * dc : dc
 
       // a -= aStep * da;
       b -= bStep * db
