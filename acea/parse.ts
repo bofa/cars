@@ -5,7 +5,8 @@ const fs = require('fs')
 // Sources
 // Europe https://www.acea.auto/nav/?content=press-releases
 // USA https://www.anl.gov/esia/reference/light-duty-electric-drive-vehicles-monthly-sales-updates-historical-data
-
+// China https://tradingeconomics.com/china/electric-car-registrations
+// China https://tradingeconomics.com/china/car-registrations
 
 const files = [
   // { date: '2023-01-01', file: './acea/2023-01.pdf' },
