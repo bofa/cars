@@ -70,11 +70,11 @@ export function MultiMergeSelect(props: {
   const largestValue = percent ? 1 : max(itemsSorted.map(market => market.sort))
 
   return (
-    <div style={{ height: '100%', width: 300, overflowY: 'scroll', flexShrink: 0 }}>
+    <div style={{ height: '100%', width: 230, overflowY: 'scroll', flexShrink: 0 }}>
       <div style={{ display: 'flex', gap: 10, alignItems: 'baseline' }}>
         <HTMLSelect options={sortOptions} onChange={e => setSort(e.target.value as any)}/>
         <Switch
-          label="Ascending"
+          label="Asc"
           checked={acending === 1}
           onChange={e => setAcending(e.target.checked ? 1 : -1)}  
         />
