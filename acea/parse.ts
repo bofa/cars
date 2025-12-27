@@ -43,7 +43,8 @@ const files = [
   // { date: '2025-07-01', file: './acea/2025-07.pdf' },
   // { date: '2025-08-01', file: './acea/2025-08.pdf' },
   // { date: '2025-09-01', file: './acea/2025-09.pdf' },
-  { date: '2025-10-01', file: './acea/2025-10.pdf' },
+  // { date: '2025-10-01', file: './acea/2025-10.pdf' },
+  { date: '2025-11-01', file: './acea/2025-11.pdf' },
 ]
 
 const rowOffset = 22
