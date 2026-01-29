@@ -148,5 +148,15 @@
     "petrol": 296,
     "disel": 1122,
     "total": 1637
+  },
+  {
+    "x": "2025-10-01T00:00:00.000Z",
+    "bev": 88,
+    "phev": 223,
+    "hybrid": null,
+    "other": 0,
+    "petrol": 368,
+    "disel": 1512,
+    "total": 2191
   }
 ]

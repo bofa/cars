@@ -18,7 +18,8 @@ const files = [
 
   // { date: '2025-01-01', file: './acea_commercial/2025Q1.pdf' },
   // { date: '2025-04-01', file: './acea_commercial/2025Q2.pdf' },
-  { date: '2025-07-01', file: './acea_commercial/2025Q3.pdf' },
+  // { date: '2025-07-01', file: './acea_commercial/2025Q3.pdf' },
+  { date: '2025-10-01', file: './acea_commercial/2025Q4.pdf' },
 
 ]
 
@@ -57,13 +58,15 @@ const countries = [
 ]
 
 const categories = [
-  { label: 'van', search: ['NEW VAN'] },
-  { label: 'mediumtrucks', search: ['NEW MEDIUM TRUCK'] },
   { label: 'heavytrucks', search: [
-    'NEW HEAVY TRUCK', 'NEWHEAVYTRUCKREGISTRATIONS',
+    'HEAVY',
+    'NEW HEAVY TRUCK',
+    'NEWHEAVYTRUCKREGISTRATIONS',
     // 'TRUCK'
   ] },
-  { label: 'busses', search: ['NEW BUS', 'TOTAL NEW BUS'] },
+  // { label: 'van', search: ['NEW VAN'] },
+  // { label: 'mediumtrucks', search: ['NEW MEDIUM TRUCK'] },
+  // { label: 'busses', search: ['NEW BUS', 'TOTAL NEW BUS'] },
 ]
 
 const rowOffset = 22
@@ -73,7 +76,7 @@ files
   readPdf(file).then(result => {
     categories
     .forEach(category => countries.forEach((startString) => {
-      // console.log('starts With new', result.filter(s => s.includes('TRUCK')))
+      console.log('starts With new', result.filter(s => s.includes('HEAVY')))
       const monthlyIndex = result.findIndex(s => category.search.some(c => s.startsWith(c)))
       const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex) + monthlyIndex
       // console.log('monthlyIndex', startString, monthlyIndex, startIndex)

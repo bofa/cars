@@ -111,12 +111,12 @@
   },
   {
     "x": "2024-10-01T00:00:00.000Z",
-    "bev": 2378,
+    "bev": 2399,
     "phev": 0,
     "hybrid": null,
-    "other": 78,
+    "other": 86,
     "petrol": 15,
-    "disel": 25556,
+    "disel": 25527,
     "total": 28027
   },
   {
@@ -148,5 +148,15 @@
     "petrol": 14,
     "disel": 15417,
     "total": 17716
+  },
+  {
+    "x": "2025-10-01T00:00:00.000Z",
+    "bev": 3368,
+    "phev": 0,
+    "hybrid": null,
+    "other": 28,
+    "petrol": 17,
+    "disel": 20873,
+    "total": 24286
   }
 ]

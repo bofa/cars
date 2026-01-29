@@ -19,7 +19,7 @@ const allFiles = fs.readdirSync(folderRead)
 .filter(file => file.includes('.json'))
 // .filter(file => file.startsWith('heavy-trucks-'))
 
-const output = allFiles
+allFiles
 // Debug
 // .slice(0, 0)
 .forEach(file => {
@@ -52,5 +52,3 @@ const output = allFiles
 
   fs.writeFileSync(outputFile, JSON.stringify(output, null, 2))
 })
-
-console.log('output', output)
