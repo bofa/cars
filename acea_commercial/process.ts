@@ -16,13 +16,13 @@ const folderRead = './acea_commercial/process/'
 const outputFolder = './public/sales/'
 
 const allFiles = fs.readdirSync(folderRead)
-.filter(file => file.includes('.json'))
+.filter((file: string) => file.includes('.json'))
 // .filter(file => file.startsWith('heavy-trucks-'))
 
 allFiles
 // Debug
 // .slice(0, 0)
-.forEach(file => {
+.forEach((file: string) => {
   const segment = file.split('-')[0]
   const marketLabel = file.split('-')[1].slice(0, -5)
   const outputFile = outputFolder + segment + '-' + marketLabel + '.json'
