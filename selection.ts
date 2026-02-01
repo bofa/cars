@@ -1,4 +1,17 @@
+import { DateTime } from "luxon"
+
 const fs = require('fs')
+
+type Point = {
+  x: DateTime
+  bev: number
+  phev: number
+  hybrid: number
+  other: number
+  petrol: number
+  disel: number
+  total: number
+}
 
 const categories = [
   { category: 'cars',         step: 12/1 },
@@ -22,7 +35,7 @@ const output = allFiles
 // .slice(0, 0)
 .map(file => {
   const marketLabel = file.split('-')[1].slice(0, -5)
-  const content = JSON.parse(fs.readFileSync(folderRead + file))
+  const content: Point[] = JSON.parse(fs.readFileSync(folderRead + file))
 
   const latest = content
     .filter(month => month.total != null)

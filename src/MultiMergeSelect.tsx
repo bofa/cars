@@ -3,7 +3,7 @@ import { DateTime } from "luxon"
 import { useState } from "react"
 import { Divider, HTMLSelect, Menu, MenuDivider, MenuItem, Switch } from "@blueprintjs/core"
 import { Segment } from "./input"
-import cars from './assets/selection.json'
+import cars from './assets/selection-cars.json'
 import van from './assets/selection-van.json'
 import busses from './assets/selection-busses.json'
 import mediumtrucks from './assets/selection-mediumtrucks.json'
