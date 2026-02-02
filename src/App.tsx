@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon'
 import { useState } from 'react'
-import { HTMLSelect, Radio, RadioGroup, Switch } from '@blueprintjs/core'
+import { Button, Drawer, HTMLSelect, Radio, RadioGroup, Switch } from '@blueprintjs/core'
 import { MergeSelect, MultiMergeSelect } from './MultiMergeSelect'
 import { DateRangeSlider } from './DateRangeSlider'
 import { Make, makes, Segment, segments } from './input'
@@ -28,8 +28,11 @@ function App() {
     DateTime.now().minus({ year: 5 }).set({ day: 0 }),
     DateTime.now(),
   ])
+  const [drawerOpen, setDrawerOpen] = useState(false)
 
   const smoothAdjusted = segment === 'cars' ? smooth : Math.max(1, smooth / 3)
+
+  const smallScreen = window.innerWidth < 1000
 
   return (
     <div style={{ width: '100wv', height: '100vh', padding: 20, paddingBottom: 60 }}>
@@ -65,6 +68,7 @@ function App() {
           <Radio label="Fleet" value="fleet" />
           {/* <Radio label="Fuel" value="fuel" /> */}
         </RadioGroup>
+        {smallScreen && <Button icon="drawer-right" onClick={() => setDrawerOpen(!drawerOpen)}/>}
       </div>
       <div style={{ width: '100%', height: '100%', display: 'flex' }}>
         <div style={{ flexGrow: 1, flexShrink: 1, width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -108,12 +112,24 @@ function App() {
             onValue={value => setRange([value, range[1]])}
           />
         </div>
-        <MultiMergeSelect
-          category={segment}
-          type={make}
-          selected={selected}
-          setSelected={setSelected}
-        />
+        {smallScreen &&
+          <Drawer isOpen={drawerOpen} onClose={() => setDrawerOpen(false)}>
+            <MultiMergeSelect
+              category={segment}
+              type={make}
+              selected={selected}
+              setSelected={setSelected}
+            />
+          </Drawer>
+        }
+        {!smallScreen &&
+          <MultiMergeSelect
+            category={segment}
+            type={make}
+            selected={selected}
+            setSelected={setSelected}
+          />
+        }
       </div>
     </div>
   )
