@@ -44,6 +44,7 @@ export function MultiMergeSelect(props: {
 
   const [sort, setSort] = useState<typeof sortOptions[number]>('bev')
   const [acending, setAcending] = useState<1|-1>(-1)
+  const [linear, setLinear] = useState(false)
 
   const percent = ['bevPercent'].includes(sort)
 
@@ -57,7 +58,7 @@ export function MultiMergeSelect(props: {
     } else if (sort === 'bevGrowthTotal') {
       sortValue = (market.latest[type] - market.before[type]) / market.before['total']
     } else {
-      sortValue = market.latest[sort]
+      sortValue = linear ? market.latest[sort] : market.latest[sort] ** (1/3)
     }
 
     return {
@@ -77,6 +78,11 @@ export function MultiMergeSelect(props: {
           label="Asc"
           checked={acending === 1}
           onChange={e => setAcending(e.target.checked ? 1 : -1)}  
+        />
+        <Switch
+          label="Linear"
+          checked={linear}
+          onChange={e => setLinear(e.target.checked)}  
         />
       </div>
       <Menu>
