@@ -58,13 +58,13 @@ allFiles
   
   const fleetFormatted = bevSeries.data.map((d, i) => ({
     x: d.x,
-    bev: d.y,
-    total: d.y + combustionSeries.data[i].y
+    bev: Math.round(d.y),
+    total: Math.round(d.y + combustionSeries.data[i].y)
   }))
 
   const salesFormatted = bevSeries.data.map((d, i) => ({
     x: d.x,
-    bev: projectedSales.data[i].y,
+    bev: Math.round(projectedSales.data[i].y),
     // TODO
     // total: series[i][1]
   }))
