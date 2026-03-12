@@ -45,7 +45,8 @@ const files = [
   // { date: '2025-09-01', file: './acea/2025-09.pdf' },
   // { date: '2025-10-01', file: './acea/2025-10.pdf' },
   // { date: '2025-11-01', file: './acea/2025-11.pdf' },
-  { date: '2025-12-01', file: './acea/2025-12.pdf' },
+  // { date: '2025-12-01', file: './acea/2025-12.pdf' },
+  { date: '2026-01-01', file: './acea/2026-01.pdf' },
 ]
 
 const rowOffset = 22
@@ -60,7 +61,7 @@ files.forEach(({ date, file }) => {
       "Croatia", 
       "Cyprus", 
       "Czechia",
-      "Czech Republic",
+      // "Czech Republic",
       "Denmark", 
       "Estonia", 
       "Finland", 
@@ -88,15 +89,43 @@ files.forEach(({ date, file }) => {
     ]
     .forEach((startString) => {
       // console.log('result', result.filter(s => s.startsWith('NEW')))
-      const monthlyIndex = result.findIndex(s => s === 'MONTHLY' || s === 'NEW PASSENGER CAR REGISTRATIONS, BY MARKET AND FUEL TYPE ' || s === 'NEW PASSENGER CAR REGISTRATIONS BY MARKET AND FUEL TYPE ')
+      const monthlyIndex = result.findIndex(s => false
+        || s === 'MONTHLY'
+        // || s === 'NEW PASSENGER CAR REGISTRATIONS, BY MARKET AND FUEL TYPE '
+        // || s === 'NEW PASSENGER CAR REGISTRATIONS BY MARKET AND FUEL TYPE '
+        // || s === 'NEW CAR REGISTRATIONS BY MARKET AND POWER SOURCE'
+        // || s === 'YEAR TO DATE'
+      )
       const startIndex = result.slice(monthlyIndex).findIndex(s => s === startString, monthlyIndex)
         + monthlyIndex
       // console.log('monthlyIndex', monthlyIndex, startIndex)
       // const endTableIndex = result.findIndex(s => s === endString) - 1
-      
-      const countrySegment = result.slice(startIndex, startIndex + rowOffset)
-        .filter(s => !((s.includes('+') || s.includes('-') || s.includes('!'))))
-        .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
+
+      const baseSlice = result.slice(startIndex, startIndex + rowOffset)
+      // const countrySegment = result.slice(startIndex, startIndex + rowOffset)
+        // .filter(s => !((s.includes('+') || s.includes('-') || s.includes('!'))))
+        // .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
+
+      const countrySegment = baseSlice.reduce((input, value, i, a) => {
+        // @ts-ignore
+        if ((input.at(-1) === '0' && value === '0') || (input.at(-1) === "ꟷ" && value === "ꟷ")) {
+          return input.concat([value, 'p'])
+        }
+
+        return input.concat(value)
+      }, [] as any[])
+      .slice(1, 21)
+      .filter((v, i) => i%3 !== 2)
+      // .filter(s => !((s.includes('+') || s.includes('-') || s.includes('!'))))
+      // .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
+
+      if (countrySegment.some(v => v.includes('+') || v.includes('-'))) {
+        console.log('Broken', countrySegment.map(v => v.padEnd(6,' ')).join('|'), startString)
+        // return
+      }
+
+      // console.log(countrySegment.map(v => v.padEnd(6,' ')).join('|'), startString)
+      // console.log('2', countrySegment)
 
       // console.log(countrySegment[0], countrySegment.length)
       // if (countrySegment.length < )
@@ -105,28 +134,28 @@ files.forEach(({ date, file }) => {
 
       const index = 0
       const market = {
-        country: countrySegment[index],
+        country: baseSlice[index],
         data: [
           {
             x: DateTime.fromISO(date, { zone: 'utc' }),
-            bev: toNumber(countrySegment[index+1]),
-            phev: toNumber(countrySegment[index+3]),
-            hybrid: toNumber(countrySegment[index+5]),
-            other: toNumber(countrySegment[index+7]),
-            petrol: toNumber(countrySegment[index+9]),
-            disel: toNumber(countrySegment[index+11]),
-            total: toNumber(countrySegment[index+13]),
+            bev: toNumber(countrySegment[index]),
+            phev: toNumber(countrySegment[index+2]),
+            hybrid: toNumber(countrySegment[index+4]),
+            other: toNumber(countrySegment[index+6]),
+            petrol: toNumber(countrySegment[index+8]),
+            disel: toNumber(countrySegment[index+10]),
+            total: toNumber(countrySegment[index+12]),
           },
-          {
-            x: DateTime.fromISO(date, { zone: 'utc' }).minus({ year: 1 }),
-            bev: toNumber(countrySegment[index+2]),
-            phev: toNumber(countrySegment[index+4]),
-            hybrid: toNumber(countrySegment[index+6]),
-            other: toNumber(countrySegment[index+8]),
-            petrol: toNumber(countrySegment[index+10]),
-            disel: toNumber(countrySegment[index+12]),
-            total: toNumber(countrySegment[index+14]),
-          },
+          // {
+          //   x: DateTime.fromISO(date, { zone: 'utc' }).minus({ year: 1 }),
+          //   bev: toNumber(countrySegment[index+1]),
+          //   phev: toNumber(countrySegment[index+3]),
+          //   hybrid: toNumber(countrySegment[index+5]),
+          //   other: toNumber(countrySegment[index+7]),
+          //   petrol: toNumber(countrySegment[index+9]),
+          //   disel: toNumber(countrySegment[index+11]),
+          //   total: toNumber(countrySegment[index+13]),
+          // },
         ]
       }
 

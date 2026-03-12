@@ -37,6 +37,7 @@ const output = allFiles
   const marketLabel = file.split('-')[1].slice(0, -5)
   const content: Point[] = JSON.parse(fs.readFileSync(folderRead + file))
 
+  console.log('file', file)
   const latest = content
     .filter(month => month.total != null)
     .slice(-step)
