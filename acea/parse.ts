@@ -1,3 +1,4 @@
+import { sum } from 'mathjs'
 import { readPdf } from '../read-pdf'
 import { DateTime } from 'luxon'
 const fs = require('fs')
@@ -120,9 +121,22 @@ files.forEach(({ date, file }) => {
       // .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
 
       if (countrySegment.some(v => v.includes('+') || v.includes('-'))) {
-        console.log('Broken', countrySegment.map(v => v.padEnd(6,' ')).join('|'), startString)
-        // return
+        console.log('Broken', startString, countrySegment.map(v => v.padEnd(6,' ')).join('|'))
+        return
       }
+
+      const valueSum = sum(countrySegment.filter((v, i) => [0, 2, 4, 6, 8, 10].includes(i))
+        .filter(v => v !== null)
+        .map(toNumber)
+      )
+      const total = toNumber(countrySegment[12])
+      
+      if (valueSum !== total) {
+        console.log('Sum error', startString, startString, valueSum - total, valueSum, total)
+        return
+      }
+
+      console.log('Working', startString)
 
       // console.log(countrySegment.map(v => v.padEnd(6,' ')).join('|'), startString)
       // console.log('2', countrySegment)
@@ -146,16 +160,16 @@ files.forEach(({ date, file }) => {
             disel: toNumber(countrySegment[index+10]),
             total: toNumber(countrySegment[index+12]),
           },
-          // {
-          //   x: DateTime.fromISO(date, { zone: 'utc' }).minus({ year: 1 }),
-          //   bev: toNumber(countrySegment[index+1]),
-          //   phev: toNumber(countrySegment[index+3]),
-          //   hybrid: toNumber(countrySegment[index+5]),
-          //   other: toNumber(countrySegment[index+7]),
-          //   petrol: toNumber(countrySegment[index+9]),
-          //   disel: toNumber(countrySegment[index+11]),
-          //   total: toNumber(countrySegment[index+13]),
-          // },
+          {
+            x: DateTime.fromISO(date, { zone: 'utc' }).minus({ year: 1 }),
+            bev: toNumber(countrySegment[index+1]),
+            phev: toNumber(countrySegment[index+3]),
+            hybrid: toNumber(countrySegment[index+5]),
+            other: toNumber(countrySegment[index+7]),
+            petrol: toNumber(countrySegment[index+9]),
+            disel: toNumber(countrySegment[index+11]),
+            total: toNumber(countrySegment[index+13]),
+          },
         ]
       }
 
