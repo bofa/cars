@@ -501,12 +501,12 @@
   },
   {
     "x": "2026-03-01T00:00:00.000Z",
-    "bev": 16242,
-    "phev": null,
-    "hybrid": null,
-    "other": null,
-    "petrol": null,
-    "disel": null,
-    "total": null
+    "bev": 16121,
+    "phev": 15805,
+    "hybrid": 93241,
+    "other": 9890,
+    "petrol": 37456,
+    "disel": 12744,
+    "total": 185257
   }
 ]

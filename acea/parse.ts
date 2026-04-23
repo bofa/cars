@@ -113,9 +113,29 @@ files.forEach(({ date, file }) => {
         // .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
 
       const countrySegment = baseSlice
-      // Join cells starting with ','
+      // +- should be follow by a .
+      .reduce((input, value, i, a) => {
+        if (/^(?!.*[+-](?!.*\.))[\s\S]*$/.test(a[i-1])) {
+          return input.concat(value)
+        }
+
+        const output = input.map(v => v)
+        output[output.length-1] = input.at(-1) + value
+        return output
+      }, [] as string[])
+      // Comma should be follow by three numbers
+      .reduce((input, value, i, a) => {
+        if (/^(?:[^,]*|[^,]*,(?=\d{3}\b)[^,]*)*$/.test(a[i-1])) {
+          return input.concat(value)
+        }
+
+        const output = input.map(v => v)
+        output[output.length-1] = input.at(-1) + value
+        return output
+      }, [] as string[])
+      // Join cells starting with ',' or '.'
       .reduce((input, value, i) => {
-        if (value[0] !== ',' && value.slice(0, 2) !== '0,') {
+        if (value[0] !== ',' && value[0] !== '.' && value.slice(0, 2) !== '0,') {
           return input.concat(value)
         }
 
@@ -137,7 +157,9 @@ files.forEach(({ date, file }) => {
       // .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
 
       if (countrySegment.some(v => v.includes('+') || v.includes('-'))) {
-        console.log('Broken', startString, countrySegment.map(v => v.padEnd(6,' ')).join('|'))
+        console.log('Broken', startString)
+        console.log(baseSlice.slice(1).map(v => v.padEnd(6,' ')).join('|'))
+        console.log(countrySegment.map(v => v.padEnd(6,' ')).join('|'))
         return
       }
 
