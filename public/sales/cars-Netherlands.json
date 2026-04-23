@@ -1101,12 +1101,12 @@
   },
   {
     "x": "2026-03-01T00:00:00.000Z",
-    "bev": 11171,
-    "phev": null,
-    "hybrid": null,
-    "other": null,
-    "petrol": null,
-    "disel": null,
-    "total": null
+    "bev": 11114,
+    "phev": 7516,
+    "hybrid": 9918,
+    "other": 133,
+    "petrol": 2403,
+    "disel": 383,
+    "total": 31467
   }
 ]
