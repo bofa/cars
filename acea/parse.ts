@@ -66,7 +66,6 @@ files.forEach(({ date, file }) => {
       "Croatia", 
       "Cyprus", 
       "Czechia",
-      // "Czech Republic",
       "Denmark", 
       "Estonia", 
       "Finland", 
@@ -91,6 +90,8 @@ files.forEach(({ date, file }) => {
       "Norway",
       "Switzerland",
       "United Kingdom",
+
+      // "Czech Republic",
     ]
     .forEach((startString) => {
       // console.log('result', result.filter(s => s.startsWith('NEW')))
@@ -111,14 +112,25 @@ files.forEach(({ date, file }) => {
         // .filter(s => !((s.includes('+') || s.includes('-') || s.includes('!'))))
         // .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
 
-      const countrySegment = baseSlice.reduce((input, value, i, a) => {
+      const countrySegment = baseSlice
+      // Join cells starting with ','
+      .reduce((input, value, i) => {
+        if (value[0] !== ',' && value.slice(0, 2) !== '0,') {
+          return input.concat(value)
+        }
+
+        const output = input.map(v => v)
+        output[output.length-1] = input.at(-1) + value
+        return output
+      }, [] as string[])
+      .reduce((input, value) => {
         // @ts-ignore
         if ((input.at(-1) === '0' && value === '0') || (input.at(-1) === "ꟷ" && value === "ꟷ")) {
           return input.concat([value, 'p'])
         }
 
         return input.concat(value)
-      }, [] as any[])
+      }, [] as string[])
       .slice(1, 21)
       .filter((v, i) => i%3 !== 2)
       // .filter(s => !((s.includes('+') || s.includes('-') || s.includes('!'))))
