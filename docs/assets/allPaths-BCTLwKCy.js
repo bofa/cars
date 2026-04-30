@@ -1,0 +1,1 @@
+import{t as e}from"./paths-BVteGOrt.js";import{t}from"./paths-D1T-17IF.js";import{n,r}from"./index-BjeisTib.js";function i(i,a){let o=r(i);return a===n.STANDARD?e[o]:t[o]}export{i as getIconPaths};

@@ -27,24 +27,24 @@
     "id": "Belgium",
     "name": "Belgium",
     "latest": {
-      "x": "2025-10-01T00:00:00.000Z",
-      "bev": 191,
+      "x": "2026-01-01T00:00:00.000Z",
+      "bev": 211,
       "phev": 2,
       "hybrid": 0,
-      "other": 70,
-      "petrol": 10,
-      "disel": 7397,
-      "total": 7670
+      "other": 52,
+      "petrol": 5,
+      "disel": 7188,
+      "total": 7458
     },
     "before": {
-      "x": "2024-10-01T00:00:00.000Z",
-      "bev": 77,
+      "x": "2025-01-01T00:00:00.000Z",
+      "bev": 93,
       "phev": 2,
       "hybrid": 0,
-      "other": 48,
-      "petrol": 3,
-      "disel": 7742,
-      "total": 7872
+      "other": 58,
+      "petrol": 8,
+      "disel": 7650,
+      "total": 7811
     }
   },
   {
@@ -129,8 +129,8 @@
       "hybrid": 0,
       "other": 9,
       "petrol": 0,
-      "disel": 4006,
-      "total": 4357
+      "disel": 4009,
+      "total": 4360
     },
     "before": {
       "x": "2025-01-01T00:00:00.000Z",
@@ -139,8 +139,8 @@
       "hybrid": 0,
       "other": 32,
       "petrol": 0,
-      "disel": 3909,
-      "total": 4158
+      "disel": 3906,
+      "total": 4155
     }
   },
   {
@@ -195,24 +195,24 @@
     "id": "France",
     "name": "France",
     "latest": {
-      "x": "2025-10-01T00:00:00.000Z",
-      "bev": 861,
+      "x": "2026-01-01T00:00:00.000Z",
+      "bev": 895,
       "phev": 0,
       "hybrid": 0,
-      "other": 3321,
+      "other": 2896,
       "petrol": 1,
-      "disel": 34267,
-      "total": 38450
+      "disel": 34409,
+      "total": 38201
     },
     "before": {
-      "x": "2024-10-01T00:00:00.000Z",
-      "bev": 671,
+      "x": "2025-01-01T00:00:00.000Z",
+      "bev": 796,
       "phev": 0,
       "hybrid": 0,
-      "other": 3722,
+      "other": 3856,
       "petrol": 0,
-      "disel": 38193,
-      "total": 42586
+      "disel": 35593,
+      "total": 40245
     }
   },
   {
@@ -483,24 +483,24 @@
     "id": "Poland",
     "name": "Poland",
     "latest": {
-      "x": "2025-10-01T00:00:00.000Z",
-      "bev": 52,
-      "phev": 1,
-      "hybrid": 0,
-      "other": 182,
-      "petrol": 4,
-      "disel": 26576,
-      "total": 26815
-    },
-    "before": {
-      "x": "2024-10-01T00:00:00.000Z",
-      "bev": 41,
+      "x": "2026-01-01T00:00:00.000Z",
+      "bev": 50,
       "phev": 0,
       "hybrid": 0,
-      "other": 132,
+      "other": 213,
+      "petrol": 4,
+      "disel": 28505,
+      "total": 28772
+    },
+    "before": {
+      "x": "2025-01-01T00:00:00.000Z",
+      "bev": 36,
+      "phev": 1,
+      "hybrid": 0,
+      "other": 144,
       "petrol": 0,
-      "disel": 24393,
-      "total": 24566
+      "disel": 23664,
+      "total": 23845
     }
   },
   {
@@ -531,24 +531,24 @@
     "id": "Romania",
     "name": "Romania",
     "latest": {
-      "x": "2025-10-01T00:00:00.000Z",
-      "bev": 55,
+      "x": "2026-01-01T00:00:00.000Z",
+      "bev": 59,
       "phev": 0,
       "hybrid": 0,
       "other": 34,
       "petrol": 0,
-      "disel": 8614,
-      "total": 8703
+      "disel": 9104,
+      "total": 9197
     },
     "before": {
-      "x": "2024-10-01T00:00:00.000Z",
-      "bev": 3,
-      "phev": 1,
+      "x": "2025-01-01T00:00:00.000Z",
+      "bev": 4,
+      "phev": 0,
       "hybrid": 0,
-      "other": 2,
+      "other": 0,
       "petrol": 0,
-      "disel": 7949,
-      "total": 7955
+      "disel": 7460,
+      "total": 7464
     }
   },
   {
@@ -580,23 +580,23 @@
     "name": "Spain",
     "latest": {
       "x": "2026-01-01T00:00:00.000Z",
-      "bev": 127,
+      "bev": 126,
       "phev": 0,
       "hybrid": 0,
-      "other": 433,
+      "other": 434,
       "petrol": 0,
-      "disel": 26685,
-      "total": 27245
+      "disel": 26686,
+      "total": 27246
     },
     "before": {
       "x": "2025-01-01T00:00:00.000Z",
-      "bev": 119,
+      "bev": 120,
       "phev": 1,
       "hybrid": 0,
-      "other": 797,
+      "other": 796,
       "petrol": 0,
-      "disel": 25263,
-      "total": 26180
+      "disel": 25262,
+      "total": 26179
     }
   },
   {
