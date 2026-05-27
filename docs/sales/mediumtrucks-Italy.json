@@ -115,7 +115,7 @@
     "phev": 20,
     "hybrid": 0,
     "other": 0,
-    "petrol": -1,
+    "petrol": 0,
     "disel": 1123,
     "total": 1185
   },
