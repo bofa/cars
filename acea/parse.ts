@@ -10,7 +10,7 @@ const fs = require('fs')
 // China https://tradingeconomics.com/china/car-registrations
 
 const files = [
-  // { date: '2023-01-01', file: './acea/2023-01.pdf' },
+  { date: '2023-01-01', file: './acea/2023-01.pdf' },
   // { date: '2023-02-01', file: './acea/2023-02.pdf' },
   // { date: '2023-03-01', file: './acea/2023-03.pdf' },
   // { date: '2023-04-01', file: './acea/2023-04.pdf' },
@@ -91,6 +91,10 @@ files.forEach(({ date, file }) => {
       "Switzerland",
       "United Kingdom",
 
+      "EUROPEAN UNION",
+
+      // "EFTA",
+      // "EU + EFTA + UK",
       // "Czech Republic",
     ]
     .forEach((startString) => {
@@ -143,6 +147,16 @@ files.forEach(({ date, file }) => {
         output[output.length-1] = input.at(-1) + value
         return output
       }, [] as string[])
+      // Join cells starting with zero followed by number
+      .reduce((input, value, i) => {
+        if (value.length < 2 || value[0] !== '0' || /D/.test(value[1])) {
+          return input.concat(value)
+        }
+
+        const output = input.map(v => v)
+        output[output.length-1] = input.at(-1) + value
+        return output
+      }, [] as string[])
       .reduce((input, value) => {
         // @ts-ignore
         if ((input.at(-1) === '0' && value === '0') || (input.at(-1) === "ꟷ" && value === "ꟷ")) {
@@ -157,9 +171,9 @@ files.forEach(({ date, file }) => {
       // .filter((s, i) => i === 0 || !isFirstCharLetter(s)) //  && (Number(s.slice(1, 2)) > 0)))
 
       if (countrySegment.some(v => v.includes('+') || v.includes('-'))) {
-        console.log('Broken', startString)
-        console.log(baseSlice.slice(1).map(v => v.padEnd(6,' ')).join('|'))
-        console.log(countrySegment.map(v => v.padEnd(6,' ')).join('|'))
+        console.log(date, 'Broken', startString)
+        console.log(date, baseSlice.slice(1).map(v => v.padEnd(6,' ')).join('|'))
+        console.log(date, countrySegment.map(v => v.padEnd(6,' ')).join('|'))
         return
       }
 
@@ -169,8 +183,15 @@ files.forEach(({ date, file }) => {
       )
       const total = toNumber(countrySegment[12])
       
+      if (isNaN(total)) {
+        console.log(date, 'Total is NaN', startString)
+        console.log(date, baseSlice.slice(1).map(v => v.padEnd(6,' ')).join('|'))
+        console.log(date, countrySegment.map(v => v.padEnd(6,' ')).join('|'))
+        return
+      }
+
       if (valueSum !== total) {
-        console.log('Sum error', startString, startString, valueSum - total, valueSum, total)
+        console.log(date, 'Sum error', startString, startString, valueSum - total, valueSum, total)
         return
       }
 
@@ -246,7 +267,7 @@ files.forEach(({ date, file }) => {
 })
 
 function toNumber(s: string) {
-  return Number(s?.replace(',', ''))
+  return Number(s?.replace(',', '').replace(',', ''))
 }
 
 function uniq<T extends Record<string, any>>(array: T[], key: keyof T) {

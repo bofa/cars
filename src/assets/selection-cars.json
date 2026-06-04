@@ -216,6 +216,30 @@
     }
   },
   {
+    "id": "EUROPEAN UNION",
+    "name": "EUROPEAN UNION",
+    "latest": {
+      "x": "2026-04-01T00:00:00.000Z",
+      "bev": 2069306,
+      "phev": 1088728,
+      "hybrid": 3898384,
+      "other": 320614,
+      "petrol": 2699794,
+      "disel": 904206,
+      "total": 10981032
+    },
+    "before": {
+      "x": "2025-04-01T00:00:00.000Z",
+      "bev": 1564268,
+      "phev": 781956,
+      "hybrid": 3504404,
+      "other": 321273,
+      "petrol": 3275732,
+      "disel": 1142840,
+      "total": 10590473
+    }
+  },
+  {
     "id": "Finland",
     "name": "Finland",
     "latest": {
