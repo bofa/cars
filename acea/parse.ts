@@ -3,6 +3,8 @@ import { DateTime } from 'luxon'
 import { readPdf } from '../read-pdf'
 const fs = require('fs')
 
+const parseErrors = false
+
 // Sources
 // Europe https://www.acea.auto/nav/?content=press-releases
 // USA https://www.anl.gov/esia/reference/light-duty-electric-drive-vehicles-monthly-sales-updates-historical-data
@@ -10,7 +12,7 @@ const fs = require('fs')
 // China https://tradingeconomics.com/china/car-registrations
 
 const files = [
-  { date: '2023-01-01', file: './acea/2023-01.pdf' },
+  // { date: '2023-01-01', file: './acea/2023-01.pdf' },
   // { date: '2023-02-01', file: './acea/2023-02.pdf' },
   // { date: '2023-03-01', file: './acea/2023-03.pdf' },
   // { date: '2023-04-01', file: './acea/2023-04.pdf' },
@@ -174,7 +176,7 @@ files.forEach(({ date, file }) => {
         console.log(date, 'Broken', startString)
         console.log(date, baseSlice.slice(1).map(v => v.padEnd(6,' ')).join('|'))
         console.log(date, countrySegment.map(v => v.padEnd(6,' ')).join('|'))
-        return
+        if(!parseErrors) return
       }
 
       const valueSum = sum(countrySegment.filter((v, i) => [0, 2, 4, 6, 8, 10].includes(i))
@@ -187,12 +189,14 @@ files.forEach(({ date, file }) => {
         console.log(date, 'Total is NaN', startString)
         console.log(date, baseSlice.slice(1).map(v => v.padEnd(6,' ')).join('|'))
         console.log(date, countrySegment.map(v => v.padEnd(6,' ')).join('|'))
-        return
+        if(!parseErrors) return
       }
 
       if (valueSum !== total) {
         console.log(date, 'Sum error', startString, startString, valueSum - total, valueSum, total)
-        return
+        console.log(date, baseSlice.slice(1).map(v => v.padEnd(6,' ')).join('|'))
+        console.log(date, countrySegment.map(v => v.padEnd(6,' ')).join('|'))
+        if(!parseErrors) return
       }
 
       console.log('Working', startString)
