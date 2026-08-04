@@ -88,5 +88,15 @@
     "petrol": 0,
     "disel": 2289,
     "total": 2321
+  },
+  {
+    "x": "2026-04-01T00:00:00.000Z",
+    "bev": 61,
+    "phev": 0,
+    "hybrid": null,
+    "other": 20,
+    "petrol": 0,
+    "disel": 4972,
+    "total": 5053
   }
 ]
