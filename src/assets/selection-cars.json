@@ -192,30 +192,6 @@
     }
   },
   {
-    "id": "EUROPEAN UNION",
-    "name": "EUROPEAN UNION",
-    "latest": {
-      "x": "2026-06-01T00:00:00.000Z",
-      "bev": 2232016,
-      "phev": 1121516,
-      "hybrid": 3990995,
-      "other": 318015,
-      "petrol": 2610907,
-      "disel": 873777,
-      "total": 11147224
-    },
-    "before": {
-      "x": "2025-06-01T00:00:00.000Z",
-      "bev": 1604457,
-      "phev": 838604,
-      "hybrid": 3566901,
-      "other": 332672,
-      "petrol": 3118717,
-      "disel": 1063649,
-      "total": 10525000
-    }
-  },
-  {
     "id": "Estonia",
     "name": "Estonia",
     "latest": {
@@ -237,6 +213,30 @@
       "petrol": 5102,
       "disel": 3501,
       "total": 21638
+    }
+  },
+  {
+    "id": "EUROPEAN UNION",
+    "name": "EUROPEAN UNION",
+    "latest": {
+      "x": "2026-06-01T00:00:00.000Z",
+      "bev": 2232016,
+      "phev": 1121516,
+      "hybrid": 3990995,
+      "other": 318015,
+      "petrol": 2610907,
+      "disel": 873777,
+      "total": 11147224
+    },
+    "before": {
+      "x": "2025-06-01T00:00:00.000Z",
+      "bev": 1604457,
+      "phev": 838604,
+      "hybrid": 3566901,
+      "other": 332672,
+      "petrol": 3118717,
+      "disel": 1063649,
+      "total": 10525000
     }
   },
   {
@@ -638,13 +638,13 @@
     },
     "before": {
       "x": "2025-05-01T00:00:00.000Z",
-      "bev": 7724,
-      "phev": 10504,
-      "hybrid": 55316,
-      "other": 18823,
-      "petrol": 38615,
-      "disel": 33957,
-      "total": 164939
+      "bev": 8205,
+      "phev": 5510,
+      "hybrid": 59433,
+      "other": 17959,
+      "petrol": 43372,
+      "disel": 26259,
+      "total": 137314
     }
   },
   {
@@ -699,24 +699,24 @@
     "id": "Sweden",
     "name": "Sweden",
     "latest": {
-      "x": "2026-06-01T00:00:00.000Z",
-      "bev": 109972,
-      "phev": 71130,
-      "hybrid": 27768,
-      "other": 1018,
-      "petrol": 49654,
-      "disel": 18886,
-      "total": 278428
+      "x": "2026-08-01T00:00:00.000Z",
+      "bev": 115397,
+      "phev": 61156,
+      "hybrid": 23259,
+      "other": 1013,
+      "petrol": 41720,
+      "disel": 16400,
+      "total": 283382
     },
     "before": {
-      "x": "2025-06-01T00:00:00.000Z",
-      "bev": 101997,
-      "phev": 68921,
-      "hybrid": 28002,
-      "other": 3277,
-      "petrol": 58633,
-      "disel": 17435,
-      "total": 278265
+      "x": "2025-08-01T00:00:00.000Z",
+      "bev": 102634,
+      "phev": 70809,
+      "hybrid": 28570,
+      "other": 2909,
+      "petrol": 58902,
+      "disel": 16920,
+      "total": 280744
     }
   },
   {

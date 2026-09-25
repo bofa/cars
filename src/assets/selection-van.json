@@ -651,24 +651,24 @@
     "id": "Sweden",
     "name": "Sweden",
     "latest": {
-      "x": "2026-01-01T00:00:00.000Z",
-      "bev": 10015,
-      "phev": 0,
+      "x": "2026-04-01T00:00:00.000Z",
+      "bev": 11103,
+      "phev": 4,
       "hybrid": 0,
-      "other": 1932,
-      "petrol": 595,
-      "disel": 22099,
-      "total": 51339
+      "other": 1863,
+      "petrol": 514,
+      "disel": 23347,
+      "total": 36831
     },
     "before": {
-      "x": "2025-01-01T00:00:00.000Z",
-      "bev": 8035,
-      "phev": 2,
+      "x": "2025-04-01T00:00:00.000Z",
+      "bev": 8542,
+      "phev": 1,
       "hybrid": 0,
-      "other": 2978,
-      "petrol": 759,
-      "disel": 23806,
-      "total": 35579
+      "other": 2639,
+      "petrol": 810,
+      "disel": 21271,
+      "total": 38328
     }
   },
   {
