@@ -8,6 +8,8 @@
     "lint": "eslint .",
     "fuel": "ts-node eia/fuel.ts",
     "cars": "ts-node acea/parse.ts",
+    "carscumulative": "ts-node acea/parse-cumulative.ts",
+    "ecb": "ts-node ecb/ecb-scrape.ts",
     "trucks-parse": "ts-node acea_commercial/parse.ts",
     "trucks-process": "ts-node acea_commercial/process.ts",
     "adhoc": "ts-node adhoc/adhoc.ts",
