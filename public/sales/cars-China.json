@@ -439,5 +439,25 @@
     "petrol": null,
     "disel": null,
     "total": 1.54e6
+  },
+  {
+    "x": "2026-09-01T00:00:00.000Z",
+    "bev": 1.82e6,
+    "phev": null,
+    "hybrid": null,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1.62e6
+  },
+  {
+    "x": "2026-10-01T00:00:00.000Z",
+    "bev": 1.94e6,
+    "phev": null,
+    "hybrid": null,
+    "other": null,
+    "petrol": null,
+    "disel": null,
+    "total": 1.64e6
   }
 ]
